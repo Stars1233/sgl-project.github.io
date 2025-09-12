@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>OpenAI-Compatible APIs &#8212; SGLang</title>
+    <title>Qwen3-Next Usage &#8212; SGLang</title>
   
   
   
@@ -47,14 +47,12 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'basic_usage/openai_api';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'basic_usage/qwen3';</script>
     <link rel="icon" href="../_static/logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="OpenAI APIs - Completions" href="openai_api_completions.html" />
-    <link rel="prev" title="Sending Requests" href="send_request.html" />
+    <link rel="next" title="Server Arguments" href="../advanced_features/server_arguments.html" />
+    <link rel="prev" title="Llama4 Usage" href="llama4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Sep 12, 2025"/>
@@ -172,19 +170,14 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic Usage</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="send_request.html">Sending Requests</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">OpenAI-Compatible APIs</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="openai_api_completions.html">OpenAI APIs - Completions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="openai_api_vision.html">OpenAI APIs - Vision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="openai_api_embeddings.html">OpenAI APIs - Embedding</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="openai_api.html">OpenAI-Compatible APIs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="offline_engine_api.html">Offline Engine API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="native_api.html">SGLang Native APIs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sampling_params.html">Sampling Parameters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deepseek.html">DeepSeek Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gpt_oss.html">GPT OSS Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="llama4.html">Llama4 Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qwen3.html">Qwen3-Next Usage</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Qwen3-Next Usage</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
 <ul class="nav bd-sidenav">
@@ -310,7 +303,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/blob/main/basic_usage/openai_api.rst?plain=1" target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/blob/main/basic_usage/qwen3.md?plain=1" target="_blank"
    class="btn btn-sm btn-source-file-button dropdown-item"
    title="Show source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -327,7 +320,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/edit/main/basic_usage/openai_api.rst" target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/edit/main/basic_usage/qwen3.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +337,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/issues/new?title=Issue%20on%20page%20%2Fbasic_usage/openai_api.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/issues/new?title=Issue%20on%20page%20%2Fbasic_usage/qwen3.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,7 +367,7 @@
       
       
       
-      <li><a href="../_sources/basic_usage/openai_api.rst" target="_blank"
+      <li><a href="../_sources/basic_usage/qwen3.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -384,7 +377,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.rst</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -445,7 +438,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -456,11 +451,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>OpenAI-Compatible APIs</h1>
+    <h1>Qwen3-Next Usage</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-qwen3-next-with-sglang">Launch Qwen3-Next with SGLang</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-tips">Configuration Tips</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eagle-speculative-decoding">EAGLE Speculative Decoding</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -470,15 +477,33 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="openai-compatible-apis">
-<h1>OpenAI-Compatible APIs<a class="headerlink" href="#openai-compatible-apis" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="openai_api_completions.html">OpenAI APIs - Completions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="openai_api_vision.html">OpenAI APIs - Vision</a></li>
-<li class="toctree-l1"><a class="reference internal" href="openai_api_embeddings.html">OpenAI APIs - Embedding</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="qwen3-next-usage">
+<h1>Qwen3-Next Usage<a class="headerlink" href="#qwen3-next-usage" title="Link to this heading">#</a></h1>
+<p>SGLang has supported Qwen3-Next-80B-A3B-Instruct and Qwen3-Next-80B-A3B-Thinking since <a class="reference external" href="https://github.com/sgl-project/sglang/pull/10233">this PR</a>.</p>
+<section id="launch-qwen3-next-with-sglang">
+<h2>Launch Qwen3-Next with SGLang<a class="headerlink" href="#launch-qwen3-next-with-sglang" title="Link to this heading">#</a></h2>
+<p>To serve Qwen3-Next models on 4xH100/H200 GPUs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model<span class="w"> </span>Qwen/Qwen3-Next-80B-A3B-Instruct<span class="w"> </span>--tp<span class="w"> </span><span class="m">4</span>
+</pre></div>
 </div>
+<section id="configuration-tips">
+<h3>Configuration Tips<a class="headerlink" href="#configuration-tips" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--max-mamba-cache-size</span></code>: Adjust <code class="docutils literal notranslate"><span class="pre">--max-mamba-cache-size</span></code> to increase mamba cache space and max running requests capability. It will decrease KV cache space as a trade-off. You can adjust it according to workload.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--mamba-ssm-dtype</span></code>: <code class="docutils literal notranslate"><span class="pre">bfloat16</span></code> or <code class="docutils literal notranslate"><span class="pre">float32</span></code>, use <code class="docutils literal notranslate"><span class="pre">bfloat16</span></code> to save mamba cache size and <code class="docutils literal notranslate"><span class="pre">float32</span></code> to get more accurate results. The default setting is <code class="docutils literal notranslate"><span class="pre">float32</span></code>.</p></li>
+</ul>
+</section>
+<section id="eagle-speculative-decoding">
+<h3>EAGLE Speculative Decoding<a class="headerlink" href="#eagle-speculative-decoding" title="Link to this heading">#</a></h3>
+<p><strong>Description</strong>: SGLang has supported Qwen3-Next models with <a class="reference external" href="https://docs.sglang.ai/advanced_features/speculative_decoding.html#EAGLE-Decoding">EAGLE speculative decoding</a>.</p>
+<p><strong>Usage</strong>:
+Add arguments <code class="docutils literal notranslate"><span class="pre">--speculative-algorithm</span></code>, <code class="docutils literal notranslate"><span class="pre">--speculative-num-steps</span></code>, <code class="docutils literal notranslate"><span class="pre">--speculative-eagle-topk</span></code> and <code class="docutils literal notranslate"><span class="pre">--speculative-num-draft-tokens</span></code> to enable this feature. For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model<span class="w"> </span>Qwen/Qwen3-Next-80B-A3B-Instruct<span class="w"> </span>--tp<span class="w"> </span><span class="m">4</span><span class="w"> </span>--speculative-num-steps<span class="w"> </span><span class="m">3</span><span class="w">  </span>--speculative-eagle-topk<span class="w"> </span><span class="m">1</span><span class="w">  </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">4</span><span class="w"> </span>--speculative-algo<span class="w"> </span>NEXTN
+</pre></div>
+</div>
+<p>Details can be seen in <a class="reference external" href="https://github.com/sgl-project/sglang/pull/10233">this PR</a>.</p>
+</section>
+</section>
 </section>
 
 
@@ -493,20 +518,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="send_request.html"
+       href="llama4.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Sending Requests</p>
+        <p class="prev-next-title">Llama4 Usage</p>
       </div>
     </a>
     <a class="right-next"
-       href="openai_api_completions.html"
+       href="../advanced_features/server_arguments.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OpenAI APIs - Completions</p>
+        <p class="prev-next-title">Server Arguments</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -516,6 +541,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-qwen3-next-with-sglang">Launch Qwen3-Next with SGLang</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-tips">Configuration Tips</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eagle-speculative-decoding">EAGLE Speculative Decoding</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

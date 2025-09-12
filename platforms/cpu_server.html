@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e1c763fa"></script>
+    <script src="../_static/documentation_options.js?v=4861a642"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -55,7 +55,7 @@
     <link rel="prev" title="Blackwell GPUs" href="blackwell_gpu.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Sep 11, 2025"/>
+    <meta name="docbuild:last-update" content="Sep 12, 2025"/>
   </head>
   
   
@@ -177,6 +177,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../basic_usage/deepseek.html">DeepSeek Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../basic_usage/gpt_oss.html">GPT OSS Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../basic_usage/llama4.html">Llama4 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/qwen3.html">Qwen3-Next Usage</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
 <ul class="nav bd-sidenav">
@@ -644,9 +645,10 @@ the available memory amounts of the ranks may not be determined in prior.
 You may need to set proper <code class="docutils literal notranslate"><span class="pre">--max-total-tokens</span></code> to avoid the out-of-memory error.</p>
 </li>
 <li><p>For optimizing decoding with torch.compile, please add the flag <code class="docutils literal notranslate"><span class="pre">--enable-torch-compile</span></code>.
-To specify the maximum batch size when using torch compile, set the flag <code class="docutils literal notranslate"><span class="pre">--torch-compile-max-bs</span></code>.
-For example, <code class="docutils literal notranslate"><span class="pre">--enable-torch-compile</span> <span class="pre">--torch-compile-max-bs</span> <span class="pre">4</span></code> means using torch compile and setting the
-maximum batch size to 4.</p></li>
+To specify the maximum batch size when using <code class="docutils literal notranslate"><span class="pre">torch.compile</span></code>, set the flag <code class="docutils literal notranslate"><span class="pre">--torch-compile-max-bs</span></code>.
+For example, <code class="docutils literal notranslate"><span class="pre">--enable-torch-compile</span> <span class="pre">--torch-compile-max-bs</span> <span class="pre">4</span></code> means using <code class="docutils literal notranslate"><span class="pre">torch.compile</span></code>
+and setting the maximum batch size to 4. Currently the maximum applicable batch size
+for optimizing with <code class="docutils literal notranslate"><span class="pre">torch.compile</span></code> is 16.</p></li>
 <li><p>A warmup step is automatically triggered when the service is started.
 The server is ready when you see the log <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">server</span> <span class="pre">is</span> <span class="pre">fired</span> <span class="pre">up</span> <span class="pre">and</span> <span class="pre">ready</span> <span class="pre">to</span> <span class="pre">roll!</span></code>.</p></li>
 </ol>
@@ -683,6 +685,8 @@ and sent via the command line (e.g. using <code class="docutils literal notransl
 <span class="w">    </span>--quantization<span class="w"> </span>w8a8_int8<span class="w">                   </span><span class="se">\</span>
 <span class="w">    </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w">                             </span><span class="se">\</span>
 <span class="w">    </span>--mem-fraction-static<span class="w"> </span><span class="m">0</span>.8<span class="w">                  </span><span class="se">\</span>
+<span class="w">    </span>--enable-torch-compile<span class="w">                     </span><span class="se">\</span>
+<span class="w">    </span>--torch-compile-max-bs<span class="w"> </span><span class="m">4</span><span class="w">                   </span><span class="se">\</span>
 <span class="w">    </span>--tp<span class="w"> </span><span class="m">6</span>
 </pre></div>
 </div>
@@ -694,9 +698,13 @@ and sent via the command line (e.g. using <code class="docutils literal notransl
 <span class="w">    </span>--device<span class="w"> </span>cpu<span class="w">                               </span><span class="se">\</span>
 <span class="w">    </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w">                             </span><span class="se">\</span>
 <span class="w">    </span>--mem-fraction-static<span class="w"> </span><span class="m">0</span>.8<span class="w">                  </span><span class="se">\</span>
+<span class="w">    </span>--enable-torch-compile<span class="w">                     </span><span class="se">\</span>
+<span class="w">    </span>--torch-compile-max-bs<span class="w"> </span><span class="m">4</span><span class="w">                   </span><span class="se">\</span>
 <span class="w">    </span>--tp<span class="w"> </span><span class="m">6</span>
 </pre></div>
 </div>
+<p>Note: Please set <code class="docutils literal notranslate"><span class="pre">--torch-compile-max-bs</span></code> to the maximum desired batch size for your deployment,
+which can be up to 16. The value <code class="docutils literal notranslate"><span class="pre">4</span></code> in the examples is illustrative.</p>
 <p>Then you can test with <code class="docutils literal notranslate"><span class="pre">bench_serving</span></code> command or construct your own command or script
 following <a class="reference internal" href="#benchmarking-with-requests"><span class="std std-ref">the benchmarking example</span></a>.</p>
 </section>
@@ -789,7 +797,7 @@ By SGLang Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Sep 11, 2025.
+  Last updated on Sep 12, 2025.
   <br/>
 </p>
   </div>
