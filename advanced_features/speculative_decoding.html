@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=93a31aec"></script>
+    <script src="../_static/documentation_options.js?v=dd52d761"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -1063,8 +1063,8 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 <td><p>Ngram tree-building mode: <code class="docutils literal notranslate"><span class="pre">&quot;BFS&quot;</span></code> for recency-based expansion or <code class="docutils literal notranslate"><span class="pre">&quot;PROB&quot;</span></code> for frequency-based expansion.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;BFS&quot;</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-branch-length</span></code></p></td>
-<td><p>How many recent tokens to insert into the cache.</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-trie-depth</span></code></p></td>
+<td><p>The max trie depth for ngram speculative decoding.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-capacity</span></code></p></td>
@@ -1242,10 +1242,10 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;BFS&quot;</span></code></p></td>
 <td><p>Ngram tree-building mode: <code class="docutils literal notranslate"><span class="pre">&quot;BFS&quot;</span></code> for recency-based expansion or <code class="docutils literal notranslate"><span class="pre">&quot;PROB&quot;</span></code> for frequency-based expansion</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-branch-length</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-trie-depth</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">18</span></code></p></td>
-<td><p>Recent tokens to insert into cache</p></td>
+<td><p>Max trie depth for ngram speculative decoding</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-capacity</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
