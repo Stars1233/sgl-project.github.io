@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=6ccba3af"></script>
+    <script src="../_static/documentation_options.js?v=4d1d2d09"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -578,9 +578,9 @@ document.write(`
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-[2026-03-23 17:24:45] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-23 17:24:45] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-23 17:24:45] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-23 17:52:20] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-23 17:52:20] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-23 17:52:20] INFO utils.py:164: NumExpr defaulting to 16 threads.
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -588,42 +588,38 @@ document.write(`
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-23 17:24:50] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-23 17:24:50] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-23 17:24:50] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-23 17:52:24] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-23 17:52:24] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-23 17:52:24] INFO utils.py:164: NumExpr defaulting to 16 threads.
 /actions-runner/_work/sglang/sglang/python/sglang/launch_server.py:51: UserWarning: &#39;python -m sglang.launch_server&#39; is still supported, but &#39;sglang serve&#39; is the recommended entrypoint.
   Example: sglang serve --model-path &lt;model&gt; [options]
   warnings.warn(
-[2026-03-23 17:24:52] WARNING model_config.py:1098: Transformers version 5.3.0 is used for model type qwen2. If you experience issues related to RoPE parameters, they may be due to incompatibilities between Transformers &gt;=5.0.0 and some models. You can try downgrading to transformers==4.57.1 as a workaround.
-[2026-03-23 17:24:52] INFO server_args.py:2240: Attention backend not specified. Use fa3 backend by default.
-[2026-03-23 17:24:52] INFO server_args.py:3523: Set soft_watchdog_timeout since in CI
+[2026-03-23 17:52:27] INFO server_args.py:2240: Attention backend not specified. Use fa3 backend by default.
+[2026-03-23 17:52:27] INFO server_args.py:3523: Set soft_watchdog_timeout since in CI
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-23 17:24:53] Transformers version 5.3.0 is used for model type qwen2. If you experience issues related to RoPE parameters, they may be due to incompatibilities between Transformers &gt;=5.0.0 and some models. You can try downgrading to transformers==4.57.1 as a workaround.
-[2026-03-23 17:24:57] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-23 17:24:57] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-23 17:24:57] INFO utils.py:164: NumExpr defaulting to 16 threads.
-[2026-03-23 17:24:57] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-23 17:24:57] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-23 17:24:57] INFO utils.py:164: NumExpr defaulting to 16 threads.
-[2026-03-23 17:25:00] Transformers version 5.3.0 is used for model type qwen2. If you experience issues related to RoPE parameters, they may be due to incompatibilities between Transformers &gt;=5.0.0 and some models. You can try downgrading to transformers==4.57.1 as a workaround.
-[2026-03-23 17:25:01] Transformers version 5.3.0 is used for model type qwen2. If you experience issues related to RoPE parameters, they may be due to incompatibilities between Transformers &gt;=5.0.0 and some models. You can try downgrading to transformers==4.57.1 as a workaround.
+[2026-03-23 17:52:32] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-23 17:52:32] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-23 17:52:32] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-23 17:52:32] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-23 17:52:32] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-23 17:52:32] INFO utils.py:164: NumExpr defaulting to 16 threads.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-23 17:25:02.278 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-23 17:25:02] Persistent cache disabled, using in-memory JIT cache
-2026-03-23 17:25:02.278 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-23 17:25:02] Persistent cache disabled, using in-memory JIT cache
-2026-03-23 17:25:02.278 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-23 17:25:02] Persistent cache disabled, using in-memory JIT cache
-2026-03-23 17:25:02.278 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-23 17:25:02] Persistent cache disabled, using in-memory JIT cache
-2026-03-23 17:25:02.278 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-23 17:25:02] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  6.56it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 16.66it/s]
-Capturing num tokens (num_tokens=4 avail_mem=119.50 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 39.64it/s]
+2026-03-23 17:52:36.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-23 17:52:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-23 17:52:36.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-23 17:52:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-23 17:52:36.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-23 17:52:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-23 17:52:36.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-23 17:52:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-23 17:52:36.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-23 17:52:36] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  7.26it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 16.79it/s]
+Capturing num tokens (num_tokens=4 avail_mem=118.69 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 35.70it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:116: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -639,7 +635,7 @@ Capturing num tokens (num_tokens=4 avail_mem=119.50 GB): 100%|██████
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:32467
+Server started on http://localhost:39265
 </pre></div></div>
 </div>
 </section>
@@ -673,7 +669,7 @@ Server started on http://localhost:32467
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: ChatCompletion(id='e9ed0c919214406f897e0e5f30bdc80e', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774286718, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: ChatCompletion(id='87dd48465dad4477b0d7dd0b7865d585', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774288373, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="Model-Thinking/Reasoning-Support">
@@ -938,7 +934,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Ancient Rome was a major civilization that flourished in the Mediterranean region from the 8th to the 5th century BCE. Some of their major achievements include:<br><br>1. **Gothic Architecture**: Rome was known for its Gothic architecture, characterized by pointed arches, ribbed vaults, and flying buttresses. The Colosseum, the Pantheon, and the Vatican City are prime examples of this style.<br><br>2. **Roman Law**: The Roman legal system, which included codes such as the Corpus Juris Civilis, is one of the oldest in the world. It laid the foundation for modern legal systems.<br><br></strong></div>
+<strong style='color: #00008B;'>Ancient Rome was a major civilization that flourished from the 8th century BC to the 4th century AD. It was known for its advanced military, engineering, and art. Some of their major achievements include:<br><br>1. **Roman Empire**: The Roman Empire was the largest and most powerful empire in history, spanning across Europe, Asia Minor, and North Africa. It reached its peak around 27 BC.<br><br>2. **Architecture**: Rome is renowned for its grand architecture, including the Colosseum, Pantheon, and others. The city's layout and design were inspired by Greek architecture but were adapted to fit Roman</strong></div>
 </div>
 <p>Streaming mode is also supported.</p>
 <section id="id1">
@@ -964,7 +960,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Yes, it is a test. I am Qwen, a large language model created by Alibaba Cloud. I am here to assist you with any questions or tasks you may have. Please let me know if you need help with anything, and I&#39;ll do my best to assist you.
+Yes, it is a test. I am designed to provide helpful responses to your questions. If you have any specific questions or topics you would like to discuss, feel free to ask, and I&#39;ll do my best to assist you.
 </pre></div></div>
 </div>
 </section>
@@ -1029,7 +1025,7 @@ Yes, it is a test. I am Qwen, a large language model created by Alibaba Cloud. I
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='3822cbceae6e4f89b82fee4f6c404cb7', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774286720, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='16bc0a4298c54ceaa7811bd16973807a', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774288375, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1061,7 +1057,7 @@ Yes, it is a test. I am Qwen, a large language model created by Alibaba Cloud. I
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='3cbe311090df4dd6aecd9f6005527c9a', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=" Once upon a time, there was a space explorer named Jack who had been in space for over 10 years. He had seen everything from the beauty of Earth to the harshness of space itself. Jack's fascination with space had driven him to become a space explorer and to make history.\nOne day, Jack decided to make history by going on a deep space mission. He would explore the deepest part of the universe and see what lay beyond our solar system. He would be the first person to reach the edge of our galaxy and see what lay beyond it.\nJack spent months preparing for his mission, learning all he could about space travel and how to survive in such extreme conditions. He took many risks, including being stranded in space for weeks on", matched_stop=None)], created=1774286721, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=150, prompt_tokens=9, total_tokens=159, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='96b3280a0bdd4782847f253321134d41', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=" Once upon a time, there was a space explorer named Jack who had been on many exciting space missions. He had seen some of the most incredible sights in the universe, from the wonders of outer space to the beauty of Earth's moon.", matched_stop='\n\n')], created=1774288376, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=48, prompt_tokens=9, total_tokens=57, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <section id="id4">
 <h4>Returning Routed Experts (MoE Models)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>

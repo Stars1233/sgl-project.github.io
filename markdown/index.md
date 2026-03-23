@@ -23,8 +23,8 @@ GPU to large distributed clusters. Its core features include:
     adding new models. Compatible with most Hugging Face models and
     OpenAI APIs.
   - **Extensive Hardware Support**: Runs on NVIDIA GPUs
-    (GB200/B300/H100/A100/Spark), AMD GPUs (MI355/MI300), Intel Xeon
-    CPUs, Google TPUs, Ascend NPUs, and more.
+    (GB200/B300/H100/A100/Spark/5090), AMD GPUs (MI355/MI300), Intel
+    Xeon CPUs, Google TPUs, Ascend NPUs, and more.
   - **Active Community**: SGLang is open-source and supported by a
     vibrant community with widespread industry adoption, powering over
     400,000 GPUs worldwide.
