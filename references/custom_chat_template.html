@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=3518fb94"></script>
+    <script src="../_static/documentation_options.js?v=5caa908a"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -508,7 +508,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="custom-chat-template">
 <h1>Custom Chat Template<a class="headerlink" href="#custom-chat-template" title="Link to this heading">#</a></h1>
-<p><strong>NOTE</strong>: There are two chat template systems in SGLang project. This document is about setting a custom chat template for the OpenAI-compatible API server (defined at <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/python/sglang/srt/conversation.py">conversation.py</a>). It is NOT related to the chat template used in the SGLang language frontend (defined at <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/python/sglang/lang/chat_template.py">chat_template.py</a>).</p>
+<p><strong>NOTE</strong>: There are two chat template systems in SGLang project. This document is about setting a custom chat template for the OpenAI-compatible API server (defined at <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/python/sglang/srt/parser/conversation.py">conversation.py</a>). It is NOT related to the chat template used in the SGLang language frontend (defined at <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/python/sglang/lang/chat_template.py">chat_template.py</a>).</p>
 <p>By default, the server uses the chat template specified in the model tokenizer from Hugging Face.
 It should just work for most official models such as Llama-2/Llama-3.</p>
 <p>If needed, you can also override the chat template when launching the server:</p>

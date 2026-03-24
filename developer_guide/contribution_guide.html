@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=3518fb94"></script>
+    <script src="../_static/documentation_options.js?v=5caa908a"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -498,7 +498,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-source">Build from source</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-check-guidance-lychee">Link check guidance (lychee)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-and-add-unit-tests">Run and add unit tests</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests-no-server-required">Unit tests (no server required)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e2e-tests-server-required">E2E tests (server required)</a></li>
@@ -554,7 +557,24 @@ pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
 <ul class="simple">
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span> <span class="pre">--all-files</span></code></strong> manually runs all configured checks, applying fixes if possible. If it fails the first time, re-run it to ensure lint errors are fully resolved. Make sure your code passes all checks <strong>before</strong> creating a Pull Request.</p></li>
 <li><p><strong>Do not commit</strong> directly to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. Always create a new branch (e.g., <code class="docutils literal notranslate"><span class="pre">feature/my-new-feature</span></code>), push your changes, and open a PR from that branch.</p></li>
+<li><p>Link checking with lychee is <strong>enforced in CI</strong>. By default, it is not blocking local commits.</p></li>
+<li><p>To run local link checks manually, use: <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span> <span class="pre">--hook-stage</span> <span class="pre">manual</span> <span class="pre">lychee</span> <span class="pre">--all-files</span></code>.</p></li>
 </ul>
+<section id="link-check-guidance-lychee">
+<h3>Link check guidance (lychee)<a class="headerlink" href="#link-check-guidance-lychee" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>If your PR changes <code class="docutils literal notranslate"><span class="pre">docs/</span></code> or <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, we recommend running local link checks before pushing.</p></li>
+<li><p>Local lychee is optional (CI is the source of truth), but if you want a system installation, see the official project: <a class="reference external" href="https://github.com/lycheeverse/lychee">lycheeverse/lychee</a>.</p></li>
+<li><p>Recommended local commands:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fast local/offline check (pre-commit config)</span>
+pre-commit<span class="w"> </span>run<span class="w"> </span>--hook-stage<span class="w"> </span>manual<span class="w"> </span>lychee<span class="w"> </span>--all-files
+
+<span class="c1"># CI-like online check (external links over network)</span>
+lychee<span class="w"> </span>--config<span class="w"> </span>.github/linters/lychee-ci.toml<span class="w"> </span>README.md<span class="w"> </span><span class="s2">&quot;docs/**/*.md&quot;</span><span class="w"> </span><span class="s2">&quot;docs/**/*.rst&quot;</span><span class="w"> </span><span class="s2">&quot;docs/**/*.ipynb&quot;</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="run-and-add-unit-tests">
 <h2>Run and add unit tests<a class="headerlink" href="#run-and-add-unit-tests" title="Link to this heading">#</a></h2>
@@ -606,8 +626,8 @@ Also, do not rely on the “Latency/Output throughput” from this script, as it
 <p>GSM8K is too easy for state-of-the-art models nowadays. Please try your own more challenging accuracy tests.
 You can find additional accuracy eval examples in:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/srt/test_eval_accuracy_large.py">test_eval_accuracy_large.py</a></p></li>
-<li><p><a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/srt/test_gpt_oss_1gpu.py">test_gpt_oss_1gpu.py</a></p></li>
+<li><p><a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/registered/eval/test_eval_accuracy_large.py">test_eval_accuracy_large.py</a></p></li>
+<li><p><a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/registered/core/test_gpt_oss_1gpu.py">test_gpt_oss_1gpu.py</a></p></li>
 </ul>
 </section>
 <section id="benchmark-the-speed">
@@ -757,7 +777,10 @@ To add a new kernel or modify an existing one in the <code class="docutils liter
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-source">Build from source</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-check-guidance-lychee">Link check guidance (lychee)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-and-add-unit-tests">Run and add unit tests</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests-no-server-required">Unit tests (no server required)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e2e-tests-server-required">E2E tests (server required)</a></li>

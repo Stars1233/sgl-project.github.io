@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=3518fb94"></script>
+    <script src="../../_static/documentation_options.js?v=5caa908a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -554,7 +554,7 @@ Extend <code class="docutils literal notranslate"><span class="pre">is_multimoda
 in <a class="reference external" href="https://github.com/sgl-project/sglang/blob/0ab3f437aba729b348a683ab32b35b214456efc7/python/sglang/srt/configs/model_config.py#L561">model_config.py</a>
 to return <code class="docutils literal notranslate"><span class="pre">True</span></code> for your model.</p></li>
 <li><p><strong>Register a new chat-template</strong>:
-Only when your default chat-template is unable to accept images as input: Register a new chat template in <a class="reference external" href="https://github.com/sgl-project/sglang/tree/main/python/sglang/srt/conversation.py">conversation.py</a> and the corresponding matching function.</p></li>
+Only when your default chat-template is unable to accept images as input: Register a new chat template in <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/python/sglang/srt/parser/conversation.py">conversation.py</a> and the corresponding matching function.</p></li>
 <li><p><strong>Multimodal Data Processor</strong>:
 Define a new <code class="docutils literal notranslate"><span class="pre">Processor</span></code> class that inherits from <code class="docutils literal notranslate"><span class="pre">BaseMultimodalProcessor</span></code> and register this processor as your
 model’s dedicated processor.
@@ -598,7 +598,7 @@ should give the same text output and very similar prefill logits:</p>
 the <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/registered/models/test_generation_models.py">test_generation_models.py</a>
 file, test the new model on your local machine and report the results on demonstrative benchmarks (GSM8K, MMLU, MMMU,
 MMMU-Pro, etc.) in your PR. \
-For VLMs, also include a test in <code class="docutils literal notranslate"><span class="pre">test_vision_openai_server_{x}.py</span></code> (e.g. <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/srt/test_vision_openai_server_a.py">test_vision_openai_server_a.py</a>, <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/srt/test_vision_openai_server_b.py">test_vision_openai_server_b.py</a>).</p>
+For VLMs, also include a test in <code class="docutils literal notranslate"><span class="pre">test_vision_openai_server_{x}.py</span></code> (e.g. <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/test/registered/vlm/test_vision_openai_server_a.py">test_vision_openai_server_a.py</a>).</p>
 <p>This is an example command to run to test a new model on your local machine:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ONLY_RUN</span><span class="o">=</span>Qwen/Qwen2-1.5B<span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>unittest<span class="w"> </span>test_generation_models.TestGenerationModels.test_others
 </pre></div>
