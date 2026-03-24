@@ -29,79 +29,77 @@ python3 -m sglang.launch_server --model-path Qwen/Qwen2.5-VL-7B-Instruct --log-l
 wait_for_server(f"http://localhost:{port}", process=vision_process)
 ```
 
-    [2026-03-24 03:16:42] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+    [2026-03-24 04:20:23] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
 
 
-    [2026-03-24 03:16:42] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+    [2026-03-24 04:20:23] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
 
 
-    [2026-03-24 03:16:42] INFO utils.py:164: NumExpr defaulting to 16 threads.
+    [2026-03-24 04:20:23] INFO utils.py:164: NumExpr defaulting to 16 threads.
 
 
-    [2026-03-24 03:16:47] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
-    [2026-03-24 03:16:47] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
-    [2026-03-24 03:16:47] INFO utils.py:164: NumExpr defaulting to 16 threads.
+    [2026-03-24 04:20:27] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+    [2026-03-24 04:20:27] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+    [2026-03-24 04:20:27] INFO utils.py:164: NumExpr defaulting to 16 threads.
     /actions-runner/_work/sglang/sglang/python/sglang/launch_server.py:51: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.
       Example: sglang serve --model-path <model> [options]
       warnings.warn(
 
 
-    [2026-03-24 03:16:49] INFO server_args.py:2240: Attention backend not specified. Use fa3 backend by default.
-    [2026-03-24 03:16:49] INFO server_args.py:3523: Set soft_watchdog_timeout since in CI
+    [2026-03-24 04:20:29] INFO server_args.py:2240: Attention backend not specified. Use fa3 backend by default.
+    [2026-03-24 04:20:29] INFO server_args.py:3523: Set soft_watchdog_timeout since in CI
 
 
     /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       from sglang.srt.utils.json_response import (
 
 
-    [2026-03-24 03:16:54] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
-    [2026-03-24 03:16:54] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
-    [2026-03-24 03:16:54] INFO utils.py:164: NumExpr defaulting to 16 threads.
+    2026-03-24 04:20:30.765 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:30] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:30.765 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:30] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:30.765 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:30] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:30.765 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:30] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:30.765 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:30] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-24 03:16:59] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
-    [2026-03-24 03:16:59] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
-    [2026-03-24 03:16:59] INFO utils.py:164: NumExpr defaulting to 16 threads.
-
-
-    2026-03-24 03:16:59.981 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:16:59] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:16:59.982 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:16:59] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:16:59.982 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:16:59] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:16:59.982 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:16:59] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:16:59.982 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:16:59] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:34] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+    [2026-03-24 04:20:34] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+    [2026-03-24 04:20:34] INFO utils.py:164: NumExpr defaulting to 16 threads.
+    [2026-03-24 04:20:35] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+    [2026-03-24 04:20:35] INFO utils.py:151: Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+    [2026-03-24 04:20:35] INFO utils.py:164: NumExpr defaulting to 16 threads.
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-    2026-03-24 03:17:00.579 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:17:00] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:17:00.579 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:17:00] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:17:00.579 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:17:00] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:17:00.579 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:17:00] Persistent cache disabled, using in-memory JIT cache
-    2026-03-24 03:17:00.579 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-24 03:17:00] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:40.656 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:40] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:40.656 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:40] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:40.656 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:40] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:40.656 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:40] Persistent cache disabled, using in-memory JIT cache
+    2026-03-24 04:20:40.656 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-24 04:20:40] Persistent cache disabled, using in-memory JIT cache
 
 
     Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.95it/s]
+    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:01,  2.05it/s]
 
-    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:02,  1.45it/s]
+    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:01,  1.69it/s]
 
-    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:01,  1.92it/s]
+    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:01,  1.61it/s]
 
-    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.86it/s]
+    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.48it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.66it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.71it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.83it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.74it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:116: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -155,11 +153,11 @@ print_highlight(response)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"187acceef4934a50b4ba484d8b9db23c","object":"chat.completion","created":1774322236,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"0c2150a720064caeb7469c09fff9c3e2","object":"chat.completion","created":1774326055,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 
-<strong style='color: #00008B;'>{"id":"376979688162415ea1983a5520e82600","object":"chat.completion","created":1774322237,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"cb33e6a0ca91494fbbde096c2c35c812","object":"chat.completion","created":1774326056,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using Python Requests
@@ -192,7 +190,7 @@ print_highlight(response.text)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"252fa2fdd4f04258be760e4e0cd9599c","object":"chat.completion","created":1774322237,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"d287973183d24b21ac3ef9c4332e6bc7","object":"chat.completion","created":1774326057,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using OpenAI Python Client
