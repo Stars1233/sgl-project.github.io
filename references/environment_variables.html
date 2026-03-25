@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=882497b2"></script>
+    <script src="../_static/documentation_options.js?v=e381acfb"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -768,35 +768,31 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_FP8_DISP</span></code></p></td>
-<td><p>Use FP8 for dispatch</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">&quot;false&quot;</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_DISPATCH_DTYPE</span></code></p></td>
+<td><p>Override MoRI-EP dispatch quantization type. <code class="docutils literal notranslate"><span class="pre">auto</span></code> uses auto-detection from weight dtype; <code class="docutils literal notranslate"><span class="pre">bf16</span></code>/<code class="docutils literal notranslate"><span class="pre">fp8</span></code>/<code class="docutils literal notranslate"><span class="pre">fp4</span></code> forces the specified type for all layers</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_FP4_DISP</span></code></p></td>
-<td><p>Use MXFP4 for dispatch</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">&quot;false&quot;</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_FP8_COMB</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_FP8_COMB</span></code></p></td>
 <td><p>Use FP8 for combine</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;false&quot;</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_NUM_MAX_DISPATCH_TOKENS_PER_RANK</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_NUM_MAX_DISPATCH_TOKENS_PER_RANK</span></code></p></td>
 <td><p>Maximum number of dispatch tokens per rank for MORI-EP buffer allocation</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">4096</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_DISPATCH_INTER_KERNEL_SWITCH_THRESHOLD</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_DISPATCH_INTER_KERNEL_SWITCH_THRESHOLD</span></code></p></td>
 <td><p>Threshold for switching between <code class="docutils literal notranslate"><span class="pre">InterNodeV1</span></code> and <code class="docutils literal notranslate"><span class="pre">InterNodeV1LL</span></code> kernel types. <code class="docutils literal notranslate"><span class="pre">InterNodeV1LL</span></code> is used if <code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_NUM_MAX_DISPATCH_TOKENS_PER_RANK</span></code> is less than or equal to this threshold; otherwise, <code class="docutils literal notranslate"><span class="pre">InterNodeV1</span></code> is used.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">256</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_QP_PER_TRANSFER</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_QP_PER_TRANSFER</span></code></p></td>
 <td><p>Number of RDMA Queue Pairs (QPs) used per transfer operation</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_POST_BATCH_SIZE</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_POST_BATCH_SIZE</span></code></p></td>
 <td><p>Number of RDMA work requests posted in a single batch to each QP</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-1</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_NUM_WORKERS</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MORI_NUM_WORKERS</span></code></p></td>
 <td><p>Number of worker threads in the RDMA executor thread pool</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
 </tr>
