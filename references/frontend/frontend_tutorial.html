@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -221,21 +221,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../diffusion/quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../diffusion/environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -558,9 +549,9 @@ document.write(`
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-[2026-03-25 06:04:42] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:04:42] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:04:42] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-25 08:12:20] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:12:20] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:12:20] INFO utils.py:164: NumExpr defaulting to 16 threads.
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -568,38 +559,38 @@ document.write(`
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-25 06:04:47] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:04:47] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:04:47] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-25 08:12:25] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:12:25] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:12:25] INFO utils.py:164: NumExpr defaulting to 16 threads.
 /actions-runner/_work/sglang/sglang/python/sglang/launch_server.py:51: UserWarning: &#39;python -m sglang.launch_server&#39; is still supported, but &#39;sglang serve&#39; is the recommended entrypoint.
   Example: sglang serve --model-path &lt;model&gt; [options]
   warnings.warn(
-[2026-03-25 06:04:49] INFO server_args.py:2246: Attention backend not specified. Use fa3 backend by default.
-[2026-03-25 06:04:49] INFO server_args.py:3535: Set soft_watchdog_timeout since in CI
+[2026-03-25 08:12:27] INFO server_args.py:2246: Attention backend not specified. Use fa3 backend by default.
+[2026-03-25 08:12:27] INFO server_args.py:3544: Set soft_watchdog_timeout since in CI
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-25 06:04:55] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:04:55] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:04:55] INFO utils.py:164: NumExpr defaulting to 16 threads.
-[2026-03-25 06:04:55] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:04:55] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:04:55] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-25 08:12:33] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:12:33] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:12:33] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-25 08:12:33] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:12:33] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:12:33] INFO utils.py:164: NumExpr defaulting to 16 threads.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-25 06:04:59.239 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:04:59] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:04:59.240 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:04:59] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:04:59.240 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:04:59] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:04:59.240 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:04:59] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:04:59.240 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:04:59] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.49it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:08&lt;00:00,  6.72it/s]
-Capturing num tokens (num_tokens=4 avail_mem=100.43 GB): 100%|██████████| 58/58 [00:07&lt;00:00,  7.96it/s]
+2026-03-25 08:12:36.892 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:12:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:12:36.893 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:12:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:12:36.893 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:12:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:12:36.893 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:12:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:12:36.893 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:12:36] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.42it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.79it/s]
+Capturing num tokens (num_tokens=4 avail_mem=116.98 GB): 100%|██████████| 58/58 [00:03&lt;00:00, 15.28it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -615,7 +606,7 @@ Capturing num tokens (num_tokens=4 avail_mem=100.43 GB): 100%|██████
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:31692
+Server started on http://localhost:34316
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -632,7 +623,7 @@ Server started on http://localhost:31692
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-25 06:05:27] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-25 08:13:10] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -664,7 +655,7 @@ Server started on http://localhost:31692
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure, here are three countries and their capitals:<br><br>1. **France** - Paris<br>2. **Germany** - Berlin<br>3. **Italy** - Rome</strong></div>
+<strong style='color: #00008B;'>Sure, here are three countries along with their capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Brazil - Brasília</strong></div>
 </div>
 </section>
 <section id="Multi-turn-Dialog">
@@ -694,13 +685,13 @@ Server started on http://localhost:31692
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here is a list of three countries along with their capitals:<br><br>1. ** France - Paris**<br>2. ** Germany - Berlin**<br>3. ** Japan - Tokyo**</strong></div>
+<strong style='color: #00008B;'>Certainly! Here is a list of three countries along with their capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Brazil - Brasília</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Of course! Here is another list of three countries along with their capitals:<br><br>1. ** India - New Delhi**<br>2. ** Brazil - Brasília**<br>3. ** Canada - Ottawa**</strong></div>
+<strong style='color: #00008B;'>Of course! Here is another list of three countries along with their capitals:<br><br>1. Germany - Berlin<br>2. Canada - Ottawa<br>3. Mexico - Mexico City</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -742,7 +733,7 @@ Server started on http://localhost:31692
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2.<br><br>This is a simple multiplication problem. When you multiply 2 by 2, you get:<br><br>\[ 2 * 2 = 4 \]<br><br>So, the answer to 2 * 2 is 4, and you didn't actually need a calculator for this!</strong></div>
+<strong style='color: #00008B;'>2 * 2.<br><br>You don't need a calculator to compute this; the result is 4. <br><br>So, 2 * 2 = 4.</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -782,7 +773,7 @@ Server started on http://localhost:31692
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: Consuming a variety of nutrient-dense foods from different food groups to support your immune system, maintain a healthy weight, and promote overall well-being. This includes eating a wide range of fruits and vegetables, whole grains, lean proteins, and staying hydrated.<br><br>2. **Regular Exercise**: Engaging in regular physical activity to boost your immune system, strengthen your heart, and improve your mental health. Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, plus strength training exercises at least two days a week.<br><br>By combining a balanced diet and regular exercise, you can significantly enhance your physical and mental health, leading to a more active and fulfilling life.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet:**<br>   - Include a variety of nutrients like proteins, carbohydrates, fats, vitamins, minerals, and fiber.<br>   - Eat a mix of fruits, vegetables, whole grains, lean proteins, and healthy fats.<br>   - Avoid processed foods and sugars and opt for whole foods.<br>   - Stay hydrated by drinking plenty of water.<br><br>2. **Regular Exercise:**<br>   - Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous aerobic activity per week.<br>   - Include muscle-strengthening exercises on two or more days a week.<br>   - Engage in a variety of activities such as walking, jogging, swimming, cycling, or strength training.<br>   - Consistency is key for maintaining physical and mental health.<br><br>Following these two tips can significantly enhance your overall health and well-being.</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -855,7 +846,7 @@ Server started on http://localhost:31692
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Oak",<br>        "core": "Phoenix feather",<br>        "length": 10.75<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Shrieking Shack"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Holly",<br>        "core": "Phoenix feather",<br>        "length": 11.0<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "The Dementor"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -890,7 +881,7 @@ Server started on http://localhost:31692
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 26.63it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 25.40it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -1009,46 +1000,46 @@ The capital of France is Paris.&lt;|im_end|&gt;
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-25 06:05:38] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:05:38] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:05:38] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-25 08:13:22] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:13:22] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:13:22] INFO utils.py:164: NumExpr defaulting to 16 threads.
 /actions-runner/_work/sglang/sglang/python/sglang/launch_server.py:51: UserWarning: &#39;python -m sglang.launch_server&#39; is still supported, but &#39;sglang serve&#39; is the recommended entrypoint.
   Example: sglang serve --model-path &lt;model&gt; [options]
   warnings.warn(
-[2026-03-25 06:05:40] INFO server_args.py:2246: Attention backend not specified. Use fa3 backend by default.
-[2026-03-25 06:05:40] INFO server_args.py:3535: Set soft_watchdog_timeout since in CI
+[2026-03-25 08:13:24] INFO server_args.py:2246: Attention backend not specified. Use fa3 backend by default.
+[2026-03-25 08:13:25] INFO server_args.py:3544: Set soft_watchdog_timeout since in CI
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-2026-03-25 06:05:41.612 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:41] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:41.612 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:41] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:41.612 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:41] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:41.612 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:41] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:41.612 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:41] Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:46] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:05:46] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:05:46] INFO utils.py:164: NumExpr defaulting to 16 threads.
-[2026-03-25 06:05:46] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
-[2026-03-25 06:05:46] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
-[2026-03-25 06:05:46] INFO utils.py:164: NumExpr defaulting to 16 threads.
+2026-03-25 08:13:26.087 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:26] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:26.088 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:26] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:26.088 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:26] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:26.088 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:26] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:26.088 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:26] Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:30] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:13:30] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:13:30] INFO utils.py:164: NumExpr defaulting to 16 threads.
+[2026-03-25 08:13:31] INFO utils.py:148: Note: detected 192 virtual cores but NumExpr set to maximum of 64, check &#34;NUMEXPR_MAX_THREADS&#34; environment variable.
+[2026-03-25 08:13:31] INFO utils.py:151: Note: NumExpr detected 192 cores but &#34;NUMEXPR_MAX_THREADS&#34; not set, so enforcing safe limit of 16.
+[2026-03-25 08:13:31] INFO utils.py:164: NumExpr defaulting to 16 threads.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-25 06:05:51.477 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:51] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:51.477 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:51] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:51.477 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:51] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:51.477 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:51] Persistent cache disabled, using in-memory JIT cache
-2026-03-25 06:05:51.477 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-25 06:05:51] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.71it/s]
+2026-03-25 08:13:36.576 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:36.576 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:36.576 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:36.576 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-25 08:13:36.576 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-25 08:13:36] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.79it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1064,7 +1055,7 @@ Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:38710
+Server started on http://localhost:32540
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1080,7 +1071,7 @@ Server started on http://localhost:38710
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-25 06:06:05] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-25 08:13:49] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1105,7 +1096,7 @@ Server started on http://localhost:38710
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a man standing on the back of a yellow taxi, using an iron to iron a pair of jeans or a similar garment hanging on an ironing board set up on the tailgate. The scene appears to be taking place on a city street with other vehicles and a fast-food outlet in the background. The context and action seem unusual for an everyday scenario, suggesting this might be a humorous or staged event.</strong></div>
+<strong style='color: #00008B;'>The image shows a man standing on the side of a road in an urban setting, likely a city. He is hillbillying, which is a term used to describe engaging in an unusual or unconventional activity, in this case, ironing clothes on a makeshift ironing board. The ironing board is positioned on the tailgate of a yellow SUV, which is parked between two yellow taxis. The man appears to be balancing or preparing to iron a blue garment. The scene takes place at a busy street corner with buildings, a street sign, and some people walking in the background. The juxtaposition of the casual and humorous activity against the ordinary urban backdrop creates a humorous and lighthearted scene.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:

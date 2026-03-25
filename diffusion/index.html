@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -218,21 +218,12 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -494,24 +485,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">Key Features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-usage">Basic Usage</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-optimization">Performance Optimization</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cli-quick-reference">CLI Quick Reference</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-one-off-generation">Generate (one-off generation)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serve-http-server">Serve (HTTP server)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-cache-dit-acceleration">Enable Cache-DiT acceleration</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-here">Start Here</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-documentation">Additional Documentation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
@@ -526,108 +502,53 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sglang-diffusion">
 <h1>SGLang Diffusion<a class="headerlink" href="#sglang-diffusion" title="Link to this heading">#</a></h1>
-<p>SGLang Diffusion is an inference framework for accelerated image and video generation using diffusion models. It provides an end-to-end unified pipeline with optimized kernels and an efficient scheduler loop.</p>
+<p>SGLang Diffusion is a high-performance inference framework for image and video generation. It provides native SGLang pipelines, diffusers backend support, an OpenAI-compatible server, and an optimized kernel stack built on both precompiled <code class="docutils literal notranslate"><span class="pre">sgl-kernel</span></code> operators and JIT kernels for key inference paths.</p>
 <section id="key-features">
 <h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Broad Model Support</strong>: Wan series, FastWan series, Hunyuan, Qwen-Image, Qwen-Image-Edit, Flux, Z-Image, GLM-Image, and more</p></li>
-<li><p><strong>Fast Inference</strong>: Optimized kernels, efficient scheduler loop, and Cache-DiT acceleration</p></li>
-<li><p><strong>Ease of Use</strong>: OpenAI-compatible API, CLI, and Python SDK</p></li>
-<li><p><strong>Multi-Platform</strong>:</p>
-<ul>
-<li><p>NVIDIA GPUs (H100, H200, A100, B200, 4090)</p></li>
-<li><p>AMD GPUs (MI300X, MI325X)</p></li>
-<li><p>Ascend NPU (A2, A3)</p></li>
-<li><p>Apple Silicon (M-series via MPS)</p></li>
-<li><p>Moore Threads GPUs (MTT S5000)</p></li>
-</ul>
-</li>
+<li><p>Broad model support across Wan, Hunyuan, Qwen-Image, FLUX, Z-Image, GLM-Image, and more</p></li>
+<li><p>Fast inference with <code class="docutils literal notranslate"><span class="pre">sgl-kernel</span></code>, JIT kernels, scheduler improvements, and caching acceleration</p></li>
+<li><p>Multiple interfaces: <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code>, <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">serve</span></code>, and an OpenAI-compatible API</p></li>
+<li><p>Multi-platform support for NVIDIA, AMD, Ascend, Apple Silicon, and Moore Threads</p></li>
 </ul>
 </section>
-<hr class="docutils" />
 <section id="quick-start">
 <h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h2>
-<section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;sglang[diffusion]&quot;</span><span class="w"> </span>--prerelease<span class="o">=</span>allow
 </pre></div>
 </div>
-<p>See <a class="reference internal" href="installation.html"><span class="std std-doc">Installation Guide</span></a> for more installation methods and ROCm-specific instructions.</p>
-</section>
-<section id="basic-usage">
-<h3>Basic Usage<a class="headerlink" href="#basic-usage" title="Link to this heading">#</a></h3>
-<p>Generate an image with the CLI:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span class="w"> </span>Qwen/Qwen-Image<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--prompt<span class="w"> </span><span class="s2">&quot;A beautiful sunset over the mountains&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--save-output
+<span class="w">  </span>--prompt<span class="w"> </span><span class="s2">&quot;A beautiful sunset over the mountains&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--save-output
 </pre></div>
 </div>
-<p>Or start a server with the OpenAI-compatible API:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>serve<span class="w"> </span>--model-path<span class="w"> </span>Qwen/Qwen-Image<span class="w"> </span>--port<span class="w"> </span><span class="m">30010</span>
 </pre></div>
 </div>
 </section>
-</section>
-<hr class="docutils" />
-<section id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h2>
-<section id="getting-started">
-<h3>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h3>
+<section id="start-here">
+<h2>Start Here<a class="headerlink" href="#start-here" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong><a class="reference internal" href="installation.html"><span class="std std-doc">Installation</span></a></strong> - Install SGLang Diffusion via pip, uv, Docker, or from source</p></li>
-<li><p><strong><a class="reference internal" href="compatibility_matrix.html"><span class="std std-doc">Compatibility Matrix</span></a></strong> - Supported models and optimization compatibility</p></li>
+<li><p><a class="reference internal" href="installation.html"><span class="std std-doc">Installation</span></a>: install SGLang Diffusion and platform dependencies</p></li>
+<li><p><a class="reference internal" href="compatibility_matrix.html"><span class="std std-doc">Compatibility Matrix</span></a>: check model and optimization support</p></li>
+<li><p><a class="reference internal" href="api/cli.html"><span class="std std-doc">CLI</span></a>: run one-off generation jobs or launch a persistent server</p></li>
+<li><p><a class="reference internal" href="api/openai_api.html"><span class="std std-doc">OpenAI-Compatible API</span></a>: send image and video requests to the HTTP server</p></li>
+<li><p><a class="reference internal" href="performance/attention_backends.html"><span class="std std-doc">Attention Backends</span></a>: choose the best backend for your model and hardware</p></li>
+<li><p><a class="reference internal" href="performance/cache/index.html"><span class="std std-doc">Caching Acceleration</span></a>: use Cache-DiT or TeaCache to reduce denoising cost</p></li>
+<li><p><a class="reference internal" href="quantization.html"><span class="std std-doc">Quantization</span></a>: load quantized transformer checkpoints</p></li>
+<li><p><a class="reference internal" href="contributing.html"><span class="std std-doc">Contributing</span></a>: contribution workflow, adding new models, and CI perf baselines</p></li>
 </ul>
 </section>
-<section id="usage">
-<h3>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h3>
+<section id="additional-documentation">
+<h2>Additional Documentation<a class="headerlink" href="#additional-documentation" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong><a class="reference internal" href="api/cli.html"><span class="std std-doc">CLI Documentation</span></a></strong> - Command-line interface for <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code> and <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">serve</span></code></p></li>
-<li><p><strong><a class="reference internal" href="api/openai_api.html"><span class="std std-doc">OpenAI API</span></a></strong> - OpenAI-compatible API for image/video generation and LoRA management</p></li>
-<li><p><strong><a class="reference internal" href="api/post_processing.html"><span class="std std-doc">Post-Processing</span></a></strong> - Frame interpolation (RIFE) and upscaling (Real-ESRGAN)</p></li>
+<li><p><a class="reference internal" href="api/post_processing.html"><span class="std std-doc">Post-Processing</span></a>: frame interpolation and upscaling</p></li>
+<li><p><a class="reference internal" href="performance/index.html"><span class="std std-doc">Performance Overview</span></a>: overview of attention, caching, and profiling</p></li>
+<li><p><a class="reference internal" href="environment_variables.html"><span class="std std-doc">Environment Variables</span></a>: platform, caching, storage, and debugging configuration</p></li>
+<li><p><a class="reference internal" href="support_new_models.html"><span class="std std-doc">Support New Models</span></a>: implementation guide for new diffusion pipelines</p></li>
+<li><p><a class="reference internal" href="ci_perf.html"><span class="std std-doc">CI Performance</span></a>: performance baseline generation</p></li>
 </ul>
 </section>
-<section id="performance-optimization">
-<h3>Performance Optimization<a class="headerlink" href="#performance-optimization" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong><a class="reference internal" href="performance/index.html"><span class="std std-doc">Performance Overview</span></a></strong> - Overview of all performance optimization strategies</p></li>
-<li><p><strong><a class="reference internal" href="performance/attention_backends.html"><span class="std std-doc">Attention Backends</span></a></strong> - Available attention backends (FlashAttention, SageAttention, etc.)</p></li>
-<li><p><strong><a class="reference internal" href="#performance/cache/"><span class="xref myst">Caching Strategies</span></a></strong> - Cache-DiT and TeaCache acceleration</p></li>
-<li><p><strong><a class="reference internal" href="performance/profiling.html"><span class="std std-doc">Profiling</span></a></strong> - Profiling techniques with PyTorch Profiler and Nsight Systems</p></li>
-</ul>
-</section>
-<section id="reference">
-<h3>Reference<a class="headerlink" href="#reference" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><strong><a class="reference internal" href="environment_variables.html"><span class="std std-doc">Environment Variables</span></a></strong> - Configuration via environment variables</p></li>
-<li><p><strong><a class="reference internal" href="support_new_models.html"><span class="std std-doc">Support New Models</span></a></strong> - Guide for adding new diffusion models</p></li>
-<li><p><strong><a class="reference internal" href="contributing.html"><span class="std std-doc">Contributing</span></a></strong> - Contribution guidelines and commit message conventions</p></li>
-<li><p><strong><a class="reference internal" href="ci_perf.html"><span class="std std-doc">CI Performance</span></a></strong> - Performance baseline generation script</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="cli-quick-reference">
-<h2>CLI Quick Reference<a class="headerlink" href="#cli-quick-reference" title="Link to this heading">#</a></h2>
-<section id="generate-one-off-generation">
-<h3>Generate (one-off generation)<a class="headerlink" href="#generate-one-off-generation" title="Link to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span class="w"> </span>&lt;MODEL&gt;<span class="w"> </span>--prompt<span class="w"> </span><span class="s2">&quot;&lt;PROMPT&gt;&quot;</span><span class="w"> </span>--save-output
-</pre></div>
-</div>
-</section>
-<section id="serve-http-server">
-<h3>Serve (HTTP server)<a class="headerlink" href="#serve-http-server" title="Link to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>serve<span class="w"> </span>--model-path<span class="w"> </span>&lt;MODEL&gt;<span class="w"> </span>--port<span class="w"> </span><span class="m">30010</span>
-</pre></div>
-</div>
-</section>
-<section id="enable-cache-dit-acceleration">
-<h3>Enable Cache-DiT acceleration<a class="headerlink" href="#enable-cache-dit-acceleration" title="Link to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SGLANG_CACHE_DIT_ENABLED</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span>sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span class="w"> </span>&lt;MODEL&gt;<span class="w"> </span>--prompt<span class="w"> </span><span class="s2">&quot;&lt;PROMPT&gt;&quot;</span>
-</pre></div>
-</div>
-</section>
-</section>
-<hr class="docutils" />
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -686,24 +607,9 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">Key Features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-usage">Basic Usage</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-optimization">Performance Optimization</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cli-quick-reference">CLI Quick Reference</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-one-off-generation">Generate (one-off generation)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serve-http-server">Serve (HTTP server)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-cache-dit-acceleration">Enable Cache-DiT acceleration</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-here">Start Here</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-documentation">Additional Documentation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Caching Acceleration for Diffusion Models &#8212; SGLang</title>
+    <title>Caching Acceleration &#8212; SGLang</title>
   
   
   
@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../../../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -51,8 +51,8 @@
     <link rel="icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Cache-DiT Acceleration" href="cache_dit.html" />
-    <link rel="prev" title="Profiling Multimodal Generation" href="../profiling.html" />
+    <link rel="next" title="Cache-DiT" href="cache_dit.html" />
+    <link rel="prev" title="Attention Backends" href="../attention_backends.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Mar 25, 2026"/>
@@ -218,21 +218,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Caching Acceleration</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="cache_dit.html">Cache-DiT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teacache.html">TeaCache</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -483,7 +478,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Caching Acceleration for Diffusion Models</h1>
+    <h1>Caching Acceleration</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -516,9 +511,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="caching-acceleration-for-diffusion-models">
-<h1>Caching Acceleration for Diffusion Models<a class="headerlink" href="#caching-acceleration-for-diffusion-models" title="Link to this heading">#</a></h1>
-<p>SGLang provides multiple caching acceleration strategies for Diffusion Transformer (DiT) models. These strategies can significantly reduce inference time by skipping redundant computation.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="caching-acceleration">
+<h1>Caching Acceleration<a class="headerlink" href="#caching-acceleration" title="Link to this heading">#</a></h1>
+<p>SGLang provides two complementary caching strategies for Diffusion Transformer (DiT) models. Both reduce denoising cost by skipping redundant computation, but they operate at different levels.</p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <p>SGLang supports two complementary caching approaches:</p>
@@ -587,6 +582,12 @@ sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span 
 <li><p>Z-Image</p></li>
 </ul>
 <p>For Flux and Qwen models, TeaCache is automatically disabled when CFG is enabled.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cache_dit.html">Cache-DiT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teacache.html">TeaCache</a></li>
+</ul>
+</div>
 </section>
 </section>
 <section id="references">
@@ -610,12 +611,12 @@ sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../profiling.html"
+       href="../attention_backends.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Profiling Multimodal Generation</p>
+        <p class="prev-next-title">Attention Backends</p>
       </div>
     </a>
     <a class="right-next"
@@ -623,7 +624,7 @@ sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span 
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Cache-DiT Acceleration</p>
+        <p class="prev-next-title">Cache-DiT</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

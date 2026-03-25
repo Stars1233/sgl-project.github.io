@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -218,21 +218,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="current nav bd-sidenav">
@@ -847,12 +838,37 @@ click <a class="reference external" href="https://docs.sglang.io/advanced_featur
 <td><p><code class="docutils literal notranslate"><span class="pre">lru</span></code>,<br/><code class="docutils literal notranslate"><span class="pre">lfu</span></code></p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--abort-on-priority-</span></code><br/><code class="docutils literal notranslate"><span class="pre">when-disabled</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-prefill-delayer</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag<br/> (set to enable)</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-dynamic-chunking</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--prefill-delayer-max-delay-passes</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">30</span></code></p></td>
+<td><p>Type: int</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--prefill-delayer-token-usage-low-watermark</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>Type: float</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--prefill-delayer-forward-passes-buckets</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>List[float]</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--prefill-delayer-wait-seconds-buckets</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>List[float]</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--abort-on-priority-</span></code><br/><code class="docutils literal notranslate"><span class="pre">when-disabled</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p>bool flag<br/> (set to enable)</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-dynamic-chunking</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag<br/> (set to enable)</p></td>
 <td class="text-center"><p>A2, A3</p></td>
@@ -883,6 +899,16 @@ click <a class="reference external" href="https://docs.sglang.io/advanced_featur
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--pipeline-parallel-size</span></code><br/><code class="docutils literal notranslate"><span class="pre">--pp-size</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+<td><p>Type: int</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--attention-context-parallel-size</span></code><br/><code class="docutils literal notranslate"><span class="pre">--attn-cp-size</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+<td><p>Type: int</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--moe-data-parallel-size</span></code><br/><code class="docutils literal notranslate"><span class="pre">--moe-dp-size</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
 <td><p>Type: int</p></td>
 <td class="text-center"><p>A2, A3</p></td>
@@ -935,6 +961,16 @@ click <a class="reference external" href="https://docs.sglang.io/advanced_featur
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--dist-timeout</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>Type: int</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--download-dir</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>Type: str</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--model-checksum</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>Type: str</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--base-gpu-id</span></code></p></td>
@@ -1157,27 +1193,32 @@ click <a class="reference external" href="https://docs.sglang.io/advanced_featur
 <td><p>Type: str</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--completion-template</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--hf-chat-template-name</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>Type: str</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-cache-report</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--completion-template</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>Type: str</p></td>
+<td class="text-center"><p>A2, A3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-cache-report</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag<br/> (set to enable)</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--reasoning-parser</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--reasoning-parser</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">deepseek-r1</span></code><br/><code class="docutils literal notranslate"><span class="pre">deepseek-v3</span></code><br/><code class="docutils literal notranslate"><span class="pre">glm45</span></code><br/><code class="docutils literal notranslate"><span class="pre">gpt-oss</span></code><br/><code class="docutils literal notranslate"><span class="pre">kimi</span></code><br/><code class="docutils literal notranslate"><span class="pre">qwen3</span></code><br/><code class="docutils literal notranslate"><span class="pre">qwen3-thinking</span></code><br/><code class="docutils literal notranslate"><span class="pre">step3</span></code></p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tool-call-parser</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--tool-call-parser</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">deepseekv3</span></code><br/><code class="docutils literal notranslate"><span class="pre">deepseekv31</span></code><br/><code class="docutils literal notranslate"><span class="pre">glm</span></code><br/><code class="docutils literal notranslate"><span class="pre">glm45</span></code><br/><code class="docutils literal notranslate"><span class="pre">glm47</span></code><br/><code class="docutils literal notranslate"><span class="pre">gpt-oss</span></code><br/><code class="docutils literal notranslate"><span class="pre">kimi_k2</span></code><br/><code class="docutils literal notranslate"><span class="pre">llama3</span></code><br/><code class="docutils literal notranslate"><span class="pre">mistral</span></code><br/><code class="docutils literal notranslate"><span class="pre">pythonic</span></code><br/><code class="docutils literal notranslate"><span class="pre">qwen</span></code><br/><code class="docutils literal notranslate"><span class="pre">qwen25</span></code><br/><code class="docutils literal notranslate"><span class="pre">qwen3_coder</span></code><br/><code class="docutils literal notranslate"><span class="pre">step3</span></code><br/><code class="docutils literal notranslate"><span class="pre">gigachat3</span></code></p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--sampling-defaults</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--sampling-defaults</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">model</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">openai</span></code>, <code class="docutils literal notranslate"><span class="pre">model</span></code></p></td>
 <td class="text-center"><p>A2, A3</p></td>
@@ -1205,11 +1246,6 @@ click <a class="reference external" href="https://docs.sglang.io/advanced_featur
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--load-balance-method</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>,<br/> <code class="docutils literal notranslate"><span class="pre">round_robin</span></code>,<br/> <code class="docutils literal notranslate"><span class="pre">follow_bootstrap_room</span></code>,<br/> <code class="docutils literal notranslate"><span class="pre">total_requests</span></code>,<br/> <code class="docutils literal notranslate"><span class="pre">total_tokens</span></code></p></td>
-<td class="text-center"><p>A2, A3</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--prefill-round-robin-balance</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
-<td><p>bool flag<br/> (set to enable)</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
 </tbody>
@@ -2222,17 +2258,12 @@ click <a class="reference external" href="https://docs.sglang.io/advanced_featur
 <td><p>bool flag<br/> (set to enable)</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--disaggregation-decode-</span></code><br/><code class="docutils literal notranslate"><span class="pre">enable-fake-auto</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
-<td><p>bool flag<br/> (set to enable)</p></td>
-<td class="text-center"><p>A2, A3</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--num-reserved-decode-tokens</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--num-reserved-decode-tokens</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">512</span></code></p></td>
 <td><p>Type: int</p></td>
 <td class="text-center"><p>A2, A3</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--disaggregation-decode-</span></code><br/><code class="docutils literal notranslate"><span class="pre">polling-interval</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--disaggregation-decode-</span></code><br/><code class="docutils literal notranslate"><span class="pre">polling-interval</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
 <td><p>Type: int</p></td>
 <td class="text-center"><p>A2, A3</p></td>
@@ -2500,7 +2531,7 @@ NPU, like Ktransformer, checkpoint-engine etc.</p>
 <td><p>Type: int</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--kt-threadpool-count</span></code></p></td>
-<td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
 <td><p>Type: int</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--kt-num-gpu-experts</span></code></p></td>

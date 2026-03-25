@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=e381acfb"></script>
+    <script src="_static/documentation_options.js?v=9cbd0659"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -221,21 +221,12 @@
 <li class="toctree-l1"><a class="reference internal" href="diffusion/index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diffusion/quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -596,8 +587,8 @@ Its core features include:</p>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/index.html">SGLang Diffusion</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#key-features">Key Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#quick-start">Quick Start</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#documentation">Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#cli-quick-reference">CLI Quick Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#start-here">Start Here</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#additional-documentation">Additional Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/index.html#references">References</a></li>
 </ul>
 </li>
@@ -615,11 +606,12 @@ Its core features include:</p>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/compatibility_matrix.html#special-requirements">Special requirements</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/api/cli.html">SGLang diffusion CLI Inference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#prerequisites">Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#supported-arguments">Supported Arguments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#serve">Serve</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#generate">Generate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diffusion/api/cli.html">SGLang Diffusion CLI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#quick-start">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#common-options">Common Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#configuration-files">Configuration Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#id1">Generate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#id2">Serve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#component-path-overrides">Component Path Overrides</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/api/cli.html#diffusers-backend">Diffusers Backend</a></li>
 </ul>
@@ -628,14 +620,6 @@ Its core features include:</p>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/api/openai_api.html#prerequisites">Prerequisites</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/api/openai_api.html#serve">Serve</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/api/openai_api.html#endpoints">Endpoints</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/index.html">Performance Optimization</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/index.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/index.html#caching-strategies">Caching Strategies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/index.html#attention-backends">Attention Backends</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/index.html#profiling">Profiling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/index.html#references">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/performance/attention_backends.html">Attention Backends</a><ul>
@@ -647,68 +631,28 @@ Its core features include:</p>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/performance/attention_backends.html#usage">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/profiling.html">Profiling Multimodal Generation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/profiling.html#pytorch-profiler">PyTorch Profiler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/profiling.html#nsight-systems">Nsight Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/profiling.html#notes">Notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/profiling.html#faq">FAQ</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/index.html">Caching Acceleration for Diffusion Models</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/index.html">Caching Acceleration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/index.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/index.html#cache-dit">Cache-DiT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/index.html#teacache">TeaCache</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/index.html#references">References</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html">Cache-DiT Acceleration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#basic-usage">Basic Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#diffusers-backend">Diffusers Backend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#advanced-configuration">Advanced Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#environment-variables">Environment Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#supported-models">Supported Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#performance-tips">Performance Tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#limitations">Limitations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#troubleshooting">Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/cache_dit.html#references">References</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/performance/cache/teacache.html">TeaCache Acceleration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/teacache.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/teacache.html#how-it-works">How It Works</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/teacache.html#configuration">Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/teacache.html#supported-models">Supported Models</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/performance/cache/teacache.html#references">References</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/support_new_models.html">How to Support New Diffusion Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/support_new_models.html#architecture-overview">Architecture Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/support_new_models.html#key-components-for-implementation">Key Components for Implementation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/support_new_models.html#pipeline-stages-reference">Pipeline Stages Reference</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/support_new_models.html#implementation-guide">Implementation Guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/support_new_models.html#reference-implementations">Reference Implementations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/support_new_models.html#checklist">Checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diffusion/quantization.html">Quantization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/quantization.html#quick-reference">Quick Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/quantization.html#quant-families">Quant Families</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/quantization.html#nvfp4">NVFP4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/quantization.html#nunchaku-svdquant">Nunchaku (SVDQuant)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="diffusion/contributing.html">Contributing to SGLang Diffusion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="diffusion/contributing.html#contributor-guides">Contributor Guides</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/contributing.html#on-ai-assisted-vibe-coding-prs">On AI-Assisted (“Vibe Coding”) PRs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/contributing.html#commit-message-convention">Commit Message Convention</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/contributing.html#performance-reporting">Performance Reporting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="diffusion/contributing.html#ci-based-change-protection">CI-Based Change Protection</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/ci_perf.html">Perf Baseline Generation Script</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/ci_perf.html#usage">Usage</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/environment_variables.html">Apple MPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/environment_variables.html#caching-acceleration">Caching Acceleration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="diffusion/environment_variables.html#cache-dit-configuration">Cache-DiT Configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/environment_variables.html#cloud-storage">Cloud Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="diffusion/environment_variables.html#cuda-crash-debugging">CUDA Crash Debugging</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">

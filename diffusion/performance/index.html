@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Performance Optimization &#8212; SGLang</title>
+    <title>Performance &#8212; SGLang</title>
   
   
   
@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -51,8 +51,6 @@
     <link rel="icon" href="../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Attention Backends" href="attention_backends.html" />
-    <link rel="prev" title="SGLang Diffusion OpenAI API" href="../api/openai_api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Mar 25, 2026"/>
@@ -115,6 +113,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -214,25 +214,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../../supported_models/extending/index.html">Extending SGLang</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SGLang Diffusion</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -483,7 +474,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Performance Optimization</h1>
+    <h1>Performance</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -494,13 +485,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-strategies">Caching Strategies</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit">Cache-DiT</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teacache">TeaCache</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-backends">Attention Backends</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#profiling">Profiling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-here">Start Here</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-at-a-glance">Caching at a Glance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
@@ -513,9 +499,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="performance-optimization">
-<h1>Performance Optimization<a class="headerlink" href="#performance-optimization" title="Link to this heading">#</a></h1>
-<p>SGLang-Diffusion provides multiple performance optimization strategies to accelerate inference. This section covers all available performance tuning options.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="performance">
+<h1>Performance<a class="headerlink" href="#performance" title="Link to this heading">#</a></h1>
+<p>This section covers the main performance levers for SGLang Diffusion: attention backends, caching acceleration, and profiling.</p>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -532,7 +518,7 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p><strong>TeaCache</strong></p></td>
 <td><p>Caching</p></td>
-<td><p>Timestep-level caching using L1 similarity</p></td>
+<td><p>Timestep-level caching based on temporal similarity</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Attention Backends</strong></p></td>
 <td><p>Kernel</p></td>
@@ -546,58 +532,27 @@ document.write(`
 </table>
 </div>
 </section>
-<section id="caching-strategies">
-<h2>Caching Strategies<a class="headerlink" href="#caching-strategies" title="Link to this heading">#</a></h2>
-<p>SGLang supports two complementary caching approaches:</p>
-<section id="cache-dit">
-<h3>Cache-DiT<a class="headerlink" href="#cache-dit" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://github.com/vipshop/cache-dit">Cache-DiT</a> provides block-level caching with advanced strategies. It can achieve up to <strong>1.69x speedup</strong>.</p>
-<p><strong>Quick Start:</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SGLANG_CACHE_DIT_ENABLED</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="se">\</span>
-sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span class="w"> </span>Qwen/Qwen-Image<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--prompt<span class="w"> </span><span class="s2">&quot;A beautiful sunset over the mountains&quot;</span>
-</pre></div>
+<section id="start-here">
+<h2>Start Here<a class="headerlink" href="#start-here" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Use <a class="reference internal" href="attention_backends.html"><span class="std std-doc">Attention Backends</span></a> to choose the best backend for your model and hardware.</p></li>
+<li><p>Use <a class="reference internal" href="cache/index.html"><span class="std std-doc">Caching Acceleration</span></a> to reduce denoising cost with Cache-DiT or TeaCache.</p></li>
+<li><p>Use <a class="reference internal" href="profiling.html"><span class="std std-doc">Profiling</span></a> when you need to diagnose a bottleneck rather than guess.</p></li>
+</ul>
+</section>
+<section id="caching-at-a-glance">
+<h2>Caching at a Glance<a class="headerlink" href="#caching-at-a-glance" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="cache/cache_dit.html"><span class="std std-doc">Cache-DiT</span></a> is block-level caching for diffusers pipelines and higher speedup-oriented tuning.</p></li>
+<li><p><a class="reference internal" href="cache/teacache.html"><span class="std std-doc">TeaCache</span></a> is timestep-level caching built into SGLang model families.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="attention_backends.html">Attention Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profiling.html">Profiling Multimodal Generation</a></li>
+</ul>
 </div>
-<p><strong>Key Features:</strong></p>
-<ul class="simple">
-<li><p><strong>DBCache</strong>: Dynamic block-level caching based on residual differences</p></li>
-<li><p><strong>TaylorSeer</strong>: Taylor expansion-based calibration for optimized caching</p></li>
-<li><p><strong>SCM</strong>: Step-level computation masking for additional speedup</p></li>
-</ul>
-<p>See <a class="reference internal" href="cache/cache_dit.html"><span class="std std-doc">Cache-DiT Documentation</span></a> for detailed configuration.</p>
-</section>
-<section id="teacache">
-<h3>TeaCache<a class="headerlink" href="#teacache" title="Link to this heading">#</a></h3>
-<p>TeaCache (Temporal similarity-based caching) accelerates diffusion inference by detecting when consecutive denoising steps are similar enough to skip computation entirely.</p>
-<p><strong>Quick Overview:</strong></p>
-<ul class="simple">
-<li><p>Tracks L1 distance between modulated inputs across timesteps</p></li>
-<li><p>When accumulated distance is below threshold, reuses cached residual</p></li>
-<li><p>Supports CFG with separate positive/negative caches</p></li>
-</ul>
-<p><strong>Supported Models:</strong> Wan (wan2.1, wan2.2), Hunyuan (HunyuanVideo), Z-Image</p>
-<p>See <a class="reference internal" href="cache/teacache.html"><span class="std std-doc">TeaCache Documentation</span></a> for detailed configuration.</p>
-</section>
-</section>
-<section id="attention-backends">
-<h2>Attention Backends<a class="headerlink" href="#attention-backends" title="Link to this heading">#</a></h2>
-<p>Different attention backends offer varying performance characteristics depending on your hardware and model:</p>
-<ul class="simple">
-<li><p><strong>FlashAttention</strong>: Fastest on NVIDIA GPUs with fp16/bf16</p></li>
-<li><p><strong>SageAttention</strong>: Alternative optimized implementation</p></li>
-<li><p><strong>xformers</strong>: Memory-efficient attention</p></li>
-<li><p><strong>SDPA</strong>: PyTorch native scaled dot-product attention</p></li>
-</ul>
-<p>See <a class="reference internal" href="attention_backends.html"><span class="std std-doc">Attention Backends</span></a> for platform support and configuration options.</p>
-</section>
-<section id="profiling">
-<h2>Profiling<a class="headerlink" href="#profiling" title="Link to this heading">#</a></h2>
-<p>To diagnose performance bottlenecks, SGLang-Diffusion supports profiling tools:</p>
-<ul class="simple">
-<li><p><strong>PyTorch Profiler</strong>: Built-in Python profiling</p></li>
-<li><p><strong>Nsight Systems</strong>: GPU kernel-level analysis</p></li>
-</ul>
-<p>See <a class="reference internal" href="profiling.html"><span class="std std-doc">Profiling Guide</span></a> for detailed instructions.</p>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
@@ -619,24 +574,6 @@ sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span 
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../api/openai_api.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">SGLang Diffusion OpenAI API</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="attention_backends.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Attention Backends</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -654,13 +591,8 @@ sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-strategies">Caching Strategies</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit">Cache-DiT</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teacache">TeaCache</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attention-backends">Attention Backends</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#profiling">Profiling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-here">Start Here</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-at-a-glance">Caching at a Glance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>

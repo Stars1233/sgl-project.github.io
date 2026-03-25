@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -218,21 +218,12 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -516,7 +507,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="install-sglang-diffusion">
 <h1>Install SGLang-Diffusion<a class="headerlink" href="#install-sglang-diffusion" title="Link to this heading">#</a></h1>
-<p>You can install SGLang-Diffusion using one of the methods below.</p>
+<p>You can install SGLang-Diffusion using one of the methods below. The standard installation already includes SGLang’s optimized kernel stack, including both <code class="docutils literal notranslate"><span class="pre">sgl-kernel</span></code> and JIT kernels used by diffusion workloads.</p>
 <section id="standard-installation-nvidia-gpus">
 <h2>Standard Installation (NVIDIA GPUs)<a class="headerlink" href="#standard-installation-nvidia-gpus" title="Link to this heading">#</a></h2>
 <section id="method-1-with-pip-or-uv">

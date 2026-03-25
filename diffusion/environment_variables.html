@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Apple MPS &#8212; SGLang</title>
+    <title>Environment Variables &#8212; SGLang</title>
   
   
   
@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -51,8 +51,6 @@
     <link rel="icon" href="../_static/logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="AMD GPUs" href="../platforms/amd_gpu.html" />
-    <link rel="prev" title="Perf Baseline Generation Script" href="ci_perf.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Mar 25, 2026"/>
@@ -214,25 +212,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../supported_models/extending/index.html">Extending SGLang</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SGLang Diffusion</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -483,7 +472,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Apple MPS</h1>
+    <h1>Environment Variables</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -493,15 +482,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Apple MPS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-acceleration">Caching Acceleration</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit-configuration">Cache-DiT Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apple-mps">Apple MPS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-acceleration">Caching Acceleration</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit-configuration">Cache-DiT Configuration</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage">Cloud Storage</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cuda-crash-debugging">CUDA Crash Debugging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage">Cloud Storage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuda-crash-debugging">CUDA Crash Debugging</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -512,8 +500,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="apple-mps">
-<h1>Apple MPS<a class="headerlink" href="#apple-mps" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="environment-variables">
+<h1>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading">#</a></h1>
+<section id="apple-mps">
+<h2>Apple MPS<a class="headerlink" href="#apple-mps" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Environment Variable</p></th>
@@ -531,11 +521,11 @@ document.write(`
 </div>
 </section>
 <section id="caching-acceleration">
-<h1>Caching Acceleration<a class="headerlink" href="#caching-acceleration" title="Link to this heading">#</a></h1>
+<h2>Caching Acceleration<a class="headerlink" href="#caching-acceleration" title="Link to this heading">#</a></h2>
 <p>These variables configure caching acceleration for Diffusion Transformer (DiT) models.
 SGLang supports multiple caching strategies - see <a class="reference internal" href="performance/cache/index.html"><span class="std std-doc">caching documentation</span></a> for an overview.</p>
 <section id="cache-dit-configuration">
-<h2>Cache-DiT Configuration<a class="headerlink" href="#cache-dit-configuration" title="Link to this heading">#</a></h2>
+<h3>Cache-DiT Configuration<a class="headerlink" href="#cache-dit-configuration" title="Link to this heading">#</a></h3>
 <p>See <a class="reference internal" href="performance/cache/cache_dit.html"><span class="std std-doc">cache-dit documentation</span></a> for detailed configuration.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -599,7 +589,7 @@ SGLang supports multiple caching strategies - see <a class="reference internal" 
 </section>
 </section>
 <section id="cloud-storage">
-<h1>Cloud Storage<a class="headerlink" href="#cloud-storage" title="Link to this heading">#</a></h1>
+<h2>Cloud Storage<a class="headerlink" href="#cloud-storage" title="Link to this heading">#</a></h2>
 <p>These variables configure S3-compatible cloud storage for automatically uploading generated images and videos.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -638,7 +628,7 @@ SGLang supports multiple caching strategies - see <a class="reference internal" 
 </div>
 </section>
 <section id="cuda-crash-debugging">
-<h1>CUDA Crash Debugging<a class="headerlink" href="#cuda-crash-debugging" title="Link to this heading">#</a></h1>
+<h2>CUDA Crash Debugging<a class="headerlink" href="#cuda-crash-debugging" title="Link to this heading">#</a></h2>
 <p>These variables enable kernel API logging and optional input/output dumps around diffusion CUDA kernel call boundaries. They are useful when tracking down CUDA crashes such as illegal memory access, device-side assert, or shape mismatches in custom kernels.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -672,6 +662,7 @@ SGLang supports multiple caching strategies - see <a class="reference internal" 
 </table>
 </div>
 </section>
+</section>
 
 
                 </article>
@@ -684,24 +675,6 @@ SGLang supports multiple caching strategies - see <a class="reference internal" 
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="ci_perf.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Perf Baseline Generation Script</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../platforms/amd_gpu.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">AMD GPUs</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -718,15 +691,14 @@ SGLang supports multiple caching strategies - see <a class="reference internal" 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Apple MPS</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-acceleration">Caching Acceleration</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit-configuration">Cache-DiT Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apple-mps">Apple MPS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caching-acceleration">Caching Acceleration</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit-configuration">Cache-DiT Configuration</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage">Cloud Storage</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cuda-crash-debugging">CUDA Crash Debugging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage">Cloud Storage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuda-crash-debugging">CUDA Crash Debugging</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

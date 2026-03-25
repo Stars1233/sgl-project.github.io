@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -218,21 +218,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion/environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="current nav bd-sidenav">
@@ -667,7 +658,6 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 <span class="w">    </span>--attention-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--device<span class="w"> </span>npu<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--quantization<span class="w"> </span>modelslim<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--prefill-round-robin-balance<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--moe-a2a-backend<span class="w"> </span>deepep<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--enable-dp-attention<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--deepep-mode<span class="w"> </span>low_latency<span class="w"> </span><span class="se">\</span>
@@ -776,7 +766,7 @@ sysctl<span class="w"> </span>-w<span class="w"> </span>kernel.sched_migration_c
 <span class="w">        </span>--moe-a2a-backend<span class="w"> </span>deepep<span class="w"> </span>--enable-dp-attention<span class="w"> </span>--deepep-mode<span class="w"> </span>low_latency<span class="w"> </span>--enable-dp-lm-head<span class="w"> </span>--moe-dense-tp<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>--cuda-graph-bs<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">18</span><span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">22</span><span class="w"> </span><span class="m">24</span><span class="w"> </span><span class="m">26</span><span class="w"> </span>--disaggregation-transfer-backend<span class="w"> </span>ascend<span class="w"> </span>--watchdog-timeout<span class="w"> </span><span class="m">9000</span><span class="w"> </span>--context-length<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>--speculative-algorithm<span class="w"> </span>NEXTN<span class="w"> </span>--speculative-num-steps<span class="w"> </span><span class="m">2</span><span class="w"> </span>--speculative-eagle-topk<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">3</span><span class="w">  </span><span class="se">\</span>
-<span class="w">        </span>--tokenizer-worker-num<span class="w"> </span><span class="m">4</span><span class="w"> </span>--prefill-round-robin-balance<span class="w"> </span>--disable-shared-experts-fusion<span class="w"> </span>--dtype<span class="w"> </span>bfloat16<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--tokenizer-worker-num<span class="w"> </span><span class="m">4</span><span class="w"> </span>--disable-shared-experts-fusion<span class="w"> </span>--dtype<span class="w"> </span>bfloat16<span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>--load-balance-method<span class="w"> </span>decode_round_robin
 <span class="w">        </span><span class="nv">NODE_RANK</span><span class="o">=</span><span class="nv">$i</span>
 <span class="w">        </span><span class="k">break</span>

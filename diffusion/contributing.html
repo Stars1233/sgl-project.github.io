@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -51,8 +51,8 @@
     <link rel="icon" href="../_static/logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Perf Baseline Generation Script" href="ci_perf.html" />
-    <link rel="prev" title="How to Support New Diffusion Models" href="support_new_models.html" />
+    <link rel="next" title="How to Support New Diffusion Models" href="support_new_models.html" />
+    <link rel="prev" title="Quantization" href="quantization.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Mar 25, 2026"/>
@@ -218,21 +218,16 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="environment_variables.html">Apple MPS</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Contributing to SGLang Diffusion</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci_perf.html">CI Performance</a></li>
+</ul>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -493,6 +488,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-guides">Contributor Guides</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#on-ai-assisted-vibe-coding-prs">On AI-Assisted (“Vibe Coding”) PRs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-message-convention">Commit Message Convention</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-reporting">Performance Reporting</a><ul class="visible nav section-nav flex-column">
@@ -514,6 +510,19 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="contributing-to-sglang-diffusion">
 <h1>Contributing to SGLang Diffusion<a class="headerlink" href="#contributing-to-sglang-diffusion" title="Link to this heading">#</a></h1>
 <p>This guide outlines the requirements for contributing to the SGLang Diffusion module (<code class="docutils literal notranslate"><span class="pre">sglang.multimodal_gen</span></code>).</p>
+<section id="contributor-guides">
+<h2>Contributor Guides<a class="headerlink" href="#contributor-guides" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="support_new_models.html"><span class="std std-doc">Support New Models</span></a>: implementation guide for adding new diffusion pipelines</p></li>
+<li><p><a class="reference internal" href="ci_perf.html"><span class="std std-doc">CI Performance</span></a>: update and regenerate perf baselines</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ci_perf.html">CI Performance</a></li>
+</ul>
+</div>
+</section>
 <section id="on-ai-assisted-vibe-coding-prs">
 <h2>On AI-Assisted (“Vibe Coding”) PRs<a class="headerlink" href="#on-ai-assisted-vibe-coding-prs" title="Link to this heading">#</a></h2>
 <p>Vibe-coded PRs are welcome — we judge code quality, not how it was produced. The bar is the same for all PRs:</p>
@@ -599,20 +608,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="support_new_models.html"
+       href="quantization.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">How to Support New Diffusion Models</p>
+        <p class="prev-next-title">Quantization</p>
       </div>
     </a>
     <a class="right-next"
-       href="ci_perf.html"
+       href="support_new_models.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Perf Baseline Generation Script</p>
+        <p class="prev-next-title">How to Support New Diffusion Models</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -632,6 +641,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-guides">Contributor Guides</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#on-ai-assisted-vibe-coding-prs">On AI-Assisted (“Vibe Coding”) PRs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-message-convention">Commit Message Convention</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-reporting">Performance Reporting</a><ul class="visible nav section-nav flex-column">

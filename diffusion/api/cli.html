@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SGLang diffusion CLI Inference &#8212; SGLang</title>
+    <title>SGLang Diffusion CLI &#8212; SGLang</title>
   
   
   
@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=e381acfb"></script>
+    <script src="../../_static/documentation_options.js?v=9cbd0659"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -218,21 +218,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">SGLang diffusion CLI Inference</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">Performance Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/profiling.html">Profiling Multimodal Generation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/cache/index.html">Caching Acceleration for Diffusion Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/cache/cache_dit.html">Cache-DiT Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../performance/cache/teacache.html">TeaCache Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../support_new_models.html">How to Support New Diffusion Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ci_perf.html">Perf Baseline Generation Script</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../environment_variables.html">Apple MPS</a></li>
-
-
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -483,7 +474,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>SGLang diffusion CLI Inference</h1>
+    <h1>SGLang Diffusion CLI</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -493,28 +484,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-arguments">Supported Arguments</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#server-arguments">Server Arguments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-parameters">Sampling Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-configuration-files">Using Configuration Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate">Generate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serve">Serve</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serve">Serve</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-the-server">Start the server</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage-support">Cloud Storage Support</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-options">Common Options</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-and-runtime">Model and runtime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-and-output">Sampling and output</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantized-transformers">Quantized transformers</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate">Generate</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-path-overrides">Component Path Overrides</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-flux-2-dev-with-tiny-autoencoder">Example: FLUX.2-dev with Tiny AutoEncoder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-files">Configuration Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Generate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Serve</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage">Cloud Storage</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-path-overrides">Component Path Overrides</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diffusers-backend">Diffusers Backend</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arguments">Arguments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-running-ovis-image-7b">Example: Running Ovis-Image-7B</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-diffusers-arguments">Extra Diffusers Arguments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit-acceleration">Cache-DiT Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-options">Key Options</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
 </li>
 </ul>
@@ -528,105 +518,83 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sglang-diffusion-cli-inference">
-<h1>SGLang diffusion CLI Inference<a class="headerlink" href="#sglang-diffusion-cli-inference" title="Link to this heading">#</a></h1>
-<p>The SGLang-diffusion CLI provides a quick way to access the inference pipeline for image and video generation.</p>
-<section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>A working SGLang diffusion installation and the <code class="docutils literal notranslate"><span class="pre">sglang</span></code> CLI available in <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>.</p></li>
-</ul>
-</section>
-<section id="supported-arguments">
-<h2>Supported Arguments<a class="headerlink" href="#supported-arguments" title="Link to this heading">#</a></h2>
-<section id="server-arguments">
-<h3>Server Arguments<a class="headerlink" href="#server-arguments" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">--model-path</span> <span class="pre">{MODEL_PATH}</span></code>: Path to the model or model ID</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--lora-path</span> <span class="pre">{LORA_PATH}</span></code>: Path to a LoRA adapter (local path or HuggingFace model ID). If not specified, LoRA will not be applied.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--lora-nickname</span> <span class="pre">{NAME}</span></code>: Nickname for the LoRA adapter. (default: <code class="docutils literal notranslate"><span class="pre">default</span></code>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--num-gpus</span> <span class="pre">{NUM_GPUS}</span></code>: Number of GPUs to use</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--tp-size</span> <span class="pre">{TP_SIZE}</span></code>: Tensor parallelism size (only for the encoder; should not be larger than 1 if text encoder offload is enabled, as layer-wise offload plus prefetch is faster)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--sp-degree</span> <span class="pre">{SP_SIZE}</span></code>: Sequence parallelism size (typically should match the number of GPUs)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--ulysses-degree</span> <span class="pre">{ULYSSES_DEGREE}</span></code>: The degree of DeepSpeed-Ulysses-style SP in USP</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--ring-degree</span> <span class="pre">{RING_DEGREE}</span></code>: The degree of ring attention-style SP in USP</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--attention-backend</span> <span class="pre">{BACKEND}</span></code>: Attention backend to use. For SGLang-native pipelines use <code class="docutils literal notranslate"><span class="pre">fa</span></code>, <code class="docutils literal notranslate"><span class="pre">torch_sdpa</span></code>, <code class="docutils literal notranslate"><span class="pre">sage_attn</span></code>, etc. For diffusers pipelines use diffusers backend names like <code class="docutils literal notranslate"><span class="pre">flash</span></code>, <code class="docutils literal notranslate"><span class="pre">_flash_3_hub</span></code>, <code class="docutils literal notranslate"><span class="pre">sage</span></code>, <code class="docutils literal notranslate"><span class="pre">xformers</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--attention-backend-config</span> <span class="pre">{CONFIG}</span></code>: Configuration for the attention backend. Can be a JSON string (e.g., ‘{“k”: “v”}’), a path to a JSON/YAML file, or key=value pairs (e.g., “k=v,k2=v2”).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--cache-dit-config</span> <span class="pre">{PATH}</span></code>: Path to a Cache-DiT YAML/JSON config (diffusers backend only)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--dit-precision</span> <span class="pre">{DTYPE}</span></code>: Precision for the DiT model (currently supports fp32, fp16, and bf16).</p></li>
-</ul>
-</section>
-<section id="sampling-parameters">
-<h3>Sampling Parameters<a class="headerlink" href="#sampling-parameters" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">--prompt</span> <span class="pre">{PROMPT}</span></code>: Text description for the video you want to generate</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--num-inference-steps</span> <span class="pre">{STEPS}</span></code>: Number of denoising steps</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--negative-prompt</span> <span class="pre">{PROMPT}</span></code>: Negative prompt to guide generation away from certain concepts</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--seed</span> <span class="pre">{SEED}</span></code>: Random seed for reproducible generation</p></li>
-</ul>
-<p><strong>Image/Video Configuration</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">--height</span> <span class="pre">{HEIGHT}</span></code>: Height of the generated output</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--width</span> <span class="pre">{WIDTH}</span></code>: Width of the generated output</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--num-frames</span> <span class="pre">{NUM_FRAMES}</span></code>: Number of frames to generate</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--fps</span> <span class="pre">{FPS}</span></code>: Frames per second for the saved output, if this is a video-generation task</p></li>
-</ul>
-<p><strong>Post-Processing</strong> (frame interpolation &amp; upscaling)</p>
-<p>SGLang diffusion supports optional post-processing steps — frame interpolation
-(RIFE) for smoother video and upscaling (Real-ESRGAN) for higher resolution.
-See the dedicated <strong><a class="reference internal" href="post_processing.html"><span class="std std-doc">Post-Processing</span></a></strong> page for full
-details, supported models, and examples.</p>
-<p><strong>Output Options</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">--output-path</span> <span class="pre">{PATH}</span></code>: Directory to save the generated video</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--save-output</span></code>: Whether to save the image/video to disk</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--return-frames</span></code>: Whether to return the raw frames</p></li>
-</ul>
-</section>
-<section id="using-configuration-files">
-<h3>Using Configuration Files<a class="headerlink" href="#using-configuration-files" title="Link to this heading">#</a></h3>
-<p>Instead of specifying all parameters on the command line, you can use a configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--config<span class="w"> </span><span class="o">{</span>CONFIG_FILE_PATH<span class="o">}</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="sglang-diffusion-cli">
+<h1>SGLang Diffusion CLI<a class="headerlink" href="#sglang-diffusion-cli" title="Link to this heading">#</a></h1>
+<p>Use the CLI for one-off generation with <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code> or to start a persistent HTTP server with <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">serve</span></code>.</p>
+<section id="quick-start">
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h2>
+<section id="generate">
+<h3>Generate<a class="headerlink" href="#generate" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>Qwen/Qwen-Image<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--prompt<span class="w"> </span><span class="s2">&quot;A beautiful sunset over the mountains&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--save-output
 </pre></div>
 </div>
-<p>The configuration file should be in JSON or YAML format with the same parameter names as the CLI options. Command-line arguments take precedence over settings in the configuration file, allowing you to override specific values while keeping the rest from the configuration file.</p>
-<p>Example configuration file (config.json):</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;model_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FastVideo/FastHunyuan-diffusers&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;prompt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A beautiful woman in a red dress walking down a street&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;output_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;outputs/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;num_gpus&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;sp_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;tp_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;num_frames&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">720</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1280</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;num_inference_steps&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;seed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;fps&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;precision&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bf16&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;vae_precision&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;fp16&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;vae_tiling&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;vae_sp&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;vae_config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;load_encoder&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;load_decoder&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;tile_sample_min_height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;tile_sample_min_width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;text_encoder_precisions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;fp16&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;fp16&quot;</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;mask_strategy_file_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;enable_torch_compile&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-<span class="p">}</span>
+</section>
+<section id="serve">
+<h3>Serve<a class="headerlink" href="#serve" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>serve<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>Wan-AI/Wan2.1-T2V-1.3B-Diffusers<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--num-gpus<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ulysses-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ring-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--port<span class="w"> </span><span class="m">30010</span>
 </pre></div>
 </div>
-<p>Or using YAML format (config.yaml):</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">model_path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;FastVideo/FastHunyuan-diffusers&quot;</span>
-<span class="nt">prompt</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A</span><span class="nv"> </span><span class="s">beautiful</span><span class="nv"> </span><span class="s">woman</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">red</span><span class="nv"> </span><span class="s">dress</span><span class="nv"> </span><span class="s">walking</span><span class="nv"> </span><span class="s">down</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">street&quot;</span>
-<span class="nt">output_path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;outputs/&quot;</span>
+<p>For request and response examples, see <a class="reference internal" href="openai_api.html"><span class="std std-doc">OpenAI-Compatible API</span></a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span> <span class="pre">--help</span></code> and <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">serve</span> <span class="pre">--help</span></code> for the full argument list. The CLI help output is the source of truth for exhaustive flags.</p>
+</div>
+</section>
+</section>
+<section id="common-options">
+<h2>Common Options<a class="headerlink" href="#common-options" title="Link to this heading">#</a></h2>
+<section id="model-and-runtime">
+<h3>Model and runtime<a class="headerlink" href="#model-and-runtime" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--model-path</span> <span class="pre">{MODEL}</span></code>: model path or Hugging Face model ID</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--lora-path</span> <span class="pre">{PATH}</span></code> and <code class="docutils literal notranslate"><span class="pre">--lora-nickname</span> <span class="pre">{NAME}</span></code>: load a LoRA adapter</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--num-gpus</span> <span class="pre">{N}</span></code>: number of GPUs to use</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--tp-size</span> <span class="pre">{N}</span></code>: tensor parallelism size, mainly for encoders</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--sp-degree</span> <span class="pre">{N}</span></code>: sequence parallelism size</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--ulysses-degree</span> <span class="pre">{N}</span></code> and <code class="docutils literal notranslate"><span class="pre">--ring-degree</span> <span class="pre">{N}</span></code>: USP parallelism controls</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--attention-backend</span> <span class="pre">{BACKEND}</span></code>: attention backend for native SGLang pipelines</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--attention-backend-config</span> <span class="pre">{CONFIG}</span></code>: attention backend configuration</p></li>
+</ul>
+</section>
+<section id="sampling-and-output">
+<h3>Sampling and output<a class="headerlink" href="#sampling-and-output" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--prompt</span> <span class="pre">{PROMPT}</span></code> and <code class="docutils literal notranslate"><span class="pre">--negative-prompt</span> <span class="pre">{PROMPT}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--num-inference-steps</span> <span class="pre">{STEPS}</span></code> and <code class="docutils literal notranslate"><span class="pre">--seed</span> <span class="pre">{SEED}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--height</span> <span class="pre">{HEIGHT}</span></code>, <code class="docutils literal notranslate"><span class="pre">--width</span> <span class="pre">{WIDTH}</span></code>, <code class="docutils literal notranslate"><span class="pre">--num-frames</span> <span class="pre">{N}</span></code>, <code class="docutils literal notranslate"><span class="pre">--fps</span> <span class="pre">{FPS}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--output-path</span> <span class="pre">{PATH}</span></code>, <code class="docutils literal notranslate"><span class="pre">--output-file-name</span> <span class="pre">{NAME}</span></code>, <code class="docutils literal notranslate"><span class="pre">--save-output</span></code>, <code class="docutils literal notranslate"><span class="pre">--return-frames</span></code></p></li>
+</ul>
+<p>For frame interpolation and upscaling, see <a class="reference internal" href="post_processing.html"><span class="std std-doc">Post-Processing</span></a>.</p>
+</section>
+<section id="quantized-transformers">
+<h3>Quantized transformers<a class="headerlink" href="#quantized-transformers" title="Link to this heading">#</a></h3>
+<p>For quantized transformer checkpoints, prefer:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--model-path</span></code> for the base pipeline</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--transformer-path</span></code> for a quantized <code class="docutils literal notranslate"><span class="pre">transformers</span></code> transformer component folder</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--transformer-weights-path</span></code> for a quantized safetensors file, directory, or repo</p></li>
+</ul>
+<p>See <a class="reference internal" href="../quantization.html"><span class="std std-doc">Quantization</span></a> for supported quantization families and examples.</p>
+</section>
+</section>
+<section id="configuration-files">
+<h2>Configuration Files<a class="headerlink" href="#configuration-files" title="Link to this heading">#</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">--config</span></code> to load JSON or YAML configuration. Command-line flags override values from the config file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--config<span class="w"> </span>config.yaml
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">model_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FastVideo/FastHunyuan-diffusers</span>
+<span class="nt">prompt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A beautiful woman in a red dress walking down a street</span>
+<span class="nt">output_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">outputs/</span>
 <span class="nt">num_gpus</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 <span class="nt">sp_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 <span class="nt">tp_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
@@ -636,141 +604,77 @@ details, supported models, and examples.</p>
 <span class="nt">num_inference_steps</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
 <span class="nt">seed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1024</span>
 <span class="nt">fps</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">24</span>
-<span class="nt">precision</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bf16&quot;</span>
-<span class="nt">vae_precision</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fp16&quot;</span>
+<span class="nt">precision</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bf16</span>
+<span class="nt">vae_precision</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fp16</span>
 <span class="nt">vae_tiling</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="nt">vae_sp</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">vae_config</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">load_encoder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
-<span class="w">  </span><span class="nt">load_decoder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">  </span><span class="nt">tile_sample_min_height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">256</span>
-<span class="w">  </span><span class="nt">tile_sample_min_width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">256</span>
-<span class="nt">text_encoder_precisions</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;fp16&quot;</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;fp16&quot;</span>
-<span class="nt">mask_strategy_file_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
 <span class="nt">enable_torch_compile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </pre></div>
 </div>
-<p>To see all the options, you can use the <code class="docutils literal notranslate"><span class="pre">--help</span></code> flag:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--help
+</section>
+<section id="id1">
+<h2>Generate<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code> runs a single generation job and exits when the job finishes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>Wan-AI/Wan2.2-T2V-A14B-Diffusers<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--text-encoder-cpu-offload<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--pin-cpu-memory<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--num-gpus<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ulysses-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ring-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--prompt<span class="w"> </span><span class="s2">&quot;A curious raccoon&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--save-output<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--output-path<span class="w"> </span>outputs<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--output-file-name<span class="w"> </span><span class="s2">&quot;a-curious-raccoon.mp4&quot;</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>HTTP server-only arguments are ignored by <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code>.</p>
+</div>
+<p>For diffusers pipelines, Cache-DiT can be enabled with <code class="docutils literal notranslate"><span class="pre">SGLANG_CACHE_DIT_ENABLED=true</span></code> or <code class="docutils literal notranslate"><span class="pre">--cache-dit-config</span></code>. See <a class="reference internal" href="../performance/cache/cache_dit.html"><span class="std std-doc">Cache-DiT</span></a>.</p>
 </section>
-</section>
-<section id="serve">
-<h2>Serve<a class="headerlink" href="#serve" title="Link to this heading">#</a></h2>
-<p>Launch the SGLang diffusion HTTP server and interact with it using the OpenAI SDK and curl.</p>
-<section id="start-the-server">
-<h3>Start the server<a class="headerlink" href="#start-the-server" title="Link to this heading">#</a></h3>
-<p>Use the following command to launch the server:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SERVER_ARGS</span><span class="o">=(</span>
-<span class="w">  </span>--model-path<span class="w"> </span>Wan-AI/Wan2.1-T2V-1.3B-Diffusers
-<span class="w">  </span>--text-encoder-cpu-offload
-<span class="w">  </span>--pin-cpu-memory
-<span class="w">  </span>--num-gpus<span class="w"> </span><span class="m">4</span>
-<span class="w">  </span>--ulysses-degree<span class="o">=</span><span class="m">2</span>
-<span class="w">  </span>--ring-degree<span class="o">=</span><span class="m">2</span>
-<span class="o">)</span>
-
-sglang<span class="w"> </span>serve<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SERVER_ARGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
+<section id="id2">
+<h2>Serve<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">serve</span></code> starts the HTTP server and keeps the model loaded for repeated requests.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>serve<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>Wan-AI/Wan2.1-T2V-1.3B-Diffusers<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--text-encoder-cpu-offload<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--pin-cpu-memory<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--num-gpus<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ulysses-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--ring-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--port<span class="w"> </span><span class="m">30010</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><strong>–model-path</strong>: Which model to load. The example uses <code class="docutils literal notranslate"><span class="pre">Wan-AI/Wan2.1-T2V-1.3B-Diffusers</span></code>.</p></li>
-<li><p><strong>–port</strong>: HTTP port to listen on (the default here is <code class="docutils literal notranslate"><span class="pre">30010</span></code>).</p></li>
-</ul>
-<p>For detailed API usage, including Image, Video Generation and LoRA management, please refer to the <a class="reference internal" href="openai_api.html"><span class="std std-doc">OpenAI API Documentation</span></a>.</p>
-</section>
-<section id="cloud-storage-support">
-<h3>Cloud Storage Support<a class="headerlink" href="#cloud-storage-support" title="Link to this heading">#</a></h3>
-<p>SGLang diffusion supports automatically uploading generated images and videos to S3-compatible cloud storage (e.g., AWS S3, MinIO, Alibaba Cloud OSS, Tencent Cloud COS).</p>
-<p>When enabled, the server follows a <strong>Generate -&gt; Upload -&gt; Delete</strong> workflow:</p>
-<ol class="arabic simple">
-<li><p>The artifact is generated to a temporary local file.</p></li>
-<li><p>The file is immediately uploaded to the configured S3 bucket in a background thread.</p></li>
-<li><p>Upon successful upload, the local file is deleted.</p></li>
-<li><p>The API response returns the public URL of the uploaded object.</p></li>
-</ol>
-<p><strong>Configuration</strong></p>
-<p>Cloud storage is enabled via environment variables. Note that <code class="docutils literal notranslate"><span class="pre">boto3</span></code> must be installed separately (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">boto3</span></code>) to use this feature.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enable S3 storage</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_CLOUD_STORAGE_TYPE</span><span class="o">=</span>s3
+<section id="cloud-storage">
+<h3>Cloud Storage<a class="headerlink" href="#cloud-storage" title="Link to this heading">#</a></h3>
+<p>SGLang Diffusion can upload generated images and videos to S3-compatible object storage after generation.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_CLOUD_STORAGE_TYPE</span><span class="o">=</span>s3
 <span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_S3_BUCKET_NAME</span><span class="o">=</span>my-bucket
 <span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_S3_ACCESS_KEY_ID</span><span class="o">=</span>your-access-key
 <span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_S3_SECRET_ACCESS_KEY</span><span class="o">=</span>your-secret-key
-
-<span class="c1"># Optional: Custom endpoint for MinIO/OSS/COS</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_S3_ENDPOINT_URL</span><span class="o">=</span>https://minio.example.com
 </pre></div>
 </div>
-<p>See <a class="reference internal" href="../environment_variables.html"><span class="std std-doc">Environment Variables Documentation</span></a> for more details.</p>
+<p>See <a class="reference internal" href="../environment_variables.html"><span class="std std-doc">Environment Variables</span></a> for the full set of storage options.</p>
 </section>
-</section>
-<section id="generate">
-<h2>Generate<a class="headerlink" href="#generate" title="Link to this heading">#</a></h2>
-<p>Run a one-off generation task without launching a persistent server.</p>
-<p>To use it, pass both server arguments and sampling parameters in one command, after the <code class="docutils literal notranslate"><span class="pre">generate</span></code> subcommand, for example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">SERVER_ARGS</span><span class="o">=(</span>
-<span class="w">  </span>--model-path<span class="w"> </span>Wan-AI/Wan2.2-T2V-A14B-Diffusers
-<span class="w">  </span>--text-encoder-cpu-offload
-<span class="w">  </span>--pin-cpu-memory
-<span class="w">  </span>--num-gpus<span class="w"> </span><span class="m">4</span>
-<span class="w">  </span>--ulysses-degree<span class="o">=</span><span class="m">2</span>
-<span class="w">  </span>--ring-degree<span class="o">=</span><span class="m">2</span>
-<span class="o">)</span>
-
-<span class="nv">SAMPLING_ARGS</span><span class="o">=(</span>
-<span class="w">  </span>--prompt<span class="w"> </span><span class="s2">&quot;A curious raccoon&quot;</span>
-<span class="w">  </span>--save-output
-<span class="w">  </span>--output-path<span class="w"> </span>outputs
-<span class="w">  </span>--output-file-name<span class="w"> </span><span class="s2">&quot;A curious raccoon.mp4&quot;</span>
-<span class="o">)</span>
-
-sglang<span class="w"> </span>generate<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SERVER_ARGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SAMPLING_ARGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
-
-<span class="c1"># Or, users can set `SGLANG_CACHE_DIT_ENABLED` env as `true` to enable cache acceleration</span>
-<span class="nv">SGLANG_CACHE_DIT_ENABLED</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span>sglang<span class="w"> </span>generate<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SERVER_ARGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SAMPLING_ARGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
-</pre></div>
-</div>
-<p>Once the generation task has finished, the server will shut down automatically.</p>
-<blockquote>
-<div><p>[!NOTE]
-The HTTP server-related arguments are ignored in this subcommand.</p>
-</div></blockquote>
 </section>
 <section id="component-path-overrides">
 <h2>Component Path Overrides<a class="headerlink" href="#component-path-overrides" title="Link to this heading">#</a></h2>
-<p>SGLang diffusion allows you to override any pipeline component (e.g., <code class="docutils literal notranslate"><span class="pre">vae</span></code>, <code class="docutils literal notranslate"><span class="pre">transformer</span></code>, <code class="docutils literal notranslate"><span class="pre">text_encoder</span></code>) by specifying a custom checkpoint path. This is useful for:</p>
-<section id="example-flux-2-dev-with-tiny-autoencoder">
-<h3>Example: FLUX.2-dev with Tiny AutoEncoder<a class="headerlink" href="#example-flux-2-dev-with-tiny-autoencoder" title="Link to this heading">#</a></h3>
-<p>You can override <strong>any</strong> component by using <code class="docutils literal notranslate"><span class="pre">--&lt;component&gt;-path</span></code>, where <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;</span></code> matches the key in the model’s <code class="docutils literal notranslate"><span class="pre">model_index.json</span></code>:</p>
-<p>For example, replace the default VAE with a distilled tiny autoencoder for ~3x faster decoding:</p>
+<p>Override individual pipeline components such as <code class="docutils literal notranslate"><span class="pre">vae</span></code>, <code class="docutils literal notranslate"><span class="pre">transformer</span></code>, or <code class="docutils literal notranslate"><span class="pre">text_encoder</span></code> with <code class="docutils literal notranslate"><span class="pre">--&lt;component&gt;-path</span></code>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>serve<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--model-path<span class="o">=</span>black-forest-labs/FLUX.2-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span><span class="c1"># with a Huggingface Repo ID</span>
-<span class="w">  </span>--vae-path<span class="o">=</span>fal/FLUX.2-Tiny-AutoEncoder
-<span class="w">  </span><span class="c1"># or use a local path</span>
-<span class="w">  </span>--vae-path<span class="o">=</span>~/.cache/huggingface/hub/models--fal--FLUX.2-Tiny-AutoEncoder/snapshots/.../vae
+<span class="w">  </span>--model-path<span class="w"> </span>black-forest-labs/FLUX.2-dev<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--vae-path<span class="w"> </span>fal/FLUX.2-Tiny-AutoEncoder
 </pre></div>
 </div>
-<p><strong>Important:</strong></p>
-<ul class="simple">
-<li><p>The component key must match the one in your model’s <code class="docutils literal notranslate"><span class="pre">model_index.json</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">vae</span></code>).</p></li>
-<li><p>The path must:</p>
-<ul>
-<li><p>either be a Huggingface Repo ID (e.g., fal/FLUX.2-Tiny-AutoEncoder)</p></li>
-<li><p>or point to a <strong>complete component folder</strong>, containing <code class="docutils literal notranslate"><span class="pre">config.json</span></code> and safetensors files</p></li>
-</ul>
-</li>
-</ul>
-</section>
+<p>The component key must match the key in the model’s <code class="docutils literal notranslate"><span class="pre">model_index.json</span></code>, and the path must be either a Hugging Face repo ID or a complete component directory.</p>
 </section>
 <section id="diffusers-backend">
 <h2>Diffusers Backend<a class="headerlink" href="#diffusers-backend" title="Link to this heading">#</a></h2>
-<p>SGLang diffusion supports a <strong>diffusers backend</strong> that allows you to run any diffusers-compatible model through SGLang’s infrastructure using vanilla diffusers pipelines. This is useful for running models without native SGLang implementations or models with custom pipeline classes.</p>
-<section id="arguments">
-<h3>Arguments<a class="headerlink" href="#arguments" title="Link to this heading">#</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">--backend</span> <span class="pre">diffusers</span></code> to force vanilla diffusers pipelines when no native SGLang implementation exists or when a model requires a custom pipeline class.</p>
+<section id="key-options">
+<h3>Key Options<a class="headerlink" href="#key-options" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -780,48 +684,39 @@ The HTTP server-related arguments are ignored in this subcommand.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--backend</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code> (default), <code class="docutils literal notranslate"><span class="pre">sglang</span></code>, <code class="docutils literal notranslate"><span class="pre">diffusers</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>: prefer native SGLang, fallback to diffusers. <code class="docutils literal notranslate"><span class="pre">sglang</span></code>: force native (fails if unavailable). <code class="docutils literal notranslate"><span class="pre">diffusers</span></code>: force vanilla diffusers pipeline.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>, <code class="docutils literal notranslate"><span class="pre">sglang</span></code>, <code class="docutils literal notranslate"><span class="pre">diffusers</span></code></p></td>
+<td><p>Choose native SGLang, force native, or force diffusers</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--diffusers-attention-backend</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">flash</span></code>, <code class="docutils literal notranslate"><span class="pre">_flash_3_hub</span></code>, <code class="docutils literal notranslate"><span class="pre">sage</span></code>, <code class="docutils literal notranslate"><span class="pre">xformers</span></code>, <code class="docutils literal notranslate"><span class="pre">native</span></code></p></td>
-<td><p>Attention backend for diffusers pipelines. See <a class="reference external" href="https://huggingface.co/docs/diffusers/main/en/optimization/attention_backends">diffusers attention backends</a>.</p></td>
+<td><p>Attention backend for diffusers pipelines</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--trust-remote-code</span></code></p></td>
 <td><p>flag</p></td>
-<td><p>Required for models with custom pipeline classes (e.g., Ovis).</p></td>
+<td><p>Required for models with custom pipeline classes</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--vae-tiling</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--vae-tiling</span></code> and <code class="docutils literal notranslate"><span class="pre">--vae-slicing</span></code></p></td>
 <td><p>flag</p></td>
-<td><p>Enable VAE tiling for large image support (decodes tile-by-tile).</p></td>
+<td><p>Lower memory usage for VAE decode</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--vae-slicing</span></code></p></td>
-<td><p>flag</p></td>
-<td><p>Enable VAE slicing for lower memory usage (decodes slice-by-slice).</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--dit-precision</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--dit-precision</span></code> and <code class="docutils literal notranslate"><span class="pre">--vae-precision</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">fp16</span></code>, <code class="docutils literal notranslate"><span class="pre">bf16</span></code>, <code class="docutils literal notranslate"><span class="pre">fp32</span></code></p></td>
-<td><p>Precision for the diffusion transformer.</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--vae-precision</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">fp16</span></code>, <code class="docutils literal notranslate"><span class="pre">bf16</span></code>, <code class="docutils literal notranslate"><span class="pre">fp32</span></code></p></td>
-<td><p>Precision for the VAE.</p></td>
+<td><p>Precision controls</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-torch-compile</span></code></p></td>
 <td><p>flag</p></td>
-<td><p>Enable <code class="docutils literal notranslate"><span class="pre">torch.compile</span></code> for diffusers pipelines.</p></td>
+<td><p>Enable <code class="docutils literal notranslate"><span class="pre">torch.compile</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--cache-dit-config</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">{PATH}</span></code></p></td>
-<td><p>Path to a Cache-DiT YAML/JSON config file for accelerating diffusers pipelines with Cache-DiT.</p></td>
+<td><p>Cache-DiT config for diffusers pipelines</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="example-running-ovis-image-7b">
-<h3>Example: Running Ovis-Image-7B<a class="headerlink" href="#example-running-ovis-image-7b" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://huggingface.co/AIDC-AI/Ovis-Image-7B">Ovis-Image-7B</a> is a 7B text-to-image model optimized for high-quality text rendering.</p>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--model-path<span class="w"> </span>AIDC-AI/Ovis-Image-7B<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--backend<span class="w"> </span>diffusers<span class="w"> </span><span class="se">\</span>
@@ -836,27 +731,7 @@ The HTTP server-related arguments are ignored in this subcommand.</p>
 <span class="w">  </span>--output-file-name<span class="w"> </span>ovis_garden.png
 </pre></div>
 </div>
-</section>
-<section id="extra-diffusers-arguments">
-<h3>Extra Diffusers Arguments<a class="headerlink" href="#extra-diffusers-arguments" title="Link to this heading">#</a></h3>
-<p>For pipeline-specific parameters not exposed via CLI, use <code class="docutils literal notranslate"><span class="pre">diffusers_kwargs</span></code> in a config file:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;model_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AIDC-AI/Ovis-Image-7B&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;backend&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;diffusers&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;prompt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A beautiful landscape&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;diffusers_kwargs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;cross_attention_kwargs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;scale&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--config<span class="w"> </span>config.json
-</pre></div>
-</div>
-</section>
-<section id="cache-dit-acceleration">
-<h3>Cache-DiT Acceleration<a class="headerlink" href="#cache-dit-acceleration" title="Link to this heading">#</a></h3>
-<p>Users who use the diffusers backend can also leverage Cache-DiT acceleration and load custom cache configs from a YAML file to boost performance of diffusers pipelines. See the <a class="reference external" href="https://docs.sglang.io/diffusion/performance/cache/cache_dit.html">Cache-DiT Acceleration</a> documentation for details.</p>
+<p>For pipeline-specific arguments not exposed in the CLI, pass <code class="docutils literal notranslate"><span class="pre">diffusers_kwargs</span></code> in a config file.</p>
 </section>
 </section>
 </section>
@@ -906,28 +781,27 @@ The HTTP server-related arguments are ignored in this subcommand.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-arguments">Supported Arguments</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#server-arguments">Server Arguments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-parameters">Sampling Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-configuration-files">Using Configuration Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate">Generate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serve">Serve</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serve">Serve</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-the-server">Start the server</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage-support">Cloud Storage Support</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-options">Common Options</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-and-runtime">Model and runtime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-and-output">Sampling and output</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantized-transformers">Quantized transformers</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate">Generate</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-path-overrides">Component Path Overrides</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-flux-2-dev-with-tiny-autoencoder">Example: FLUX.2-dev with Tiny AutoEncoder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-files">Configuration Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Generate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Serve</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloud-storage">Cloud Storage</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-path-overrides">Component Path Overrides</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diffusers-backend">Diffusers Backend</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arguments">Arguments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-running-ovis-image-7b">Example: Running Ovis-Image-7B</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-diffusers-arguments">Extra Diffusers Arguments</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cache-dit-acceleration">Cache-DiT Acceleration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-options">Key Options</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
 </li>
 </ul>
