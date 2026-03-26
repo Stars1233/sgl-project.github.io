@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-26 13:25:41.352 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:05.870 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 13:25:41.353 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:05.871 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 13:25:41.354 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:05.872 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 13:25:41.354 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:05.872 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 13:25:41.355 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:05.873 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 13:25:49.663 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:15.818 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:15] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:15.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:15] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:15.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:15] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:15.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:15] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 18:25:15.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 18:25:15] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.26it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.23it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.55s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.44s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.59it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.66it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a scene on a city street with a new York City taxi (also known as a "taxi" in the United States). There are two taxis visible in the image. One taxi is positioned in the foreground on the left side, while another top-of-car is shown in the background on the right side. The taxi on the right has a person wiring said in a window and draped over the top of the car, with the wires possibly extending over a platform or above the vehicle. The wires are constructed from red rope draped over beams的空间, and there is an orange motor-driven rack at the rear with a buzzer attached
+    The image shows two yellow taxis parked on a city street in the United States, likely in New York City. The taxis have lobster umbrellas attached to the back, which is a distinctive feature. The street is lined with tall buildings, and there are various commercial and institutional signs visible in the background. The scene captures a unique and humorous situation where the taxis appear to be participating in a wash-and-iron art installation or performance, as the flags resemble laundry on a drying line.
 
 
 ### Call with Processor Output
@@ -183,7 +183,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a scene on a city street. A yellow taxi cab is parked along the side of the road. In the foreground, there is a person wearing a yellow shirt and blue jeans pulling a cart full of luggage. The cart is an old-fashioned metal cart with growing flaps extended. There are also several bright red and green banners hanging from flagpoles along the sidewalk. The background includes buildings with bright lights and windows.
+    What you are seeing here is a humorous scene where someone has attempted to cycle or pedal a piece of luggage or perhaps a shopping cart attached to a cab or taxi. The individual is pushing the cart-like object with one foot, while keeping the other foot on the pedal area. This humorous image likely aims to amuse viewers by demonstrating a creative or unexpected way to transport heavy objects.
+    
+    The scene seems to be set in an urban area, possibly during a parade or public event, given the presence of flags and the festive atmosphere. The cessation of the cab's movement indicates that the individual with the cart is in control of it, possibly blocking traffic
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +241,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    It looks like the image depicts a vendor dressed in a yellow shirt and blue jeans, standing on the sidewalk next to a yellow taxi. The vendor seems to be demonstrating or showcasing something on a clothes rack attached to the back of the taxi. The scene appears to be set in an urban area with tall buildings and storefronts in the background.
+    The image shows a yellow and blue minced pineapple mounted on a stand in the middle of a city street. It is likely an art installation. Behind the pineapple, there is a yellow SUV taxi cab. The scene appears to be in a urban setting, possibly in New York City, given the style of the taxi and the General Store advertisement banners visible in the background. The pineapple is being 'minced' (squeezed), which is a metaphor for transforming something into something familiar yet altered. The highlight of this image is not the pineapple itself but the concept and impact of everyday objects being used in creative and unexpected ways on public streets
 
 
 ## Querying Llama 4 Vision Model
