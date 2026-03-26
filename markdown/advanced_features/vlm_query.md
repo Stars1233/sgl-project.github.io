@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-26 08:35:39.069 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:41.352 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 08:35:39] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 08:35:39.070 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:41.353 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 08:35:39] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 08:35:39.071 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:41.354 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 08:35:39] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 08:35:39.071 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:41.354 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 08:35:39] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 08:35:39.072 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:41.355 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 08:35:39] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 08:35:48.134 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 08:35:48] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 08:35:48.134 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 08:35:48] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 08:35:48.134 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 08:35:48] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 08:35:48.134 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 08:35:48] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 08:35:48.134 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 08:35:48] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:49.662 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 13:25:49.663 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 13:25:49] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.95it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.26it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.40it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.46it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.55s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.44s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a man reenacting a historical event in New York City, likely during the 1960s civil rights protest. He is engaged in a performance art piece called "static protest," where he stands on a chair fittingly atop an actress playing the role of Coretta Scott King. The man is wind-surfing, which visually symbolizes contemplation and a mental challenge. The visual setup includes signs, specifically museums, and is representative of that era's social and political environment. This event aims to instill a sense of idealism and purpose by engaging with the_KEYBOARD settings on Ky不 ch مش؟
+    The image shows a scene on a city street with a new York City taxi (also known as a "taxi" in the United States). There are two taxis visible in the image. One taxi is positioned in the foreground on the left side, while another top-of-car is shown in the background on the right side. The taxi on the right has a person wiring said in a window and draped over the top of the car, with the wires possibly extending over a platform or above the vehicle. The wires are constructed from red rope draped over beams的空间, and there is an orange motor-driven rack at the rear with a buzzer attached
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a person using a portable clothesline attached to the rear of a yellow taxi. The clothesline is holding aпон a cardboard box designed to hang items. This appears to be a creative or fun setup, possibly for an art piece or a prank. The taxi is parked on a city street, with buildings and other vehicles visible in the background. The scene is vibrant and captures a playful moment in an urban environment.
+    The image shows a scene on a city street. A yellow taxi cab is parked along the side of the road. In the foreground, there is a person wearing a yellow shirt and blue jeans pulling a cart full of luggage. The cart is an old-fashioned metal cart with growing flaps extended. There are also several bright red and green banners hanging from flagpoles along the sidewalk. The background includes buildings with bright lights and windows.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene from what appears to be a parade or public event in an urban setting. A taxi is being decorated with an American flag and other banners, suggesting it is part of the event. A person, whose face is not visible, is adjusting the decorations on the taxi. The taxi is parked on a city street, and there are some buildings and other vehicles in the background. The overall atmosphere suggests a celebratory or commemorative event.
+    It looks like the image depicts a vendor dressed in a yellow shirt and blue jeans, standing on the sidewalk next to a yellow taxi. The vendor seems to be demonstrating or showcasing something on a clothes rack attached to the back of the taxi. The scene appears to be set in an urban area with tall buildings and storefronts in the background.
 
 
 ## Querying Llama 4 Vision Model
