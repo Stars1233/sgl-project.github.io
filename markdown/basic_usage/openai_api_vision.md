@@ -38,28 +38,28 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
       from sglang.srt.utils.json_response import (
 
 
-    2026-03-26 20:04:03.799 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:03] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:03.799 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:03] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:03.799 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:03] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:03.799 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:03] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:03.800 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:03] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:09.240 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:09.240 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:09.240 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:09.240 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:09.240 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 20:04:13.349 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:13.349 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:13.349 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:13.349 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:04:13.349 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:04:13] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:19.690 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:19.690 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:19.690 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:19.690 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:52:19.690 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:52:19] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -69,15 +69,15 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
 
     Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.90it/s]
+    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.67it/s]
 
-    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:02,  1.46it/s]
+    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:01,  2.04it/s]
 
-    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:01,  1.91it/s]
+    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:01,  1.84it/s]
 
-    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.86it/s]
+    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.61it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.72it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.74it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03<00:00,  1.45it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03<00:00,  1.58it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -131,11 +131,11 @@ print_highlight(response)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"69f0efa06a2644d5b01a42fddd2ce12e","object":"chat.completion","created":1774555468,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"a702f06ec5834d04923aa230b1f276cd","object":"chat.completion","created":1774561955,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 
-<strong style='color: #00008B;'>{"id":"72ae6f0269204c0abb9bd23ee0e516e9","object":"chat.completion","created":1774555469,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"45f2b4408d9748de86d9f9d7c0c931bf","object":"chat.completion","created":1774561956,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using Python Requests
@@ -168,7 +168,7 @@ print_highlight(response.text)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"dd21725644e2476ebbea9aaad032d548","object":"chat.completion","created":1774555470,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"09d9fab8879e498d9e556e2196499f13","object":"chat.completion","created":1774561957,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using OpenAI Python Client

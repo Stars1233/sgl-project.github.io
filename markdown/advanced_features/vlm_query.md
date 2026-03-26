@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-26 20:07:40.125 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:23.739 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 20:07:40] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 20:07:40.126 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:23.741 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 20:07:40] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 20:07:40.127 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:23.741 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 20:07:40] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 20:07:40.128 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:23.742 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 20:07:40] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 20:07:40.129 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:23.743 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 20:07:40] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 20:07:49.863 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:07:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:07:49.864 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:07:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:07:49.864 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:07:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:07:49.864 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:07:49] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 20:07:49.864 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 20:07:49] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:34.196 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:34] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:34.196 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:34] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:34.196 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:34] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:34.196 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:34] Persistent cache disabled, using in-memory JIT cache
+    2026-03-26 21:46:34.196 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-26 21:46:34] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.04it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.85it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.38it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.45it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.33it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.39it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    It looks like there is an unintended installation of home clothes drying on the roof racks of two taxis on a city street. This sparks a humorous scenario that challenges normal urban norms.
+    This image shows a scene in New York City, with two yellow taxis parked on a street. A man in a yellow shirt is ironing clothes on the side of the taxi. This is an unusual and humorous sight in a city known for its iconic yellow cabs. The man appears to be pretending to iron his clothes in a carefree manner, adding a touch of humor to an otherwise busy scene.
 
 
 ### Call with Processor Output
@@ -183,11 +183,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image depicts a taxi parked near a sidewalk. The taxi is yellow, which is a common color for taxis in many cities. The driver appears to be draped in a striped towel or blanket, which is unusual and potentially dangerous. The driver is perched on the side of the cab, with his legs dangling over the front windows. 
+    The image shows a scene where a person is division drying a未能 clothing item in a public space. The clothing item appears to be a未能 pants. The person is using a未能 ironing board or similar object to support the未能 material. The未能 spot is adding a humorous or quirky element to the scene. The未能 device is connected to未能 wires, and the未能 structure seems to be set up to hold the未能 fabric open.
     
-    The setting looks like an urban environment, with buildings in the background and a roadway separating the sidewalk from the road. There are several colorful banners or flags hanging from the buildings, adding to the urban atmosphere. 
-    
-    The driver seems to be in a precarious position,ليبitingقلب thefaq from the cab
+    The未能 scene is accompanied by未能 number banners on未能 streetlights, and未能 it is unclear if these banners are displaying some kinds of words, graphics or numbers. The未能rive between two buildings is observable
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +241,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi cab parked on a street. A person is standing next to the taxi, adjusting the rearview mirrors. The taxi appears to be in New York City, as indicated by the street signs and environment. The person seems to be preparing the vehicle for use, possibly readying it for a fare.
+    The image shows a street scene with two yellow taxis. There are also people standing near the taxis, possibly engaging in some form of street performance or demonstration. The setting appears to be an urban environment, likely in a busy city area. The flags and the two-tone clothing of the individuals contribute to thezá
 
 
 ## Querying Llama 4 Vision Model
