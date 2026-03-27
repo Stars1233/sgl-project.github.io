@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=3a58f22a"></script>
+    <script src="../_static/documentation_options.js?v=9d1b6210"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -680,6 +680,7 @@ Users with permission are listed in the <a class="reference external" href="http
 <li><p>Reuse server launches in your unit tests to make tests run faster.</p></li>
 </ul>
 </li>
+<li><p>Never use <code class="docutils literal notranslate"><span class="pre">pickle.loads()</span></code>, <code class="docutils literal notranslate"><span class="pre">pickle.load()</span></code>, or <code class="docutils literal notranslate"><span class="pre">recv_pyobj()</span></code> to deserialize untrusted or network-received data. Python’s <a class="reference external" href="https://docs.python.org/3/library/pickle.html">pickle module is not secure</a> — it can execute arbitrary code during deserialization. Use safe serialization formats such as <a class="reference external" href="https://github.com/jcrist/msgspec">msgpack</a> or JSON instead.</p></li>
 <li><p>When supporting new hardware or features, follow these guidelines:</p>
 <ul>
 <li><p>Do not drastically change existing code.</p></li>
