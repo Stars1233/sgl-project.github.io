@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=c114e6de"></script>
+    <script src="../_static/documentation_options.js?v=dc7913b9"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -572,182 +572,24 @@ document.write(`
 /actions-runner/_work/sglang/sglang/python/sglang/launch_server.py:51: UserWarning: &#39;python -m sglang.launch_server&#39; is still supported, but &#39;sglang serve&#39; is the recommended entrypoint.
   Example: sglang serve --model-path &lt;model&gt; [options]
   warnings.warn(
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 10, in map_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 28, in read
-    return self._sock.recv(max_bytes)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1288, in recv
-    return self.read(buflen)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1161, in read
-    return self._sslobj.read(len)
-TimeoutError: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 60, in map_httpcore_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 218, in handle_request
-    resp = self._pool.handle_request(req)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 253, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 237, in handle_request
-    response = connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection.py&#34;, line 90, in handle_request
-    return self._connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 112, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 91, in handle_request
-    ) = self._receive_response_headers(**kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 155, in _receive_response_headers
-    event = self._receive_event(timeout=timeout)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 191, in _receive_event
-    data = self._network_stream.read(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 26, in read
-    with map_exceptions(exc_map):
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 14, in map_exceptions
-    raise to_exc(exc)
-httpcore.ReadTimeout: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/utils/common.py&#34;, line 2520, in retry
-    return fn()
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/configs/model_config.py&#34;, line 727, in &lt;lambda&gt;
-    lambda: hf_api.file_exists(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py&#34;, line 3436, in file_exists
-    get_hf_file_metadata(url, token=token)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py&#34;, line 1576, in get_hf_file_metadata
-    response = _httpx_follow_relative_redirects_with_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 685, in _httpx_follow_relative_redirects_with_backoff
-    response = http_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 559, in http_backoff
-    return next(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 467, in _http_backoff_base
-    response = client.request(method=method, url=url, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 821, in request
-    return self.send(request, auth=auth, follow_redirects=follow_redirects)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 908, in send
-    response = self._send_handling_auth(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 936, in _send_handling_auth
-    response = self._send_handling_redirects(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 973, in _send_handling_redirects
-    response = self._send_single_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 1009, in _send_single_request
-    response = transport.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 217, in handle_request
-    with map_httpcore_exceptions():
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 77, in map_httpcore_exceptions
-    raise mapped_exc(message) from exc
-httpx.ReadTimeout: The read operation timed out
-retry() failed once (0th try, maximum 2 retries). Will delay 0.77s and retry. Error: The read operation timed out
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 10, in map_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 28, in read
-    return self._sock.recv(max_bytes)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1288, in recv
-    return self.read(buflen)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1161, in read
-    return self._sslobj.read(len)
-TimeoutError: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 60, in map_httpcore_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 218, in handle_request
-    resp = self._pool.handle_request(req)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 253, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 237, in handle_request
-    response = connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection.py&#34;, line 90, in handle_request
-    return self._connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 112, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 91, in handle_request
-    ) = self._receive_response_headers(**kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 155, in _receive_response_headers
-    event = self._receive_event(timeout=timeout)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 191, in _receive_event
-    data = self._network_stream.read(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 26, in read
-    with map_exceptions(exc_map):
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 14, in map_exceptions
-    raise to_exc(exc)
-httpcore.ReadTimeout: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/utils/common.py&#34;, line 2520, in retry
-    return fn()
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/configs/model_config.py&#34;, line 727, in &lt;lambda&gt;
-    lambda: hf_api.file_exists(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py&#34;, line 3436, in file_exists
-    get_hf_file_metadata(url, token=token)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py&#34;, line 1576, in get_hf_file_metadata
-    response = _httpx_follow_relative_redirects_with_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 685, in _httpx_follow_relative_redirects_with_backoff
-    response = http_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 559, in http_backoff
-    return next(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 467, in _http_backoff_base
-    response = client.request(method=method, url=url, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 821, in request
-    return self.send(request, auth=auth, follow_redirects=follow_redirects)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 908, in send
-    response = self._send_handling_auth(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 936, in _send_handling_auth
-    response = self._send_handling_redirects(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 973, in _send_handling_redirects
-    response = self._send_single_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 1009, in _send_single_request
-    response = transport.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 217, in handle_request
-    with map_httpcore_exceptions():
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 77, in map_httpcore_exceptions
-    raise mapped_exc(message) from exc
-httpx.ReadTimeout: The read operation timed out
-[2026-03-27 21:03:24] retry() failed once (0th try, maximum 2 retries). Will delay 0.82s and retry. Error: The read operation timed out
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-27 21:05:26.570 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 21:05:26] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 21:05:26.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 21:05:26] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 21:05:26.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 21:05:26] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 21:05:26.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 21:05:26] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 21:05:26.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 21:05:26] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  4.96it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 18.87it/s]
-Capturing num tokens (num_tokens=4 avail_mem=68.30 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 35.71it/s]
+2026-03-27 22:44:17.185 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 22:44:17] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 22:44:17.185 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 22:44:17] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 22:44:17.185 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 22:44:17] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 22:44:17.185 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 22:44:17] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 22:44:17.185 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 22:44:17] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  5.72it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:04&lt;00:00, 14.03it/s]
+Capturing num tokens (num_tokens=4 avail_mem=70.87 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 35.03it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -763,7 +605,7 @@ Capturing num tokens (num_tokens=4 avail_mem=68.30 GB): 100%|██████�
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:31996
+Server started on http://localhost:36415
 </pre></div></div>
 </div>
 </section>
@@ -797,7 +639,7 @@ Server started on http://localhost:31996
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: ChatCompletion(id='47d05c079c1f4e79b1c14a4117c9445c', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774645541, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: ChatCompletion(id='f0fe490f3f9b49c2b4e2879ecb60495d', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774651473, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="Model-Thinking/Reasoning-Support">
@@ -1062,7 +904,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Ancient Rome achieved significant accomplishments in various fields, including:<br><br>1. Architecture: The Romans were known for their impressive architectural achievements, particularly in the construction of monumental structures such as the Colosseum, the Pantheon, and the Roman Forum.<br><br>2. Law: They developed a complex legal system that included laws for both citizens and non-citizens, which influenced legal systems worldwide.<br><br>3. Literature: The Romans are credited with developing Latin as a literary language, which was later adopted by other European languages.<br><br>4. Art: They were renowned for their art, particularly in sculpture and architecture, which included works like the Colossus</strong></div>
+<strong style='color: #00008B;'>Ancient Rome was a major civilization that left a significant impact on the world. Some of their major achievements include:<br><br>1. The construction of the Colosseum, which was built in the 2nd century AD and is considered one of the most impressive structures in history.<br><br>2. The construction of the Pantheon, a temple dedicated to Jupiter, which was built in the 2nd century AD.<br><br>3. The construction of the Roman Forum, which was a public square where important events and gatherings took place.<br><br>4. The development of Roman law, which established a system of laws that were based on natural rights and duties.<br><br>5</strong></div>
 </div>
 <p>Streaming mode is also supported.</p>
 <section id="id1">
@@ -1088,7 +930,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Yes, that is a test. I&#39;m here to assist you with any questions or tasks you might have. Please let me know if there&#39;s anything specific you&#39;d like to know or if you need help with anything else.
+Yes, that&#39;s a test. I&#39;m here to assist you with any questions or topics you have. Please feel free to ask me anything you&#39;d like to know or discuss.
 </pre></div></div>
 </div>
 </section>
@@ -1153,7 +995,7 @@ Yes, that is a test. I&#39;m here to assist you with any questions or tasks you 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='1aae9664b4f5436da77b8cbe55fe41c9', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774645543, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='93fd2698bfd0406cad6911ac153ef893', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774651475, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1185,7 +1027,7 @@ Yes, that is a test. I&#39;m here to assist you with any questions or tasks you 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='067ae537a51c4b97b4f1cb5c43653da6', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a space explorer named Jack who had always been fascinated by the stars and the universe. He had traveled to many planets, from the smallest speck of dust to the most distant galaxies, and he had always found something new and exciting to discover.', matched_stop='\n\n')], created=1774645543, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=56, prompt_tokens=9, total_tokens=65, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='2e791c9daf2b407e8e7ae2ab09f0222d', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a young space explorer named Alex who had always dreamed of exploring the stars. He had always been fascinated by the vastness of space and the mysteries that lay beyond our own planet.', matched_stop='\n\n')], created=1774651476, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=43, prompt_tokens=9, total_tokens=52, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <section id="id4">
 <h4>Returning Routed Experts (MoE Models)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>

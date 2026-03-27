@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-27 20:57:04.078 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:41.926 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 20:57:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 20:57:04.079 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:41.927 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 20:57:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 20:57:04.079 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:41.927 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 20:57:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 20:57:04.079 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:41.928 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 20:57:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 20:57:04.080 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:41.928 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 20:57:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:41] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 20:57:12.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 20:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 20:57:12.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 20:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 20:57:12.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 20:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 20:57:12.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 20:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 20:57:12.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 20:57:12] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:50.134 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:50] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:50.134 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:50] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:50.134 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:50] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:50.134 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:50] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 22:42:50.134 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 22:42:50] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.97it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.49it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.03it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.11it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.16s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.09s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    This image shows a person hitching their bike to the back of a yellow taxi in New York City. The person is stretching out their clothing on a makeshift clothesline tied to the back of the taxi. This is a common practice in Manhattan and other urban areas where taxis use their hoods to share the road with long-distance bicyclists, allowing both to move in the same direction.
+    The image shows a scene in a busy urban area with two yellow taxis. The article of clothing is hanging from a metal arm-like structure placed on the back of the rear taxi. The person in the image is an actual person, not a mascot, and appears to be interacting with the clothing attached to the tailgate of the vehicle. The background includes tall buildings, a few pedestrians, and traffic signs. Some distinct features include the two yellow taxis, the person's yellow shirt and dark pants, and the urban street environment.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    I don't know what is shown here
+    The image shows a yellow taxi cab on a city street. There is a person hanging a pink shirt over the back of the cab using a clothesline or a bar. There are also clothes hanging on the clothesline as well.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    It looks like the image shows a yellow taxi driving down a city street. The taxi has a cart attached to the back, on which clothing has been placed to dry using a clothesline. This is a common practice for taxi drivers to use a flat-roofed pickup truck to load and unload vehicles, and sometimes they use these pickup trucks for childcare or other activities.
+    This image shows a taxi cab in an urban setting. You can see the distinct yellow paint on the vehicle, which is characteristic of many taxi cabs in New York City. There are people nearby, one of whom is stretching out a plot of cloth, likely to fold or organize it. Flags are visible above, possibly from a nearby building or store. The scene seems to be taken on a city street with buildings and other urban elements in the background. This particular flag on the cab indicates that it is operating in New York City, where yellow cabs are common.
 
 
 ## Querying Llama 4 Vision Model
