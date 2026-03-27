@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=9635c1a9"></script>
+    <script src="../_static/documentation_options.js?v=c114e6de"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -573,19 +573,97 @@ document.write(`
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-03-27 15:56:23.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 15:56:23] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 15:56:23.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 15:56:23] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 15:56:23.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 15:56:23] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 15:56:23.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 15:56:23] Persistent cache disabled, using in-memory JIT cache
-2026-03-27 15:56:23.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-27 15:56:23] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  6.30it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 17.31it/s]
-Capturing num tokens (num_tokens=4 avail_mem=120.15 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 36.85it/s]
+2026-03-27 21:03:41.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 21:03:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 21:03:41.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 21:03:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 21:03:41.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 21:03:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 21:03:41.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 21:03:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-27 21:03:41.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-27 21:03:41] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  4.94it/s]
+Traceback (most recent call last):
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 10, in map_exceptions
+    yield
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 28, in read
+    return self._sock.recv(max_bytes)
+  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1288, in recv
+    return self.read(buflen)
+  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1161, in read
+    return self._sslobj.read(len)
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 60, in map_httpcore_exceptions
+    yield
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 253, in handle_request
+    raise exc
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 237, in handle_request
+    response = connection.handle_request(request)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection.py&#34;, line 90, in handle_request
+    return self._connection.handle_request(request)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 112, in handle_request
+    raise exc
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 91, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 155, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 191, in _receive_event
+    data = self._network_stream.read(
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 26, in read
+    with map_exceptions(exc_map):
+  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 14, in map_exceptions
+    raise to_exc(exc)
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/utils/common.py&#34;, line 2520, in retry
+    return fn()
+  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/configs/model_config.py&#34;, line 727, in &lt;lambda&gt;
+    lambda: hf_api.file_exists(
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py&#34;, line 3436, in file_exists
+    get_hf_file_metadata(url, token=token)
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py&#34;, line 1576, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 685, in _httpx_follow_relative_redirects_with_backoff
+    response = http_backoff(
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 559, in http_backoff
+    return next(
+  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 467, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 821, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 908, in send
+    response = self._send_handling_auth(
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 936, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 973, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 1009, in _send_single_request
+    response = transport.handle_request(request)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 217, in handle_request
+    with map_httpcore_exceptions():
+  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 19.23it/s]
+Capturing num tokens (num_tokens=4 avail_mem=70.86 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 40.35it/s]
 </pre></div></div>
 </div>
 <section id="Non-streaming-Synchronous-Generation">
@@ -617,38 +695,24 @@ Capturing num tokens (num_tokens=4 avail_mem=120.15 GB): 100%|██████
 <div class="highlight"><pre>
 ===============================
 Prompt: Hello, my name is
-Generated text:  Aya Saim. I’m a fan of the latest generation of cars, and I’m a tech enthusiast with a passion for how technology can shape our lives. I have a love for the Japanese culture and my parents are both Japanese, so I’m intrigued by how technology can play into Japanese culture.
+Generated text:  Tammy and I am 17 years old and currently I am in a difficult situation. My mother has passed away, my father has passed away, and I have been living at home with my two brothers. I haven’t been with any other family for a while. I am very lonely, and I feel very sad.
 
-What is your experience with technology?
+When I was growing up, I always had a brother and sister. I was always happy and did well in school. I always had no problem with my mother and father and no problems. I was always good with my brothers, but I didn’t feel lonely because they had a brother and sister.
 
-As an AI language model, I don&#39;t have personal experiences. However, I am programmed to understand and respond to queries related to technology, including its impact on society, the latest developments, and the role of technology in daily life.
-
-Is there a particular technology or area of focus that excites
+I
 ===============================
 Prompt: The president of the United States is
-Generated text:  now considering whether to send a new generation of Starfleet officers. The president has identified four potential candidates for leadership roles: Captain James Kirk, Captain Sarah Patel, Captain Charles Starzak, and Captain Tuvan Starzak. The president wants to select a leader who, when acting alone, can always predict the actions of all other officers in the fleet with a probability greater than 0.5. What is the probability that Captain Tuvan Starzak will be the selected leader?
-
-To determine the probability that Captain Tuvan Starzak will be the selected leader, we need to understand that the probability that Captain T
+Generated text:  proposing to issue a new bill to expand gun control. The bill is expected to pass with a high percentage of support among the majority of Congressmen and women. However, if passed, the bill will have a significant impact on the lives of an estimated 4.0 million Americans. The bill will require the government to have the power to regulate firearms if it is passed. The bill will also require the government to have the power to punish those who violate the law if it is passed. If this bill is passed, the government will be able to issue a series of permits for people to buy guns, and this will create new jobs in
 ===============================
 Prompt: The capital of France is
-Generated text:  [ ]
-A. Paris
-B. New York
-C. Rome
-D. London
-Answer: A
+Generated text:  Paris, which is the most visited city in the world. The population of the capital is 8.5 million, with approximately 70% of the population under 30 years. How many people are under 30 years old in Paris? To determine how many people under 30 years old are in Paris, we start by calculating the total population of the capital of France. The population is given as 8.5 million. Since the population is 70% of the total population, we can express the total population as:
 
-When measuring the content of salt in a solution, if the previously prepared standard solution contains 0.01000 mol/L of NaCl, and it is necessary to measure the content of 0.002500 mol/L of salt in the solution, how many moles of NaCl are required for the measurement?
-A. 0.01000
-B. 0.02000
-C. 0.03000
-D.
+\[
+\text{Total population} = 8.5 \times
 ===============================
 Prompt: The future of AI is
-Generated text:  here and it’s transforming industries like never before. AI is a rapidly evolving technology that is driving innovation and change across various sectors.
-Here are some examples of how AI is impacting various industries:
-1. Healthcare: AI is revolutionizing the healthcare industry by providing more accurate diagnoses, faster and more personalized treatment, and better patient care. AI-powered systems can analyze medical data to identify patterns and make predictions, which can help doctors make more informed decisions.
-2. Finance: AI is helping banks and financial institutions to better understand customers, improve customer service, and manage risk. AI-powered chatbots can provide 24/7 customer service, while
+Generated text:  here. It’s going to be everywhere and in many different ways, from the way we interact with the internet to the way we interact with our fellow citizens and our local communities. The technologies that will drive these advancements will be the one that allow us to process and understand the data that is generated by these interactions, and that is what will enable us to identify and respond to the issue at hand – such as climate change, in our local, national, or global communities, and beyond.
+AI is, by definition, a method of computing that allows systems to learn and perform tasks without being explicitly programmed. To do this, a machine must
 </pre></div></div>
 </div>
 </section>
@@ -688,17 +752,19 @@ Here are some examples of how AI is impacting various industries:
 === Testing synchronous streaming generation with overlap removal ===
 
 Prompt: Write a short, neutral self-introduction for a fictional character. Hello, my name is
-Generated text:  [Name], and I&#39;m a [job title] at [company name]. I&#39;m a [job title] with [number of years] years of experience in [industry]. I&#39;m passionate about [reason for interest] and I&#39;m always looking for ways to [action or goal]. I&#39;m a [reason for interest] and I&#39;m always looking for ways to [action or goal]. I&#39;m a [reason for interest] and I&#39;m always looking for ways to [action or goal]. I&#39;m a [reason for interest] and I&#39;m always looking for ways to [action or goal]. I&#39;m a [reason for interest
+Generated text:  [Name] and I&#39;m a [job title] at [company name]. I&#39;m excited to meet you and learn more about you. What can you tell me about yourself? [Name] is a [job title] at [company name]. I&#39;m excited to meet you and learn more about you. What can you tell me about yourself? [Name] is a [job title] at [company name]. I&#39;m excited to meet you and learn more about you. What can you tell me about yourself? [Name] is a [job title] at [company name]. I&#39;m excited to meet you and learn more about
 
 Prompt: Provide a concise factual statement about France’s capital city. The capital of France is
-Generated text:  Paris, the city known for its iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. It is also a major cultural and economic center, hosting numerous world-renowned museums, theaters, and art galleries. Paris is known for its rich history, including the influence of the French Revolution and the influence of the French Revolution on art and literature. It is also home to many famous landmarks, including the Arc de Triomphe and the Champs-Élysées. Paris is a vibrant and dynamic city that is known for its diverse culture, food, and fashion. It is also a popular
+Generated text:  Paris, also known as &#34;La Ville Fluviale&#34; (The River City). It is the largest city in France and the second-largest city in the European Union. Paris is a cultural and historical center with many famous landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. It is also known for its cuisine, fashion, and art. Paris is a major transportation hub and a major tourist destination, attracting millions of visitors each year. The city is home to many international organizations and institutions, including the European Parliament and the United Nations. Paris is a city of contrasts, with its modern architecture and
 
 Prompt: Explain possible future trends in artificial intelligence. The future of AI is
-Generated text:  likely to be characterized by a number of trends that are expected to shape the way that AI is used and developed. Here are some of the most likely trends that are expected to shape the future of AI:
+Generated text:  likely to be characterized by several key trends:
 
-1. Increased Use of AI in Healthcare: AI is already being used in healthcare to help diagnose and treat diseases, and it has the potential to be even more effective in the future. AI-powered diagnostic tools, such as machine learning algorithms, can help doctors make more accurate diagnoses and provide more personalized treatment plans.
+1. Increased integration with human intelligence: AI is likely to become more integrated with human intelligence, allowing machines to learn and adapt to human behavior and preferences. This could lead to more personalized and adaptive AI systems that can better understand and respond to human needs.
 
-2. Increased Use of AI in Manufacturing: AI is already being used in manufacturing to help automate processes, improve efficiency, and
+2. Enhanced ethical considerations: As AI becomes more integrated with human intelligence, there will be increased scrutiny of its ethical implications. This could lead to more stringent regulations and guidelines for AI development and deployment.
+
+3. Greater reliance on AI for decision-making: AI is likely to become more integrated into decision-making processes, allowing machines to make more informed
 
 </pre></div></div>
 </div>
@@ -741,17 +807,18 @@ Generated text:  likely to be characterized by a number of trends that are expec
 === Testing asynchronous batch generation ===
 
 Prompt: Write a short, neutral self-introduction for a fictional character. Hello, my name is
-Generated text:  [First Name] and I am a self-proclaimed &#34;quiet thinker&#34; who enjoys reading, reading about books, and sometimes even crafting. I&#39;m always looking for new ways to challenge my perspective and expand my knowledge. I enjoy spending time with my family and friends, and I&#39;m a big fan of sports, especially football. I&#39;m also a lover of gourmet food and wine, and I love going to the local wine bar to sample new and exciting wines. I&#39;m always up for learning something new and discovering new recipes, so if I have the time and the inclination, I&#39;ll happily spend some time trying out new recipes and learning
+Generated text:  [Name] and I am [Position] at [Company]. I have always been passionate about [what you might call my main interest] and have always been a [how long ago did you start at [Company], and what position in the company did you start with?] assistant. I am always eager to learn and adapt to new things, and I am always looking for ways to contribute to the company and its goals. Thank you for having me! Let me know if you&#39;d like to learn more about me. [Name] [Position] at [Company] [When you started at [Company], what role did you play?
 
 Prompt: Provide a concise factual statement about France’s capital city. The capital of France is
-Generated text:  Paris, known for its iconic Eiffel Tower, Louvre Museum, and the Notre-Dame Cathedral. According to the latest statistics, Paris has a population of about 2.2 million people. The city is also known for its vibrant nightlife, annual festivals, and rich culture. The French are a highly skilled and passionate community, contributing significantly to the country&#39;s economic and social life. Paris is a city that is constantly evolving, with new developments and cultural events taking place throughout the year. In terms of cuisine, French food is considered a global culinary treasure and enjoys worldwide popularity. The city is also home to numerous museums, art
+Generated text:  Paris.
+That statement is accurate and factual. Paris is the capital city of France, located in the heart of the country, serving as the political, economic, and cultural center. The city is known for its rich history, diverse art and culture scene, and iconic landmarks such as the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and the Paris Opera. Paris is also a global hub for fashion, food, and entertainment, making it an important cultural and business center.
 
 Prompt: Explain possible future trends in artificial intelligence. The future of AI is
-Generated text:  rapidly evolving and there are many potential trends that could shape the field. Here are some possible future trends in AI:
+Generated text:  highly uncertain, and it is difficult to predict with certainty what trends will emerge. However, some potential trends that may be seen in AI in the years to come include:
 
-1. More personalized and accurate AI: With the increasing amount of data and human interaction, it is likely that AI will become more personalized and accurate. Machine learning algorithms will be able to learn from and understand the patterns in large amounts of data, leading to more accurate predictions and decision-making.
+1. Increased focus on ethical AI: As AI becomes more sophisticated, there will be a greater emphasis on ensuring that it is used ethically and responsibly. This may involve implementing ethical guidelines and standards to ensure that AI systems are not used to perpetuate biases or discriminate against certain groups of people.
 
-2. AI will become more ethical and transparent: As AI is becoming more integrated into our daily lives, it will become increasingly important to ensure that it is ethical and transparent. This means that AI will need to be developed in ways that
+2. AI integration with other technologies: As AI becomes more advanced, it is likely to become more integrated with other technologies, such as medical devices, transportation systems, and communication
 </pre></div></div>
 </div>
 </section>
@@ -797,20 +864,25 @@ Generated text:  rapidly evolving and there are many potential trends that could
 === Testing asynchronous streaming generation (no repeats) ===
 
 Prompt: Write a short, neutral self-introduction for a fictional character. Hello, my name is
-Generated text:  ____ and I&#39;m a/an ____.
-Hello, my name is [Name] and I&#39;m a/an [Occupation/Role]. I&#39;ve always been curious about the world around me and always wanted to learn more. Whether it&#39;s reading books, watching movies, or attending workshops, I&#39;ve always been fascinated by the stories and ideas that are out there. I enjoy sharing my knowledge and passion for learning with others and I&#39;m excited to be a part of this community. Thanks for having me here today. What&#39;s your name, and what brings you to this table today? I&#39;m ready for a bit of conversation. How about you
+Generated text:  [Name] and I&#39;m a [occupation or type of work] who is passionate about [what you like to do]. I&#39;m always looking for ways to make the world a better place, so I try to use my skills and knowledge to help others. I enjoy working with people and my team always works hard to achieve our goals. I have a great sense of humor and love to laugh. In my free time, I enjoy playing basketball, hiking, and exploring the outdoors. I&#39;m always learning and striving to grow as a person. I believe in continuous improvement and I&#39;m always looking for ways to stay up-to-date with the
 
 Prompt: Provide a concise factual statement about France’s capital city. The capital of France is
-Generated text:  Paris, also known as the City of Light, and is the largest city in the European Union. It is home to the country&#39;s government, institutions, and cultural centers, and has been the seat of French administration since 1682. Paris is renowned for its architecture, including iconic landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. The city is also known for its cuisine, fashion industry, and annual summer festivals. Paris is a global cultural and political center, hosting many of the world&#39;s leading events and institutions. The city is also the birthplace of the French Revolution and remains
+Generated text:  Paris.
+
+That&#39;s correct! Paris is the capital city of France and serves as the country&#39;s largest city. It&#39;s known for its magnificent architecture, vibrant culture, and beautiful parks, making it a popular tourist destination. The city is also known for its annual Carnaval, which is a major cultural event and an important part of French culture. Paris is a city with a rich history and a unique blend of French, Spanish, and Italian cultures. It&#39;s a popular place for people of all ages to explore, learn about, and enjoy. That&#39;s why Paris is widely regarded as one of the most beautiful cities in the world.
 
 Prompt: Explain possible future trends in artificial intelligence. The future of AI is
-Generated text:  rapidly evolving, with a number of potential trends that could shape the industry. Here are some of the most likely trends we can expect to see in the coming years:
+Generated text:  likely to be one of unprecedented growth and complexity. Some possible trends that could shape the AI landscape in the coming years include:
 
-1. Increased Integration: AI will continue to be integrated into various industries, from healthcare and finance to manufacturing and transportation. This integration will likely become more seamless, with more companies adopting AI technologies and providing their employees with access to these tools.
+1. AI will become more integrated into various industries, from healthcare and finance to manufacturing and transportation.
 
-2. Personalization: AI will become more personalized, allowing machines to understand and respond to individual users&#39; needs and preferences. This will enable more accurate and efficient customer service and personalized marketing.
+2. AI will become more sophisticated and capable of performing tasks that were previously thought impossible. This includes image recognition, natural language processing, and decision-making.
 
-3. Autonomous Agents: Autonomous agents will become
+3. AI will become more ubiquitous and accessible, with more people gaining access to it through new tools and platforms.
+
+4. AI will become more personalized and adaptive, with machines learning from user behavior and feedback to improve their performance.
+
+5. AI will become more
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
