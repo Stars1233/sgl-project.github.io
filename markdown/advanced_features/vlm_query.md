@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-27 07:50:33.934 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:18.424 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 07:50:33] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:18] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 07:50:33.935 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:18.425 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 07:50:33] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:18] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 07:50:33.935 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:18.426 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 07:50:33] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:18] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 07:50:33.936 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:18.426 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 07:50:33] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:18] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 07:50:33.936 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:18.427 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 07:50:33] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:18] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 07:50:44.224 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 07:50:44] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 07:50:44.224 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 07:50:44] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 07:50:44.224 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 07:50:44] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 07:50:44.224 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 07:50:44] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 07:50:44.225 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 07:50:44] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:28.716 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:28.716 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:28.716 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:28.716 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 08:42:28.716 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 08:42:28] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.35it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.08it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.01s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.03it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.54it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows two yellow taxis stopped in a city street, likely New York, given the iconic yellow cabs. The man in the image is using a folding clothesline attached to the back of one of the taxis to hang clothes on it. This practice suggests that the temperature is too hot for hanging clothes on racks. This image likely depicts a humorous or unusual scene where a taxi driver or a pedestrian is fortunate enough to find a suitable place, such as the back of a taxi, to hang clothes.
+    The image shows a person hanging laundry, including a blue raincoat, on the back of a yellow taxi cab as it drives down a city street. There are other taxis and people around, and the scene appears to be set in an urban environment, likely in New York City given the yellow taxis. The person is wearing a yellow shirt and seems to be using a simple stick to hang the laundry.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image depicts a scene on a street where a person is drying clothes outside a taxi. This is an unusual and humorous sight as typically clothes are not dried on or near vehicles in urban areas.
+    The image shows a street scene with a taxi in the foreground and a person demonstrating acai leaf cleaning tools on a fold-out board attached to the taxi. The person appears to be in the process of removing anything from the taxi. The background includes buildings and some flags.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene on a street with a yellow city cab (taxi). A person wearing a yellow shirt and pants is standing beside a rack with their clothes hanging on it. The person appears to be in the process of hanging their clothes on the line or rack, possibly for drying. The background includes other city vehicles and a city environment with buildings and streetlights. The person is using a clothes drying rack on the sidewalk to hang their laundry, likely microfiber cloths, seeds, or other similar items.
+    The image shows a scene from what appears to be a ticker-tape parade. A yellow cab with a明星舆论ative出租车 máiyánghuà flag pole attached to the back is being used to hang a large blue flag, likely for the purpose of celebration or commemoration. The flag seems to be draped over clothing on the back of the cab, possibly to commemorate an event or honor a person. The taxi is moving down a street, and the background includes other vehicles, buildings, and street lights, indicating an urban setting.
 
 
 ## Querying Llama 4 Vision Model
