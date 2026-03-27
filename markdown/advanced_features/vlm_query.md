@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-27 15:04:03.416 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:46.246 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 15:04:03] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:46] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 15:04:03.417 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:46.247 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 15:04:03] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:46] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 15:04:03.417 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:46.247 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 15:04:03] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:46] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 15:04:03.418 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:46.248 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 15:04:03] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:46] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 15:04:03.419 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:46.248 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 15:04:03] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:46] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 15:04:13.513 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 15:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 15:04:13.514 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 15:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 15:04:13.514 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 15:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 15:04:13.514 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 15:04:13] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 15:04:13.514 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 15:04:13] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:55.708 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:55] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:55.708 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:55] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:55.708 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:55] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:55.708 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:55] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 16:01:55.708 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 16:01:55] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.17it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.29it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.55it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.62it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.05s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.01s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a scene from the movie "The Hangover." A man is draped over the back of a taxi, with laundry on a makeshift clothesline hanging from the cab's rear view mirror. The setting appears to be a busy city street, including yellow taxis and buildings in the background.
+    The image shows two taxis, one in the foreground and another in the background, both parked on a city street. The person in the foreground appears to be掛ນàìปร.amàn bị í in a belt, possibly as part of a creative or humorous activity. The background features tall buildings, and the area is likely a busy urban setting with some scenery including trees and flag poles adorned with gazetteer signs.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    This image shows a scene in what appears to be a city street, possibly during a public demonstration or protest. A person in a bright yellow sweatshirt and jeans is adjusting pieces of bright blue tarp or fabric on the back of a yellow taxi. The taxi is parked along the curb, and the person is using a small folding table or stand to lower the backdrop. The presence of multiple flags attached to flagpoles or poles suggests this could be a political or social event. The background includes buildings with various signs and storefronts, indicating an urban environment.
+    This image shows a person dancing in the street of New York City. They are wearing a yellow polo shirt and have a pile of clothes sitting on a Hula Hoop balance device while performing a dance routine. Additionally, various American flags are hanging from the buildings and utility poles in the background, contributing to the festive atmosphere. The taxi in the foreground is a typical New York City yellow cab.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,9 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene that appears to be set in a bustling city environment. There is a yellow taxi and another car parked on the street. A person is dump the clothes into the back of the taxi. The person is wearing a yellow shirt, and the architecture in the background suggests that this could be a part of a city likely in the United States. There are also a couple of flags visible, and the sidewalk appears to have some shops or businesses.
+    This image shows a whimsical and humorous scene on a city street. A person standing next to a yellow taxi cab is demonstrating how to hang washcloths on the back of a damaged taxi roof. The washcloths are draped over a metal stand. The setting appears to be an urban area, likely in a busy city with tall buildings and flag poles in the background. 
+    
+    This scene is meant to be light-hearted and is likely a protest against or humorous take on certain industry practices, possibly related to taxi operations or fuel costs.
 
 
 ## Querying Llama 4 Vision Model
