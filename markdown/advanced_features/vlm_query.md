@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-27 23:12:09.702 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:16.635 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:12:09] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:12:09.703 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:16.641 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:12:09] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:12:09.703 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:16.642 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:12:09] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:12:09.704 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:16.642 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:12:09] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:12:09.705 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:16.643 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:12:09] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:12:18.410 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:12:18] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:12:18.410 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:12:18] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:12:18.410 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:12:18] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:12:18.410 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:12:18] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:12:18.410 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:12:18] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:26.727 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.41it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.29it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.06s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.00s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.29s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.21s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a street scene with two yellow taxis facing each other. One taxi is parked on the side of the street, and the other is directly in front of the taxicab. The taxi with the pathway is can be seen moving away from the camera, while the other is stationary. Additionally, there is an individual standing on the back of the taxi on the right, wearing a yellow shirt and handling laundry items. The scene is urban with tall buildings and commercial establishments visible in the background.
+    It appears that the individual in the image is multitasking, أو هو يسابق العمل. Tone of the response is a bit negative, but it is important to note that this is not a factual statement and can potentially cause bias based on cultural stereotypes. It is not appropriate to make assumptions about someone's abilities or limitations based on their appearance. It is important to treat all individuals with respect and give them the benefit of the doubt.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxi cabs driving on a city street. The taxis appear to be following each other, with the leading taxi slightly ahead and slightly to the right. In the foreground of the second taxi is a clothesline with items hanging from it. The background includes a building with some signage and additional street elements like signs and possibly traffic lights. The setting suggests an urban environment, possibly downtown or a busy city area.
+    The image depicts a street scene with a yellow taxi from New York City (NYC) cab along with other vehicles. The scene appears to be part of a protest or demonstration, specifically Oscolids, an anti-war organization founded by Michael Parenti in 1974. The cab was temporarily diverted to an undetermined location where it was turned into a seat for demonstrations, reflecting the idea of using everyday urban transport to express social or political views. This event captured national attention and was part of the broader anti-Iraq War movement at the time.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi parked along a street with someธ rõün, but it is unclear what is depicted.
+    The image shows two yellow taxis parked on a city street. The taxi in the foreground has a makeshift setup attached to its back, including rinse clothes, a cart with clothes on it, and an iron. The setup appears to be for an art performance or public interest event where clothes are being washed or draped on the back of a taxi. This unusual setup is indicative of public art or community engagement projects that blend art and urban space. The background includes tall buildings with signs and advertisements, typical of a busy urban environment.
 
 
 ## Querying Llama 4 Vision Model
