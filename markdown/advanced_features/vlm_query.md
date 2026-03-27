@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-26 23:32:45.085 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:35.177 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 23:32:45] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:35] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 23:32:45.086 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:35.177 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 23:32:45] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:35] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 23:32:45.087 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:35.178 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 23:32:45] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:35] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 23:32:45.087 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:35.178 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 23:32:45] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:35] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 23:32:45.088 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:35.179 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-26 23:32:45] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:35] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-26 23:32:54.785 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 23:32:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 23:32:54.785 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 23:32:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 23:32:54.785 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 23:32:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 23:32:54.785 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 23:32:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-26 23:32:54.785 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-26 23:32:54] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:44.870 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:44] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:44.870 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:44] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:44.870 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:44] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:44.870 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:44] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 00:54:44.870 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 00:54:44] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.00it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.38it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.46it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.53it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.10s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.05s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows two yellow taxis in New York City. One taxi is parked near a storefront with visible tubes, and the driver is using a mop and bucket to clean the back window of the taxi. The other taxi is parked further back. The scene appears to be a typical urban street with livelihoods continuing amidst the usual urban chaos.
+    The image shows a scene in New York City, where a man is hanging a jacket on the back of a taxi. The setting includes the distinctive yellow cabs and the iconic starched white collars. This activity appears unique and humorous, crossing a mundane act with the famous yellow taxis.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi driving down the street. The taxi has a red suitcase on its roof and marking flags on the side. The scene appears to be in an urban area.
+    The image shows a yellow taxi driving down a city street, with a man holding clothes on a small stand next to the taxi. It appears to be a creative display or protest, possibly related to environmental issues or pollution, as clothes can sometimes symbolize cleansed air or the净化 of society.
 
 
 ### Call with Precomputed Embeddings
@@ -239,14 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    Here's what's shown in the picture:
-    
-    1. A yellow taxi cab is parked on a city street.
-    2. There is a piece of clothing on a stand next to the taxi, indicating someone is possibly selling or distributing clothing.
-    3. The background shows some buildings with flags and other street elements, characteristic of an urban setting.
-    4. A person, possibly a vendor or seller, is standing near the clothing stand, dressed in a yellow shirt and glasses.
-    
-    This image appears to depict a street vending activity, where someone is selling or exhibiting clothing. The presence of the clothing stand, the vendor, and the branded taxi in the background
+    This image shows a street scene with a yellow taxi. The taxi appears to be emulating the typical yellow taxi color but is using clothes to make it stand out. This act likely aims to raise awareness about issues like homelessness or poverty, as the yellow color is commonly associated with taxis, which are often used to help people who are homeless.
 
 
 ## Querying Llama 4 Vision Model
