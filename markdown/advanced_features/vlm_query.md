@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-27 02:12:07.385 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:40:52.483 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 02:12:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:40:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 02:12:07.386 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:40:52.484 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 02:12:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:40:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 02:12:07.386 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:40:52.484 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 02:12:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:40:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 02:12:07.387 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:40:52.485 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 02:12:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:40:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 02:12:07.387 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:40:52.485 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 02:12:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:40:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 02:12:17.627 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 02:12:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 02:12:17.627 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 02:12:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 02:12:17.627 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 02:12:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 02:12:17.627 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 02:12:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 02:12:17.627 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 02:12:17] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:41:02.052 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:41:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:41:02.053 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:41:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:41:02.053 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:41:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:41:02.053 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:41:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-27 06:41:02.053 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-27 06:41:02] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.28it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.83it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.43s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.33s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.27it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.33it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a man using a folding clothes rack attached to the back of a taxi in a city environment. The text on the clothes rack appears to be in Spanish. The cabs in the image are yellow, which is typical of taxi cabs in many parts of New York City. The man is dressed in a bright yellow shirt, matching the color of the taxi cabs, and he is holding a piece of clothing while standing on the side of the road. The background includes urban elements such as buildings, street signs, and other taxis.
+    The image shows a scene lacking a majority of the arms of a bicyclist, specifically the right arm and left leg. This is often incorrectly used to describe situations where someone's hands are bound or out of view due to a lack of perspective from the point of view of the camera or the person being photographed.
 
 
 ### Call with Processor Output
@@ -183,7 +183,17 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image you provided shows a yellow taxi parked on a street corner. The taxi has a clothes cart attached to the back with clothes hanging on it, appearing humorous and slightly unusual. The setting seems to be in an urban area, possibly in New York City given the architectural style and the flag visible in the background.
+    The image shows a street scene with several notable elements:
+    
+    1. A yellow taxi cab is parked on the street.
+    2. A man is hanging clothes on a broomstick or broom.
+    3. On the taxi, there are two flags and a banner.
+    4. There is a signboard with some wording on it.
+    5. The background features a building with larger windows and some yellow and blue flags.
+    
+    There are also two streetlights visible in the background.
+    
+    The setting appears to be in an urban area, possibly New York City, given the style of the taxi and the person's actions.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +249,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow curved coffee cup with a brown handle and a white inner insert.
+    The image shows a yellow cab parked in an urban setting, likely in New York City, considering the street slang commonly used in the area. A man is standing next to the open back of the cab, dressed in a yellow shirt, possibly a yellow cab driver, displaying his work or job. The scene appears to be a makeshift porter demonstrating or setting up a carrying device, which might be related to his profession.
 
 
 ## Querying Llama 4 Vision Model
