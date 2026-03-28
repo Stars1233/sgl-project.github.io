@@ -96,52 +96,52 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    [2026-03-28 03:13:14] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-28 04:25:15] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 03:13:15.063 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:15.916 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 03:13:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 03:13:15.064 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:15.917 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 03:13:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 03:13:15.065 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:15.917 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 03:13:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 03:13:15.065 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:15.918 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 03:13:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 03:13:15.066 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:15.919 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 03:13:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 03:13:20] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-28 04:25:21] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 03:13:23.461 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 03:13:23] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 03:13:23.461 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 03:13:23] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 03:13:23.461 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 03:13:23] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 03:13:23.461 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 03:13:23] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 03:13:23.462 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 03:13:23] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:24.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:24.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:24.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:24.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 04:25:24.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 04:25:24] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -151,9 +151,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.02it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.83it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.52it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.58it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.35it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.41it/s]
 
 
 
@@ -164,11 +164,7 @@ print(out["text"])
 ```
 
     Model response:
-    This image shows a scene where an individual, visible at the top of the image, is hanging blue clothing on a clothesline attached to the back window of a yellow taxi. The taxi is a standard New York City yellow cab, which is often nicknamed a "cabbie". 
-    
-    The street is lined with buildings, including storefronts and a walking sidewalk. There are also multiple traffic lights and poles visible around the scene. 
-    
-    The person is wearing a yellow hoodie and appears to be interacting with the clothesline. This image highlights an unusual scene where someone is "contexting" clothes he's hanging up, a term used to describe "
+    The image shows a scene with a yellow taxi and a person wearing a yellow jacket operating a clothesline. The clothesline has laundry items hanging on it. The person appears to be tending to the clothesline, possibly adjusting or removing items. The scene is outdoors, likely in an urban area given the presence of the taxi and buildings in the background.
 
 
 ### Call with Processor Output
@@ -193,7 +189,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    This image depicts a humorous and unconventional scene of a person forwarding aolly bag on the back of a yellow New York City taxi.
+    There is no obvious image or relevant information in your message. If it refers to a recent event, please provide details so I can help you understand.
 
 
 ### Call with Precomputed Embeddings
@@ -249,7 +245,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi cab positioned behind a fabric on stands. The fabric appears to be part of a marketing stunt or demonstration. The taxi is stopped, and the fabric is extended out from its side, displaying something that has caught the attention of pedestrians and possibly insects, such as bees or mosquitoes. This is often done in cities for various purposes including promotions, caution signs, or simply to draw attention.
+    The image shows a scene with two yellow taxis parked on a street. One taxi is in front of a storefront with various signs and banners. The street appears to be in an urban area, and there are people walking on the sidewalk behind the taxis. The taxis are typical cab-style vehicles, and the storefront has multiple signs and flags hanging from it.
 
 
 ## Querying Llama 4 Vision Model

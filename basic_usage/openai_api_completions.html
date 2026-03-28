@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=b71e9d58"></script>
+    <script src="../_static/documentation_options.js?v=03c8a389"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -574,24 +574,24 @@ document.write(`
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 03:15:47] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-[2026-03-28 03:15:53] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 04:26:56] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 04:27:02] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 03:15:55.615 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 03:15:55] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 03:15:55.615 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 03:15:55] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 03:15:55.615 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 03:15:55] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 03:15:55.615 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 03:15:55] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 03:15:55.615 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 03:15:55] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  4.58it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 18.19it/s]
-Capturing num tokens (num_tokens=4 avail_mem=74.04 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 43.99it/s]
+2026-03-28 04:27:04.771 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 04:27:04] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 04:27:04.771 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 04:27:04] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 04:27:04.771 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 04:27:04] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 04:27:04.771 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 04:27:04] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 04:27:04.771 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 04:27:04] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  2.36it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:04&lt;00:00, 12.53it/s]
+Capturing num tokens (num_tokens=4 avail_mem=40.17 GB): 100%|██████████| 58/58 [00:08&lt;00:00,  6.69it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -607,7 +607,7 @@ Capturing num tokens (num_tokens=4 avail_mem=74.04 GB): 100%|██████�
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:38849
+Server started on http://localhost:37373
 </pre></div></div>
 </div>
 </section>
@@ -641,7 +641,7 @@ Server started on http://localhost:38849
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: ChatCompletion(id='14660e2a17b7492a84ac195ad4f028bc', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774667770, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: ChatCompletion(id='8fb2a5ece2704269bc3168e925debfca', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774672050, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="Model-Thinking/Reasoning-Support">
@@ -906,7 +906,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Ancient Rome was a major civilization that flourished from the 8th to the 5th centuries BCE. It was known for its advanced engineering, art, literature, and philosophy. Some of the most notable achievements of ancient Rome include:<br><br>1. The construction of the Colosseum, which was built in 70 AD and is one of the largest amphitheaters in the world.<br><br>2. The development of Roman law, which included the concept of universal jurisdiction and the principle of nullum crimen sine lege (no crime without a law).<br><br>3. The construction of aqueducts, which provided water to cities</strong></div>
+<strong style='color: #00008B;'>Ancient Rome was a major civilization that flourished in the Mediterranean region from the 8th century BC to the 4th century AD. Some of their major achievements include:<br><br>1. **Roman Empire**: The Roman Empire, which lasted from the 2nd century BC to the 5th century AD, was one of the largest and most powerful empires in history. It stretched from the Atlantic coast in Europe to the Mediterranean Sea in Asia.<br><br>2. **Architecture**: Rome was known for its grand architecture, including the Colosseum, the Pantheon, and many others. The Romans also built extensive aqueducts and</strong></div>
 </div>
 <p>Streaming mode is also supported.</p>
 <section id="id1">
@@ -932,7 +932,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Yes, that&#39;s a test. I&#39;m here to assist you with any questions or topics you have. If you have any specific questions or need help with something, feel free to ask!
+Yes, I am ready for the test. How can I assist you today?
 </pre></div></div>
 </div>
 </section>
@@ -997,7 +997,7 @@ Yes, that&#39;s a test. I&#39;m here to assist you with any questions or topics 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='70b33f68e8f248a09f2cd9aa260f4793', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774667772, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='4f80b3aa831247838b15b5126f5ba676', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774672051, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1029,7 +1029,7 @@ Yes, that&#39;s a test. I&#39;m here to assist you with any questions or topics 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='101d9103bf0d476ea4a3235929304a5a', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a space explorer named Alex who had been working in the stars for years. He had traveled to many planets and had discovered some amazing new worlds. He loved exploring and learning about the universe.', matched_stop='\n\n')], created=1774667772, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=45, prompt_tokens=9, total_tokens=54, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='081ed380f73b4c0e9a13afa6050883f7', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a space explorer named Dr. Olivia Carter. She was an experienced astronaut who had spent her entire career on the moon and Mars. She had always been fascinated by the unknown and had a keen interest in the stars.', matched_stop='\n\n')], created=1774672052, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=50, prompt_tokens=9, total_tokens=59, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <section id="id4">
 <h4>Returning Routed Experts (MoE Models)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
