@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=03c8a389"></script>
+    <script src="../_static/documentation_options.js?v=811455a1"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -640,24 +640,24 @@ content.</p></td>
 The tool_call_parser &#39;qwen25&#39; is deprecated. Please use &#39;qwen&#39; instead.
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 04:23:40] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-[2026-03-28 04:23:46] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 05:23:29] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 05:23:36] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 04:23:48.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:23:48] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:23:48.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:23:48] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:23:48.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:23:48] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:23:48.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:23:48] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:23:48.472 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:23:48] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.34it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.92it/s]
-Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████████| 58/58 [00:09&lt;00:00,  5.82it/s]
+2026-03-28 05:23:37.800 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:23:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:23:37.800 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:23:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:23:37.800 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:23:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:23:37.800 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:23:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:23:37.800 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:23:37] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.25it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:07&lt;00:00,  7.94it/s]
+Capturing num tokens (num_tokens=4 avail_mem=20.27 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 12.25it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -779,7 +779,7 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>ChatCompletion(id='4dadd9cc8c974d8f8bdf401ca929fcb5', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content="To provide you with the current weather in Boston, I will use the `get_current_weather` function. This function requires the city name, state abbreviation, and the temperature unit you prefer. For Boston, the state is Massachusetts, which has the abbreviation 'MA'. You didn't specify a unit, so I'll provide the temperature in both Celsius and Fahrenheit for your convenience.\n\nLet's proceed with fetching the weather data.", refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_5d461eabdbfa4a9d945fbf3d', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "celsius"}', name='get_current_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_1ca46258f8fd4124b6c661ac', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)], reasoning_content=None), matched_stop=None)], created=1774671858, model='Qwen/Qwen2.5-7B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=152, prompt_tokens=290, total_tokens=442, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>ChatCompletion(id='b29f4b93349943f89dbcba4bbf8e9e56', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content="To provide you with the current weather in Boston, I will use the `get_current_weather` function. This function requires the city name, state abbreviation, and the temperature unit you prefer. For Boston, the state is Massachusetts, which has the abbreviation 'MA'. You didn't specify a unit, so I'll provide the temperature in both Celsius and Fahrenheit for your convenience.\n\nLet's proceed with fetching the weather data.", refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_0e65a7e5c243426a98e09a71', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "celsius"}', name='get_current_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_ec0a442924994054a1ef4cb5', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)], reasoning_content=None), matched_stop=None)], created=1774675444, model='Qwen/Qwen2.5-7B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=152, prompt_tokens=290, total_tokens=442, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -803,7 +803,7 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>[ChatCompletionMessageFunctionToolCall(id='call_5d461eabdbfa4a9d945fbf3d', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "celsius"}', name='get_current_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_1ca46258f8fd4124b6c661ac', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)]</strong></div>
+<strong style='color: #00008B;'>[ChatCompletionMessageFunctionToolCall(id='call_0e65a7e5c243426a98e09a71', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "celsius"}', name='get_current_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_ec0a442924994054a1ef4cb5', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)]</strong></div>
 </div>
 <section id="Handle-Tools">
 <h4>Handle Tools<a class="headerlink" href="#Handle-Tools" title="Link to this heading">#</a></h4>
@@ -881,6 +881,45 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+[2026-03-28 05:24:06] Error in parse_streaming_increment: Expecting value: line 1 column 1 (char 0)
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
 <div class="output_area rendered_html docutils container">
 <strong style='color: #00008B;'>==== Text ====</strong></div>
 </div>
@@ -888,7 +927,7 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>To determine the current weather in Boston, I will use the `get_current_weather` function by providing the city name, state abbreviation, and the temperature unit in which you prefer the information. Since the user did not specify the unit, I will assume Celsius for the response.<br><br>Reasoning: The `get_current_weather` function requires the city name, state abbreviation, and the temperature unit. Boston is the city, and Massachusetts' state abbreviation is MA. I will use Celsius as the default unit for the temperature.<br><br></strong></div>
+<strong style='color: #00008B;'>To provide you with the current weather in Boston, I will use the `get_current_weather` function. This function requires the city name, state abbreviation, and the temperature unit you prefer. For Boston, the state is Massachusetts, which has the abbreviation 'MA'. You didn't specify a unit, so I'll provide the temperature in both Celsius and Fahrenheit for your convenience.<br><br>Let's proceed with fetching the weather data.<br></strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -900,7 +939,7 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>ChoiceDeltaToolCall(index=0, id='call_1904f7d3a44f4add9e13ba0b', function=ChoiceDeltaToolCallFunction(arguments='', name='get_current_weather'), type='function')</strong></div>
+<strong style='color: #00008B;'>ChoiceDeltaToolCall(index=0, id='call_11ba8baeac41453e9b176bef', function=ChoiceDeltaToolCallFunction(arguments='', name='get_current_weather'), type='function')</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -1037,7 +1076,7 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Updated message history: [{'role': 'user', 'content': "What's the weather like in Boston today? Output a reasoning before act, then use the tools to help you."}, ChatCompletionMessage(content="To provide you with the current weather in Boston, I will use the `get_current_weather` function. This function requires the city name, state abbreviation, and the temperature unit you prefer. For Boston, the state is Massachusetts, which has the abbreviation 'MA'. You didn't specify a unit, so I'll provide the temperature in both Celsius and Fahrenheit for your convenience.\n\nLet's proceed with fetching the weather data.", refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_5d461eabdbfa4a9d945fbf3d', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "celsius"}', name='get_current_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_1ca46258f8fd4124b6c661ac', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)], reasoning_content=None), {'role': 'tool', 'tool_call_id': 'call_5d461eabdbfa4a9d945fbf3d', 'content': "The weather in Boston, MA is 85 degrees celsius. It is partly cloudly, with highs in the 90's.", 'name': 'get_current_weather'}]</strong></div>
+<strong style='color: #00008B;'>Updated message history: [{'role': 'user', 'content': "What's the weather like in Boston today? Output a reasoning before act, then use the tools to help you."}, ChatCompletionMessage(content="To provide you with the current weather in Boston, I will use the `get_current_weather` function. This function requires the city name, state abbreviation, and the temperature unit you prefer. For Boston, the state is Massachusetts, which has the abbreviation 'MA'. You didn't specify a unit, so I'll provide the temperature in both Celsius and Fahrenheit for your convenience.\n\nLet's proceed with fetching the weather data.", refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_0e65a7e5c243426a98e09a71', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "celsius"}', name='get_current_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_ec0a442924994054a1ef4cb5', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)], reasoning_content=None), {'role': 'tool', 'tool_call_id': 'call_0e65a7e5c243426a98e09a71', 'content': "The weather in Boston, MA is 85 degrees celsius. It is partly cloudly, with highs in the 90's.", 'name': 'get_current_weather'}]</strong></div>
 </div>
 </section>
 <section id="Send-Results-Back-to-Model">
@@ -1072,7 +1111,7 @@ Capturing num tokens (num_tokens=4 avail_mem=42.10 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>ChatCompletion(id='3a9f131bc76f40b093955536f0c44cb5', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems there was an error in the response as 85 degrees Celsius is not a typical temperature for Boston, especially not in the 90's Fahrenheit range. Let's correct this by fetching the weather data again in a more standard unit, such as Fahrenheit.", refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_56300ebc1b5d44d1b39fa1eb', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)], reasoning_content=None), matched_stop=None)], created=1774671860, model='Qwen/Qwen2.5-7B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=88, prompt_tokens=488, total_tokens=576, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>ChatCompletion(id='41ff787906a546f4ac9e513654fef99b', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content="It seems there was an error in the response as 85 degrees Celsius is not a typical temperature for Boston, especially not in the 90's Fahrenheit range. Let's correct this by fetching the weather data again in a more standard unit, such as Fahrenheit.", refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_2dd748b145bb4eb1a870cef3', function=Function(arguments='{"city": "Boston", "state": "MA", "unit": "fahrenheit"}', name='get_current_weather'), type='function', index=0)], reasoning_content=None), matched_stop=None)], created=1774675448, model='Qwen/Qwen2.5-7B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=88, prompt_tokens=488, total_tokens=576, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -1280,19 +1319,19 @@ function arguments:  {&#34;city&#34;: &#34;Boston&#34;, &#34;state&#34;: &#34;MA
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-03-28 04:24:32.461 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:24:32] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:24:32.462 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:24:32] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:24:32.462 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:24:32] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:24:32.462 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:24:32] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:24:32.462 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:24:32] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.34it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.89it/s]
-Capturing num tokens (num_tokens=4 avail_mem=42.11 GB): 100%|██████████| 58/58 [00:05&lt;00:00, 10.77it/s]
+2026-03-28 05:24:21.174 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:21] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:21.174 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:21] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:21.174 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:21] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:21.174 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:21] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:21.174 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:21] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.57it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:07&lt;00:00,  7.93it/s]
+Capturing num tokens (num_tokens=4 avail_mem=61.59 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 14.03it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -1445,24 +1484,24 @@ Reasoning: The user asked for the current weather in Boston, so we need to fetch
 The tool_call_parser &#39;qwen25&#39; is deprecated. Please use &#39;qwen&#39; instead.
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 04:24:59] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-[2026-03-28 04:25:05] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 05:24:47] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 05:24:53] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 04:25:06.944 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:06] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:06.944 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:06] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:06.944 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:06] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:06.944 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:06] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:06.944 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:06] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.32it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.88it/s]
-Capturing num tokens (num_tokens=4 avail_mem=61.59 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 11.93it/s]
+2026-03-28 05:24:55.361 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:55.361 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:55.361 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:55.361 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:24:55.361 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:24:55] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.69it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:06&lt;00:00,  8.95it/s]
+Capturing num tokens (num_tokens=4 avail_mem=59.02 GB): 100%|██████████| 58/58 [00:05&lt;00:00, 11.16it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1485,7 +1524,7 @@ Capturing num tokens (num_tokens=4 avail_mem=61.59 GB): 100%|██████�
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 Content: None
-Tool calls: [ChatCompletionMessageFunctionToolCall(id=&#39;call_7ac6a42ab5af46ce81b58de8&#39;, function=Function(arguments=&#39;{&#34;city&#34;: &#34;Paris&#34;, &#34;unit&#34;: &#34;celsius&#34;}&#39;, name=&#39;get_current_weather&#39;), type=&#39;function&#39;, index=0)]
+Tool calls: [ChatCompletionMessageFunctionToolCall(id=&#39;call_4def3a91a46246dab2464b81&#39;, function=Function(arguments=&#39;{&#34;city&#34;: &#34;Paris&#34;, &#34;unit&#34;: &#34;celsius&#34;}&#39;, name=&#39;get_current_weather&#39;), type=&#39;function&#39;, index=0)]
 </pre></div></div>
 </div>
 </section>
@@ -1535,7 +1574,7 @@ Tool calls: [ChatCompletionMessageFunctionToolCall(id=&#39;call_7ac6a42ab5af46ce
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 Content: None
-Tool calls: [ChatCompletionMessageFunctionToolCall(id=&#39;call_2c5064863884489dba8f9815&#39;, function=Function(arguments=&#39;{&#34;city&#34;: &#34;Paris&#34;, &#34;unit&#34;: &#34;celsius&#34;}&#39;, name=&#39;get_current_weather&#39;), type=&#39;function&#39;, index=0)]
+Tool calls: [ChatCompletionMessageFunctionToolCall(id=&#39;call_7ea229931f74456dbd151856&#39;, function=Function(arguments=&#39;{&#34;city&#34;: &#34;Paris&#34;, &#34;unit&#34;: &#34;celsius&#34;}&#39;, name=&#39;get_current_weather&#39;), type=&#39;function&#39;, index=0)]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -1716,24 +1755,24 @@ not use the correct chat template, tool calling may fail or produce inconsistent
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 04:25:38] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-[2026-03-28 04:25:44] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 05:25:27] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 05:25:33] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 04:25:47.660 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:47.660 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:47.660 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:47.660 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 04:25:47.660 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 04:25:47] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  2.66it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:02&lt;00:00, 23.06it/s]
-Capturing num tokens (num_tokens=4 avail_mem=74.65 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 34.50it/s]
+2026-03-28 05:25:36.674 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:25:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:25:36.674 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:25:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:25:36.674 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:25:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:25:36.674 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:25:36] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 05:25:36.674 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 05:25:36] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  2.20it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:02&lt;00:00, 24.26it/s]
+Capturing num tokens (num_tokens=4 avail_mem=71.37 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 31.02it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1754,7 +1793,7 @@ Capturing num tokens (num_tokens=4 avail_mem=74.65 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>ChatCompletion(id='3d78a79e579a47079720dee80e6a25c6', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_2f1710c103bc408b8bc34cc8', function=Function(arguments='{"location": "Tokyo"}', name='get_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_35d2e1a4b7074996ae148e14', function=Function(arguments='{"city": "Tokyo"}', name='get_tourist_attractions'), type='function', index=1)], reasoning_content=None), matched_stop=None)], created=1774671962, model='meta-llama/Llama-3.2-1B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=20, prompt_tokens=435, total_tokens=455, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>ChatCompletion(id='6ed1032134f24f1185b61167224db3d8', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content=None, refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=[ChatCompletionMessageFunctionToolCall(id='call_338d0d284b0c4986857beb4b', function=Function(arguments='{"location": "Tokyo"}', name='get_weather'), type='function', index=0), ChatCompletionMessageFunctionToolCall(id='call_fc0fc3b044e64b7b95f77404', function=Function(arguments='{"city": "Tokyo"}', name='get_tourist_attractions'), type='function', index=1)], reasoning_content=None), matched_stop=None)], created=1774675552, model='meta-llama/Llama-3.2-1B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=20, prompt_tokens=435, total_tokens=455, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -1784,13 +1823,13 @@ Capturing num tokens (num_tokens=4 avail_mem=74.65 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>ChoiceDeltaToolCall(index=0, id='call_d9ce5a544b414692847112dd', function=ChoiceDeltaToolCallFunction(arguments='{"location": "Tokyo"}', name='get_weather'), type='function')</strong></div>
+<strong style='color: #00008B;'>ChoiceDeltaToolCall(index=0, id='call_4ee6227947a44099982a6604', function=ChoiceDeltaToolCallFunction(arguments='{"location": "Tokyo"}', name='get_weather'), type='function')</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>ChoiceDeltaToolCall(index=1, id='call_b6339497f0de4350b379c1a9', function=ChoiceDeltaToolCallFunction(arguments='{"city": "Tokyo"}', name='get_tourist_attractions'), type='function')</strong></div>
+<strong style='color: #00008B;'>ChoiceDeltaToolCall(index=1, id='call_842c4ee3dd8d481fae7ec63e', function=ChoiceDeltaToolCallFunction(arguments='{"city": "Tokyo"}', name='get_tourist_attractions'), type='function')</strong></div>
 </div>
 <blockquote>
 <div><div class="line-block">
