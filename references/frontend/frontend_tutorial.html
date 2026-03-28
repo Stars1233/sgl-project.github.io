@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=096f0ec6"></script>
+    <script src="../../_static/documentation_options.js?v=a2c89c69"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -554,24 +554,24 @@ document.write(`
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 07:44:39] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-[2026-03-28 07:44:46] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 09:33:46] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 09:33:53] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 07:44:47.843 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:44:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:44:47.843 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:44:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:44:47.843 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:44:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:44:47.843 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:44:47] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:44:47.843 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:44:47] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.67it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.88it/s]
-Capturing num tokens (num_tokens=4 avail_mem=41.26 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 13.67it/s]
+2026-03-28 09:33:55.327 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:33:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:33:55.328 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:33:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:33:55.328 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:33:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:33:55.328 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:33:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:33:55.328 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:33:55] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.70it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.71it/s]
+Capturing num tokens (num_tokens=4 avail_mem=101.19 GB): 100%|██████████| 58/58 [00:03&lt;00:00, 15.23it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -587,7 +587,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.26 GB): 100%|██████�
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:32889
+Server started on http://localhost:39449
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -604,7 +604,7 @@ Server started on http://localhost:32889
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-28 07:45:10] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-28 09:34:17] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -666,13 +666,13 @@ Server started on http://localhost:32889
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Certainly! Here's a list of three countries along with their respective capitals:<br><br>1. **France** - Paris<br>2. **Germany** - Berlin<br>3. **Japan** - Tokyo</strong></div>
+<strong style='color: #00008B;'>Certainly! Here's a list of three countries along with their capitals:<br><br>1. France - Paris<br>2. Germany - Berlin<br>3. Japan - Tokyo</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Of course! Here's another list of three countries and their capitals:<br><br>1. **Italy** - Rome<br>2. **Spain** - Madrid<br>3. **Canada** - Ottawa</strong></div>
+<strong style='color: #00008B;'>Of course! Here’s another list of three countries and their capitals:<br><br>1. Italy - Rome<br>2. Brazil - Brasília<br>3. Canada - Ottawa</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -714,7 +714,7 @@ Server started on http://localhost:32889
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2.<br><br>When you multiply 2 by 2, you get:<br><br>2 * 2 = 4<br><br>So, 2 * 2 equals 4.<br><br>You didn't need a calculator for this one, as it's a basic multiplication fact. But if you want to use a calculator, you can input "2 * 2" and the result will be 4.</strong></div>
+<strong style='color: #00008B;'>2 * 2<br><br>When you perform the multiplication, the result is:<br><br>2 * 2 = 4<br><br>So, 2 * 2 equals 4. You didn't need a calculator for this simple multiplication; you could figure it out with basic arithmetic skills.</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -754,7 +754,7 @@ Server started on http://localhost:32889
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: Ensure your diet includes a variety of nutrients from all food groups. Focus on fruits, vegetables, whole grains, lean proteins, and healthy fats while limiting processed foods, sugary beverages, and excessive sodium. This helps in boosting your immune system, improving your energy levels, and enhancing overall health.<br>2. **Regular Exercise**: Engage in physical activities regularly to keep your muscles and joints strong, improve cardiovascular health, manage weight, and boost energy levels. This can also help in preventing chronic diseases such as heart disease, diabetes, and obesity. Choose activities you enjoy and vary your workouts to keep things interesting and effective.<br><br>Both of these tips together form a strong foundation for maintaining good health and well-being.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet**: Consuming a variety of nutrient-rich foods to ensure your body gets essential vitamins, minerals, proteins, and other vital components. Focus on fruits, vegetables, whole grains, lean proteins, and healthy fats. Staying hydrated with plenty of water is also crucial.<br>2. **Regular Exercise**: Engaging in physical activity consistently to strengthen your cardiovascular system, boost your immune function, enhance your mental health, and improve overall quality of life. Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, and include strength training exercises at least two days a week.<br><br>These two practices are fundamental for maintaining good health!</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -827,7 +827,7 @@ Server started on http://localhost:32889
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Holm oak",<br>        "core": "Phoenix feather",<br>        "length": 10.5<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Green"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Trollwood",<br>        "core": "Centauret tail",<br>        "length": 11.3<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "The Dementor"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -862,7 +862,7 @@ Server started on http://localhost:32889
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 34.09it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 22.91it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -986,190 +986,32 @@ The capital of France is Paris.&lt;|im_end|&gt;
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 07:45:22] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-2026-03-28 07:45:22.942 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:22] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:22.942 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:22] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:22.942 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:22] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:22.942 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:22] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:22.942 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:22] Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:29] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 10, in map_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 28, in read
-    return self._sock.recv(max_bytes)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1288, in recv
-    return self.read(buflen)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1161, in read
-    return self._sslobj.read(len)
-TimeoutError: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 60, in map_httpcore_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 218, in handle_request
-    resp = self._pool.handle_request(req)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 253, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 237, in handle_request
-    response = connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection.py&#34;, line 90, in handle_request
-    return self._connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 112, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 91, in handle_request
-    ) = self._receive_response_headers(**kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 155, in _receive_response_headers
-    event = self._receive_event(timeout=timeout)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 191, in _receive_event
-    data = self._network_stream.read(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 26, in read
-    with map_exceptions(exc_map):
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 14, in map_exceptions
-    raise to_exc(exc)
-httpcore.ReadTimeout: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/utils/common.py&#34;, line 2520, in retry
-    return fn()
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/configs/model_config.py&#34;, line 727, in &lt;lambda&gt;
-    lambda: hf_api.file_exists(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py&#34;, line 3436, in file_exists
-    get_hf_file_metadata(url, token=token)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py&#34;, line 1576, in get_hf_file_metadata
-    response = _httpx_follow_relative_redirects_with_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 685, in _httpx_follow_relative_redirects_with_backoff
-    response = http_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 559, in http_backoff
-    return next(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 467, in _http_backoff_base
-    response = client.request(method=method, url=url, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 821, in request
-    return self.send(request, auth=auth, follow_redirects=follow_redirects)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 908, in send
-    response = self._send_handling_auth(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 936, in _send_handling_auth
-    response = self._send_handling_redirects(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 973, in _send_handling_redirects
-    response = self._send_single_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 1009, in _send_single_request
-    response = transport.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 217, in handle_request
-    with map_httpcore_exceptions():
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 77, in map_httpcore_exceptions
-    raise mapped_exc(message) from exc
-httpx.ReadTimeout: The read operation timed out
-[2026-03-28 07:45:39] retry() failed once (0th try, maximum 2 retries). Will delay 0.81s and retry. Error: The read operation timed out
-2026-03-28 07:45:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:52] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:52] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:52] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:52] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 07:45:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 07:45:52] Persistent cache disabled, using in-memory JIT cache
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 10, in map_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 28, in read
-    return self._sock.recv(max_bytes)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1288, in recv
-    return self.read(buflen)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1161, in read
-    return self._sslobj.read(len)
-TimeoutError: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 60, in map_httpcore_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 218, in handle_request
-    resp = self._pool.handle_request(req)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 253, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 237, in handle_request
-    response = connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection.py&#34;, line 90, in handle_request
-    return self._connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 112, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 91, in handle_request
-    ) = self._receive_response_headers(**kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 155, in _receive_response_headers
-    event = self._receive_event(timeout=timeout)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 191, in _receive_event
-    data = self._network_stream.read(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 26, in read
-    with map_exceptions(exc_map):
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 14, in map_exceptions
-    raise to_exc(exc)
-httpcore.ReadTimeout: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/utils/common.py&#34;, line 2520, in retry
-    return fn()
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/configs/model_config.py&#34;, line 727, in &lt;lambda&gt;
-    lambda: hf_api.file_exists(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py&#34;, line 3436, in file_exists
-    get_hf_file_metadata(url, token=token)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py&#34;, line 1576, in get_hf_file_metadata
-    response = _httpx_follow_relative_redirects_with_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 685, in _httpx_follow_relative_redirects_with_backoff
-    response = http_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 559, in http_backoff
-    return next(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 467, in _http_backoff_base
-    response = client.request(method=method, url=url, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 821, in request
-    return self.send(request, auth=auth, follow_redirects=follow_redirects)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 908, in send
-    response = self._send_handling_auth(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 936, in _send_handling_auth
-    response = self._send_handling_redirects(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 973, in _send_handling_redirects
-    response = self._send_single_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 1009, in _send_single_request
-    response = transport.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 217, in handle_request
-    with map_httpcore_exceptions():
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 77, in map_httpcore_exceptions
-    raise mapped_exc(message) from exc
-httpx.ReadTimeout: The read operation timed out
-[2026-03-28 07:46:04] retry() failed once (0th try, maximum 2 retries). Will delay 0.86s and retry. Error: The read operation timed out
+[2026-03-28 09:34:32] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+2026-03-28 09:34:33.156 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:33.156 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:33.156 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:33.156 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:33.156 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:33] Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:39] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+2026-03-28 09:34:43.237 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:43] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:43.238 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:43] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:43.238 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:43] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:43.238 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:43] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 09:34:43.238 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 09:34:43] Persistent cache disabled, using in-memory JIT cache
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.65it/s]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.78it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1185,7 +1027,7 @@ Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:37915
+Server started on http://localhost:37757
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1201,7 +1043,7 @@ Server started on http://localhost:37915
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-28 07:46:32] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-28 09:34:56] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1226,7 +1068,7 @@ Server started on http://localhost:37915
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a person ironing clothes in the open back of a yellow taxi parked on a street. The person, wearing a yellow T-shirt, is standing while ironing clothes draped over a clothesline that is set up horizontally behind the taxi. The scene appears to be in an urban area with tall buildings and another yellow taxi visible in the background.</strong></div>
+<strong style='color: #00008B;'>The image shows a man in the back of a yellow taxi. He is leaning over a small crane-like structure, which seems to be holding clothes that he is in the process of ironing. The man is dressed in a bright yellow shirt, and the scene appears to be an urban setting with other taxis and buildings in the background. This image captures a humorous or somewhat unusual scenario of a person performing an ironing task in a mobile manner.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
