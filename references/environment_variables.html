@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=920ff3cd"></script>
+    <script src="../_static/documentation_options.js?v=096f0ec6"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -904,35 +904,23 @@ document.write(`
 <td><p>Force using FP8 MARLIN kernels even if other FP8 kernels are available</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_FLASHINFER_FP4_GEMM_BACKEND</span></code> (deprecated)</p></td>
-<td><p>Select backend for <code class="docutils literal notranslate"><span class="pre">mm_fp4</span></code> on Blackwell GPUs. <strong>DEPRECATED</strong>: Please use <code class="docutils literal notranslate"><span class="pre">--fp4-gemm-backend</span></code> instead.</p></td>
-<td><p>``</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_NVFP4_CKPT_FP8_GEMM_IN_ATTN</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_NVFP4_CKPT_FP8_GEMM_IN_ATTN</span></code></p></td>
 <td><p>Quantize q_b_proj from BF16 to FP8 when launching DeepSeek NVFP4 checkpoint</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MOE_NVFP4_DISPATCH</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_MOE_NVFP4_DISPATCH</span></code></p></td>
 <td><p>Use nvfp4 for moe dispatch (on flashinfer_cutlass or flashinfer_cutedsl moe runner backend)</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;false&quot;</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_NVFP4_CKPT_FP8_NEXTN_MOE</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_NVFP4_CKPT_FP8_NEXTN_MOE</span></code></p></td>
 <td><p>Quantize moe of nextn layer from BF16 to FP8 when launching DeepSeek NVFP4 checkpoint</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_ENABLE_FLASHINFER_FP8_GEMM</span></code> (deprecated)</p></td>
-<td><p>Use flashinfer kernels when running blockwise fp8 GEMM on Blackwell GPUs. <strong>DEPRECATED</strong>: Please use <code class="docutils literal notranslate"><span class="pre">--fp8-gemm-backend=flashinfer_trtllm</span></code> (SM100/SM103) or <code class="docutils literal notranslate"><span class="pre">--fp8-gemm-backend=flashinfer_cutlass</span></code> (SM120/SM121 and newer) instead.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_SUPPORT_CUTLASS_BLOCK_FP8</span></code> (deprecated)</p></td>
-<td><p>Use Cutlass kernels when running blockwise fp8 GEMM on Hopper or Blackwell GPUs. <strong>DEPRECATED</strong>: Please use <code class="docutils literal notranslate"><span class="pre">--fp8-gemm-backend=cutlass</span></code> instead.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_QUANT_ALLOW_DOWNCASTING</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_QUANT_ALLOW_DOWNCASTING</span></code></p></td>
 <td><p>Allow weight dtype downcasting during loading (e.g., fp32 → fp16). By default, SGLang rejects this kind of downcasting when using quantization.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_FP8_IGNORED_LAYERS</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_FP8_IGNORED_LAYERS</span></code></p></td>
 <td><p>A comma-separated list of layer names to ignore during FP8 quantization. For example: <code class="docutils literal notranslate"><span class="pre">model.layers.0,model.layers.1.,qkv_proj</span></code>.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></td>
 </tr>

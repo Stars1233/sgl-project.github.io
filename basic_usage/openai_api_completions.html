@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=920ff3cd"></script>
+    <script src="../_static/documentation_options.js?v=096f0ec6"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -574,22 +574,24 @@ document.write(`
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
+[2026-03-28 07:42:25] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 07:42:31] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 06:02:30.415 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 06:02:30] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 06:02:30.415 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 06:02:30] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 06:02:30.415 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 06:02:30] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 06:02:30.415 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 06:02:30] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 06:02:30.415 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 06:02:30] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  6.34it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 17.11it/s]
-Capturing num tokens (num_tokens=4 avail_mem=119.50 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 32.05it/s]
+2026-03-28 07:42:33.503 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 07:42:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 07:42:33.503 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 07:42:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 07:42:33.503 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 07:42:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 07:42:33.503 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 07:42:33] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 07:42:33.503 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 07:42:33] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  5.43it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 18.98it/s]
+Capturing num tokens (num_tokens=4 avail_mem=66.90 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 38.05it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -605,7 +607,7 @@ Capturing num tokens (num_tokens=4 avail_mem=119.50 GB): 100%|██████
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:31244
+Server started on http://localhost:33031
 </pre></div></div>
 </div>
 </section>
@@ -639,7 +641,7 @@ Server started on http://localhost:31244
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: ChatCompletion(id='5985f39ab0c546848caf998a640c5972', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774677766, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: ChatCompletion(id='624c2f6940c941258663daa64cf52da1', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774683769, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="Model-Thinking/Reasoning-Support">
@@ -904,7 +906,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Ancient Rome was a major civilization that flourished in the Mediterranean region from the 8th century BCE to the 4th century CE. Some of their major achievements include:<br><br>1. **Roman Republic**: The Roman Republic was a period of political and economic stability that lasted from 509 BCE to 476 BCE. It was characterized by a strong central government, which was led by the Senate, and a system of checks and balances.<br><br>2. **Roman Empire**: After the fall of the Roman Republic, Rome expanded its territory and became known as the Roman Empire. The empire reached its greatest extent under Emperor Augustus</strong></div>
+<strong style='color: #00008B;'>The ancient Romans made significant contributions to various fields, including law, philosophy, science, and literature. They are known for their monumental achievements in architecture, engineering, and public works. Key aspects of Roman civilization include the construction of the Colosseum, the Pantheon, and the aqueducts that brought water to Rome. The Roman Empire also had a profound impact on world history, influencing art, literature, and philosophy.</strong></div>
 </div>
 <p>Streaming mode is also supported.</p>
 <section id="id1">
@@ -930,7 +932,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Yes, that&#39;s a test. I&#39;m here to help answer any questions you may have, so please feel free to ask me anything!
+Yes, I am Qwen, created by Alibaba Cloud. I am designed to provide assistance and information to users. My purpose is to help you with any questions or tasks you may have. If you have any specific questions or need any information, please feel free to ask, and I&#39;ll do my best to provide the help you&#39;re looking for.
 </pre></div></div>
 </div>
 </section>
@@ -995,7 +997,7 @@ Yes, that&#39;s a test. I&#39;m here to help answer any questions you may have, 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='c7215bc6fa554fa8af6bbc11d97ea904', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774677769, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='ce26340becd64c4eb606419ea141be4e', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774683771, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1027,7 +1029,7 @@ Yes, that&#39;s a test. I&#39;m here to help answer any questions you may have, 
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='8a2210378b9a45c0b25ff1c1d19bbcbf', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a space explorer named Dr. Emily Carter who had been working in the space station for many years. She had seen countless planets and galaxies and had always been fascinated by the mysteries of space.', matched_stop='\n\n')], created=1774677769, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=45, prompt_tokens=9, total_tokens=54, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='c431844555c14b5f81ec0b5b67e33b6a', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a space explorer named John who had been exploring the stars for many years. He was an experienced and adventurous explorer who had traveled to every corner of the universe and witnessed some of the most incredible things in the cosmos. John loved nothing more than going on space missions, but he was also a curious person who always wanted to know more about the world around him.', matched_stop='\n\n')], created=1774683772, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=79, prompt_tokens=9, total_tokens=88, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <section id="id4">
 <h4>Returning Routed Experts (MoE Models)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
