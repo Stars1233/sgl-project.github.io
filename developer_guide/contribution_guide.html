@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=a5c1adce"></script>
+    <script src="../_static/documentation_options.js?v=90e6abb3"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -55,7 +55,7 @@
     <link rel="prev" title="XPU" href="../platforms/xpu.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 27, 2026"/>
+    <meta name="docbuild:last-update" content="Mar 28, 2026"/>
   </head>
   
   
@@ -489,10 +489,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-source">Build from source</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-check-guidance-lychee">Link check guidance (lychee)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-and-add-unit-tests">Run and add unit tests</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests-no-server-required">Unit tests (no server required)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e2e-tests-server-required">E2E tests (server required)</a></li>
@@ -551,29 +548,14 @@ pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
 <li><p>Link checking with lychee is <strong>enforced in CI</strong>. By default, it is not blocking local commits.</p></li>
 <li><p>To run local link checks manually, use: <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span> <span class="pre">--hook-stage</span> <span class="pre">manual</span> <span class="pre">lychee</span> <span class="pre">--all-files</span></code>.</p></li>
 </ul>
-<section id="link-check-guidance-lychee">
-<h3>Link check guidance (lychee)<a class="headerlink" href="#link-check-guidance-lychee" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>If your PR changes <code class="docutils literal notranslate"><span class="pre">docs/</span></code> or <code class="docutils literal notranslate"><span class="pre">README.md</span></code>, we recommend running local link checks before pushing.</p></li>
-<li><p>Local lychee is optional (CI is the source of truth), but if you want a system installation, see the official project: <a class="reference external" href="https://github.com/lycheeverse/lychee">lycheeverse/lychee</a>.</p></li>
-<li><p>Recommended local commands:</p></li>
-</ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fast local/offline check (pre-commit config)</span>
-pre-commit<span class="w"> </span>run<span class="w"> </span>--hook-stage<span class="w"> </span>manual<span class="w"> </span>lychee<span class="w"> </span>--all-files
-
-<span class="c1"># CI-like online check (external links over network)</span>
-lychee<span class="w"> </span>--config<span class="w"> </span>.github/linters/lychee-ci.toml<span class="w"> </span>README.md<span class="w"> </span><span class="s2">&quot;docs/**/*.md&quot;</span><span class="w"> </span><span class="s2">&quot;docs/**/*.rst&quot;</span><span class="w"> </span><span class="s2">&quot;docs/**/*.ipynb&quot;</span>
-</pre></div>
-</div>
-</section>
 </section>
 <section id="run-and-add-unit-tests">
 <h2>Run and add unit tests<a class="headerlink" href="#run-and-add-unit-tests" title="Link to this heading">#</a></h2>
-<p>If you add a new feature or fix a bug, please add corresponding unit tests to ensure coverage and prevent regression.
-SGLang uses Python’s built-in <a class="reference external" href="https://docs.python.org/3/library/unittest.html">unittest</a> framework with <a class="reference external" href="https://docs.pytest.org/">pytest</a> as the test runner.</p>
+<p>If you add a new feature or fix a bug, please add corresponding unit tests to ensure coverage and prevent regression.</p>
 <section id="unit-tests-no-server-required">
 <h3>Unit tests (no server required)<a class="headerlink" href="#unit-tests-no-server-required" title="Link to this heading">#</a></h3>
-<p>Unit tests live under <a class="reference external" href="https://github.com/sgl-project/sglang/tree/main/test/registered/unit"><code class="docutils literal notranslate"><span class="pre">test/registered/unit/</span></code></a>, organized to mirror the <code class="docutils literal notranslate"><span class="pre">python/sglang/srt/</span></code> source tree. These tests validate component logic <strong>without</strong> launching a server or loading real model weights.</p>
+<p>Unit tests live under <a class="reference external" href="https://github.com/sgl-project/sglang/tree/main/test/registered/unit"><code class="docutils literal notranslate"><span class="pre">test/registered/unit/</span></code></a>, organized to mirror the <code class="docutils literal notranslate"><span class="pre">python/sglang/srt/</span></code> source tree. These tests validate component logic <strong>without</strong> launching a server or loading real model weights.
+SGLang uses Python’s built-in <a class="reference external" href="https://docs.python.org/3/library/unittest.html">unittest</a> framework with <a class="reference external" href="https://docs.pytest.org/">pytest</a> as the test runner.</p>
 <p><strong>When to add a unit test:</strong> If you modify a file under <code class="docutils literal notranslate"><span class="pre">python/sglang/srt/</span></code>, check whether a corresponding test exists in <code class="docutils literal notranslate"><span class="pre">test/registered/unit/</span></code> and add coverage for your changes. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>srt/mem_cache/radix_cache.py   →  unit/mem_cache/test_radix_cache.py
 srt/sampling/sampling_params.py →  unit/sampling/test_sampling_params.py
@@ -649,8 +631,8 @@ Users with permission are listed in the <a class="reference external" href="http
 <p>If you don’t have permission and you’re not the PR author, please ask maintainers to trigger CI for you.</p>
 <section id="ci-rate-limits">
 <h3>CI rate limits<a class="headerlink" href="#ci-rate-limits" title="Link to this heading">#</a></h3>
-<p>Due to CI scheduling and limited resources, higher-priority PRs may preempt running jobs. In such cases, you may need to rerun the tests.</p>
-<p>We apply CI rate limits to prevent abuse and ensure fair usage of our CI resources.</p>
+<p>Due to CI scheduling and limited resources, higher-priority PRs may preempt running jobs. In such cases, you may need to rerun the tests.
+We apply CI rate limits to prevent abuse and ensure fair usage of our CI resources.</p>
 <p>Each CI workflow has a default limit defined in its workflow configuration file. For example, in <a class="reference external" href="https://github.com/sgl-project/sglang/blob/main/.github/workflows/pr-gate.yml">pr-gate.yml</a>, the default cooldown period is 120 minutes, and each workflow can override it via the <code class="docutils literal notranslate"><span class="pre">cool-down-minutes</span></code> input parameter:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">cool-down-minutes</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Default</span><span class="nv"> </span><span class="s">cooldown</span><span class="nv"> </span><span class="s">period</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">minutes;</span><span class="nv"> </span><span class="s">0</span><span class="nv"> </span><span class="s">disables</span><span class="nv"> </span><span class="s">rate</span><span class="nv"> </span><span class="s">limiting&quot;</span>
@@ -769,10 +751,7 @@ To add a new kernel or modify an existing one in the <code class="docutils liter
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-source">Build from source</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-check-guidance-lychee">Link check guidance (lychee)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format-code-with-pre-commit">Format code with pre-commit</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-and-add-unit-tests">Run and add unit tests</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-tests-no-server-required">Unit tests (no server required)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e2e-tests-server-required">E2E tests (server required)</a></li>
@@ -822,7 +801,7 @@ By SGLang Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Mar 27, 2026.
+  Last updated on Mar 28, 2026.
   <br/>
 </p>
   </div>

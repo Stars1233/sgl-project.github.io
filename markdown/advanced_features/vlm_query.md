@@ -96,46 +96,52 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-27 23:44:16.635 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:31] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:32.219 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:44:16.641 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:32.220 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:44:16.642 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:32.220 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:44:16.642 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:32.221 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:44:16.643 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-27 23:44:16] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:32.221 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-27 23:44:26.727 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
-    2026-03-27 23:44:26.728 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-27 23:44:26] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:32] Persistent cache disabled, using in-memory JIT cache
+
+
+    [2026-03-28 01:53:39] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+
+
+    2026-03-28 01:53:42.608 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:42] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:42.609 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:42] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:42.609 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:42] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:42.609 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:42] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 01:53:42.609 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 01:53:42] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +151,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.29it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.71it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.29s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.21s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
 
 
 
@@ -158,7 +164,7 @@ print(out["text"])
 ```
 
     Model response:
-    It appears that the individual in the image is multitasking, أو هو يسابق العمل. Tone of the response is a bit negative, but it is important to note that this is not a factual statement and can potentially cause bias based on cultural stereotypes. It is not appropriate to make assumptions about someone's abilities or limitations based on their appearance. It is important to treat all individuals with respect and give them the benefit of the doubt.
+    The image shows a yellow taxi cab parked on the side of a street. The taxi cab is equipped with a small washing machine mounted on its rear tailgate, which is open. A person wearing glasses and a yellow shirt is standing next to the washing machine, adding detergent to the machine. This scene appears to be from a promotional campaign or a demonstration showcasing the use of washing machines in unusual or eco-friendly ways, highlighting the versatility and efficiency of such devices in a metropolitan setting.
 
 
 ### Call with Processor Output
@@ -183,7 +189,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image depicts a street scene with a yellow taxi from New York City (NYC) cab along with other vehicles. The scene appears to be part of a protest or demonstration, specifically Oscolids, an anti-war organization founded by Michael Parenti in 1974. The cab was temporarily diverted to an undetermined location where it was turned into a seat for demonstrations, reflecting the idea of using everyday urban transport to express social or political views. This event captured national attention and was part of the broader anti-Iraq War movement at the time.
+    In the image, a man is standing next to a car, and it appears that he is hung up on something. The scene seems to be unusual, possibly an illusion or a staged photograph. There are two yellow taxis parked on the street: one on the left side and another larger one on the right side. Between the two taxis, the man is holding what looks like a blue fabric or clothing item up in front of him, creating the illusion that he is stuck to the taxi.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +245,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows two yellow taxis parked on a city street. The taxi in the foreground has a makeshift setup attached to its back, including rinse clothes, a cart with clothes on it, and an iron. The setup appears to be for an art performance or public interest event where clothes are being washed or draped on the back of a taxi. This unusual setup is indicative of public art or community engagement projects that blend art and urban space. The background includes tall buildings with signs and advertisements, typical of a busy urban environment.
+    In the picture, a man in a yellow shirt is pushing a laundry basket, which appears to contain clothing and laundry items, in the middle of a city street. The scene likely resembles the "Tow Away the Lavender" protest, where protesters in New York City were using yellow laundry baskets as a form of political statement. A yellow backdrop,Cabriolet, Land NEV and a yellow taxi are in the middle of a city street.
 
 
 ## Querying Llama 4 Vision Model
