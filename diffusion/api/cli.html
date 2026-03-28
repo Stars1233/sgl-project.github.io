@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=a2c89c69"></script>
+    <script src="../../_static/documentation_options.js?v=d09fb2fa"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -484,6 +484,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overlay-repos-for-non-diffusers-models">Overlay repos for non-diffusers models</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate">Generate</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serve">Serve</a></li>
@@ -521,6 +522,33 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="sglang-diffusion-cli">
 <h1>SGLang Diffusion CLI<a class="headerlink" href="#sglang-diffusion-cli" title="Link to this heading">#</a></h1>
 <p>Use the CLI for one-off generation with <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code> or to start a persistent HTTP server with <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">serve</span></code>.</p>
+<section id="overlay-repos-for-non-diffusers-models">
+<h2>Overlay repos for non-diffusers models<a class="headerlink" href="#overlay-repos-for-non-diffusers-models" title="Link to this heading">#</a></h2>
+<p>If <code class="docutils literal notranslate"><span class="pre">--model-path</span></code> points to a supported non-diffusers source repo, SGLang can resolve it
+through a self-hosted overlay repo.</p>
+<p>SGLang first checks a built-in overlay registry. Concrete built-in mappings can be added over time without changing the CLI surface.</p>
+<p>Override example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_DIFFUSION_MODEL_OVERLAY_REGISTRY</span><span class="o">=</span><span class="s1">&#39;{</span>
+<span class="s1">  &quot;Wan-AI/Wan2.2-S2V-14B&quot;: {</span>
+<span class="s1">    &quot;overlay_repo_id&quot;: &quot;your-org/Wan2.2-S2V-14B-overlay&quot;,</span>
+<span class="s1">    &quot;overlay_revision&quot;: &quot;main&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+
+sglang<span class="w"> </span>generate<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>Wan-AI/Wan2.2-S2V-14B<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config<span class="w"> </span>configs/wan_s2v.yaml
+</pre></div>
+</div>
+<p>The overlay repo should be a complete diffusers-style/componentized repo</p>
+<p>You can also pass the overlay repo itself as <code class="docutils literal notranslate"><span class="pre">--model-path</span></code> if it contains <code class="docutils literal notranslate"><span class="pre">_overlay/overlay_manifest.json</span></code>.</p>
+<p>Notes:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SGLANG_DIFFUSION_MODEL_OVERLAY_REGISTRY</span></code> is only an optional override for
+development and debugging. It accepts either a JSON object or a path to a JSON
+file, and can extend or replace built-in entries for the current process.</p></li>
+</ol>
+</section>
 <section id="quick-start">
 <h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h2>
 <section id="generate">
@@ -781,6 +809,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overlay-repos-for-non-diffusers-models">Overlay repos for non-diffusers models</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate">Generate</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serve">Serve</a></li>
