@@ -96,52 +96,52 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    [2026-03-28 17:52:54] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-28 18:46:58] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 17:52:54.443 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:46:58.615 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 17:52:54] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 17:52:54.444 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:46:58.616 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 17:52:54] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 17:52:54.445 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:46:58.616 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 17:52:54] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 17:52:54.445 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:46:58.617 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 17:52:54] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 17:52:54.446 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:46:58.618 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 17:52:54] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 17:53:00] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-28 18:47:04] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 17:53:04.161 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 17:53:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 17:53:04.161 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 17:53:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 17:53:04.161 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 17:53:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 17:53:04.161 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 17:53:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 17:53:04.162 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 17:53:04] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -151,9 +151,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.31it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.53it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.07s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.02s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
 
 
 
@@ -164,7 +164,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image you provided shows a yellow taxi cab roadblocking a street. A person in a reflective yellow and black jacket is diving headfirst through the luggage compartment of another yellow taxi cab. The scene appears to be chaotic and chaotic, suggesting an attempt at street performance or a dramatic protest. The setting seems to be an urban environment, likely New York, given the appearance of the taxis and the use of reflective safety gear. The street is likely closed or under significant traffic disruption.
+    The image shows a man hanging laundry from the back of a yellow taxi. The taxi appears to be a New York City yellow cab, and the scene takes place on a city street, likely during daytime. This scene is quite unusual as it prompts the viewer's curiosity about how the man could be hanging laundry outside of his home or a public laundry facility.
 
 
 ### Call with Processor Output
@@ -189,14 +189,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    It appears there might be some confusion or context missing in the image you've described. From what I can interpret:
-    
-    - There are two taxicabs: one yellow, possibly in the United States, and another one in Brazil due to the hairstyle.
-    - A man is standing next to the Brazilian taxi, wearing glasses and a yellow T-shirt.
-    - He seems to be adjusting or holding a piece of clothing, possibly a towel or a coat, with a hanger.
-    - The Brazilian taxicab has the typical design, including the Amazonas flag on its boot, which is that of the Brazilian Amazonas state.
-    
-    This scene resembles the
+    The image shows a scene outdoors, possibly on a street in an urban area. There is a yellow taxi cab parked on the side of the road. A person is standing on the sidewalk with a matching yellow shirt and blue shorts, forming the shape of a human body with their arms outstretched. They are creating visual effects on a red and white striped object attached to a long, thin rod or stick. The object appears to be dancing or moving as if it were the person's body. Various flags and banners are hanging in the background, and there are buildings with large windows. The overall scene is whimsical and illusionary.
 
 
 ### Call with Precomputed Embeddings
@@ -252,7 +245,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The object in the picture depicts a hanging laundry rack with clothes pegs attached. The clothes appear to be spread out, possibly red bucket hats, suggesting that someone is drying clothes outside. The setting looks like an urban street with a taxi and buildings in the background, indicating an outdoor environment.
+    It appears that the image shows a scene with a yellow taxi cab in the background. There is a man, dressed in a yellow shirt, seemingly folding or handling a shirt над the taxi. The background includes some storefronts, a pink banner, and additional cars. The overall impression seems to be humorous, potentially representing the image as a meme where the man is folding his shirt on the side of a taxi cab in a public scene.
 
 
 ## Querying Llama 4 Vision Model

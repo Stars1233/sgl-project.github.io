@@ -99,7 +99,7 @@ diffusion/contributing
 <div class="toctree" data-maxdepth="1" data-caption="Hardware Platforms">
 
 platforms/amd\_gpu.md platforms/cpu\_server.md platforms/tpu.md
-platforms/nvidia\_jetson.md platforms/ascend\_npu\_support.rst
+platforms/nvidia\_jetson.md platforms/ascend/ascend\_npu\_support.rst
 platforms/xpu.md
 
 </div>
