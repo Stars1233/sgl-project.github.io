@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=74b04936"></script>
+    <script src="../../_static/documentation_options.js?v=d57de469"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -554,24 +554,24 @@ document.write(`
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 18:49:55] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-[2026-03-28 18:50:02] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 22:59:28] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+[2026-03-28 22:59:35] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-28 18:50:03.936 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:03] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:03.936 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:03] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:03.936 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:03] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:03.936 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:03] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:03.936 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:03] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.29it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:06&lt;00:00,  9.64it/s]
-Capturing num tokens (num_tokens=4 avail_mem=43.07 GB): 100%|██████████| 58/58 [00:08&lt;00:00,  6.56it/s]
+2026-03-28 22:59:37.460 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 22:59:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 22:59:37.461 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 22:59:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 22:59:37.461 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 22:59:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 22:59:37.461 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 22:59:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 22:59:37.461 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 22:59:37] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.53it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:07&lt;00:00,  8.03it/s]
+Capturing num tokens (num_tokens=4 avail_mem=119.60 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 13.43it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -587,7 +587,7 @@ Capturing num tokens (num_tokens=4 avail_mem=43.07 GB): 100%|██████�
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:39792
+Server started on http://localhost:32444
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -604,7 +604,7 @@ Server started on http://localhost:39792
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-28 18:50:31] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-28 23:00:01] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -636,7 +636,7 @@ Server started on http://localhost:39792
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here are three countries with their capitals:<br><br>1. **France** - Paris<br>2. **Japan** - Tokyo<br>3. **Australia** - Canberra</strong></div>
+<strong style='color: #00008B;'>Sure! Here are three countries along with their capitals:<br><br>1. **France** - Paris<br>2. **Japan** - Tokyo<br>3. **Australia** - Canberra</strong></div>
 </div>
 </section>
 <section id="Multi-turn-Dialog">
@@ -666,13 +666,13 @@ Server started on http://localhost:39792
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here is a list of three countries along with their capitals:<br><br>1. France - Paris<br>2. Germany - Berlin<br>3. Japan - Tokyo</strong></div>
+<strong style='color: #00008B;'>Sure! Here are three countries along with their respective capitals:<br><br>1. **France** - Paris<br>2. **Japan** - Tokyo<br>3. **Canada** - Ottawa</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Of course! Here is another list of three countries along with their capitals:<br><br>1. Italy - Rome<br>2. Mexico - Mexico City<br>3. Australia - Canberra</strong></div>
+<strong style='color: #00008B;'>Certainly! Here's another list of three countries and their capitals:<br><br>1. **Mexico** - Mexico City<br>2. **Germany** - Berlin<br>3. **India** - New Delhi</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -714,7 +714,7 @@ Server started on http://localhost:39792
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2. <br><br>Let's solve this without a calculator:<br><br>1) Multiplication is a basic arithmetic function.<br>2) 2 multiplied by 2 can be visualized as adding 2 to itself once: 2 + 2.<br>3) 2 + 2 = 4<br><br>Therefore, 2 * 2 = 4.</strong></div>
+<strong style='color: #00008B;'>2 * 2. <br><br>Let's compute it directly without needing a calculator.<br><br>2 * 2 = 4<br><br>So, the answer is 4.</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -754,7 +754,7 @@ Server started on http://localhost:39792
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: Eating a variety of nutrient-rich foods in appropriate amounts is crucial. Include plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, sugary drinks, and foods high in saturated and trans fats.<br><br>2. **Regular Exercise**: Engage in at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises on two or more days a week. Regular physical activity improves cardiovascular health, strengthens muscles and bones, enhances mental health, and helps prevent chronic diseases.<br><br>By combining these two habits, you can significantly enhance your overall health and well-being.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet**: Consuming a variety of nutrients from fruits, vegetables, lean proteins, whole grains, and healthy fats. Ensure proper meal timing and portion control, and stay hydrated.<br><br>2. **Regular Exercise**: Aim for at least 150 to 300 minutes of moderate aerobic activity or 75 to 150 minutes of vigorous aerobic activity each week, along with muscle-strengthening exercises on two or more days. Engage in activities you enjoy for better adherence.<br><br>Together, these habits can significantly enhance your overall health and well-being.</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -827,7 +827,7 @@ Server started on http://localhost:39792
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Holm oak",<br>        "core": "Phoenix feather",<br>        "length": 11.0<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Slytherin"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Holly",<br>        "core": "Phoenix Feather",<br>        "length": 11.0<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Peaches"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -862,7 +862,7 @@ Server started on http://localhost:39792
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 34.62it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 27.27it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -986,32 +986,32 @@ The capital of France is Paris.&lt;|im_end|&gt;
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-[2026-03-28 18:50:44] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-2026-03-28 18:50:44.247 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:44.247 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:44.247 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:44.248 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:44.248 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:44] Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:50] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
-2026-03-28 18:50:53.360 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:53] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:53.360 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:53] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:53.360 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:53] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:53.360 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:53] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 18:50:53.360 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 18:50:53] Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:21] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+2026-03-28 23:00:22.160 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:22] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:22.160 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:22] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:22.160 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:22] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:22.160 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:22] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:22.160 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:22] Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:28] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+2026-03-28 23:00:32.032 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:32] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:32.033 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:32] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:32.033 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:32] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:32.033 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:32] Persistent cache disabled, using in-memory JIT cache
+2026-03-28 23:00:32.033 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-28 23:00:32] Persistent cache disabled, using in-memory JIT cache
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.69it/s]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:05&lt;00:00,  1.06s/it]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1027,7 +1027,7 @@ Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:32153
+Server started on http://localhost:30913
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1043,7 +1043,7 @@ Server started on http://localhost:32153
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-28 18:51:06] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-28 23:00:48] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1068,7 +1068,7 @@ Server started on http://localhost:32153
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a person standing on the back of a yellow taxi, which is parked on a street. The person is using crutches to support themselves, and they appear to be ironing clothes on a metal frame set up on the tub of the taxi. The scene takes place in an urban setting with other taxis and buildings visible in the background. The person seems to be multitasking, cooking or ironing while standing on the taxi's open rear section.</strong></div>
+<strong style='color: #00008B;'>The image shows a man standing on the back of a yellow SUV, using an upright iron to iron a pair of jeans spread out on an ironing board. The ironing board is attached to a stand that seems to be positioned on the roof of the vehicle. The SUV is stopped on a city street, and there is another yellow taxi visible on the left side of the image. The setting appears to be an urban environment, possibly near a building with signs and other city infrastructure.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:

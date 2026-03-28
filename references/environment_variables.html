@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=74b04936"></script>
+    <script src="../_static/documentation_options.js?v=d57de469"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -664,6 +664,14 @@ document.write(`
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_CUSTOM_ALLREDUCE_ALGO</span></code></p></td>
 <td><p>The algorithm of custom all-reduce. Set to <code class="docutils literal notranslate"><span class="pre">oneshot</span></code> or <code class="docutils literal notranslate"><span class="pre">1stage</span></code> to force use one-shot. Set to <code class="docutils literal notranslate"><span class="pre">twoshot</span></code> or <code class="docutils literal notranslate"><span class="pre">2stage</span></code> to force use two-shot.</p></td>
 <td><p>``</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_SKIP_SOFTMAX_PREFILL_THRESHOLD_SCALE_FACTOR</span></code></p></td>
+<td><p>Skip-softmax threshold scale factor for TRT-LLM prefill attention in flashinfer. <code class="docutils literal notranslate"><span class="pre">None</span></code> means standard attention. See https://arxiv.org/abs/2512.12087</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_SKIP_SOFTMAX_DECODE_THRESHOLD_SCALE_FACTOR</span></code></p></td>
+<td><p>Skip-softmax threshold scale factor for TRT-LLM decode attention in flashinfer. <code class="docutils literal notranslate"><span class="pre">None</span></code> means standard attention. See https://arxiv.org/abs/2512.12087</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 </tr>
 </tbody>
 </table>

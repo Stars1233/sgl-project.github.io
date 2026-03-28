@@ -96,52 +96,52 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    [2026-03-28 18:46:58] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-28 23:05:53] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 18:46:58.615 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:05:53.911 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:05:53] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 18:46:58.616 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:05:53.912 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:05:53] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 18:46:58.616 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:05:53.913 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:05:53] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 18:46:58.617 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:05:53.913 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:05:53] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-28 18:46:58.618 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:05:53.913 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 18:46:58] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:05:53] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 18:47:04] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-28 23:06:00] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 18:47:06.840 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 18:47:06] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:06:03.506 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:06:03] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:06:03.506 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:06:03] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:06:03.506 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:06:03] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:06:03.507 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:06:03] Persistent cache disabled, using in-memory JIT cache
+    2026-03-28 23:06:03.507 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-28 23:06:03] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -151,9 +151,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.53it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.02s/it]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.14s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.13s/it]
 
 
 
@@ -164,7 +164,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a man hanging laundry from the back of a yellow taxi. The taxi appears to be a New York City yellow cab, and the scene takes place on a city street, likely during daytime. This scene is quite unusual as it prompts the viewer's curiosity about how the man could be hanging laundry outside of his home or a public laundry facility.
+    The image shows a man hanging clothes out of the back window of a yellow taxi cab. This scene likely took place in New York City, often referred to as "The Garlic Wind" due to its strong, characteristic scent. The man is using a metal hook and a red handle to hang the clothes, and the taxi is parked on a street lined with buildings and tall, thin streetlights.
 
 
 ### Call with Processor Output
@@ -189,7 +189,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a scene outdoors, possibly on a street in an urban area. There is a yellow taxi cab parked on the side of the road. A person is standing on the sidewalk with a matching yellow shirt and blue shorts, forming the shape of a human body with their arms outstretched. They are creating visual effects on a red and white striped object attached to a long, thin rod or stick. The object appears to be dancing or moving as if it were the person's body. Various flags and banners are hanging in the background, and there are buildings with large windows. The overall scene is whimsical and illusionary.
+    The image shows a yellow taxi parked in a busy city street. The taxi's driver is standing in front of the vehicle, hanging laundry on a metal coat rack attached to the car. The scene appears to capture a moment of unexpected city life, with the laundry hanging from the car in a way that might be casually done but could also be considered humorous or whimsical. The background includes other buildings and vehicles, indicating a densely populated urban area.
 
 
 ### Call with Precomputed Embeddings
@@ -245,7 +245,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    It appears that the image shows a scene with a yellow taxi cab in the background. There is a man, dressed in a yellow shirt, seemingly folding or handling a shirt над the taxi. The background includes some storefronts, a pink banner, and additional cars. The overall impression seems to be humorous, potentially representing the image as a meme where the man is folding his shirt on the side of a taxi cab in a public scene.
+    The image shows a sunny street scene with two yellow taxis parked side by side on a city street. The taxi on the left appears to have a blue trash bag tied to the back, possibly as a form of guerrilla marketing or public service announcement. The taxi on the right seems to have an additional blue item attached to it in a similar fashion. The background includes buildings with some signage visible, and there are some street lamps and other street elements. The overall scene looks like it could be part of an urban development or marketing campaign in a busy city area.
 
 
 ## Querying Llama 4 Vision Model
