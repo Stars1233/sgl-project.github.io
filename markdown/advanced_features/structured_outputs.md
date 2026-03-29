@@ -45,10 +45,10 @@ client = openai.Client(base_url=f"http://127.0.0.1:{port}/v1", api_key="None")
 
     /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:176: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       from sglang.srt.utils.json_response import (
-    [2026-03-29 04:56:57] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-29 07:10:10] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    [2026-03-29 04:57:03] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-29 07:10:17] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -56,153 +56,113 @@ client = openai.Client(base_url=f"http://127.0.0.1:{port}/v1", api_key="None")
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 
 
-    2026-03-29 04:57:07.664 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:57:07] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:57:07.664 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:57:07] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:57:07.664 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:57:07] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:57:07.664 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:57:07] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:57:07.664 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:57:07] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:10:21.430 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:10:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:10:21.430 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:10:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:10:21.430 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:10:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:10:21.431 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:10:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:10:21.431 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:10:21] Persistent cache disabled, using in-memory JIT cache
 
 
     Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.40it/s]
+    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.43it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.25it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.29it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.75it/s]
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.80it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.60it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.55it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.62it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.58it/s]
 
 
       0%|          | 0/58 [00:00<?, ?it/s]Compiling num tokens (num_tokens=8192):   0%|          | 0/58 [00:00<?, ?it/s]
 
-    Compiling num tokens (num_tokens=8192):   2%|▏         | 1/58 [00:03<02:57,  3.11s/it]Compiling num tokens (num_tokens=7680):   2%|▏         | 1/58 [00:03<02:57,  3.11s/it]
+    Compiling num tokens (num_tokens=8192):   2%|▏         | 1/58 [00:03<03:09,  3.32s/it]Compiling num tokens (num_tokens=7680):   2%|▏         | 1/58 [00:03<03:09,  3.32s/it]
 
-    Compiling num tokens (num_tokens=7680):   3%|▎         | 2/58 [00:04<01:41,  1.81s/it]Compiling num tokens (num_tokens=7168):   3%|▎         | 2/58 [00:04<01:41,  1.81s/it]
+    Compiling num tokens (num_tokens=7680):   3%|▎         | 2/58 [00:04<01:48,  1.95s/it]Compiling num tokens (num_tokens=7168):   3%|▎         | 2/58 [00:04<01:48,  1.95s/it]
 
-    Compiling num tokens (num_tokens=7168):   5%|▌         | 3/58 [00:04<01:05,  1.19s/it]Compiling num tokens (num_tokens=6656):   5%|▌         | 3/58 [00:04<01:05,  1.19s/it]
+    Compiling num tokens (num_tokens=7168):   5%|▌         | 3/58 [00:04<01:12,  1.31s/it]Compiling num tokens (num_tokens=6656):   5%|▌         | 3/58 [00:04<01:12,  1.31s/it]
 
-    Compiling num tokens (num_tokens=6656):   7%|▋         | 4/58 [00:04<00:47,  1.14it/s]Compiling num tokens (num_tokens=6144):   7%|▋         | 4/58 [00:04<00:47,  1.14it/s]
+    Compiling num tokens (num_tokens=6656):   7%|▋         | 4/58 [00:05<00:52,  1.04it/s]Compiling num tokens (num_tokens=6144):   7%|▋         | 4/58 [00:05<00:52,  1.04it/s]
 
-    Compiling num tokens (num_tokens=6144):   9%|▊         | 5/58 [00:05<00:37,  1.42it/s]Compiling num tokens (num_tokens=5632):   9%|▊         | 5/58 [00:05<00:37,  1.42it/s]
+    Compiling num tokens (num_tokens=6144):   9%|▊         | 5/58 [00:05<00:40,  1.31it/s]Compiling num tokens (num_tokens=5632):   9%|▊         | 5/58 [00:05<00:40,  1.31it/s]
 
-    Compiling num tokens (num_tokens=5632):  10%|█         | 6/58 [00:05<00:30,  1.71it/s]Compiling num tokens (num_tokens=5120):  10%|█         | 6/58 [00:05<00:30,  1.71it/s]
+    Compiling num tokens (num_tokens=5632):  10%|█         | 6/58 [00:06<00:32,  1.61it/s]Compiling num tokens (num_tokens=5120):  10%|█         | 6/58 [00:06<00:32,  1.61it/s]
 
-    Compiling num tokens (num_tokens=5120):  12%|█▏        | 7/58 [00:05<00:25,  2.01it/s]Compiling num tokens (num_tokens=4608):  12%|█▏        | 7/58 [00:05<00:25,  2.01it/s]
+    Compiling num tokens (num_tokens=5120):  12%|█▏        | 7/58 [00:06<00:26,  1.95it/s]Compiling num tokens (num_tokens=4608):  12%|█▏        | 7/58 [00:06<00:26,  1.95it/s]
 
-    Compiling num tokens (num_tokens=4608):  14%|█▍        | 8/58 [00:06<00:21,  2.30it/s]Compiling num tokens (num_tokens=4096):  14%|█▍        | 8/58 [00:06<00:21,  2.30it/s]
+    Compiling num tokens (num_tokens=4608):  14%|█▍        | 8/58 [00:06<00:21,  2.34it/s]Compiling num tokens (num_tokens=4096):  14%|█▍        | 8/58 [00:06<00:21,  2.34it/s]
 
-    Compiling num tokens (num_tokens=4096):  16%|█▌        | 9/58 [00:06<00:18,  2.63it/s]Compiling num tokens (num_tokens=3840):  16%|█▌        | 9/58 [00:06<00:18,  2.63it/s]
+    Compiling num tokens (num_tokens=4096):  16%|█▌        | 9/58 [00:06<00:17,  2.77it/s]Compiling num tokens (num_tokens=3840):  16%|█▌        | 9/58 [00:06<00:17,  2.77it/s]Compiling num tokens (num_tokens=3840):  17%|█▋        | 10/58 [00:06<00:14,  3.28it/s]Compiling num tokens (num_tokens=3584):  17%|█▋        | 10/58 [00:06<00:14,  3.28it/s]
 
-    Compiling num tokens (num_tokens=3840):  17%|█▋        | 10/58 [00:06<00:16,  3.00it/s]Compiling num tokens (num_tokens=3584):  17%|█▋        | 10/58 [00:06<00:16,  3.00it/s]
+    Compiling num tokens (num_tokens=3584):  19%|█▉        | 11/58 [00:07<00:12,  3.84it/s]Compiling num tokens (num_tokens=3328):  19%|█▉        | 11/58 [00:07<00:12,  3.84it/s]Compiling num tokens (num_tokens=3328):  21%|██        | 12/58 [00:07<00:10,  4.44it/s]Compiling num tokens (num_tokens=3072):  21%|██        | 12/58 [00:07<00:10,  4.44it/s]
 
-    Compiling num tokens (num_tokens=3584):  19%|█▉        | 11/58 [00:06<00:14,  3.35it/s]Compiling num tokens (num_tokens=3328):  19%|█▉        | 11/58 [00:06<00:14,  3.35it/s]
+    Compiling num tokens (num_tokens=3072):  22%|██▏       | 13/58 [00:07<00:08,  5.17it/s]Compiling num tokens (num_tokens=2816):  22%|██▏       | 13/58 [00:07<00:08,  5.17it/s]Compiling num tokens (num_tokens=2816):  24%|██▍       | 14/58 [00:07<00:07,  5.89it/s]Compiling num tokens (num_tokens=2560):  24%|██▍       | 14/58 [00:07<00:07,  5.89it/s]
 
-    Compiling num tokens (num_tokens=3328):  21%|██        | 12/58 [00:07<00:12,  3.67it/s]Compiling num tokens (num_tokens=3072):  21%|██        | 12/58 [00:07<00:12,  3.67it/s]Compiling num tokens (num_tokens=3072):  22%|██▏       | 13/58 [00:07<00:11,  4.04it/s]Compiling num tokens (num_tokens=2816):  22%|██▏       | 13/58 [00:07<00:11,  4.04it/s]
+    Compiling num tokens (num_tokens=2304):  24%|██▍       | 14/58 [00:07<00:07,  5.89it/s]Compiling num tokens (num_tokens=2304):  28%|██▊       | 16/58 [00:07<00:05,  7.46it/s]Compiling num tokens (num_tokens=2048):  28%|██▊       | 16/58 [00:07<00:05,  7.46it/s]Compiling num tokens (num_tokens=1792):  28%|██▊       | 16/58 [00:07<00:05,  7.46it/s]
 
-    Compiling num tokens (num_tokens=2816):  24%|██▍       | 14/58 [00:07<00:09,  4.43it/s]Compiling num tokens (num_tokens=2560):  24%|██▍       | 14/58 [00:07<00:09,  4.43it/s]Compiling num tokens (num_tokens=2560):  26%|██▌       | 15/58 [00:07<00:09,  4.60it/s]Compiling num tokens (num_tokens=2304):  26%|██▌       | 15/58 [00:07<00:09,  4.60it/s]
+    Compiling num tokens (num_tokens=1792):  31%|███       | 18/58 [00:07<00:04,  8.98it/s]Compiling num tokens (num_tokens=1536):  31%|███       | 18/58 [00:07<00:04,  8.98it/s]Compiling num tokens (num_tokens=1280):  31%|███       | 18/58 [00:07<00:04,  8.98it/s]Compiling num tokens (num_tokens=1280):  34%|███▍      | 20/58 [00:07<00:03, 11.06it/s]Compiling num tokens (num_tokens=1024):  34%|███▍      | 20/58 [00:07<00:03, 11.06it/s]Compiling num tokens (num_tokens=960):  34%|███▍      | 20/58 [00:07<00:03, 11.06it/s] Compiling num tokens (num_tokens=896):  34%|███▍      | 20/58 [00:08<00:03, 11.06it/s]Compiling num tokens (num_tokens=832):  34%|███▍      | 20/58 [00:08<00:03, 11.06it/s]
 
-    Compiling num tokens (num_tokens=2304):  28%|██▊       | 16/58 [00:07<00:08,  4.73it/s]Compiling num tokens (num_tokens=2048):  28%|██▊       | 16/58 [00:07<00:08,  4.73it/s]Compiling num tokens (num_tokens=2048):  29%|██▉       | 17/58 [00:08<00:08,  4.89it/s]Compiling num tokens (num_tokens=1792):  29%|██▉       | 17/58 [00:08<00:08,  4.89it/s]
+    Compiling num tokens (num_tokens=832):  41%|████▏     | 24/58 [00:08<00:01, 17.13it/s]Compiling num tokens (num_tokens=768):  41%|████▏     | 24/58 [00:08<00:01, 17.13it/s]Compiling num tokens (num_tokens=704):  41%|████▏     | 24/58 [00:08<00:01, 17.13it/s]Compiling num tokens (num_tokens=640):  41%|████▏     | 24/58 [00:08<00:01, 17.13it/s]Compiling num tokens (num_tokens=576):  41%|████▏     | 24/58 [00:08<00:01, 17.13it/s]Compiling num tokens (num_tokens=512):  41%|████▏     | 24/58 [00:08<00:01, 17.13it/s]Compiling num tokens (num_tokens=512):  50%|█████     | 29/58 [00:08<00:01, 24.63it/s]Compiling num tokens (num_tokens=480):  50%|█████     | 29/58 [00:08<00:01, 24.63it/s]Compiling num tokens (num_tokens=448):  50%|█████     | 29/58 [00:08<00:01, 24.63it/s]Compiling num tokens (num_tokens=416):  50%|█████     | 29/58 [00:08<00:01, 24.63it/s]Compiling num tokens (num_tokens=384):  50%|█████     | 29/58 [00:08<00:01, 24.63it/s]
 
-    Compiling num tokens (num_tokens=1792):  31%|███       | 18/58 [00:08<00:07,  5.26it/s]Compiling num tokens (num_tokens=1536):  31%|███       | 18/58 [00:08<00:07,  5.26it/s]Compiling num tokens (num_tokens=1536):  33%|███▎      | 19/58 [00:08<00:06,  5.66it/s]Compiling num tokens (num_tokens=1280):  33%|███▎      | 19/58 [00:08<00:06,  5.66it/s]
+    Compiling num tokens (num_tokens=384):  57%|█████▋    | 33/58 [00:08<00:00, 27.55it/s]Compiling num tokens (num_tokens=352):  57%|█████▋    | 33/58 [00:08<00:00, 27.55it/s]Compiling num tokens (num_tokens=320):  57%|█████▋    | 33/58 [00:08<00:00, 27.55it/s]Compiling num tokens (num_tokens=288):  57%|█████▋    | 33/58 [00:08<00:00, 27.55it/s]Compiling num tokens (num_tokens=256):  57%|█████▋    | 33/58 [00:08<00:00, 27.55it/s]Compiling num tokens (num_tokens=256):  64%|██████▍   | 37/58 [00:08<00:00, 25.74it/s]Compiling num tokens (num_tokens=240):  64%|██████▍   | 37/58 [00:08<00:00, 25.74it/s]
 
-    Compiling num tokens (num_tokens=1280):  34%|███▍      | 20/58 [00:08<00:06,  6.14it/s]Compiling num tokens (num_tokens=1024):  34%|███▍      | 20/58 [00:08<00:06,  6.14it/s]Compiling num tokens (num_tokens=1024):  36%|███▌      | 21/58 [00:08<00:05,  6.86it/s]Compiling num tokens (num_tokens=960):  36%|███▌      | 21/58 [00:08<00:05,  6.86it/s] Compiling num tokens (num_tokens=896):  36%|███▌      | 21/58 [00:08<00:05,  6.86it/s]
+    Compiling num tokens (num_tokens=224):  64%|██████▍   | 37/58 [00:08<00:00, 25.74it/s]Compiling num tokens (num_tokens=208):  64%|██████▍   | 37/58 [00:08<00:00, 25.74it/s]Compiling num tokens (num_tokens=208):  69%|██████▉   | 40/58 [00:08<00:00, 25.52it/s]Compiling num tokens (num_tokens=192):  69%|██████▉   | 40/58 [00:08<00:00, 25.52it/s]Compiling num tokens (num_tokens=176):  69%|██████▉   | 40/58 [00:08<00:00, 25.52it/s]Compiling num tokens (num_tokens=160):  69%|██████▉   | 40/58 [00:08<00:00, 25.52it/s]Compiling num tokens (num_tokens=160):  74%|███████▍  | 43/58 [00:08<00:00, 26.49it/s]Compiling num tokens (num_tokens=144):  74%|███████▍  | 43/58 [00:08<00:00, 26.49it/s]
 
-    Compiling num tokens (num_tokens=896):  40%|███▉      | 23/58 [00:08<00:04,  8.13it/s]Compiling num tokens (num_tokens=832):  40%|███▉      | 23/58 [00:08<00:04,  8.13it/s]Compiling num tokens (num_tokens=768):  40%|███▉      | 23/58 [00:08<00:04,  8.13it/s]Compiling num tokens (num_tokens=768):  43%|████▎     | 25/58 [00:08<00:03, 10.34it/s]Compiling num tokens (num_tokens=704):  43%|████▎     | 25/58 [00:08<00:03, 10.34it/s]Compiling num tokens (num_tokens=640):  43%|████▎     | 25/58 [00:08<00:03, 10.34it/s]
+    Compiling num tokens (num_tokens=128):  74%|███████▍  | 43/58 [00:08<00:00, 26.49it/s]Compiling num tokens (num_tokens=112):  74%|███████▍  | 43/58 [00:08<00:00, 26.49it/s]Compiling num tokens (num_tokens=112):  79%|███████▉  | 46/58 [00:08<00:00, 26.61it/s]Compiling num tokens (num_tokens=96):  79%|███████▉  | 46/58 [00:08<00:00, 26.61it/s] Compiling num tokens (num_tokens=80):  79%|███████▉  | 46/58 [00:08<00:00, 26.61it/s]Compiling num tokens (num_tokens=64):  79%|███████▉  | 46/58 [00:08<00:00, 26.61it/s]
 
-    Compiling num tokens (num_tokens=576):  43%|████▎     | 25/58 [00:09<00:03, 10.34it/s]Compiling num tokens (num_tokens=576):  48%|████▊     | 28/58 [00:09<00:02, 13.49it/s]Compiling num tokens (num_tokens=512):  48%|████▊     | 28/58 [00:09<00:02, 13.49it/s]Compiling num tokens (num_tokens=480):  48%|████▊     | 28/58 [00:09<00:02, 13.49it/s]Compiling num tokens (num_tokens=448):  48%|████▊     | 28/58 [00:09<00:02, 13.49it/s]Compiling num tokens (num_tokens=448):  53%|█████▎    | 31/58 [00:09<00:01, 15.97it/s]Compiling num tokens (num_tokens=416):  53%|█████▎    | 31/58 [00:09<00:01, 15.97it/s]
+    Compiling num tokens (num_tokens=64):  84%|████████▍ | 49/58 [00:08<00:00, 26.11it/s]Compiling num tokens (num_tokens=48):  84%|████████▍ | 49/58 [00:08<00:00, 26.11it/s]Compiling num tokens (num_tokens=32):  84%|████████▍ | 49/58 [00:08<00:00, 26.11it/s]Compiling num tokens (num_tokens=28):  84%|████████▍ | 49/58 [00:09<00:00, 26.11it/s]Compiling num tokens (num_tokens=28):  90%|████████▉ | 52/58 [00:09<00:00, 24.73it/s]Compiling num tokens (num_tokens=24):  90%|████████▉ | 52/58 [00:09<00:00, 24.73it/s]Compiling num tokens (num_tokens=20):  90%|████████▉ | 52/58 [00:09<00:00, 24.73it/s]
 
-    Compiling num tokens (num_tokens=384):  53%|█████▎    | 31/58 [00:09<00:01, 15.97it/s]Compiling num tokens (num_tokens=384):  57%|█████▋    | 33/58 [00:09<00:01, 16.88it/s]Compiling num tokens (num_tokens=352):  57%|█████▋    | 33/58 [00:09<00:01, 16.88it/s]Compiling num tokens (num_tokens=320):  57%|█████▋    | 33/58 [00:09<00:01, 16.88it/s]Compiling num tokens (num_tokens=288):  57%|█████▋    | 33/58 [00:09<00:01, 16.88it/s]Compiling num tokens (num_tokens=288):  62%|██████▏   | 36/58 [00:09<00:01, 18.85it/s]Compiling num tokens (num_tokens=256):  62%|██████▏   | 36/58 [00:09<00:01, 18.85it/s]
-
-    Compiling num tokens (num_tokens=240):  62%|██████▏   | 36/58 [00:09<00:01, 18.85it/s]Compiling num tokens (num_tokens=224):  62%|██████▏   | 36/58 [00:09<00:01, 18.85it/s]Compiling num tokens (num_tokens=224):  67%|██████▋   | 39/58 [00:09<00:00, 19.71it/s]Compiling num tokens (num_tokens=208):  67%|██████▋   | 39/58 [00:09<00:00, 19.71it/s]Compiling num tokens (num_tokens=192):  67%|██████▋   | 39/58 [00:09<00:00, 19.71it/s]Compiling num tokens (num_tokens=176):  67%|██████▋   | 39/58 [00:09<00:00, 19.71it/s]
-
-    Compiling num tokens (num_tokens=176):  72%|███████▏  | 42/58 [00:09<00:00, 21.46it/s]Compiling num tokens (num_tokens=160):  72%|███████▏  | 42/58 [00:09<00:00, 21.46it/s]Compiling num tokens (num_tokens=144):  72%|███████▏  | 42/58 [00:09<00:00, 21.46it/s]Compiling num tokens (num_tokens=128):  72%|███████▏  | 42/58 [00:09<00:00, 21.46it/s]Compiling num tokens (num_tokens=128):  78%|███████▊  | 45/58 [00:09<00:00, 22.82it/s]Compiling num tokens (num_tokens=112):  78%|███████▊  | 45/58 [00:09<00:00, 22.82it/s]Compiling num tokens (num_tokens=96):  78%|███████▊  | 45/58 [00:09<00:00, 22.82it/s] Compiling num tokens (num_tokens=80):  78%|███████▊  | 45/58 [00:09<00:00, 22.82it/s]
-
-    Compiling num tokens (num_tokens=80):  83%|████████▎ | 48/58 [00:09<00:00, 23.57it/s]Compiling num tokens (num_tokens=64):  83%|████████▎ | 48/58 [00:09<00:00, 23.57it/s]Compiling num tokens (num_tokens=48):  83%|████████▎ | 48/58 [00:09<00:00, 23.57it/s]Compiling num tokens (num_tokens=32):  83%|████████▎ | 48/58 [00:10<00:00, 23.57it/s]Compiling num tokens (num_tokens=32):  88%|████████▊ | 51/58 [00:10<00:00, 24.67it/s]Compiling num tokens (num_tokens=28):  88%|████████▊ | 51/58 [00:10<00:00, 24.67it/s]Compiling num tokens (num_tokens=24):  88%|████████▊ | 51/58 [00:10<00:00, 24.67it/s]Compiling num tokens (num_tokens=20):  88%|████████▊ | 51/58 [00:10<00:00, 24.67it/s]Compiling num tokens (num_tokens=16):  88%|████████▊ | 51/58 [00:10<00:00, 24.67it/s]
-
-    Compiling num tokens (num_tokens=16):  95%|█████████▍| 55/58 [00:10<00:00, 27.04it/s]Compiling num tokens (num_tokens=12):  95%|█████████▍| 55/58 [00:10<00:00, 27.04it/s]Compiling num tokens (num_tokens=8):  95%|█████████▍| 55/58 [00:10<00:00, 27.04it/s] Compiling num tokens (num_tokens=4):  95%|█████████▍| 55/58 [00:10<00:00, 27.04it/s]Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:10<00:00,  5.66it/s]
+    Compiling num tokens (num_tokens=16):  90%|████████▉ | 52/58 [00:09<00:00, 24.73it/s]Compiling num tokens (num_tokens=16):  95%|█████████▍| 55/58 [00:09<00:00, 23.65it/s]Compiling num tokens (num_tokens=12):  95%|█████████▍| 55/58 [00:09<00:00, 23.65it/s]Compiling num tokens (num_tokens=8):  95%|█████████▍| 55/58 [00:09<00:00, 23.65it/s] Compiling num tokens (num_tokens=4):  95%|█████████▍| 55/58 [00:09<00:00, 23.65it/s]Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09<00:00, 24.09it/s]Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09<00:00,  6.23it/s]
 
 
-      0%|          | 0/58 [00:00<?, ?it/s]Capturing num tokens (num_tokens=8192 avail_mem=41.34 GB):   0%|          | 0/58 [00:00<?, ?it/s]
+      0%|          | 0/58 [00:00<?, ?it/s]Capturing num tokens (num_tokens=8192 avail_mem=22.18 GB):   0%|          | 0/58 [00:00<?, ?it/s]
 
-    Capturing num tokens (num_tokens=8192 avail_mem=41.34 GB):   2%|▏         | 1/58 [00:00<00:41,  1.37it/s]Capturing num tokens (num_tokens=7680 avail_mem=41.31 GB):   2%|▏         | 1/58 [00:00<00:41,  1.37it/s]
+    Capturing num tokens (num_tokens=8192 avail_mem=22.18 GB):   2%|▏         | 1/58 [00:00<00:40,  1.39it/s]Capturing num tokens (num_tokens=7680 avail_mem=42.09 GB):   2%|▏         | 1/58 [00:00<00:40,  1.39it/s]
 
-    Capturing num tokens (num_tokens=7680 avail_mem=41.31 GB):   3%|▎         | 2/58 [00:01<00:39,  1.43it/s]Capturing num tokens (num_tokens=7168 avail_mem=41.31 GB):   3%|▎         | 2/58 [00:01<00:39,  1.43it/s]
+    Capturing num tokens (num_tokens=7680 avail_mem=42.09 GB):   3%|▎         | 2/58 [00:01<00:38,  1.45it/s]Capturing num tokens (num_tokens=7168 avail_mem=41.43 GB):   3%|▎         | 2/58 [00:01<00:38,  1.45it/s]
 
-    Capturing num tokens (num_tokens=7168 avail_mem=41.31 GB):   5%|▌         | 3/58 [00:01<00:34,  1.59it/s]Capturing num tokens (num_tokens=6656 avail_mem=41.31 GB):   5%|▌         | 3/58 [00:01<00:34,  1.59it/s]
+    Capturing num tokens (num_tokens=7168 avail_mem=41.43 GB):   5%|▌         | 3/58 [00:01<00:33,  1.63it/s]Capturing num tokens (num_tokens=6656 avail_mem=41.58 GB):   5%|▌         | 3/58 [00:01<00:33,  1.63it/s]
 
-    Capturing num tokens (num_tokens=6656 avail_mem=41.31 GB):   7%|▋         | 4/58 [00:02<00:32,  1.69it/s]Capturing num tokens (num_tokens=6144 avail_mem=41.32 GB):   7%|▋         | 4/58 [00:02<00:32,  1.69it/s]
+    Capturing num tokens (num_tokens=6656 avail_mem=41.58 GB):   7%|▋         | 4/58 [00:02<00:31,  1.73it/s]Capturing num tokens (num_tokens=6144 avail_mem=41.64 GB):   7%|▋         | 4/58 [00:02<00:31,  1.73it/s]
 
-    Capturing num tokens (num_tokens=6144 avail_mem=41.32 GB):   9%|▊         | 5/58 [00:03<00:29,  1.78it/s]Capturing num tokens (num_tokens=5632 avail_mem=41.32 GB):   9%|▊         | 5/58 [00:03<00:29,  1.78it/s]
+    Capturing num tokens (num_tokens=6144 avail_mem=41.64 GB):   9%|▊         | 5/58 [00:02<00:27,  1.90it/s]Capturing num tokens (num_tokens=5632 avail_mem=42.11 GB):   9%|▊         | 5/58 [00:02<00:27,  1.90it/s]
 
-    Capturing num tokens (num_tokens=5632 avail_mem=41.32 GB):  10%|█         | 6/58 [00:03<00:27,  1.90it/s]Capturing num tokens (num_tokens=5120 avail_mem=41.33 GB):  10%|█         | 6/58 [00:03<00:27,  1.90it/s]
+    Capturing num tokens (num_tokens=5632 avail_mem=42.11 GB):  10%|█         | 6/58 [00:03<00:24,  2.09it/s]Capturing num tokens (num_tokens=5120 avail_mem=41.75 GB):  10%|█         | 6/58 [00:03<00:24,  2.09it/s]
 
-    Capturing num tokens (num_tokens=5120 avail_mem=41.33 GB):  12%|█▏        | 7/58 [00:03<00:25,  2.01it/s]Capturing num tokens (num_tokens=4608 avail_mem=41.33 GB):  12%|█▏        | 7/58 [00:03<00:25,  2.01it/s]
+    Capturing num tokens (num_tokens=5120 avail_mem=41.75 GB):  12%|█▏        | 7/58 [00:03<00:21,  2.35it/s]Capturing num tokens (num_tokens=4608 avail_mem=41.82 GB):  12%|█▏        | 7/58 [00:03<00:21,  2.35it/s]
 
-    Capturing num tokens (num_tokens=4608 avail_mem=41.33 GB):  14%|█▍        | 8/58 [00:04<00:23,  2.17it/s]Capturing num tokens (num_tokens=4096 avail_mem=41.33 GB):  14%|█▍        | 8/58 [00:04<00:23,  2.17it/s]
+    Capturing num tokens (num_tokens=4608 avail_mem=41.82 GB):  14%|█▍        | 8/58 [00:03<00:19,  2.63it/s]Capturing num tokens (num_tokens=4096 avail_mem=42.12 GB):  14%|█▍        | 8/58 [00:03<00:19,  2.63it/s]
 
-    Capturing num tokens (num_tokens=4096 avail_mem=41.33 GB):  16%|█▌        | 9/58 [00:04<00:20,  2.35it/s]Capturing num tokens (num_tokens=3840 avail_mem=41.33 GB):  16%|█▌        | 9/58 [00:04<00:20,  2.35it/s]
+    Capturing num tokens (num_tokens=4096 avail_mem=42.12 GB):  16%|█▌        | 9/58 [00:04<00:17,  2.88it/s]Capturing num tokens (num_tokens=3840 avail_mem=41.95 GB):  16%|█▌        | 9/58 [00:04<00:17,  2.88it/s]
 
-    Capturing num tokens (num_tokens=3840 avail_mem=41.33 GB):  17%|█▋        | 10/58 [00:04<00:19,  2.51it/s]Capturing num tokens (num_tokens=3584 avail_mem=41.33 GB):  17%|█▋        | 10/58 [00:04<00:19,  2.51it/s]
+    Capturing num tokens (num_tokens=3840 avail_mem=41.95 GB):  17%|█▋        | 10/58 [00:04<00:14,  3.29it/s]Capturing num tokens (num_tokens=3584 avail_mem=42.12 GB):  17%|█▋        | 10/58 [00:04<00:14,  3.29it/s]
 
-    Capturing num tokens (num_tokens=3584 avail_mem=41.33 GB):  19%|█▉        | 11/58 [00:05<00:17,  2.66it/s]Capturing num tokens (num_tokens=3328 avail_mem=41.33 GB):  19%|█▉        | 11/58 [00:05<00:17,  2.66it/s]
+    Capturing num tokens (num_tokens=3584 avail_mem=42.12 GB):  19%|█▉        | 11/58 [00:04<00:12,  3.67it/s]Capturing num tokens (num_tokens=3328 avail_mem=42.11 GB):  19%|█▉        | 11/58 [00:04<00:12,  3.67it/s]Capturing num tokens (num_tokens=3328 avail_mem=42.11 GB):  21%|██        | 12/58 [00:04<00:11,  4.08it/s]Capturing num tokens (num_tokens=3072 avail_mem=42.10 GB):  21%|██        | 12/58 [00:04<00:11,  4.08it/s]
 
-    Capturing num tokens (num_tokens=3328 avail_mem=41.33 GB):  21%|██        | 12/58 [00:05<00:16,  2.84it/s]Capturing num tokens (num_tokens=3072 avail_mem=41.33 GB):  21%|██        | 12/58 [00:05<00:16,  2.84it/s]
+    Capturing num tokens (num_tokens=3072 avail_mem=42.10 GB):  22%|██▏       | 13/58 [00:04<00:09,  4.52it/s]Capturing num tokens (num_tokens=2816 avail_mem=42.10 GB):  22%|██▏       | 13/58 [00:04<00:09,  4.52it/s]Capturing num tokens (num_tokens=2816 avail_mem=42.10 GB):  24%|██▍       | 14/58 [00:05<00:08,  5.03it/s]Capturing num tokens (num_tokens=2560 avail_mem=42.01 GB):  24%|██▍       | 14/58 [00:05<00:08,  5.03it/s]
 
-    Capturing num tokens (num_tokens=3072 avail_mem=41.33 GB):  22%|██▏       | 13/58 [00:05<00:14,  3.04it/s]Capturing num tokens (num_tokens=2816 avail_mem=41.33 GB):  22%|██▏       | 13/58 [00:05<00:14,  3.04it/s]
+    Capturing num tokens (num_tokens=2560 avail_mem=42.01 GB):  26%|██▌       | 15/58 [00:05<00:08,  5.10it/s]Capturing num tokens (num_tokens=2304 avail_mem=42.05 GB):  26%|██▌       | 15/58 [00:05<00:08,  5.10it/s]Capturing num tokens (num_tokens=2304 avail_mem=42.05 GB):  28%|██▊       | 16/58 [00:05<00:07,  5.69it/s]Capturing num tokens (num_tokens=2048 avail_mem=42.08 GB):  28%|██▊       | 16/58 [00:05<00:07,  5.69it/s]
 
-    Capturing num tokens (num_tokens=2816 avail_mem=41.33 GB):  24%|██▍       | 14/58 [00:06<00:13,  3.26it/s]Capturing num tokens (num_tokens=2560 avail_mem=41.33 GB):  24%|██▍       | 14/58 [00:06<00:13,  3.26it/s]
+    Capturing num tokens (num_tokens=2048 avail_mem=42.08 GB):  29%|██▉       | 17/58 [00:05<00:06,  6.42it/s]Capturing num tokens (num_tokens=1792 avail_mem=42.08 GB):  29%|██▉       | 17/58 [00:05<00:06,  6.42it/s]Capturing num tokens (num_tokens=1536 avail_mem=42.07 GB):  29%|██▉       | 17/58 [00:05<00:06,  6.42it/s]Capturing num tokens (num_tokens=1536 avail_mem=42.07 GB):  33%|███▎      | 19/58 [00:05<00:04,  8.13it/s]Capturing num tokens (num_tokens=1280 avail_mem=42.07 GB):  33%|███▎      | 19/58 [00:05<00:04,  8.13it/s]
 
-    Capturing num tokens (num_tokens=2560 avail_mem=41.33 GB):  26%|██▌       | 15/58 [00:06<00:12,  3.51it/s]Capturing num tokens (num_tokens=2304 avail_mem=41.33 GB):  26%|██▌       | 15/58 [00:06<00:12,  3.51it/s]
+    Capturing num tokens (num_tokens=1024 avail_mem=42.06 GB):  33%|███▎      | 19/58 [00:05<00:04,  8.13it/s]Capturing num tokens (num_tokens=1024 avail_mem=42.06 GB):  36%|███▌      | 21/58 [00:05<00:03,  9.87it/s]Capturing num tokens (num_tokens=960 avail_mem=42.05 GB):  36%|███▌      | 21/58 [00:05<00:03,  9.87it/s] Capturing num tokens (num_tokens=896 avail_mem=42.04 GB):  36%|███▌      | 21/58 [00:05<00:03,  9.87it/s]Capturing num tokens (num_tokens=896 avail_mem=42.04 GB):  40%|███▉      | 23/58 [00:05<00:03, 11.65it/s]Capturing num tokens (num_tokens=832 avail_mem=42.03 GB):  40%|███▉      | 23/58 [00:05<00:03, 11.65it/s]
 
-    Capturing num tokens (num_tokens=2304 avail_mem=41.33 GB):  28%|██▊       | 16/58 [00:06<00:11,  3.64it/s]Capturing num tokens (num_tokens=2048 avail_mem=41.33 GB):  28%|██▊       | 16/58 [00:06<00:11,  3.64it/s]
+    Capturing num tokens (num_tokens=768 avail_mem=42.02 GB):  40%|███▉      | 23/58 [00:05<00:03, 11.65it/s]Capturing num tokens (num_tokens=768 avail_mem=42.02 GB):  43%|████▎     | 25/58 [00:06<00:02, 12.48it/s]Capturing num tokens (num_tokens=704 avail_mem=42.01 GB):  43%|████▎     | 25/58 [00:06<00:02, 12.48it/s]Capturing num tokens (num_tokens=640 avail_mem=42.02 GB):  43%|████▎     | 25/58 [00:06<00:02, 12.48it/s]Capturing num tokens (num_tokens=640 avail_mem=42.02 GB):  47%|████▋     | 27/58 [00:06<00:02, 14.21it/s]Capturing num tokens (num_tokens=576 avail_mem=42.01 GB):  47%|████▋     | 27/58 [00:06<00:02, 14.21it/s]
 
-    Capturing num tokens (num_tokens=2048 avail_mem=41.33 GB):  29%|██▉       | 17/58 [00:07<00:13,  3.01it/s]Capturing num tokens (num_tokens=1792 avail_mem=41.33 GB):  29%|██▉       | 17/58 [00:07<00:13,  3.01it/s]Capturing num tokens (num_tokens=1792 avail_mem=41.33 GB):  31%|███       | 18/58 [00:07<00:11,  3.46it/s]Capturing num tokens (num_tokens=1536 avail_mem=41.33 GB):  31%|███       | 18/58 [00:07<00:11,  3.46it/s]
+    Capturing num tokens (num_tokens=512 avail_mem=42.00 GB):  47%|████▋     | 27/58 [00:06<00:02, 14.21it/s]Capturing num tokens (num_tokens=512 avail_mem=42.00 GB):  50%|█████     | 29/58 [00:06<00:01, 15.62it/s]Capturing num tokens (num_tokens=480 avail_mem=41.99 GB):  50%|█████     | 29/58 [00:06<00:01, 15.62it/s]Capturing num tokens (num_tokens=448 avail_mem=41.98 GB):  50%|█████     | 29/58 [00:06<00:01, 15.62it/s]Capturing num tokens (num_tokens=416 avail_mem=41.98 GB):  50%|█████     | 29/58 [00:06<00:01, 15.62it/s]Capturing num tokens (num_tokens=416 avail_mem=41.98 GB):  55%|█████▌    | 32/58 [00:06<00:01, 17.33it/s]Capturing num tokens (num_tokens=384 avail_mem=41.97 GB):  55%|█████▌    | 32/58 [00:06<00:01, 17.33it/s]
 
-    Capturing num tokens (num_tokens=1536 avail_mem=41.33 GB):  33%|███▎      | 19/58 [00:07<00:09,  3.96it/s]Capturing num tokens (num_tokens=1280 avail_mem=41.33 GB):  33%|███▎      | 19/58 [00:07<00:09,  3.96it/s]Capturing num tokens (num_tokens=1280 avail_mem=41.33 GB):  34%|███▍      | 20/58 [00:07<00:08,  4.46it/s]Capturing num tokens (num_tokens=1024 avail_mem=41.33 GB):  34%|███▍      | 20/58 [00:07<00:08,  4.46it/s]
+    Capturing num tokens (num_tokens=352 avail_mem=41.96 GB):  55%|█████▌    | 32/58 [00:06<00:01, 17.33it/s]Capturing num tokens (num_tokens=320 avail_mem=41.95 GB):  55%|█████▌    | 32/58 [00:06<00:01, 17.33it/s]Capturing num tokens (num_tokens=320 avail_mem=41.95 GB):  60%|██████    | 35/58 [00:06<00:01, 19.23it/s]Capturing num tokens (num_tokens=288 avail_mem=41.94 GB):  60%|██████    | 35/58 [00:06<00:01, 19.23it/s]Capturing num tokens (num_tokens=256 avail_mem=41.93 GB):  60%|██████    | 35/58 [00:06<00:01, 19.23it/s]Capturing num tokens (num_tokens=240 avail_mem=41.93 GB):  60%|██████    | 35/58 [00:06<00:01, 19.23it/s]
 
-    Capturing num tokens (num_tokens=1024 avail_mem=41.33 GB):  36%|███▌      | 21/58 [00:07<00:07,  5.00it/s]Capturing num tokens (num_tokens=960 avail_mem=41.33 GB):  36%|███▌      | 21/58 [00:07<00:07,  5.00it/s] Capturing num tokens (num_tokens=960 avail_mem=41.33 GB):  38%|███▊      | 22/58 [00:07<00:06,  5.47it/s]Capturing num tokens (num_tokens=896 avail_mem=41.32 GB):  38%|███▊      | 22/58 [00:07<00:06,  5.47it/s]
+    Capturing num tokens (num_tokens=240 avail_mem=41.93 GB):  66%|██████▌   | 38/58 [00:06<00:00, 20.89it/s]Capturing num tokens (num_tokens=224 avail_mem=41.92 GB):  66%|██████▌   | 38/58 [00:06<00:00, 20.89it/s]Capturing num tokens (num_tokens=208 avail_mem=41.91 GB):  66%|██████▌   | 38/58 [00:06<00:00, 20.89it/s]Capturing num tokens (num_tokens=192 avail_mem=41.91 GB):  66%|██████▌   | 38/58 [00:06<00:00, 20.89it/s]Capturing num tokens (num_tokens=176 avail_mem=41.90 GB):  66%|██████▌   | 38/58 [00:06<00:00, 20.89it/s]Capturing num tokens (num_tokens=176 avail_mem=41.90 GB):  72%|███████▏  | 42/58 [00:06<00:00, 25.13it/s]Capturing num tokens (num_tokens=160 avail_mem=41.90 GB):  72%|███████▏  | 42/58 [00:06<00:00, 25.13it/s]Capturing num tokens (num_tokens=144 avail_mem=41.89 GB):  72%|███████▏  | 42/58 [00:06<00:00, 25.13it/s]Capturing num tokens (num_tokens=128 avail_mem=41.89 GB):  72%|███████▏  | 42/58 [00:06<00:00, 25.13it/s]Capturing num tokens (num_tokens=112 avail_mem=41.90 GB):  72%|███████▏  | 42/58 [00:06<00:00, 25.13it/s]
 
-    Capturing num tokens (num_tokens=896 avail_mem=41.32 GB):  40%|███▉      | 23/58 [00:08<00:05,  5.88it/s]Capturing num tokens (num_tokens=832 avail_mem=41.32 GB):  40%|███▉      | 23/58 [00:08<00:05,  5.88it/s]Capturing num tokens (num_tokens=832 avail_mem=41.32 GB):  41%|████▏     | 24/58 [00:08<00:05,  6.14it/s]Capturing num tokens (num_tokens=768 avail_mem=41.32 GB):  41%|████▏     | 24/58 [00:08<00:05,  6.14it/s]
+    Capturing num tokens (num_tokens=112 avail_mem=41.90 GB):  79%|███████▉  | 46/58 [00:06<00:00, 28.63it/s]Capturing num tokens (num_tokens=96 avail_mem=41.90 GB):  79%|███████▉  | 46/58 [00:06<00:00, 28.63it/s] Capturing num tokens (num_tokens=80 avail_mem=41.89 GB):  79%|███████▉  | 46/58 [00:06<00:00, 28.63it/s]Capturing num tokens (num_tokens=64 avail_mem=41.89 GB):  79%|███████▉  | 46/58 [00:06<00:00, 28.63it/s]Capturing num tokens (num_tokens=48 avail_mem=41.88 GB):  79%|███████▉  | 46/58 [00:06<00:00, 28.63it/s]Capturing num tokens (num_tokens=48 avail_mem=41.88 GB):  86%|████████▌ | 50/58 [00:06<00:00, 29.35it/s]Capturing num tokens (num_tokens=32 avail_mem=41.88 GB):  86%|████████▌ | 50/58 [00:06<00:00, 29.35it/s]Capturing num tokens (num_tokens=28 avail_mem=41.88 GB):  86%|████████▌ | 50/58 [00:06<00:00, 29.35it/s]Capturing num tokens (num_tokens=24 avail_mem=41.87 GB):  86%|████████▌ | 50/58 [00:07<00:00, 29.35it/s]
 
-    Capturing num tokens (num_tokens=768 avail_mem=41.32 GB):  43%|████▎     | 25/58 [00:08<00:05,  6.47it/s]Capturing num tokens (num_tokens=704 avail_mem=41.31 GB):  43%|████▎     | 25/58 [00:08<00:05,  6.47it/s]Capturing num tokens (num_tokens=704 avail_mem=41.31 GB):  45%|████▍     | 26/58 [00:08<00:04,  6.74it/s]Capturing num tokens (num_tokens=640 avail_mem=41.31 GB):  45%|████▍     | 26/58 [00:08<00:04,  6.74it/s]
-
-    Capturing num tokens (num_tokens=640 avail_mem=41.31 GB):  47%|████▋     | 27/58 [00:08<00:04,  7.36it/s]Capturing num tokens (num_tokens=576 avail_mem=41.30 GB):  47%|████▋     | 27/58 [00:08<00:04,  7.36it/s]Capturing num tokens (num_tokens=576 avail_mem=41.30 GB):  48%|████▊     | 28/58 [00:08<00:03,  7.63it/s]Capturing num tokens (num_tokens=512 avail_mem=41.30 GB):  48%|████▊     | 28/58 [00:08<00:03,  7.63it/s]
-
-    Capturing num tokens (num_tokens=512 avail_mem=41.30 GB):  50%|█████     | 29/58 [00:08<00:03,  7.76it/s]Capturing num tokens (num_tokens=480 avail_mem=41.29 GB):  50%|█████     | 29/58 [00:08<00:03,  7.76it/s]Capturing num tokens (num_tokens=480 avail_mem=41.29 GB):  52%|█████▏    | 30/58 [00:08<00:03,  7.98it/s]Capturing num tokens (num_tokens=448 avail_mem=41.29 GB):  52%|█████▏    | 30/58 [00:08<00:03,  7.98it/s]
-
-    Capturing num tokens (num_tokens=448 avail_mem=41.29 GB):  53%|█████▎    | 31/58 [00:09<00:03,  7.83it/s]Capturing num tokens (num_tokens=416 avail_mem=41.28 GB):  53%|█████▎    | 31/58 [00:09<00:03,  7.83it/s]Capturing num tokens (num_tokens=416 avail_mem=41.28 GB):  55%|█████▌    | 32/58 [00:09<00:03,  7.95it/s]Capturing num tokens (num_tokens=384 avail_mem=41.28 GB):  55%|█████▌    | 32/58 [00:09<00:03,  7.95it/s]
-
-    Capturing num tokens (num_tokens=384 avail_mem=41.28 GB):  57%|█████▋    | 33/58 [00:09<00:03,  8.09it/s]Capturing num tokens (num_tokens=352 avail_mem=41.28 GB):  57%|█████▋    | 33/58 [00:09<00:03,  8.09it/s]Capturing num tokens (num_tokens=352 avail_mem=41.28 GB):  59%|█████▊    | 34/58 [00:09<00:02,  8.15it/s]Capturing num tokens (num_tokens=320 avail_mem=41.27 GB):  59%|█████▊    | 34/58 [00:09<00:02,  8.15it/s]
-
-    Capturing num tokens (num_tokens=320 avail_mem=41.27 GB):  60%|██████    | 35/58 [00:09<00:02,  8.29it/s]Capturing num tokens (num_tokens=288 avail_mem=41.27 GB):  60%|██████    | 35/58 [00:09<00:02,  8.29it/s]Capturing num tokens (num_tokens=288 avail_mem=41.27 GB):  62%|██████▏   | 36/58 [00:09<00:02,  8.32it/s]Capturing num tokens (num_tokens=256 avail_mem=41.26 GB):  62%|██████▏   | 36/58 [00:09<00:02,  8.32it/s]
-
-    Capturing num tokens (num_tokens=256 avail_mem=41.26 GB):  64%|██████▍   | 37/58 [00:09<00:02,  8.53it/s]Capturing num tokens (num_tokens=240 avail_mem=41.26 GB):  64%|██████▍   | 37/58 [00:09<00:02,  8.53it/s]Capturing num tokens (num_tokens=240 avail_mem=41.26 GB):  66%|██████▌   | 38/58 [00:09<00:02,  8.57it/s]Capturing num tokens (num_tokens=224 avail_mem=41.26 GB):  66%|██████▌   | 38/58 [00:09<00:02,  8.57it/s]
-
-    Capturing num tokens (num_tokens=224 avail_mem=41.26 GB):  67%|██████▋   | 39/58 [00:09<00:02,  8.64it/s]Capturing num tokens (num_tokens=208 avail_mem=41.25 GB):  67%|██████▋   | 39/58 [00:09<00:02,  8.64it/s]Capturing num tokens (num_tokens=208 avail_mem=41.25 GB):  69%|██████▉   | 40/58 [00:10<00:02,  8.77it/s]Capturing num tokens (num_tokens=192 avail_mem=41.25 GB):  69%|██████▉   | 40/58 [00:10<00:02,  8.77it/s]
-
-    Capturing num tokens (num_tokens=192 avail_mem=41.25 GB):  71%|███████   | 41/58 [00:10<00:01,  8.93it/s]Capturing num tokens (num_tokens=176 avail_mem=41.24 GB):  71%|███████   | 41/58 [00:10<00:01,  8.93it/s]Capturing num tokens (num_tokens=176 avail_mem=41.24 GB):  72%|███████▏  | 42/58 [00:10<00:01,  8.88it/s]Capturing num tokens (num_tokens=160 avail_mem=41.24 GB):  72%|███████▏  | 42/58 [00:10<00:01,  8.88it/s]
-
-    Capturing num tokens (num_tokens=160 avail_mem=41.24 GB):  74%|███████▍  | 43/58 [00:10<00:01,  8.93it/s]Capturing num tokens (num_tokens=144 avail_mem=41.23 GB):  74%|███████▍  | 43/58 [00:10<00:01,  8.93it/s]Capturing num tokens (num_tokens=144 avail_mem=41.23 GB):  76%|███████▌  | 44/58 [00:10<00:01,  9.02it/s]Capturing num tokens (num_tokens=128 avail_mem=41.23 GB):  76%|███████▌  | 44/58 [00:10<00:01,  9.02it/s]
-
-    Capturing num tokens (num_tokens=128 avail_mem=41.23 GB):  78%|███████▊  | 45/58 [00:10<00:01,  9.12it/s]Capturing num tokens (num_tokens=112 avail_mem=41.24 GB):  78%|███████▊  | 45/58 [00:10<00:01,  9.12it/s]Capturing num tokens (num_tokens=112 avail_mem=41.24 GB):  79%|███████▉  | 46/58 [00:10<00:01,  9.10it/s]Capturing num tokens (num_tokens=96 avail_mem=41.24 GB):  79%|███████▉  | 46/58 [00:10<00:01,  9.10it/s] 
-
-    Capturing num tokens (num_tokens=96 avail_mem=41.24 GB):  81%|████████  | 47/58 [00:10<00:01,  9.08it/s]Capturing num tokens (num_tokens=80 avail_mem=41.23 GB):  81%|████████  | 47/58 [00:10<00:01,  9.08it/s]Capturing num tokens (num_tokens=80 avail_mem=41.23 GB):  83%|████████▎ | 48/58 [00:10<00:01,  9.08it/s]Capturing num tokens (num_tokens=64 avail_mem=41.23 GB):  83%|████████▎ | 48/58 [00:10<00:01,  9.08it/s]
-
-    Capturing num tokens (num_tokens=64 avail_mem=41.23 GB):  84%|████████▍ | 49/58 [00:11<00:00,  9.08it/s]Capturing num tokens (num_tokens=48 avail_mem=41.22 GB):  84%|████████▍ | 49/58 [00:11<00:00,  9.08it/s]Capturing num tokens (num_tokens=48 avail_mem=41.22 GB):  86%|████████▌ | 50/58 [00:11<00:00,  9.15it/s]Capturing num tokens (num_tokens=32 avail_mem=41.22 GB):  86%|████████▌ | 50/58 [00:11<00:00,  9.15it/s]
-
-    Capturing num tokens (num_tokens=32 avail_mem=41.22 GB):  88%|████████▊ | 51/58 [00:11<00:00,  9.14it/s]Capturing num tokens (num_tokens=28 avail_mem=41.22 GB):  88%|████████▊ | 51/58 [00:11<00:00,  9.14it/s]Capturing num tokens (num_tokens=28 avail_mem=41.22 GB):  90%|████████▉ | 52/58 [00:11<00:00,  9.14it/s]Capturing num tokens (num_tokens=24 avail_mem=41.21 GB):  90%|████████▉ | 52/58 [00:11<00:00,  9.14it/s]
-
-    Capturing num tokens (num_tokens=24 avail_mem=41.21 GB):  91%|█████████▏| 53/58 [00:11<00:00,  9.07it/s]Capturing num tokens (num_tokens=20 avail_mem=41.20 GB):  91%|█████████▏| 53/58 [00:11<00:00,  9.07it/s]Capturing num tokens (num_tokens=20 avail_mem=41.20 GB):  93%|█████████▎| 54/58 [00:11<00:00,  9.20it/s]Capturing num tokens (num_tokens=16 avail_mem=41.20 GB):  93%|█████████▎| 54/58 [00:11<00:00,  9.20it/s]
-
-    Capturing num tokens (num_tokens=16 avail_mem=41.20 GB):  95%|█████████▍| 55/58 [00:11<00:00,  9.17it/s]Capturing num tokens (num_tokens=12 avail_mem=41.20 GB):  95%|█████████▍| 55/58 [00:11<00:00,  9.17it/s]Capturing num tokens (num_tokens=12 avail_mem=41.20 GB):  97%|█████████▋| 56/58 [00:11<00:00,  9.15it/s]Capturing num tokens (num_tokens=8 avail_mem=41.19 GB):  97%|█████████▋| 56/58 [00:11<00:00,  9.15it/s] 
-
-    Capturing num tokens (num_tokens=8 avail_mem=41.19 GB):  98%|█████████▊| 57/58 [00:11<00:00,  9.18it/s]Capturing num tokens (num_tokens=4 avail_mem=41.19 GB):  98%|█████████▊| 57/58 [00:11<00:00,  9.18it/s]Capturing num tokens (num_tokens=4 avail_mem=41.19 GB): 100%|██████████| 58/58 [00:12<00:00,  9.17it/s]Capturing num tokens (num_tokens=4 avail_mem=41.19 GB): 100%|██████████| 58/58 [00:12<00:00,  4.82it/s]
+    Capturing num tokens (num_tokens=20 avail_mem=41.86 GB):  86%|████████▌ | 50/58 [00:07<00:00, 29.35it/s]Capturing num tokens (num_tokens=20 avail_mem=41.86 GB):  93%|█████████▎| 54/58 [00:07<00:00, 31.64it/s]Capturing num tokens (num_tokens=16 avail_mem=41.86 GB):  93%|█████████▎| 54/58 [00:07<00:00, 31.64it/s]Capturing num tokens (num_tokens=12 avail_mem=41.86 GB):  93%|█████████▎| 54/58 [00:07<00:00, 31.64it/s]Capturing num tokens (num_tokens=8 avail_mem=41.85 GB):  93%|█████████▎| 54/58 [00:07<00:00, 31.64it/s] Capturing num tokens (num_tokens=4 avail_mem=41.85 GB):  93%|█████████▎| 54/58 [00:07<00:00, 31.64it/s]Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████████| 58/58 [00:07<00:00, 31.92it/s]Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████████| 58/58 [00:07<00:00,  8.07it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -515,7 +475,7 @@ print_highlight(response.choices[0].message.content)
 ```
 
 
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function></strong>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources:<br>- get_current_date function<br>- get_current_weather function</strong>
 
 
 ## Native API and SGLang Runtime (SRT)
@@ -572,7 +532,7 @@ print_highlight(f"Validated response: {capital_info.model_dump_json()}")
 ```
 
 
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'db0cfd30e58f49a297ed1f71ba94f299', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.11891204299172387, 'response_sent_to_client_ts': 1774760267.7805326}}</strong>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': '1af36ebbbf7b4aaa9e8aa82cb97614cc', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.2563402639934793, 'response_sent_to_client_ts': 1774768257.854875}}</strong>
 
 
 
@@ -611,7 +571,7 @@ print_highlight(response.json())
 ```
 
 
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'df9287cbe4c246c3be6c3627801aba63', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.11552508804015815, 'response_sent_to_client_ts': 1774760267.9040477}}</strong>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': '77c14cf2571f40728eb34a5f6b7d1a15', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.25699663400882855, 'response_sent_to_client_ts': 1774768258.120984}}</strong>
 
 
 ### EBNF
@@ -652,7 +612,7 @@ print_highlight(response.json())
 ```
 
 
-<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '7b79e014100f4644b33b603833ff3af5', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.06921173300361261, 'response_sent_to_client_ts': 1774760267.9936097}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '4f0749147507443a8d41d155cc0ec7c1', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.06916432298021391, 'response_sent_to_client_ts': 1774760267.9936142}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '47e8c36397bf44a584740378047a016f', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.06904601800488308, 'response_sent_to_client_ts': 1774760267.9936166}}]</strong>
+<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': 'cdaa9aef573e4ebaa2571bea95c03df6', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.1282226979965344, 'response_sent_to_client_ts': 1774768258.297804}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '74f083d4623343828ade0702aaf63b0f', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.1281552420114167, 'response_sent_to_client_ts': 1774768258.2978146}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '01fa468832914934a8f20f8de5e5d2bf', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12811843497911468, 'response_sent_to_client_ts': 1774768258.2978194}}]</strong>
 
 
 ### Regular expression
@@ -683,7 +643,7 @@ print_highlight(response.json())
 ```
 
 
-<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': '8adb1142b5b84fe3ba8317899500fb41', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.024777063983492553, 'response_sent_to_client_ts': 1774760268.023928}}</strong>
+<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': 'a1652912c0854142bb58d9f5a06356a7', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.056976881984155625, 'response_sent_to_client_ts': 1774768258.3621995}}</strong>
 
 
 ### Structural Tag
@@ -729,7 +689,7 @@ print_highlight(response.json())
 ```
 
 
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': 'f270cf3a894e461c90eba0c17c7f52cf', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.07800678600324318, 'response_sent_to_client_ts': 1774760269.302435}}</strong>
+<strong style='color: #00008B;'>{'text': 'Of France.', 'output_ids': [2173, 9822, 13, 128009], 'meta_info': {'id': '43bbec0c12334117943ff9a4b8d96e42', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 4, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.09865352098131552, 'response_sent_to_client_ts': 1774768259.7034612}}</strong>
 
 
 
@@ -778,7 +738,7 @@ print_highlight(response.json())
 ```
 
 
-<strong style='color: #00008B;'>{'text': 'The answer is France. Paris is the capital city of France.', 'output_ids': [791, 4320, 374, 9822, 13, 12366, 374, 279, 6864, 3363, 315, 9822, 13, 128009], 'meta_info': {'id': '8f06f22e09e04d459ca306537dcb9233', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 14, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12611400004243478, 'response_sent_to_client_ts': 1774760269.4360995}}</strong>
+<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': '687dcc36e128462bbc8933e5683dd0f0', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.040176505979616195, 'response_sent_to_client_ts': 1774768259.7545857}}</strong>
 
 
 
@@ -802,115 +762,109 @@ llm = sgl.Engine(
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 
 
-    2026-03-29 04:58:01.630 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:58:01] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:58:01.630 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:58:01] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:58:01.630 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:58:01] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:58:01.630 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:58:01] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 04:58:01.630 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 04:58:01] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:11:12.351 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:11:12] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:11:12.351 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:11:12] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:11:12.351 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:11:12] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:11:12.352 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:11:12] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 07:11:12.352 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 07:11:12] Persistent cache disabled, using in-memory JIT cache
 
 
     Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
     Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.20it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.09it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.06it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:02<00:00,  1.51it/s]
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:02<00:00,  1.49it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.35it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.32it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.35it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.31it/s]
 
 
       0%|          | 0/58 [00:00<?, ?it/s]Compiling num tokens (num_tokens=8192):   0%|          | 0/58 [00:00<?, ?it/s]
 
-    Compiling num tokens (num_tokens=8192):   2%|▏         | 1/58 [00:03<02:58,  3.14s/it]Compiling num tokens (num_tokens=7680):   2%|▏         | 1/58 [00:03<02:58,  3.14s/it]
+    Compiling num tokens (num_tokens=8192):   2%|▏         | 1/58 [00:03<02:59,  3.15s/it]Compiling num tokens (num_tokens=7680):   2%|▏         | 1/58 [00:03<02:59,  3.15s/it]
 
-    Compiling num tokens (num_tokens=7680):   3%|▎         | 2/58 [00:03<01:27,  1.56s/it]Compiling num tokens (num_tokens=7168):   3%|▎         | 2/58 [00:03<01:27,  1.56s/it]
+    Compiling num tokens (num_tokens=7680):   3%|▎         | 2/58 [00:04<01:42,  1.83s/it]Compiling num tokens (num_tokens=7168):   3%|▎         | 2/58 [00:04<01:42,  1.83s/it]
 
-    Compiling num tokens (num_tokens=7168):   5%|▌         | 3/58 [00:03<00:52,  1.05it/s]Compiling num tokens (num_tokens=6656):   5%|▌         | 3/58 [00:03<00:52,  1.05it/s]
+    Compiling num tokens (num_tokens=7168):   5%|▌         | 3/58 [00:04<01:04,  1.16s/it]Compiling num tokens (num_tokens=6656):   5%|▌         | 3/58 [00:04<01:04,  1.16s/it]
 
-    Compiling num tokens (num_tokens=6656):   7%|▋         | 4/58 [00:04<00:35,  1.53it/s]Compiling num tokens (num_tokens=6144):   7%|▋         | 4/58 [00:04<00:35,  1.53it/s]Compiling num tokens (num_tokens=6144):   9%|▊         | 5/58 [00:04<00:25,  2.05it/s]Compiling num tokens (num_tokens=5632):   9%|▊         | 5/58 [00:04<00:25,  2.05it/s]
+    Compiling num tokens (num_tokens=6656):   7%|▋         | 4/58 [00:04<00:44,  1.21it/s]Compiling num tokens (num_tokens=6144):   7%|▋         | 4/58 [00:04<00:44,  1.21it/s]
 
-    Compiling num tokens (num_tokens=5632):  10%|█         | 6/58 [00:04<00:19,  2.63it/s]Compiling num tokens (num_tokens=5120):  10%|█         | 6/58 [00:04<00:19,  2.63it/s]Compiling num tokens (num_tokens=5120):  12%|█▏        | 7/58 [00:04<00:15,  3.27it/s]Compiling num tokens (num_tokens=4608):  12%|█▏        | 7/58 [00:04<00:15,  3.27it/s]
+    Compiling num tokens (num_tokens=6144):   9%|▊         | 5/58 [00:05<00:33,  1.59it/s]Compiling num tokens (num_tokens=5632):   9%|▊         | 5/58 [00:05<00:33,  1.59it/s]
 
-    Compiling num tokens (num_tokens=4608):  14%|█▍        | 8/58 [00:04<00:12,  3.97it/s]Compiling num tokens (num_tokens=4096):  14%|█▍        | 8/58 [00:04<00:12,  3.97it/s]Compiling num tokens (num_tokens=4096):  16%|█▌        | 9/58 [00:04<00:10,  4.71it/s]Compiling num tokens (num_tokens=3840):  16%|█▌        | 9/58 [00:04<00:10,  4.71it/s]
+    Compiling num tokens (num_tokens=5632):  10%|█         | 6/58 [00:05<00:25,  2.01it/s]Compiling num tokens (num_tokens=5120):  10%|█         | 6/58 [00:05<00:25,  2.01it/s]
 
-    Compiling num tokens (num_tokens=3840):  17%|█▋        | 10/58 [00:04<00:08,  5.49it/s]Compiling num tokens (num_tokens=3584):  17%|█▋        | 10/58 [00:04<00:08,  5.49it/s]Compiling num tokens (num_tokens=3584):  19%|█▉        | 11/58 [00:05<00:07,  6.15it/s]Compiling num tokens (num_tokens=3328):  19%|█▉        | 11/58 [00:05<00:07,  6.15it/s]
+    Compiling num tokens (num_tokens=5120):  12%|█▏        | 7/58 [00:05<00:20,  2.46it/s]Compiling num tokens (num_tokens=4608):  12%|█▏        | 7/58 [00:05<00:20,  2.46it/s]Compiling num tokens (num_tokens=4608):  14%|█▍        | 8/58 [00:05<00:16,  3.10it/s]Compiling num tokens (num_tokens=4096):  14%|█▍        | 8/58 [00:05<00:16,  3.10it/s]
 
-    Compiling num tokens (num_tokens=3072):  19%|█▉        | 11/58 [00:05<00:07,  6.15it/s]Compiling num tokens (num_tokens=3072):  22%|██▏       | 13/58 [00:05<00:05,  7.78it/s]Compiling num tokens (num_tokens=2816):  22%|██▏       | 13/58 [00:05<00:05,  7.78it/s]Compiling num tokens (num_tokens=2560):  22%|██▏       | 13/58 [00:05<00:05,  7.78it/s]
+    Compiling num tokens (num_tokens=4096):  16%|█▌        | 9/58 [00:05<00:12,  3.85it/s]Compiling num tokens (num_tokens=3840):  16%|█▌        | 9/58 [00:05<00:12,  3.85it/s]Compiling num tokens (num_tokens=3840):  17%|█▋        | 10/58 [00:05<00:10,  4.42it/s]Compiling num tokens (num_tokens=3584):  17%|█▋        | 10/58 [00:05<00:10,  4.42it/s]
 
-    Compiling num tokens (num_tokens=2560):  26%|██▌       | 15/58 [00:05<00:04,  9.35it/s]Compiling num tokens (num_tokens=2304):  26%|██▌       | 15/58 [00:05<00:04,  9.35it/s]Compiling num tokens (num_tokens=2048):  26%|██▌       | 15/58 [00:05<00:04,  9.35it/s]Compiling num tokens (num_tokens=2048):  29%|██▉       | 17/58 [00:05<00:03, 11.24it/s]Compiling num tokens (num_tokens=1792):  29%|██▉       | 17/58 [00:05<00:03, 11.24it/s]Compiling num tokens (num_tokens=1536):  29%|██▉       | 17/58 [00:05<00:03, 11.24it/s]
+    Compiling num tokens (num_tokens=3584):  19%|█▉        | 11/58 [00:06<00:10,  4.36it/s]Compiling num tokens (num_tokens=3328):  19%|█▉        | 11/58 [00:06<00:10,  4.36it/s]Compiling num tokens (num_tokens=3328):  21%|██        | 12/58 [00:06<00:10,  4.58it/s]Compiling num tokens (num_tokens=3072):  21%|██        | 12/58 [00:06<00:10,  4.58it/s]
 
-    Compiling num tokens (num_tokens=1280):  29%|██▉       | 17/58 [00:05<00:03, 11.24it/s]Compiling num tokens (num_tokens=1280):  34%|███▍      | 20/58 [00:05<00:02, 14.45it/s]Compiling num tokens (num_tokens=1024):  34%|███▍      | 20/58 [00:05<00:02, 14.45it/s]Compiling num tokens (num_tokens=960):  34%|███▍      | 20/58 [00:05<00:02, 14.45it/s] Compiling num tokens (num_tokens=896):  34%|███▍      | 20/58 [00:05<00:02, 14.45it/s]Compiling num tokens (num_tokens=832):  34%|███▍      | 20/58 [00:05<00:02, 14.45it/s]Compiling num tokens (num_tokens=832):  41%|████▏     | 24/58 [00:05<00:01, 19.88it/s]Compiling num tokens (num_tokens=768):  41%|████▏     | 24/58 [00:05<00:01, 19.88it/s]Compiling num tokens (num_tokens=704):  41%|████▏     | 24/58 [00:05<00:01, 19.88it/s]Compiling num tokens (num_tokens=640):  41%|████▏     | 24/58 [00:05<00:01, 19.88it/s]
+    Compiling num tokens (num_tokens=3072):  22%|██▏       | 13/58 [00:06<00:08,  5.03it/s]Compiling num tokens (num_tokens=2816):  22%|██▏       | 13/58 [00:06<00:08,  5.03it/s]Compiling num tokens (num_tokens=2816):  24%|██▍       | 14/58 [00:06<00:08,  5.14it/s]Compiling num tokens (num_tokens=2560):  24%|██▍       | 14/58 [00:06<00:08,  5.14it/s]
 
-    Compiling num tokens (num_tokens=576):  41%|████▏     | 24/58 [00:05<00:01, 19.88it/s]Compiling num tokens (num_tokens=512):  41%|████▏     | 24/58 [00:05<00:01, 19.88it/s]Compiling num tokens (num_tokens=512):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=480):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=448):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=416):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=384):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=352):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=320):  50%|█████     | 29/58 [00:05<00:01, 26.80it/s]Compiling num tokens (num_tokens=320):  60%|██████    | 35/58 [00:05<00:00, 34.02it/s]Compiling num tokens (num_tokens=288):  60%|██████    | 35/58 [00:05<00:00, 34.02it/s]Compiling num tokens (num_tokens=256):  60%|██████    | 35/58 [00:05<00:00, 34.02it/s]Compiling num tokens (num_tokens=240):  60%|██████    | 35/58 [00:05<00:00, 34.02it/s]
+    Compiling num tokens (num_tokens=2560):  26%|██▌       | 15/58 [00:06<00:07,  5.39it/s]Compiling num tokens (num_tokens=2304):  26%|██▌       | 15/58 [00:06<00:07,  5.39it/s]Compiling num tokens (num_tokens=2304):  28%|██▊       | 16/58 [00:06<00:06,  6.17it/s]Compiling num tokens (num_tokens=2048):  28%|██▊       | 16/58 [00:06<00:06,  6.17it/s]
 
-    Compiling num tokens (num_tokens=224):  60%|██████    | 35/58 [00:05<00:00, 34.02it/s]Compiling num tokens (num_tokens=208):  60%|██████    | 35/58 [00:06<00:00, 34.02it/s]Compiling num tokens (num_tokens=192):  60%|██████    | 35/58 [00:06<00:00, 34.02it/s]Compiling num tokens (num_tokens=192):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=176):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=160):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=144):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=128):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=112):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=96):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s] Compiling num tokens (num_tokens=80):  71%|███████   | 41/58 [00:06<00:00, 40.43it/s]Compiling num tokens (num_tokens=80):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=64):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=48):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]
+    Compiling num tokens (num_tokens=2048):  29%|██▉       | 17/58 [00:07<00:06,  6.72it/s]Compiling num tokens (num_tokens=1792):  29%|██▉       | 17/58 [00:07<00:06,  6.72it/s]Compiling num tokens (num_tokens=1536):  29%|██▉       | 17/58 [00:07<00:06,  6.72it/s]Compiling num tokens (num_tokens=1536):  33%|███▎      | 19/58 [00:07<00:04,  8.66it/s]Compiling num tokens (num_tokens=1280):  33%|███▎      | 19/58 [00:07<00:04,  8.66it/s]
 
-    Compiling num tokens (num_tokens=32):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=28):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=24):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=20):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=16):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=12):  83%|████████▎ | 48/58 [00:06<00:00, 46.19it/s]Compiling num tokens (num_tokens=12):  97%|█████████▋| 56/58 [00:06<00:00, 54.13it/s]Compiling num tokens (num_tokens=8):  97%|█████████▋| 56/58 [00:06<00:00, 54.13it/s] Compiling num tokens (num_tokens=4):  97%|█████████▋| 56/58 [00:06<00:00, 54.13it/s]Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:06<00:00,  9.23it/s]
+    Compiling num tokens (num_tokens=1024):  33%|███▎      | 19/58 [00:07<00:04,  8.66it/s]Compiling num tokens (num_tokens=1024):  36%|███▌      | 21/58 [00:07<00:03,  9.70it/s]Compiling num tokens (num_tokens=960):  36%|███▌      | 21/58 [00:07<00:03,  9.70it/s] Compiling num tokens (num_tokens=896):  36%|███▌      | 21/58 [00:07<00:03,  9.70it/s]Compiling num tokens (num_tokens=896):  40%|███▉      | 23/58 [00:07<00:02, 11.88it/s]Compiling num tokens (num_tokens=832):  40%|███▉      | 23/58 [00:07<00:02, 11.88it/s]
+
+    Compiling num tokens (num_tokens=768):  40%|███▉      | 23/58 [00:07<00:02, 11.88it/s]Compiling num tokens (num_tokens=704):  40%|███▉      | 23/58 [00:07<00:02, 11.88it/s]Compiling num tokens (num_tokens=704):  45%|████▍     | 26/58 [00:07<00:02, 15.14it/s]Compiling num tokens (num_tokens=640):  45%|████▍     | 26/58 [00:07<00:02, 15.14it/s]Compiling num tokens (num_tokens=576):  45%|████▍     | 26/58 [00:07<00:02, 15.14it/s]Compiling num tokens (num_tokens=576):  48%|████▊     | 28/58 [00:07<00:01, 16.10it/s]Compiling num tokens (num_tokens=512):  48%|████▊     | 28/58 [00:07<00:01, 16.10it/s]
+
+    Compiling num tokens (num_tokens=480):  48%|████▊     | 28/58 [00:07<00:01, 16.10it/s]Compiling num tokens (num_tokens=448):  48%|████▊     | 28/58 [00:07<00:01, 16.10it/s]Compiling num tokens (num_tokens=448):  53%|█████▎    | 31/58 [00:07<00:01, 17.88it/s]Compiling num tokens (num_tokens=416):  53%|█████▎    | 31/58 [00:07<00:01, 17.88it/s]Compiling num tokens (num_tokens=384):  53%|█████▎    | 31/58 [00:07<00:01, 17.88it/s]Compiling num tokens (num_tokens=352):  53%|█████▎    | 31/58 [00:07<00:01, 17.88it/s]Compiling num tokens (num_tokens=352):  59%|█████▊    | 34/58 [00:07<00:01, 20.24it/s]Compiling num tokens (num_tokens=320):  59%|█████▊    | 34/58 [00:07<00:01, 20.24it/s]
+
+    Compiling num tokens (num_tokens=288):  59%|█████▊    | 34/58 [00:07<00:01, 20.24it/s]Compiling num tokens (num_tokens=256):  59%|█████▊    | 34/58 [00:08<00:01, 20.24it/s]Compiling num tokens (num_tokens=256):  64%|██████▍   | 37/58 [00:08<00:00, 22.08it/s]Compiling num tokens (num_tokens=240):  64%|██████▍   | 37/58 [00:08<00:00, 22.08it/s]Compiling num tokens (num_tokens=224):  64%|██████▍   | 37/58 [00:08<00:00, 22.08it/s]Compiling num tokens (num_tokens=208):  64%|██████▍   | 37/58 [00:08<00:00, 22.08it/s]
+
+    Compiling num tokens (num_tokens=208):  69%|██████▉   | 40/58 [00:08<00:00, 22.39it/s]Compiling num tokens (num_tokens=192):  69%|██████▉   | 40/58 [00:08<00:00, 22.39it/s]Compiling num tokens (num_tokens=176):  69%|██████▉   | 40/58 [00:08<00:00, 22.39it/s]Compiling num tokens (num_tokens=160):  69%|██████▉   | 40/58 [00:08<00:00, 22.39it/s]Compiling num tokens (num_tokens=144):  69%|██████▉   | 40/58 [00:08<00:00, 22.39it/s]Compiling num tokens (num_tokens=144):  76%|███████▌  | 44/58 [00:08<00:00, 25.39it/s]Compiling num tokens (num_tokens=128):  76%|███████▌  | 44/58 [00:08<00:00, 25.39it/s]Compiling num tokens (num_tokens=112):  76%|███████▌  | 44/58 [00:08<00:00, 25.39it/s]
+
+    Compiling num tokens (num_tokens=96):  76%|███████▌  | 44/58 [00:08<00:00, 25.39it/s] Compiling num tokens (num_tokens=96):  81%|████████  | 47/58 [00:08<00:00, 25.26it/s]Compiling num tokens (num_tokens=80):  81%|████████  | 47/58 [00:08<00:00, 25.26it/s]Compiling num tokens (num_tokens=64):  81%|████████  | 47/58 [00:08<00:00, 25.26it/s]Compiling num tokens (num_tokens=48):  81%|████████  | 47/58 [00:08<00:00, 25.26it/s]Compiling num tokens (num_tokens=32):  81%|████████  | 47/58 [00:08<00:00, 25.26it/s]Compiling num tokens (num_tokens=32):  88%|████████▊ | 51/58 [00:08<00:00, 28.32it/s]Compiling num tokens (num_tokens=28):  88%|████████▊ | 51/58 [00:08<00:00, 28.32it/s]Compiling num tokens (num_tokens=24):  88%|████████▊ | 51/58 [00:08<00:00, 28.32it/s]
+
+    Compiling num tokens (num_tokens=20):  88%|████████▊ | 51/58 [00:08<00:00, 28.32it/s]Compiling num tokens (num_tokens=16):  88%|████████▊ | 51/58 [00:08<00:00, 28.32it/s]Compiling num tokens (num_tokens=16):  95%|█████████▍| 55/58 [00:08<00:00, 28.84it/s]Compiling num tokens (num_tokens=12):  95%|█████████▍| 55/58 [00:08<00:00, 28.84it/s]Compiling num tokens (num_tokens=8):  95%|█████████▍| 55/58 [00:08<00:00, 28.84it/s] Compiling num tokens (num_tokens=4):  95%|█████████▍| 55/58 [00:08<00:00, 28.84it/s]Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:08<00:00,  6.63it/s]
 
 
-      0%|          | 0/58 [00:00<?, ?it/s]Capturing num tokens (num_tokens=8192 avail_mem=43.39 GB):   0%|          | 0/58 [00:00<?, ?it/s]
+      0%|          | 0/58 [00:00<?, ?it/s]Capturing num tokens (num_tokens=8192 avail_mem=40.96 GB):   0%|          | 0/58 [00:00<?, ?it/s]
 
-    Capturing num tokens (num_tokens=8192 avail_mem=43.39 GB):   2%|▏         | 1/58 [00:00<00:19,  2.88it/s]Capturing num tokens (num_tokens=7680 avail_mem=43.36 GB):   2%|▏         | 1/58 [00:00<00:19,  2.88it/s]
+    Capturing num tokens (num_tokens=8192 avail_mem=40.96 GB):   2%|▏         | 1/58 [00:00<00:38,  1.46it/s]Capturing num tokens (num_tokens=7680 avail_mem=26.40 GB):   2%|▏         | 1/58 [00:00<00:38,  1.46it/s]
 
-    Capturing num tokens (num_tokens=7680 avail_mem=43.36 GB):   3%|▎         | 2/58 [00:00<00:18,  3.05it/s]Capturing num tokens (num_tokens=7168 avail_mem=43.36 GB):   3%|▎         | 2/58 [00:00<00:18,  3.05it/s]
+    Capturing num tokens (num_tokens=7680 avail_mem=26.40 GB):   3%|▎         | 2/58 [00:01<00:35,  1.59it/s]Capturing num tokens (num_tokens=7168 avail_mem=26.08 GB):   3%|▎         | 2/58 [00:01<00:35,  1.59it/s]
 
-    Capturing num tokens (num_tokens=7168 avail_mem=43.36 GB):   5%|▌         | 3/58 [00:00<00:16,  3.28it/s]Capturing num tokens (num_tokens=6656 avail_mem=43.37 GB):   5%|▌         | 3/58 [00:00<00:16,  3.28it/s]
+    Capturing num tokens (num_tokens=7168 avail_mem=26.08 GB):   5%|▌         | 3/58 [00:01<00:29,  1.85it/s]Capturing num tokens (num_tokens=6656 avail_mem=26.41 GB):   5%|▌         | 3/58 [00:01<00:29,  1.85it/s]
 
-    Capturing num tokens (num_tokens=6656 avail_mem=43.37 GB):   7%|▋         | 4/58 [00:01<00:16,  3.26it/s]Capturing num tokens (num_tokens=6144 avail_mem=42.21 GB):   7%|▋         | 4/58 [00:01<00:16,  3.26it/s]
+    Capturing num tokens (num_tokens=6656 avail_mem=26.41 GB):   7%|▋         | 4/58 [00:02<00:26,  2.02it/s]Capturing num tokens (num_tokens=6144 avail_mem=26.41 GB):   7%|▋         | 4/58 [00:02<00:26,  2.02it/s]
 
-    Capturing num tokens (num_tokens=6144 avail_mem=42.21 GB):   9%|▊         | 5/58 [00:01<00:20,  2.60it/s]Capturing num tokens (num_tokens=5632 avail_mem=42.22 GB):   9%|▊         | 5/58 [00:01<00:20,  2.60it/s]
+    Capturing num tokens (num_tokens=6144 avail_mem=26.41 GB):   9%|▊         | 5/58 [00:02<00:22,  2.32it/s]Capturing num tokens (num_tokens=5632 avail_mem=26.29 GB):   9%|▊         | 5/58 [00:02<00:22,  2.32it/s]
 
-    Capturing num tokens (num_tokens=5632 avail_mem=42.22 GB):  10%|█         | 6/58 [00:02<00:21,  2.45it/s]Capturing num tokens (num_tokens=5120 avail_mem=42.22 GB):  10%|█         | 6/58 [00:02<00:21,  2.45it/s]
+    Capturing num tokens (num_tokens=5632 avail_mem=26.29 GB):  10%|█         | 6/58 [00:02<00:20,  2.59it/s]Capturing num tokens (num_tokens=5120 avail_mem=26.40 GB):  10%|█         | 6/58 [00:02<00:20,  2.59it/s]
 
-    Capturing num tokens (num_tokens=5120 avail_mem=42.22 GB):  12%|█▏        | 7/58 [00:02<00:20,  2.43it/s]Capturing num tokens (num_tokens=4608 avail_mem=42.23 GB):  12%|█▏        | 7/58 [00:02<00:20,  2.43it/s]
+    Capturing num tokens (num_tokens=5120 avail_mem=26.40 GB):  12%|█▏        | 7/58 [00:03<00:17,  2.88it/s]Capturing num tokens (num_tokens=4608 avail_mem=26.32 GB):  12%|█▏        | 7/58 [00:03<00:17,  2.88it/s]
 
-    Capturing num tokens (num_tokens=4608 avail_mem=42.23 GB):  14%|█▍        | 8/58 [00:03<00:20,  2.48it/s]Capturing num tokens (num_tokens=4096 avail_mem=42.23 GB):  14%|█▍        | 8/58 [00:03<00:20,  2.48it/s]
+    Capturing num tokens (num_tokens=4608 avail_mem=26.32 GB):  14%|█▍        | 8/58 [00:03<00:15,  3.26it/s]Capturing num tokens (num_tokens=4096 avail_mem=26.39 GB):  14%|█▍        | 8/58 [00:03<00:15,  3.26it/s]
 
-    Capturing num tokens (num_tokens=4096 avail_mem=42.23 GB):  16%|█▌        | 9/58 [00:03<00:18,  2.59it/s]Capturing num tokens (num_tokens=3840 avail_mem=42.23 GB):  16%|█▌        | 9/58 [00:03<00:18,  2.59it/s]
+    Capturing num tokens (num_tokens=4096 avail_mem=26.39 GB):  16%|█▌        | 9/58 [00:03<00:13,  3.64it/s]Capturing num tokens (num_tokens=3840 avail_mem=26.32 GB):  16%|█▌        | 9/58 [00:03<00:13,  3.64it/s]
 
-    Capturing num tokens (num_tokens=3840 avail_mem=42.23 GB):  17%|█▋        | 10/58 [00:03<00:17,  2.72it/s]Capturing num tokens (num_tokens=3584 avail_mem=42.23 GB):  17%|█▋        | 10/58 [00:03<00:17,  2.72it/s]
+    Capturing num tokens (num_tokens=3840 avail_mem=26.32 GB):  17%|█▋        | 10/58 [00:03<00:12,  3.96it/s]Capturing num tokens (num_tokens=3584 avail_mem=23.30 GB):  17%|█▋        | 10/58 [00:03<00:12,  3.96it/s]Capturing num tokens (num_tokens=3584 avail_mem=23.30 GB):  19%|█▉        | 11/58 [00:03<00:10,  4.32it/s]Capturing num tokens (num_tokens=3328 avail_mem=20.64 GB):  19%|█▉        | 11/58 [00:03<00:10,  4.32it/s]
 
-    Capturing num tokens (num_tokens=3584 avail_mem=42.23 GB):  19%|█▉        | 11/58 [00:04<00:16,  2.81it/s]Capturing num tokens (num_tokens=3328 avail_mem=42.23 GB):  19%|█▉        | 11/58 [00:04<00:16,  2.81it/s]
+    Capturing num tokens (num_tokens=3328 avail_mem=20.64 GB):  21%|██        | 12/58 [00:03<00:09,  4.78it/s]Capturing num tokens (num_tokens=3072 avail_mem=20.53 GB):  21%|██        | 12/58 [00:03<00:09,  4.78it/s]Capturing num tokens (num_tokens=3072 avail_mem=20.53 GB):  22%|██▏       | 13/58 [00:04<00:08,  5.26it/s]Capturing num tokens (num_tokens=2816 avail_mem=20.52 GB):  22%|██▏       | 13/58 [00:04<00:08,  5.26it/s]
 
-    Capturing num tokens (num_tokens=3328 avail_mem=42.23 GB):  21%|██        | 12/58 [00:04<00:15,  2.98it/s]Capturing num tokens (num_tokens=3072 avail_mem=42.23 GB):  21%|██        | 12/58 [00:04<00:15,  2.98it/s]
+    Capturing num tokens (num_tokens=2816 avail_mem=20.52 GB):  24%|██▍       | 14/58 [00:04<00:07,  5.80it/s]Capturing num tokens (num_tokens=2560 avail_mem=20.52 GB):  24%|██▍       | 14/58 [00:04<00:07,  5.80it/s]Capturing num tokens (num_tokens=2560 avail_mem=20.52 GB):  26%|██▌       | 15/58 [00:04<00:06,  6.42it/s]Capturing num tokens (num_tokens=2304 avail_mem=20.52 GB):  26%|██▌       | 15/58 [00:04<00:06,  6.42it/s]
 
-    Capturing num tokens (num_tokens=3072 avail_mem=42.23 GB):  22%|██▏       | 13/58 [00:04<00:14,  3.14it/s]Capturing num tokens (num_tokens=2816 avail_mem=42.23 GB):  22%|██▏       | 13/58 [00:04<00:14,  3.14it/s]
+    Capturing num tokens (num_tokens=2304 avail_mem=20.52 GB):  28%|██▊       | 16/58 [00:04<00:05,  7.06it/s]Capturing num tokens (num_tokens=2048 avail_mem=20.49 GB):  28%|██▊       | 16/58 [00:04<00:05,  7.06it/s]Capturing num tokens (num_tokens=1792 avail_mem=20.51 GB):  28%|██▊       | 16/58 [00:04<00:05,  7.06it/s]Capturing num tokens (num_tokens=1792 avail_mem=20.51 GB):  31%|███       | 18/58 [00:04<00:04,  8.52it/s]Capturing num tokens (num_tokens=1536 avail_mem=20.50 GB):  31%|███       | 18/58 [00:04<00:04,  8.52it/s]
 
-    Capturing num tokens (num_tokens=2816 avail_mem=42.23 GB):  24%|██▍       | 14/58 [00:04<00:12,  3.39it/s]Capturing num tokens (num_tokens=2560 avail_mem=42.23 GB):  24%|██▍       | 14/58 [00:04<00:12,  3.39it/s]
+    Capturing num tokens (num_tokens=1280 avail_mem=20.50 GB):  31%|███       | 18/58 [00:04<00:04,  8.52it/s]Capturing num tokens (num_tokens=1280 avail_mem=20.50 GB):  34%|███▍      | 20/58 [00:04<00:03, 10.01it/s]Capturing num tokens (num_tokens=1024 avail_mem=20.49 GB):  34%|███▍      | 20/58 [00:04<00:03, 10.01it/s]Capturing num tokens (num_tokens=960 avail_mem=20.48 GB):  34%|███▍      | 20/58 [00:04<00:03, 10.01it/s] Capturing num tokens (num_tokens=960 avail_mem=20.48 GB):  38%|███▊      | 22/58 [00:04<00:03, 11.86it/s]Capturing num tokens (num_tokens=896 avail_mem=20.47 GB):  38%|███▊      | 22/58 [00:04<00:03, 11.86it/s]
 
-    Capturing num tokens (num_tokens=2560 avail_mem=42.23 GB):  26%|██▌       | 15/58 [00:05<00:11,  3.68it/s]Capturing num tokens (num_tokens=2304 avail_mem=42.23 GB):  26%|██▌       | 15/58 [00:05<00:11,  3.68it/s]
+    Capturing num tokens (num_tokens=832 avail_mem=20.47 GB):  38%|███▊      | 22/58 [00:04<00:03, 11.86it/s]Capturing num tokens (num_tokens=832 avail_mem=20.47 GB):  41%|████▏     | 24/58 [00:05<00:02, 13.09it/s]Capturing num tokens (num_tokens=768 avail_mem=20.46 GB):  41%|████▏     | 24/58 [00:05<00:02, 13.09it/s]Capturing num tokens (num_tokens=704 avail_mem=20.45 GB):  41%|████▏     | 24/58 [00:05<00:02, 13.09it/s]Capturing num tokens (num_tokens=640 avail_mem=20.45 GB):  41%|████▏     | 24/58 [00:05<00:02, 13.09it/s]Capturing num tokens (num_tokens=640 avail_mem=20.45 GB):  47%|████▋     | 27/58 [00:05<00:01, 16.83it/s]Capturing num tokens (num_tokens=576 avail_mem=20.44 GB):  47%|████▋     | 27/58 [00:05<00:01, 16.83it/s]Capturing num tokens (num_tokens=512 avail_mem=20.44 GB):  47%|████▋     | 27/58 [00:05<00:01, 16.83it/s]
 
-    Capturing num tokens (num_tokens=2304 avail_mem=42.23 GB):  28%|██▊       | 16/58 [00:05<00:10,  3.94it/s]Capturing num tokens (num_tokens=2048 avail_mem=42.23 GB):  28%|██▊       | 16/58 [00:05<00:10,  3.94it/s]Capturing num tokens (num_tokens=2048 avail_mem=42.23 GB):  29%|██▉       | 17/58 [00:05<00:09,  4.41it/s]Capturing num tokens (num_tokens=1792 avail_mem=42.23 GB):  29%|██▉       | 17/58 [00:05<00:09,  4.41it/s]
+    Capturing num tokens (num_tokens=480 avail_mem=20.43 GB):  47%|████▋     | 27/58 [00:05<00:01, 16.83it/s]Capturing num tokens (num_tokens=448 avail_mem=20.43 GB):  47%|████▋     | 27/58 [00:05<00:01, 16.83it/s]Capturing num tokens (num_tokens=448 avail_mem=20.43 GB):  53%|█████▎    | 31/58 [00:05<00:01, 21.23it/s]Capturing num tokens (num_tokens=416 avail_mem=20.42 GB):  53%|█████▎    | 31/58 [00:05<00:01, 21.23it/s]Capturing num tokens (num_tokens=384 avail_mem=20.42 GB):  53%|█████▎    | 31/58 [00:05<00:01, 21.23it/s]Capturing num tokens (num_tokens=352 avail_mem=20.42 GB):  53%|█████▎    | 31/58 [00:05<00:01, 21.23it/s]Capturing num tokens (num_tokens=320 avail_mem=20.41 GB):  53%|█████▎    | 31/58 [00:05<00:01, 21.23it/s]Capturing num tokens (num_tokens=320 avail_mem=20.41 GB):  60%|██████    | 35/58 [00:05<00:00, 24.93it/s]Capturing num tokens (num_tokens=288 avail_mem=20.41 GB):  60%|██████    | 35/58 [00:05<00:00, 24.93it/s]
 
-    Capturing num tokens (num_tokens=1792 avail_mem=42.23 GB):  31%|███       | 18/58 [00:05<00:07,  5.06it/s]Capturing num tokens (num_tokens=1536 avail_mem=42.23 GB):  31%|███       | 18/58 [00:05<00:07,  5.06it/s]Capturing num tokens (num_tokens=1536 avail_mem=42.23 GB):  33%|███▎      | 19/58 [00:05<00:06,  5.69it/s]Capturing num tokens (num_tokens=1280 avail_mem=42.23 GB):  33%|███▎      | 19/58 [00:05<00:06,  5.69it/s]
+    Capturing num tokens (num_tokens=256 avail_mem=20.40 GB):  60%|██████    | 35/58 [00:05<00:00, 24.93it/s]Capturing num tokens (num_tokens=240 avail_mem=20.40 GB):  60%|██████    | 35/58 [00:05<00:00, 24.93it/s]Capturing num tokens (num_tokens=224 avail_mem=20.40 GB):  60%|██████    | 35/58 [00:05<00:00, 24.93it/s]Capturing num tokens (num_tokens=224 avail_mem=20.40 GB):  67%|██████▋   | 39/58 [00:05<00:00, 28.09it/s]Capturing num tokens (num_tokens=208 avail_mem=20.39 GB):  67%|██████▋   | 39/58 [00:05<00:00, 28.09it/s]Capturing num tokens (num_tokens=192 avail_mem=20.39 GB):  67%|██████▋   | 39/58 [00:05<00:00, 28.09it/s]Capturing num tokens (num_tokens=176 avail_mem=20.38 GB):  67%|██████▋   | 39/58 [00:05<00:00, 28.09it/s]Capturing num tokens (num_tokens=160 avail_mem=20.38 GB):  67%|██████▋   | 39/58 [00:05<00:00, 28.09it/s]Capturing num tokens (num_tokens=160 avail_mem=20.38 GB):  74%|███████▍  | 43/58 [00:05<00:00, 30.76it/s]Capturing num tokens (num_tokens=144 avail_mem=20.37 GB):  74%|███████▍  | 43/58 [00:05<00:00, 30.76it/s]
 
-    Capturing num tokens (num_tokens=1280 avail_mem=42.23 GB):  34%|███▍      | 20/58 [00:05<00:05,  6.43it/s]Capturing num tokens (num_tokens=1024 avail_mem=42.23 GB):  34%|███▍      | 20/58 [00:05<00:05,  6.43it/s]Capturing num tokens (num_tokens=1024 avail_mem=42.23 GB):  36%|███▌      | 21/58 [00:05<00:05,  6.97it/s]Capturing num tokens (num_tokens=960 avail_mem=42.22 GB):  36%|███▌      | 21/58 [00:05<00:05,  6.97it/s] Capturing num tokens (num_tokens=896 avail_mem=42.22 GB):  36%|███▌      | 21/58 [00:05<00:05,  6.97it/s]
+    Capturing num tokens (num_tokens=128 avail_mem=20.37 GB):  74%|███████▍  | 43/58 [00:05<00:00, 30.76it/s]Capturing num tokens (num_tokens=112 avail_mem=20.38 GB):  74%|███████▍  | 43/58 [00:05<00:00, 30.76it/s]Capturing num tokens (num_tokens=96 avail_mem=20.38 GB):  74%|███████▍  | 43/58 [00:05<00:00, 30.76it/s] Capturing num tokens (num_tokens=96 avail_mem=20.38 GB):  81%|████████  | 47/58 [00:05<00:00, 32.95it/s]Capturing num tokens (num_tokens=80 avail_mem=20.37 GB):  81%|████████  | 47/58 [00:05<00:00, 32.95it/s]Capturing num tokens (num_tokens=64 avail_mem=20.37 GB):  81%|████████  | 47/58 [00:05<00:00, 32.95it/s]Capturing num tokens (num_tokens=48 avail_mem=20.36 GB):  81%|████████  | 47/58 [00:05<00:00, 32.95it/s]Capturing num tokens (num_tokens=32 avail_mem=20.36 GB):  81%|████████  | 47/58 [00:05<00:00, 32.95it/s]Capturing num tokens (num_tokens=32 avail_mem=20.36 GB):  88%|████████▊ | 51/58 [00:05<00:00, 34.61it/s]Capturing num tokens (num_tokens=28 avail_mem=20.36 GB):  88%|████████▊ | 51/58 [00:05<00:00, 34.61it/s]
 
-    Capturing num tokens (num_tokens=896 avail_mem=42.22 GB):  40%|███▉      | 23/58 [00:06<00:03,  9.57it/s]Capturing num tokens (num_tokens=832 avail_mem=42.22 GB):  40%|███▉      | 23/58 [00:06<00:03,  9.57it/s]Capturing num tokens (num_tokens=768 avail_mem=42.21 GB):  40%|███▉      | 23/58 [00:06<00:03,  9.57it/s]Capturing num tokens (num_tokens=768 avail_mem=42.21 GB):  43%|████▎     | 25/58 [00:06<00:02, 11.42it/s]Capturing num tokens (num_tokens=704 avail_mem=42.21 GB):  43%|████▎     | 25/58 [00:06<00:02, 11.42it/s]Capturing num tokens (num_tokens=640 avail_mem=42.20 GB):  43%|████▎     | 25/58 [00:06<00:02, 11.42it/s]
-
-    Capturing num tokens (num_tokens=640 avail_mem=42.20 GB):  47%|████▋     | 27/58 [00:06<00:02, 13.33it/s]Capturing num tokens (num_tokens=576 avail_mem=42.20 GB):  47%|████▋     | 27/58 [00:06<00:02, 13.33it/s]Capturing num tokens (num_tokens=512 avail_mem=42.19 GB):  47%|████▋     | 27/58 [00:06<00:02, 13.33it/s]Capturing num tokens (num_tokens=480 avail_mem=42.18 GB):  47%|████▋     | 27/58 [00:06<00:02, 13.33it/s]Capturing num tokens (num_tokens=480 avail_mem=42.18 GB):  52%|█████▏    | 30/58 [00:06<00:01, 15.83it/s]Capturing num tokens (num_tokens=448 avail_mem=42.18 GB):  52%|█████▏    | 30/58 [00:06<00:01, 15.83it/s]Capturing num tokens (num_tokens=416 avail_mem=42.18 GB):  52%|█████▏    | 30/58 [00:06<00:01, 15.83it/s]
-
-    Capturing num tokens (num_tokens=416 avail_mem=42.18 GB):  55%|█████▌    | 32/58 [00:06<00:01, 16.74it/s]Capturing num tokens (num_tokens=384 avail_mem=42.17 GB):  55%|█████▌    | 32/58 [00:06<00:01, 16.74it/s]Capturing num tokens (num_tokens=352 avail_mem=42.17 GB):  55%|█████▌    | 32/58 [00:06<00:01, 16.74it/s]Capturing num tokens (num_tokens=320 avail_mem=42.16 GB):  55%|█████▌    | 32/58 [00:06<00:01, 16.74it/s]Capturing num tokens (num_tokens=320 avail_mem=42.16 GB):  60%|██████    | 35/58 [00:06<00:01, 19.72it/s]Capturing num tokens (num_tokens=288 avail_mem=42.16 GB):  60%|██████    | 35/58 [00:06<00:01, 19.72it/s]Capturing num tokens (num_tokens=256 avail_mem=42.16 GB):  60%|██████    | 35/58 [00:06<00:01, 19.72it/s]Capturing num tokens (num_tokens=240 avail_mem=42.15 GB):  60%|██████    | 35/58 [00:06<00:01, 19.72it/s]Capturing num tokens (num_tokens=224 avail_mem=42.15 GB):  60%|██████    | 35/58 [00:06<00:01, 19.72it/s]
-
-    Capturing num tokens (num_tokens=224 avail_mem=42.15 GB):  67%|██████▋   | 39/58 [00:06<00:00, 24.55it/s]Capturing num tokens (num_tokens=208 avail_mem=42.14 GB):  67%|██████▋   | 39/58 [00:06<00:00, 24.55it/s]Capturing num tokens (num_tokens=192 avail_mem=42.14 GB):  67%|██████▋   | 39/58 [00:06<00:00, 24.55it/s]Capturing num tokens (num_tokens=176 avail_mem=42.14 GB):  67%|██████▋   | 39/58 [00:06<00:00, 24.55it/s]Capturing num tokens (num_tokens=160 avail_mem=42.13 GB):  67%|██████▋   | 39/58 [00:06<00:00, 24.55it/s]Capturing num tokens (num_tokens=160 avail_mem=42.13 GB):  74%|███████▍  | 43/58 [00:06<00:00, 28.40it/s]Capturing num tokens (num_tokens=144 avail_mem=42.12 GB):  74%|███████▍  | 43/58 [00:06<00:00, 28.40it/s]Capturing num tokens (num_tokens=128 avail_mem=42.12 GB):  74%|███████▍  | 43/58 [00:06<00:00, 28.40it/s]Capturing num tokens (num_tokens=112 avail_mem=40.94 GB):  74%|███████▍  | 43/58 [00:06<00:00, 28.40it/s]
-
-    Capturing num tokens (num_tokens=112 avail_mem=40.94 GB):  79%|███████▉  | 46/58 [00:07<00:00, 23.55it/s]Capturing num tokens (num_tokens=96 avail_mem=40.94 GB):  79%|███████▉  | 46/58 [00:07<00:00, 23.55it/s] Capturing num tokens (num_tokens=80 avail_mem=40.93 GB):  79%|███████▉  | 46/58 [00:07<00:00, 23.55it/s]Capturing num tokens (num_tokens=64 avail_mem=42.09 GB):  79%|███████▉  | 46/58 [00:07<00:00, 23.55it/s]
-
-    Capturing num tokens (num_tokens=64 avail_mem=42.09 GB):  84%|████████▍ | 49/58 [00:07<00:00, 18.10it/s]Capturing num tokens (num_tokens=48 avail_mem=41.10 GB):  84%|████████▍ | 49/58 [00:07<00:00, 18.10it/s]Capturing num tokens (num_tokens=32 avail_mem=41.09 GB):  84%|████████▍ | 49/58 [00:07<00:00, 18.10it/s]
-
-    Capturing num tokens (num_tokens=28 avail_mem=41.09 GB):  84%|████████▍ | 49/58 [00:07<00:00, 18.10it/s]Capturing num tokens (num_tokens=28 avail_mem=41.09 GB):  90%|████████▉ | 52/58 [00:07<00:00, 14.14it/s]Capturing num tokens (num_tokens=24 avail_mem=42.07 GB):  90%|████████▉ | 52/58 [00:07<00:00, 14.14it/s]
-
-    Capturing num tokens (num_tokens=20 avail_mem=41.15 GB):  90%|████████▉ | 52/58 [00:07<00:00, 14.14it/s]Capturing num tokens (num_tokens=20 avail_mem=41.15 GB):  93%|█████████▎| 54/58 [00:07<00:00, 12.69it/s]Capturing num tokens (num_tokens=16 avail_mem=41.14 GB):  93%|█████████▎| 54/58 [00:07<00:00, 12.69it/s]Capturing num tokens (num_tokens=12 avail_mem=42.07 GB):  93%|█████████▎| 54/58 [00:07<00:00, 12.69it/s]
-
-    Capturing num tokens (num_tokens=12 avail_mem=42.07 GB):  97%|█████████▋| 56/58 [00:07<00:00, 13.05it/s]Capturing num tokens (num_tokens=8 avail_mem=42.00 GB):  97%|█████████▋| 56/58 [00:08<00:00, 13.05it/s] 
-
-    Capturing num tokens (num_tokens=4 avail_mem=41.20 GB):  97%|█████████▋| 56/58 [00:08<00:00, 13.05it/s]Capturing num tokens (num_tokens=4 avail_mem=41.20 GB): 100%|██████████| 58/58 [00:08<00:00,  9.42it/s]Capturing num tokens (num_tokens=4 avail_mem=41.20 GB): 100%|██████████| 58/58 [00:08<00:00,  6.96it/s]
+    Capturing num tokens (num_tokens=24 avail_mem=20.35 GB):  88%|████████▊ | 51/58 [00:05<00:00, 34.61it/s]Capturing num tokens (num_tokens=20 avail_mem=20.34 GB):  88%|████████▊ | 51/58 [00:05<00:00, 34.61it/s]Capturing num tokens (num_tokens=16 avail_mem=20.34 GB):  88%|████████▊ | 51/58 [00:05<00:00, 34.61it/s]Capturing num tokens (num_tokens=16 avail_mem=20.34 GB):  95%|█████████▍| 55/58 [00:05<00:00, 35.73it/s]Capturing num tokens (num_tokens=12 avail_mem=20.34 GB):  95%|█████████▍| 55/58 [00:05<00:00, 35.73it/s]Capturing num tokens (num_tokens=8 avail_mem=20.33 GB):  95%|█████████▍| 55/58 [00:05<00:00, 35.73it/s] Capturing num tokens (num_tokens=4 avail_mem=20.33 GB):  95%|█████████▍| 55/58 [00:05<00:00, 35.73it/s]Capturing num tokens (num_tokens=4 avail_mem=20.33 GB): 100%|██████████| 58/58 [00:06<00:00,  9.65it/s]
 
 
 ### JSON
@@ -1088,7 +1042,7 @@ for prompt, output in zip(prompts, outputs):
 
 
 
-<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: Paris is the capital of France</strong>
+<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: London is the capital of England</strong>
 
 
 ### Regular expression
@@ -1224,7 +1178,7 @@ for prompt, output in zip(prompts, outputs):
 
 
 
-<strong style='color: #00008B;'>Prompt: <|begin_of_text|><|start_header_id|>system<|end_header_id|><br><br>Cutting Knowledge Date: December 2023<br>Today Date: 26 Jul 2024<br><br><|eot_id|><|start_header_id|>user<|end_header_id|><br><br>Paris is the capital of<|eot_id|><|start_header_id|>assistant<|end_header_id|><br><br><br>Generated text: Paris is the capital of France.</strong>
+<strong style='color: #00008B;'>Prompt: <|begin_of_text|><|start_header_id|>system<|end_header_id|><br><br>Cutting Knowledge Date: December 2023<br>Today Date: 26 Jul 2024<br><br><|eot_id|><|start_header_id|>user<|end_header_id|><br><br>Paris is the capital of<|eot_id|><|start_header_id|>assistant<|end_header_id|><br><br><br>Generated text: France.</strong>
 
 
 
