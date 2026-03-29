@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-29 19:50:31.347 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:55:52.549 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-29 19:50:31] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:55:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-29 19:50:31.348 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:55:52.550 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-29 19:50:31] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:55:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-29 19:50:31.349 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:55:52.550 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-29 19:50:31] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:55:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-29 19:50:31.349 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:55:52.551 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-29 19:50:31] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:55:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-29 19:50:31.350 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:55:52.552 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-29 19:50:31] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:55:52] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-29 19:50:41.128 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 19:50:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 19:50:41.128 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 19:50:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 19:50:41.128 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 19:50:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 19:50:41.128 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 19:50:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-29 19:50:41.128 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-29 19:50:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:56:02.170 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:56:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:56:02.170 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:56:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:56:02.170 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:56:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:56:02.170 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:56:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 21:56:02.170 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 21:56:02] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.80it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.22it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.35s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.23s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.67it/s]
 
 
 
@@ -158,9 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    It looks like you've taken a photograph of a very unusual scene where someone is hanging laundry out on the back of a yellow taxi. This is not a typical way to hang clothes outside, especially not with a taxi as a makeshift drying frame. It might be an interesting or humorous moment, or it could be part of a street performance, art installation, or some other unconventional use of an urban space. 
-    
-    If you have more context about where this photo was taken or by whom, I might be able to provide more specific details.
+    The image shows a scene of commercial leasing of parking spaces in New York City. A car is parked on the street, and the word "BOOK" is displayed prominently on it. This indicates that this car is available for rental or leasing to other drivers. People might park their cars here by paying for the space to use it. This practice is common in bustling areas like New York City where parking can be scarce and expensive.
 
 
 ### Call with Processor Output
@@ -185,7 +183,8 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi driving down a city street. There is a person hanging clothes on the taxi, using some makeshift clotheslines attached to a blue piece of furniture. This is a common sight in some urban areas, where local residents use the taxis to hang their laundry under windows. The background includes other buildings and street signs, indicating that this is likely in a developed urban area.
+    The image shows a street scene featuring two yellow taxis driving down a city street. The foreground taxi is positioned centrally in the image and appears to be moving in the opposite direction of the second taxi, which is parked on the right side of the road. Both taxis have a distinctive yellow color and a design that includes the New York City黄色 taxpayers'));
+    The background of the image includes tall buildings with glass windows, indicating an urban environment. Various banners and flags can be seen hanging from the buildings. There are also two canes, one darker than the other, placed on the back seat of the real taxi, suggesting that the person using the taxi
 
 
 ### Call with Precomputed Embeddings
@@ -241,7 +240,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a cab blocking traffic at a red traffic light. The time that cab occupies the light for stopping is called a "red light time." There are no other vehicles in the image. The cab and the traffic light are located in an urban setting.
+    The image shows a yellow taxi cab on a city street. The taxi has a luggage rack attached to the top, which is being used to transport what appears to be a full-size toy orangutan from Casual Tycoon. This is a playful and creative use of an ordinary urban taxi cab.
 
 
 ## Querying Llama 4 Vision Model
