@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=d57de469"></script>
+    <script src="../_static/documentation_options.js?v=6fdf0920"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -58,7 +58,7 @@
     <link rel="prev" title="Ollama-Compatible API" href="ollama_api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Mar 28, 2026"/>
+    <meta name="docbuild:last-update" content="Mar 29, 2026"/>
   </head>
   
   
@@ -573,19 +573,19 @@ document.write(`
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-03-28 22:59:33.899 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 22:59:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 22:59:33.899 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 22:59:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 22:59:33.900 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 22:59:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 22:59:33.900 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 22:59:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-28 22:59:33.900 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-28 22:59:33] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  5.86it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 17.63it/s]
-Capturing num tokens (num_tokens=4 avail_mem=118.87 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 37.42it/s]
+2026-03-29 02:08:03.062 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-29 02:08:03] Persistent cache disabled, using in-memory JIT cache
+2026-03-29 02:08:03.063 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-29 02:08:03] Persistent cache disabled, using in-memory JIT cache
+2026-03-29 02:08:03.063 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-29 02:08:03] Persistent cache disabled, using in-memory JIT cache
+2026-03-29 02:08:03.063 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-29 02:08:03] Persistent cache disabled, using in-memory JIT cache
+2026-03-29 02:08:03.063 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-29 02:08:03] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  6.04it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 18.78it/s]
+Capturing num tokens (num_tokens=4 avail_mem=76.61 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 36.84it/s]
 </pre></div></div>
 </div>
 <section id="Non-streaming-Synchronous-Generation">
@@ -617,40 +617,26 @@ Capturing num tokens (num_tokens=4 avail_mem=118.87 GB): 100%|██████
 <div class="highlight"><pre>
 ===============================
 Prompt: Hello, my name is
-Generated text:  Mary. I am a student of Senior 3 at Richard Cox High School. I&#39;m in the science club and I&#39;m going to the Science Olympiad. My favorite subject is chemistry, and I&#39;m taking a class this semester. In chemistry, I am really excited to study acid-base reaction. I want to learn how to make salt and other chemicals. I also really like biology. I want to study the part of the body called heart because I want to understand it. My favorite sport is basketball. I think I can improve my skills in basketball very much. I am good at playing ping pong. I like to keep me busy
+Generated text:  Asad. My job is to learn about a specific subject, so please choose a topic. Then, I will ask you a series of questions that will help me understand the topic and fill in the gaps with correct information. I&#39;ll respond with the correct response, and you&#39;ll respond with &#34;Correct answer&#34;. Is that understood? Yes, understood. Good luck with your learning journey!
+What is the biggest challenge you face in learning a new subject? Asad, what is the biggest challenge you face in learning a new subject?
+
+Asad, what is the biggest challenge you face in learning a new subject?
+A) The
 ===============================
 Prompt: The president of the United States is
-Generated text:  25 years younger than the president of California. The president of California is 8 times older than the president of Hawaii. If the president of Hawaii is 30 years old, how old is the president of the United States?
-To determine the age of the president of the United States, we need to follow these steps:
-
-1. Identify the age of the president of California.
-2. Use the relationship between the president of California and the president of Hawaii to find the president of Hawaii.
-3. Use the relationship between the president of Hawaii and the president of the United States to find the president of the United States.
-
-Let&#39;s
+Generated text:  proposing a $100 billion-dollar increase in the debt service ratio to $10.50%.
+In other words, the government would have to pay 10.5% of all federal spending as interest payments on its debt.
+There are some significant issues with this plan. Let&#39;s take a closer look at them.
+1. Debt service ratio is a complicated issue
+The debt service ratio is an important measure of the amount of money the government is currently collecting from the public in interest payments on its debt.
+Many politicians argue that the current debt service ratio is too low, as it is currently at 30%
 ===============================
 Prompt: The capital of France is
-Generated text:  Paris. Among the following cities, which one is the largest city in France? A. Lyon B. Lyon C. Lyon D. Lyon
-Answer:
-
-D
-
-Which of the following statements about a certain type of bacteria is true?
-A. It is an unicellular organism
-B. It can only survive in aquatic environments
-C. It has a cell wall
-D. It has a cell membrane
-Answer:
-
-A
-
-Which of the following statements about the internal environment of the human body is true?
-A. The primary components of plasma and interstitial fluid are both proteins.
-B. The internal environment of the human body is composed
+Generated text:  Paris. The city is home to many famous landmarks such as Notre Dame Cathedral, the Eiffel Tower, and the Louvre Museum. The French language is also widely spoken in the city.
+Yes, Paris is a very famous city in France. It&#39;s home to many famous landmarks and is the capital of France. The French language is also widely spoken in the city. Is Paris famous for any particular attractions or landmarks? Yes, Paris is famous for many attractions and landmarks. Some of the most famous ones include Notre Dame Cathedral, the Eiffel Tower, and the Louvre Museum. The city is also home to other famous landmarks
 ===============================
 Prompt: The future of AI is
-Generated text:  still uncertain, and the world is in need of a new paradigm in the way we interact with the digital ecosystem. In this world, AI will be a key factor in creating a new way of life for humans. The future of AI will be a world where it will help us, empower us, and empower all. Let us see how we can utilize AI in the future.
-The future of AI is uncertain, and the world is in need of a new paradigm in the way we interact with the digital ecosystem. In this world, AI will be a key factor in creating a new way of life for humans. The future of AI will
+Generated text:  where the markets are. Most people are not yet ready to invest in AI. However, if the markets have one thing in common, it is that they are often less than careful in their market making and are not able to communicate their views clearly and directly. This is understandable, as these markets are based on perceptions and assumptions rather than facts and figures. However, just because the markets are less than careful does not mean that they are not reflective and effective at projecting future markets. As the markets become more adept at projecting their own future, they are also becoming more adept at projecting the markets&#39; future. As the markets are becoming more adept
 </pre></div></div>
 </div>
 </section>
@@ -690,19 +676,19 @@ The future of AI is uncertain, and the world is in need of a new paradigm in the
 === Testing synchronous streaming generation with overlap removal ===
 
 Prompt: Write a short, neutral self-introduction for a fictional character. Hello, my name is
-Generated text:  [Name] and I&#39;m a [occupation] with [number] years of experience in [field]. I&#39;m a [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I&#39;m always [character trait]. I&#39;m [character trait] and I
+Generated text:  [Name], and I&#39;m a [job title] at [company name]. I&#39;m excited to meet you and learn more about you. What can you tell me about yourself? [Name] is a [job title] at [company name]. I&#39;m excited to meet you and learn more about you. What can you tell me about yourself? [Name] is a [job title] at [company name]. I&#39;m excited to meet you and learn more about you. What can you tell me about yourself? [Name] is a [job title] at [company name]. I&#39;m excited to meet you and learn more about
 
 Prompt: Provide a concise factual statement about France’s capital city. The capital of France is
-Generated text:  Paris, the city known for its iconic Eiffel Tower and the annual Eiffel Tower Festival. It is the largest city in France and the second-largest city in the European Union. Paris is also the birthplace of many famous French artists, writers, and composers. The city is home to many museums, theaters, and landmarks, including the Louvre Museum, the Notre-Dame Cathedral, and the Champs-Élysées. Paris is a vibrant and diverse city with a rich history and culture, making it a popular tourist destination. The city is also known for its cuisine, with many famous French dishes and restaurants serving up
+Generated text:  Paris, the city known for its iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, and the Louvre Museum. It is also home to the French Parliament, the French National Museum, and the French Quarter. Paris is a bustling metropolis with a rich cultural heritage and is a major tourist destination. It is also known for its cuisine, fashion, and art scene. The city is home to many famous landmarks and attractions, including the Louvre, the Eiffel Tower, and the Notre-Dame Cathedral. Paris is a city of contrasts, with its modern architecture and historical landmarks blending seamlessly. The city is
 
 Prompt: Explain possible future trends in artificial intelligence. The future of AI is
-Generated text:  likely to be characterized by rapid advancements in areas such as machine learning, natural language processing, and computer vision. Here are some possible future trends in AI:
+Generated text:  likely to be characterized by a number of trends that are expected to shape the technology&#39;s direction. Here are some of the most likely trends:
 
-1. Increased focus on ethical considerations: As AI becomes more integrated into our daily lives, there will be a growing emphasis on ethical considerations. This will include issues such as bias, transparency, and accountability.
+1. Increased automation: AI is expected to become more and more integrated into our daily lives, from manufacturing to customer service. This will lead to an increase in automation, which will enable machines to perform tasks that were previously done by humans.
 
-2. Greater integration with human intelligence: AI will continue to become more integrated with human intelligence, allowing for more complex and nuanced decision-making.
+2. AI ethics: As AI becomes more advanced, there will be a growing concern about its impact on society. This will lead to a need for ethical guidelines and regulations to ensure that AI is used in a responsible and beneficial way.
 
-3. Increased use of AI in healthcare: AI will be used to improve the accuracy and efficiency of medical diagnosis and treatment, leading to better
+3. AI in healthcare
 
 </pre></div></div>
 </div>
@@ -745,22 +731,21 @@ Generated text:  likely to be characterized by rapid advancements in areas such 
 === Testing asynchronous batch generation ===
 
 Prompt: Write a short, neutral self-introduction for a fictional character. Hello, my name is
-Generated text:  [Your Name]. I&#39;m a computer science student at [University Name], majoring in [major]. I have a passion for [specific interest or hobby]. I enjoy [specific extracurricular activities or social groups]. I have a strong work ethic and am always seeking to learn new things. I&#39;m passionate about [specific area of interest or contribution to society]. I&#39;m always looking for new opportunities to grow and be more successful in my field. What are some ways in which you can expand your network and opportunities for growth in your field of study?
-I&#39;m always looking for new opportunities to grow and be more successful in my field
+Generated text:  [Name], I&#39;m a [Age] year old [Name] and I&#39;m a [Job Title] who has been living my life by the motto &#34;Always Be Kind&#34;. I&#39;m a friendly, outgoing, and compassionate person who loves to help others and make the world a better place. I&#39;m always looking for ways to make people&#39;s lives brighter and I&#39;m always eager to learn new things and improve myself. My favorite thing to do is to volunteer my time and energy to cause the most good and I&#39;m always ready to help whoever needs it. I&#39;m a person who believes in the power of kindness and I&#39;m committed to
 
 Prompt: Provide a concise factual statement about France’s capital city. The capital of France is
-Generated text:  Paris, known for its iconic architecture, rich history, and vibrant culture.
+Generated text:  Paris.
 
-Paris is the capital city of France and is known for its stunning architecture, rich history, and vibrant culture. Its iconic landmarks include the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral. Paris is a city that has a unique blend of traditional French culture and modernity, attracting millions of visitors each year. The city is also home to various international organizations and institutions, such as UNESCO, the European Commission, and the European Parliament. Overall, Paris is a beloved city that has made a significant contribution to French culture and history.
+That statement is quite accurate. Paris, also known as &#34;La Garde de l&#39;Étoile,&#34; is the capital city of France, located in the center of the country. It&#39;s the largest and most populous city in Europe and a major cultural and economic center. The city is famous for its architecture, including the iconic Eiffel Tower and Louvre Museum, and is also a major center for fashion, art, and music. Paris is also one of the most visited cities in the world, with millions of visitors each year. It&#39;s a fascinating city with a rich history, diverse culture, and a world-ren
 
 Prompt: Explain possible future trends in artificial intelligence. The future of AI is
-Generated text:  promising and there are several key trends that suggest it will continue to evolve and transform our world in ways we can&#39;t even imagine yet. Here are some of the most likely trends that we can expect to see in the future:
+Generated text:  bright, with new developments on the horizon. Some of the most promising areas include:
 
-1. Increased AI Personalization: AI will become more personalized, providing increasingly accurate and relevant information to users. This will result in more effective decision-making and better customer experiences.
+1. More accurate and reliable AI: As AI technology improves, we can expect to see more accurate and reliable AI systems that can perform tasks more accurately and efficiently than human experts. This could lead to breakthroughs in fields like healthcare, transportation, and more.
 
-2. Ethical and Responsible AI: As AI technology becomes more prevalent, there will be a growing emphasis on ethical and responsible AI development. This will involve creating AI systems that are transparent, accountable, and responsible for their actions.
+2. Integration of AI with other technologies: As AI continues to advance, we can expect to see more integration with other technologies, such as the internet of things (IoT), the cloud, and blockchain. This could lead to new ways of doing things and improving efficiency.
 
-3.
+3. AI becoming
 </pre></div></div>
 </div>
 </section>
@@ -806,21 +791,18 @@ Generated text:  promising and there are several key trends that suggest it will
 === Testing asynchronous streaming generation (no repeats) ===
 
 Prompt: Write a short, neutral self-introduction for a fictional character. Hello, my name is
-Generated text:  [Name] and I&#39;m a software engineer with over 10 years of experience in the field. I&#39;ve spent my time working on cutting-edge projects that push the boundaries of what&#39;s possible in the technology industry. I&#39;m passionate about pushing the limits of technology and creating innovative solutions that benefit society. I&#39;m always eager to learn and grow, and I&#39;m a proactive problem solver. I believe in making a positive impact on the world through my work, and I&#39;m always eager to contribute to the tech industry in some way. Thank you for taking the time to meet me. It&#39;s nice to meet someone like you. Congratulations on
+Generated text:  [Name]. I&#39;m a [job title] at [company name]. I&#39;m here to provide you with the best possible [service or product]. I&#39;m an [occupation] with a strong [character trait]. I&#39;m passionate [reason for being there]. I&#39;m always here to help you and make your [goal or dream]. I can help you achieve your [goal or dream]. I&#39;m always [job title] and am dedicated to [work ethic]. I&#39;m [personality] and a team player. I have a keen [skill] that I use to [describe how it helps me]. I&#39;m always learning and growing
 
 Prompt: Provide a concise factual statement about France’s capital city. The capital of France is
 Generated text:  Paris.
-
-The statement is: &#34;Paris is the capital of France.&#34;
+What is the capital city of France? Paris.
 
 Prompt: Explain possible future trends in artificial intelligence. The future of AI is
-Generated text:  expected to be a rapidly evolving landscape with numerous opportunities and challenges. Here are some possible future trends in AI:
+Generated text:  anticipated to be marked by significant advancements, creativity, and new possibilities that are yet to be fully realized. Here are some possible trends that could shape the future of AI:
 
-1. Advancements in machine learning: With the continued growth of AI, there is likely to be a significant increase in the number of machine learning algorithms and techniques being developed. This will lead to more sophisticated models that can perform tasks more accurately and efficiently.
+1. Increased Integration of AI into Everyday Life: One of the most promising areas of AI is the integration of AI into daily life. This could include smarter home devices, such as automated appliances and lighting systems, as well as virtual assistants that can assist with tasks like scheduling, reminders, and even personal style recommendations.
 
-2. Increased focus on ethics and safety: With the potential for AI to be used in dangerous or unethical ways, there will be a greater focus on ethical considerations and the potential for AI to be used in a responsible and beneficial manner.
-
-3. Integration with natural language processing:
+2. Enhanced Transparency and Explainability: AI systems are increasingly being designed to be more transparent and explainable. This means that we can understand how AI algorithms
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -922,7 +904,7 @@ By SGLang Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Mar 28, 2026.
+  Last updated on Mar 29, 2026.
   <br/>
 </p>
   </div>

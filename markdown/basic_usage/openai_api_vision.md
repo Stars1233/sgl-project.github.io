@@ -36,34 +36,34 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
 
     /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:175: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       from sglang.srt.utils.json_response import (
-    [2026-03-28 23:01:07] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-29 02:08:10] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 23:01:08.189 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:08] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:08.189 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:08] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:08.189 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:08] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:08.189 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:08] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:08.189 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:08] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:10.496 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:10] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:10.496 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:10] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:10.496 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:10] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:10.497 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:10] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:10.497 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:10] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-28 23:01:38] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
+    [2026-03-29 02:08:16] numactl command not found, skipping NUMA node configuration for GPU. Install numactl (e.g., apt-get install numactl) to enable automatic NUMA binding.
 
 
-    2026-03-28 23:01:41.718 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:41.718 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:41.718 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:41.718 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-28 23:01:41.719 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-28 23:01:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:19.404 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:19.404 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:19.404 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:19.404 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:19] Persistent cache disabled, using in-memory JIT cache
+    2026-03-29 02:08:19.404 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-29 02:08:19] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -73,15 +73,15 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
 
     Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.89it/s]
+    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.63it/s]
 
-    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:01,  1.59it/s]
+    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:01,  1.57it/s]
 
-    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:01,  1.54it/s]
+    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:00,  2.17it/s]
 
-    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.48it/s]
+    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.91it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.88it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.73it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.62it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.71it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -135,11 +135,11 @@ print_highlight(response)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"c0816d3acf984cd0aa2381431f2a5476","object":"chat.completion","created":1774738919,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"f6c66de6448e488a8922de783b4fcda0","object":"chat.completion","created":1774750114,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 
-<strong style='color: #00008B;'>{"id":"7b7c81b3a9cc41fab736587b3de322a4","object":"chat.completion","created":1774738919,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"9c4ed571ab83442cbd6cd25098871c38","object":"chat.completion","created":1774750115,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a pair of pants. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing the pants.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":370,"completion_tokens":63,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using Python Requests
@@ -172,7 +172,7 @@ print_highlight(response.text)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"3ad6f4bde65f4f85976a3eee98c0e814","object":"chat.completion","created":1774738920,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"c8fe209d8b0742e9b90e0f468fc7905f","object":"chat.completion","created":1774750116,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, using an iron to iron a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and somewhat humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":377,"completion_tokens":70,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using OpenAI Python Client
