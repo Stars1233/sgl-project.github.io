@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-30 08:59:07.307 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:32.942 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:59:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:59:07.308 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:32.943 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:59:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:59:07.308 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:32.943 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:59:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:59:07.309 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:32.944 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:59:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:59:07.309 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:32.944 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:59:07] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:59:17.172 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:59:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:59:17.172 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:59:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:59:17.173 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:59:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:59:17.173 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:59:17] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:59:17.173 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:59:17] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.10it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.77it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.58it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.64it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.32it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.37it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows two yellow taxis in an urban setting. One taxi is closer and appears to be outfitted with a laundry rack loaded with folded clothes, while the other taxi is further away. The person behind the laundry rack is wearing a yellow shirt, possibly ölться working to remove clothing items from the racks. The scene suggests that the person might be in the process of sorting or handling the laundry.
+    The image shows a scene on a city street with two yellow taxis parked on the side. One of the taxi cabs is open, and an individual is hanging clothes to dry on it. The说人 isn't complete, but it could read something like "brown belongings."
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image you provided shows two yellow taxis driven by public conveyance operators in New York City, exchanged within the city on a street or terminal based on the unpredictability of customers' demand. These iconic vehicles are considered New York's "face style" for the world.
+    The image shows a yellow taxi cab parked along a street. The taxi has apermanent display of several flags hanging over it.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a man standing on the side of a busy city street, adjusting clothes hanging on a makeshift clothesline created with metal rods and clothespins. He appears to be cleaning or arranging the clothes, possibly as part of a performance or an artistic installation. There are yellow taxis and a tall building with multiple illuminated signs in the background. The posture and activity suggest a playful or humorous scenario rather than a typical day-to-day activity.
+    The image shows a street scene with a yellow cab. The taxi is parked on the street, and there is a clothesline with laundry hanging on it extending from the backseat of the cab. The clothesline appears to be makeshift, as it is extending out the side of the cab. The background includes buildings with awnings and storefronts, and the scene appears to be in an urban setting.
 
 
 ## Querying Llama 4 Vision Model
