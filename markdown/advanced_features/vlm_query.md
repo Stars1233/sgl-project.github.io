@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-30 14:34:20.507 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:07.611 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 14:34:20] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:07] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 14:34:20.508 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:07.612 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 14:34:20] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:07] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 14:34:20.509 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:07.613 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 14:34:20] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:07] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 14:34:20.509 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:07.613 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 14:34:20] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:07] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 14:34:20.510 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:07.614 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 14:34:20] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:07] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 14:34:30.560 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 14:34:30] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 14:34:30.560 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 14:34:30] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 14:34:30.560 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 14:34:30] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 14:34:30.560 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 14:34:30] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 14:34:30.560 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 14:34:30] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:17.262 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:17] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:17.262 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:17] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:17.262 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:17] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:17.262 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:17] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 17:18:17.262 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 17:18:17] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.45it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.53it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.14s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.08s/it]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.16it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image depicts a yellow taxi, commonly recognized as a taxi in many cities, likely New York. The taxi is parked on a city street with a person standing behind it, holding a piece of laundry on a metal frame or hanger. This person seems to be taking care of their laundry while on the go, using the space between the car and the sidewalk. The scene is urban, with the background showing tall buildings and multiple street signs, indicating a busy city environment.
+    The image shows a scene of three yellow taxis parked on a city street. One of the taxis has its trunk open, and someone is drying clothes on a rack that has been set up in the trunk. Another person appears to be shuffling the upright laundry rack around the trunk. This unusual sight, where people are drying clothes in their cars on a busy city street, is depicted in the image.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a scene on a city street where a person has set up a makeshift drying rack on the back of a yellow taxi. The rack is holding what appear to be laundry items like socks and a towel, presumably drying in the rain. This image likely captures a humorous and creative solution to outdoorsy laundry drying, often seen during rainy weather in urban areas. The yellow taxi, a recognizable symbol of New York City, adds color to the photograph.
+    The image shows a city street scene with two yellow taxi cabs. One of the cabs is being used to transport laundry, with clothes hung on a clothesline attached to the back of the vehicle. The scenario appears to be humorous, as the taxi is not typically used for transporting laundry. The background includes buildings, striped awnings, and a few white smokestacks. There are also some flags and street signs visible.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    In the image, a person is using crutches to walk across the street, with one armpit underneath each crutch. The setting appears to be an urban environment, likely in a city like New York, given the presence of taxis and the style of crutches used. The person is using hula hoops attached to the crutches to aid in their movement. This is not a common sight here, and it seems to be humorous or symbolic.
+    The image shows a yellow teacher's skyline dressed in a yellow shirt and purple pants. The teacher is carrying a student skateboard and appears to be teaching the student how to navigate the sidewalk.
 
 
 ## Querying Llama 4 Vision Model
