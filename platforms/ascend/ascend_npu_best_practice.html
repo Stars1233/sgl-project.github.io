@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=45bbbc86"></script>
+    <script src="../../_static/documentation_options.js?v=acd4d6d3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -554,7 +554,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Benchmark</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deepseek-v3-2-exp-64k-3k-30ms-on-a3-32-cards-separation-mode">DeepSeek-V3.2-Exp 64K-3K 30ms on A3 32 Cards Separation Mode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deepseek-v3-2-128k-1k-20ms-on-a3-32-cards-separation-mode">DeepSeek-V3.2 128K-1K 20ms on A3 32 Cards Separation Mode</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Model Deployment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Benchmark</a></li>
 </ul>
@@ -729,12 +729,12 @@ you encounter issues or have any questions, please <a class="reference external"
 <td><p>W8A8 INT8</p></td>
 <td><p>Optimal Configuration</p></td>
 </tr>
-<tr class="row-even"><td><p>DeepSeek-V3.2-Exp</p></td>
+<tr class="row-even"><td><p>DeepSeek-V3.2</p></td>
 <td><p>Atlas 800I A3</p></td>
 <td><p>32</p></td>
 <td><p>PD Separation</p></td>
-<td><p>64K+3K</p></td>
-<td><p>30ms</p></td>
+<td><p>128K+1K</p></td>
+<td><p>20ms</p></td>
 <td><p>W8A8 INT8</p></td>
 <td><p>Optimal Configuration</p></td>
 </tr>
@@ -1686,17 +1686,16 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang_router.launch_rou
 </div>
 </section>
 </section>
-<section id="deepseek-v3-2-exp-64k-3k-30ms-on-a3-32-cards-separation-mode">
-<h3>DeepSeek-V3.2-Exp 64K-3K 30ms on A3 32 Cards Separation Mode<a class="headerlink" href="#deepseek-v3-2-exp-64k-3k-30ms-on-a3-32-cards-separation-mode" title="Link to this heading">#</a></h3>
-<p>Model: DeepSeek-V3.2-Exp-W8A8</p>
+<section id="deepseek-v3-2-128k-1k-20ms-on-a3-32-cards-separation-mode">
+<h3>DeepSeek-V3.2 128K-1K 20ms on A3 32 Cards Separation Mode<a class="headerlink" href="#deepseek-v3-2-128k-1k-20ms-on-a3-32-cards-separation-mode" title="Link to this heading">#</a></h3>
+<p>Model: DeepSeek-V3.2-W8A8</p>
 <p>Hardware: Atlas 800I A3 32Card</p>
 <p>DeployMode: PD Separation</p>
 <p>Dataset: random</p>
-<p>Input Output Length: 64K+3K</p>
-<p>TPOT: 30ms</p>
+<p>Input Output Length: 128K+1K</p>
+<p>TPOT: 20ms</p>
 <section id="id19">
 <h4>Model Deployment<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
-<p>Deploy Prefill Instance</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span>performance<span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 sysctl<span class="w"> </span>-w<span class="w"> </span>vm.swappiness<span class="o">=</span><span class="m">0</span>
 sysctl<span class="w"> </span>-w<span class="w"> </span>kernel.numa_balancing<span class="o">=</span><span class="m">0</span>
@@ -1714,164 +1713,115 @@ sysctl<span class="w"> </span>-w<span class="w"> </span>kernel.sched_migration_c
 <span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/Ascend/ascend-toolkit/latest/opp/vendors/customize/op_api/lib/:<span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="si">}</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/Ascend/8.5.0/compiler/bishengir/bin:<span class="nv">$PATH</span>
 
-<span class="nb">export</span><span class="w"> </span><span class="nv">ASCEND_HOME_PATH</span><span class="o">=</span>/usr/local/Ascend/ascend-toolkit/latest
-
 <span class="nb">export</span><span class="w"> </span><span class="nv">PYTORCH_NPU_ALLOC_CONF</span><span class="o">=</span>expandable_segments:True
 <span class="nb">export</span><span class="w"> </span><span class="nv">STREAMS_PER_DEVICE</span><span class="o">=</span><span class="m">32</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ASCEND_MF_STORE_URL</span><span class="o">=</span><span class="s2">&quot;tcp://your prefill ip1:24670&quot;</span>
 
-<span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_BUFFSIZE</span><span class="o">=</span><span class="m">1024</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DEEPEP_NORMAL_LONG_SEQ_ROUND</span><span class="o">=</span><span class="m">5</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DEEPEP_NORMAL_LONG_SEQ_PER_ROUND_TOKENS</span><span class="o">=</span><span class="m">512</span>
-
+<span class="nv">P_IP</span><span class="o">=(</span><span class="s1">&#39;your prefill ip1&#39;</span><span class="w"> </span><span class="s1">&#39;your prefill ip2&#39;</span><span class="o">)</span>
+<span class="nv">D_IP</span><span class="o">=(</span><span class="s1">&#39;your decode ip1&#39;</span><span class="w"> </span><span class="s1">&#39;your decode ip2&#39;</span><span class="o">)</span>
 <span class="nv">MODEL_PATH</span><span class="o">=</span>xxx
 
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_NPU_USE_MLAPO</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">DEEP_NORMAL_MODE_USE_INT8_QUANT</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_NPU_USE_MULTI_STREAM</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_OP_EXPANSION_MODE</span><span class="o">=</span>AIV
+<span class="nv">LOCAL_HOST1</span><span class="o">=</span><span class="sb">`</span>hostname<span class="w"> </span>-I<span class="p">|</span>awk<span class="w"> </span>-F<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="s1">&#39;{print$1}&#39;</span><span class="sb">`</span>
+<span class="nv">LOCAL_HOST2</span><span class="o">=</span><span class="sb">`</span>hostname<span class="w"> </span>-I<span class="p">|</span>awk<span class="w"> </span>-F<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="s1">&#39;{print$2}&#39;</span><span class="sb">`</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">LOCAL_HOST1</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">LOCAL_HOST2</span><span class="si">}</span><span class="s2">&quot;</span>
 
-<span class="nv">IPs</span><span class="o">=(</span><span class="s1">&#39;your prefill ip1&#39;</span><span class="w"> </span><span class="s1">&#39;your prefill ip2&#39;</span><span class="o">)</span>
-
-<span class="c1"># get IP in current node</span>
-<span class="nv">LOCAL_HOST</span><span class="o">=</span><span class="sb">`</span>hostname<span class="w"> </span>-I<span class="p">|</span>awk<span class="w"> </span>-F<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="s1">&#39;{print$1}&#39;</span><span class="sb">`</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;LOCAL_HOST = &quot;</span><span class="w"> </span><span class="si">${</span><span class="nv">LOCAL_HOST</span><span class="si">}</span>
-<span class="c1"># get node index</span>
-<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="p">!IPs[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="c1"># prefill</span>
+<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="p">!P_IP[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
 <span class="k">do</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;LOCAL_HOST=</span><span class="si">${</span><span class="nv">LOCAL_HOST</span><span class="si">}</span><span class="s2">, IPs[</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">]=</span><span class="si">${</span><span class="nv">IPs</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCAL_HOST</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IPs</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">      </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Node Rank : </span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="w">      </span><span class="nv">VC_TASK_INDEX</span><span class="o">=</span><span class="nv">$i</span>
-<span class="w">      </span><span class="k">break</span>
-<span class="w">  </span><span class="k">fi</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCAL_HOST1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">P_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCAL_HOST2</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">P_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span>
+<span class="w">    </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">P_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_BUFFSIZE</span><span class="o">=</span><span class="m">1200</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">DEEP_NORMAL_MODE_USE_INT8_QUANT</span><span class="o">=</span><span class="m">1</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">TASK_QUEUE_ENABLE</span><span class="o">=</span><span class="m">2</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="o">=</span>xxx
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">GLOO_SOCKET_IFNAME</span><span class="o">=</span>xxx
+
+<span class="w">        </span>python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model-path<span class="w"> </span><span class="si">${</span><span class="nv">MODEL_PATH</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--tp<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--trust-remote-code<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--attention-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--device<span class="w"> </span>npu<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--watchdog-timeout<span class="w"> </span><span class="m">9000</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--host<span class="w"> </span><span class="si">${</span><span class="nv">P_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--mem-fraction-static<span class="w"> </span><span class="m">0</span>.73<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disable-radix-cache<span class="w"> </span>--chunked-prefill-size<span class="w"> </span>-1<span class="w"> </span>--max-prefill-tokens<span class="w"> </span><span class="m">68000</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--max-running-requests<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--moe-a2a-backend<span class="w"> </span>deepep<span class="w"> </span>--deepep-mode<span class="w"> </span>normal<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--quantization<span class="w"> </span>modelslim<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disaggregation-transfer-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disaggregation-mode<span class="w"> </span>prefill<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disable-cuda-graph<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--nnodes<span class="w"> </span><span class="m">2</span><span class="w"> </span>--node-rank<span class="w"> </span><span class="nv">$i</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disaggregation-bootstrap-port<span class="w"> </span><span class="m">8995</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--moe-dense-tp-size<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<span class="w">	    </span>--enable-nsa-prefill-context-parallel<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--nsa-prefill-cp-mode<span class="w"> </span><span class="k">in</span>-seq-split<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--attn-cp-size<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--speculative-algorithm<span class="w"> </span>NEXTN<span class="w"> </span>--speculative-num-steps<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-eagle-topk<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--dist-init-addr<span class="w"> </span><span class="si">${</span><span class="nv">P_IP</span><span class="p">[0]</span><span class="si">}</span>:10000
+<span class="w">        </span><span class="k">break</span>
+<span class="w">    </span><span class="k">fi</span>
 <span class="k">done</span>
 
-<span class="nv">IFNAMES</span><span class="o">=(</span><span class="s1">&#39;xxx&#39;</span><span class="w"> </span><span class="s1">&#39;xxx&#39;</span><span class="o">)</span>
 
-<span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="o">=</span><span class="si">${</span><span class="nv">IFNAMES</span><span class="p">[</span><span class="nv">$VC_TASK_INDEX</span><span class="p">]</span><span class="si">}</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">GLOO_SOCKET_IFNAME</span><span class="o">=</span><span class="si">${</span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="si">}</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;HCCL_SOCKET_IFNAME : </span><span class="si">${</span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="nv">nnodes</span><span class="o">=</span><span class="si">${#</span><span class="nv">IPs</span><span class="p">[@]</span><span class="si">}</span>
-<span class="nv">tp_size</span><span class="o">=</span><span class="sb">`</span>expr<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="se">\*</span><span class="w"> </span><span class="si">${</span><span class="nv">nnodes</span><span class="si">}</span><span class="sb">`</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ASCEND_MF_STORE_URL</span><span class="o">=</span>tcp://<span class="si">${</span><span class="nv">IPs</span><span class="p">[0]</span><span class="si">}</span>:24667
-
-python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model-path<span class="w"> </span><span class="si">${</span><span class="nv">MODEL_PATH</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
---tp<span class="w"> </span><span class="nv">$tp_size</span><span class="w"> </span><span class="se">\</span>
---trust-remote-code<span class="w"> </span><span class="se">\</span>
---attention-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
---device<span class="w"> </span>npu<span class="w"> </span><span class="se">\</span>
---watchdog-timeout<span class="w"> </span><span class="m">9000</span><span class="w"> </span><span class="se">\</span>
---host<span class="w"> </span><span class="si">${</span><span class="nv">IPs</span><span class="p">[</span><span class="nv">$VC_TASK_INDEX</span><span class="p">]</span><span class="si">}</span><span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span><span class="w"> </span><span class="se">\</span>
---mem-fraction-static<span class="w"> </span><span class="m">0</span>.73<span class="w"> </span><span class="se">\</span>
---disable-radix-cache<span class="w"> </span>--chunked-prefill-size<span class="w"> </span>-1<span class="w"> </span>--max-prefill-tokens<span class="w"> </span><span class="m">68000</span><span class="w"> </span><span class="se">\</span>
---max-running-requests<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
---moe-a2a-backend<span class="w"> </span>deepep<span class="w"> </span>--deepep-mode<span class="w"> </span>normal<span class="w"> </span><span class="se">\</span>
---quantization<span class="w"> </span>modelslim<span class="w"> </span><span class="se">\</span>
---disaggregation-transfer-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
---disaggregation-mode<span class="w"> </span>prefill<span class="w"> </span><span class="se">\</span>
---disable-cuda-graph<span class="w"> </span><span class="se">\</span>
---nnodes<span class="w"> </span><span class="nv">$nnodes</span><span class="w"> </span>--node-rank<span class="w"> </span><span class="nv">$VC_TASK_INDEX</span><span class="w"> </span><span class="se">\</span>
---disaggregation-bootstrap-port<span class="w"> </span><span class="m">8995</span><span class="w"> </span><span class="se">\</span>
---enable-nsa-prefill-context-parallel<span class="w">  </span>--moe-dense-tp-size<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
---speculative-algorithm<span class="w"> </span>NEXTN<span class="w"> </span>--speculative-num-steps<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-eagle-topk<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
---dist-init-addr<span class="w"> </span><span class="si">${</span><span class="nv">IPs</span><span class="p">[0]</span><span class="si">}</span>:10000
-</pre></div>
-</div>
-<p>Deploy Decode Instance</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span>performance<span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
-sysctl<span class="w"> </span>-w<span class="w"> </span>vm.swappiness<span class="o">=</span><span class="m">0</span>
-sysctl<span class="w"> </span>-w<span class="w"> </span>kernel.numa_balancing<span class="o">=</span><span class="m">0</span>
-sysctl<span class="w"> </span>-w<span class="w"> </span>kernel.sched_migration_cost_ns<span class="o">=</span><span class="m">50000</span>
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_SET_CPU_AFFINITY</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">unset</span><span class="w"> </span>https_proxy
-<span class="nb">unset</span><span class="w"> </span>http_proxy
-<span class="nb">unset</span><span class="w"> </span>HTTPS_PROXY
-<span class="nb">unset</span><span class="w"> </span>HTTP_PROXY
-<span class="nb">unset</span><span class="w"> </span>ASCEND_LAUNCH_BLOCKING
-<span class="nb">source</span><span class="w"> </span>/usr/local/Ascend/ascend-toolkit/set_env.sh
-<span class="nb">source</span><span class="w"> </span>/usr/local/Ascend/nnal/atb/set_env.sh
-<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/Ascend/ascend-toolkit/latest/opp/vendors/customize/op_api/lib/:<span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="si">}</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/Ascend/8.5.0/compiler/bishengir/bin:<span class="nv">$PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ASCEND_HOME_PATH</span><span class="o">=</span>/usr/local/Ascend/ascend-toolkit/latest
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">PYTORCH_NPU_ALLOC_CONF</span><span class="o">=</span>expandable_segments:True
-<span class="nb">export</span><span class="w"> </span><span class="nv">STREAMS_PER_DEVICE</span><span class="o">=</span><span class="m">32</span>
-
-<span class="nv">MODEL_PATH</span><span class="o">=</span>xxx
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_NPU_USE_MULTI_STREAM</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_NPU_USE_MLAPO</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_OP_EXPANSION_MODE</span><span class="o">=</span>AIV
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_SCHEDULER_SKIP_ALL_GATHER</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">TASK_QUEUE_ENABLE</span><span class="o">=</span><span class="m">0</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_ENABLE_OVERLAP_PLAN_STREAM</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_ENABLE_SPEC_V2</span><span class="o">=</span><span class="m">1</span>
-
-<span class="nv">IPs</span><span class="o">=(</span><span class="s1">&#39;your decode ip1&#39;</span><span class="w"> </span><span class="s1">&#39;your decode ip2&#39;</span><span class="o">)</span>
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">prefill_ip</span><span class="o">=</span>your<span class="w"> </span>prefill<span class="w"> </span>ip1
-<span class="c1"># get IP in current node</span>
-<span class="nv">LOCAL_HOST</span><span class="o">=</span><span class="sb">`</span>hostname<span class="w"> </span>-I<span class="p">|</span>awk<span class="w"> </span>-F<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="s1">&#39;{print$1}&#39;</span><span class="sb">`</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;LOCAL_HOST = &quot;</span><span class="w"> </span><span class="si">${</span><span class="nv">LOCAL_HOST</span><span class="si">}</span>
-<span class="c1"># get node index</span>
-<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="p">!IPs[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="c1"># decode</span>
+<span class="k">for</span><span class="w"> </span>i<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="p">!D_IP[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
 <span class="k">do</span>
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;LOCAL_HOST=</span><span class="si">${</span><span class="nv">LOCAL_HOST</span><span class="si">}</span><span class="s2">, IPs[</span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">]=</span><span class="si">${</span><span class="nv">IPs</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCAL_HOST</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">IPs</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">      </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Node Rank : </span><span class="si">${</span><span class="nv">i</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="w">      </span><span class="nv">VC_TASK_INDEX</span><span class="o">=</span><span class="nv">$i</span>
-<span class="w">      </span><span class="k">break</span>
-<span class="w">  </span><span class="k">fi</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCAL_HOST1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">D_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCAL_HOST2</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">D_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span>
+<span class="w">    </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">D_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_ENABLE_OVERLAP_PLAN_STREAM</span><span class="o">=</span><span class="m">1</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_ENABLE_SPEC_V2</span><span class="o">=</span><span class="m">1</span>
+
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">TASK_QUEUE_ENABLE</span><span class="o">=</span><span class="m">0</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_SCHEDULER_SKIP_ALL_GATHER</span><span class="o">=</span><span class="m">1</span>
+
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="o">=</span>xxx
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">GLOO_SOCKET_IFNAME</span><span class="o">=</span>xxx
+
+<span class="w">        </span><span class="nv">DP</span><span class="o">=</span><span class="m">8</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_BUFFSIZE</span><span class="o">=</span><span class="m">400</span>
+<span class="w">        </span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_DEEPEP_NUM_MAX_DISPATCH_TOKENS_PER_RANK</span><span class="o">=</span><span class="m">8</span>
+
+<span class="w">        </span>python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model-path<span class="w"> </span><span class="si">${</span><span class="nv">MODEL_PATH</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--tp<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--dp<span class="w"> </span><span class="si">${</span><span class="nv">DP</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--ep<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--moe-dense-tp-size<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--enable-dp-attention<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--enable-dp-lm-head<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--trust-remote-code<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--attention-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--device<span class="w"> </span>npu<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--watchdog-timeout<span class="w"> </span><span class="m">9000</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--host<span class="w"> </span><span class="si">${</span><span class="nv">D_IP</span><span class="p">[</span><span class="nv">$i</span><span class="p">]</span><span class="si">}</span><span class="w"> </span>--port<span class="w"> </span><span class="m">8001</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--mem-fraction-static<span class="w"> </span><span class="m">0</span>.79<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disable-radix-cache<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--chunked-prefill-size<span class="w"> </span>-1<span class="w"> </span>--max-prefill-tokens<span class="w"> </span><span class="m">68000</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--max-running-requests<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--cuda-graph-max-bs<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--moe-a2a-backend<span class="w"> </span>deepep<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--deepep-mode<span class="w"> </span>low_latency<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--quantization<span class="w"> </span>modelslim<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--speculative-algorithm<span class="w"> </span>NEXTN<span class="w"> </span>--speculative-num-steps<span class="w"> </span><span class="m">3</span><span class="w"> </span>--speculative-eagle-topk<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disaggregation-transfer-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--disaggregation-mode<span class="w"> </span>decode<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--nnodes<span class="w"> </span><span class="m">2</span><span class="w"> </span>--node-rank<span class="w"> </span><span class="nv">$i</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--prefill-round-robin-balance<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--dist-init-addr<span class="w"> </span><span class="si">${</span><span class="nv">D_IP</span><span class="p">[0]</span><span class="si">}</span>:10000
+<span class="w">        </span><span class="k">break</span>
+<span class="w">    </span><span class="k">fi</span>
 <span class="k">done</span>
-
-<span class="nv">IFNAMES</span><span class="o">=(</span><span class="s1">&#39;xxx&#39;</span><span class="w"> </span><span class="s1">&#39;xxx&#39;</span><span class="o">)</span>
-
-<span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="o">=</span><span class="si">${</span><span class="nv">IFNAMES</span><span class="p">[</span><span class="nv">$VC_TASK_INDEX</span><span class="p">]</span><span class="si">}</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">GLOO_SOCKET_IFNAME</span><span class="o">=</span><span class="si">${</span><span class="nv">HCCL_SOCKET_IFNAME</span><span class="si">}</span>
-<span class="nv">nnodes</span><span class="o">=</span><span class="si">${#</span><span class="nv">IPs</span><span class="p">[@]</span><span class="si">}</span>
-<span class="nv">tp_size</span><span class="o">=</span><span class="sb">`</span>expr<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="se">\*</span><span class="w"> </span><span class="si">${</span><span class="nv">nnodes</span><span class="si">}</span><span class="sb">`</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ASCEND_MF_STORE_URL</span><span class="o">=</span>tcp://<span class="si">${</span><span class="nv">prefill_ip</span><span class="si">}</span>:24667
-
-<span class="nv">CHUNKED_SIZE</span><span class="o">=</span><span class="m">65536</span>
-<span class="nv">DP</span><span class="o">=</span><span class="m">8</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">HCCL_BUFFSIZE</span><span class="o">=</span><span class="m">400</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_DEEPEP_NUM_MAX_DISPATCH_TOKENS_PER_RANK</span><span class="o">=</span><span class="m">8</span>
-
-python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model-path<span class="w"> </span><span class="si">${</span><span class="nv">MODEL_PATH</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
---tp<span class="w"> </span><span class="nv">$tp_size</span><span class="w"> </span><span class="se">\</span>
---dp<span class="w"> </span><span class="si">${</span><span class="nv">DP</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
---ep<span class="w"> </span><span class="nv">$tp_size</span><span class="w"> </span><span class="se">\</span>
---moe-dense-tp-size<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
---enable-dp-attention<span class="w"> </span><span class="se">\</span>
---enable-dp-lm-head<span class="w"> </span><span class="se">\</span>
---trust-remote-code<span class="w"> </span><span class="se">\</span>
---attention-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
---device<span class="w"> </span>npu<span class="w"> </span><span class="se">\</span>
---watchdog-timeout<span class="w"> </span><span class="m">9000</span><span class="w"> </span><span class="se">\</span>
---host<span class="w"> </span><span class="si">${</span><span class="nv">IPs</span><span class="p">[</span><span class="nv">$VC_TASK_INDEX</span><span class="p">]</span><span class="si">}</span><span class="w"> </span>--port<span class="w"> </span><span class="m">8001</span><span class="w"> </span><span class="se">\</span>
---mem-fraction-static<span class="w"> </span><span class="m">0</span>.79<span class="w"> </span><span class="se">\</span>
---disable-radix-cache<span class="w"> </span><span class="se">\</span>
---chunked-prefill-size<span class="w"> </span>-1<span class="w"> </span>--max-prefill-tokens<span class="w"> </span><span class="m">68000</span><span class="w"> </span><span class="se">\</span>
---max-running-requests<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
---cuda-graph-max-bs<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
---moe-a2a-backend<span class="w"> </span>deepep<span class="w"> </span><span class="se">\</span>
---deepep-mode<span class="w"> </span>low_latency<span class="w"> </span><span class="se">\</span>
---quantization<span class="w"> </span>modelslim<span class="w"> </span><span class="se">\</span>
---speculative-algorithm<span class="w"> </span>NEXTN<span class="w"> </span>--speculative-num-steps<span class="w"> </span><span class="m">3</span><span class="w"> </span>--speculative-eagle-topk<span class="w"> </span><span class="m">1</span><span class="w"> </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
---disaggregation-transfer-backend<span class="w"> </span>ascend<span class="w"> </span><span class="se">\</span>
---disaggregation-mode<span class="w"> </span>decode<span class="w"> </span><span class="se">\</span>
---load-balance-method<span class="w"> </span>round_robin<span class="w"> </span><span class="se">\</span>
---nnodes<span class="w"> </span><span class="nv">$nnodes</span><span class="w"> </span>--node-rank<span class="w"> </span><span class="nv">$VC_TASK_INDEX</span><span class="w"> </span><span class="se">\</span>
---dist-init-addr<span class="w"> </span><span class="si">${</span><span class="nv">IPs</span><span class="p">[0]</span><span class="si">}</span>:10000<span class="w"> </span>--load-balance-method<span class="w"> </span>decode_round_robin
 </pre></div>
 </div>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">SGLANG_DP_ROUND_ROBIN</span><span class="o">=</span><span class="m">1</span>
 python<span class="w"> </span>-m<span class="w"> </span>sglang_router.launch_router<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--pd-disaggregation<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--policy<span class="w"> </span>cache_aware<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--prefill<span class="w"> </span>http://PIP1:8000<span class="w"> </span><span class="m">8995</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--decode<span class="w"> </span>http://DIP1:8001<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--prefill<span class="w"> </span>http://P_IP1:8000<span class="w"> </span><span class="m">8995</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--decode<span class="w"> </span>http://D_IP1:8001<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--port<span class="w"> </span><span class="m">6688</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--mini-lb
@@ -1881,7 +1831,7 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang_router.launch_rou
 <section id="id20">
 <h4>Benchmark<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
 <p>We tested it based on the <code class="docutils literal notranslate"><span class="pre">RANDOM</span></code> dataset.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.bench_serving<span class="w"> </span>--dataset-name<span class="w"> </span>random<span class="w"> </span>--backend<span class="w"> </span>sglang<span class="w"> </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>--port<span class="w"> </span><span class="m">6688</span><span class="w"> </span>--max-concurrency<span class="w"> </span><span class="m">32</span><span class="w">  </span>--random-input-len<span class="w"> </span><span class="m">64000</span><span class="w"> </span>--random-output-len<span class="w"> </span><span class="m">3000</span><span class="w"> </span>--num-prompts<span class="w"> </span><span class="m">64</span><span class="w"> </span>--random-range-ratio<span class="w"> </span><span class="m">1</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.bench_serving<span class="w"> </span>--dataset-name<span class="w"> </span>random<span class="w"> </span>--backend<span class="w"> </span>sglang<span class="w"> </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>--port<span class="w"> </span><span class="m">6688</span><span class="w"> </span>--max-concurrency<span class="w"> </span><span class="m">8</span><span class="w">  </span>--random-input-len<span class="w"> </span><span class="m">131076</span><span class="w"> </span>--random-output-len<span class="w"> </span><span class="m">1024</span><span class="w"> </span>--num-prompts<span class="w"> </span><span class="m">8</span><span class="w"> </span>--random-range-ratio<span class="w"> </span><span class="m">1</span>
 </pre></div>
 </div>
 </section>
@@ -3415,7 +3365,7 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Benchmark</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deepseek-v3-2-exp-64k-3k-30ms-on-a3-32-cards-separation-mode">DeepSeek-V3.2-Exp 64K-3K 30ms on A3 32 Cards Separation Mode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deepseek-v3-2-128k-1k-20ms-on-a3-32-cards-separation-mode">DeepSeek-V3.2 128K-1K 20ms on A3 32 Cards Separation Mode</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Model Deployment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Benchmark</a></li>
 </ul>
