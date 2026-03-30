@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=b01aa6e6"></script>
+    <script src="../_static/documentation_options.js?v=85b895d1"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -223,6 +223,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/attention_backends.html">Attention Backends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/quantization.html">Quantization</a></li>
@@ -636,19 +638,19 @@ Thinking</a></p></td>
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-30 17:18:49.696 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:18:49] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:18:49.696 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:18:49] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:18:49.696 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:18:49] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:18:49.696 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:18:49] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:18:49.696 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:18:49] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02&lt;00:00,  1.20s/it]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.74it/s]
-Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 12.59it/s]
+2026-03-30 17:27:12.689 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:12] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:12.689 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:12] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:12.689 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:12] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:12.689 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:12] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:12.689 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:12] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02&lt;00:00,  1.16s/it]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:06&lt;00:00,  9.61it/s]
+Capturing num tokens (num_tokens=4 avail_mem=28.89 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 13.74it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -717,7 +719,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of the numbers 1 and 3.<br><br>Next, I'll add the two numbers together: 1 plus 3.<br><br>Finally, I calculate the result, which is 4.<br></strong></div>
+<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of 1 and 3.<br><br>Next, I add the two numbers together: 1 plus 3 equals 4.<br><br>Therefore, the final answer is 4.<br></strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -729,7 +731,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Certainly! Let's solve the problem step by step.<br><br>**Question:** What is \(1 + 3\)?<br><br>**Solution:**<br><br>1. **Identify the numbers to add:**<br>   \[<br>   1 \quad \text{and} \quad 3<br>   \]<br><br>2. **Add the numbers together:**<br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Final Answer:**<br>\[<br>\boxed{4}<br>\]</strong></div>
+<strong style='color: #00008B;'>**Solution:**<br><br>We are asked to find the sum of 1 and 3.<br><br>1. **Identify the numbers to add:**<br>   \[<br>   1 \quad \text{and} \quad 3<br>   \]<br><br>2. **Add the numbers together:**<br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Final Answer:**<br>\[<br>\boxed{4}<br>\]</strong></div>
 </div>
 </section>
 <section id="Streaming-Request">
@@ -773,7 +775,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>I need to add the numbers 1 and 3.<br><br>I'll start with 1 and add 3 to it.<br><br>This gives me a total of 4.<br></strong></div>
+<strong style='color: #00008B;'>I need to add the numbers 1 and 3 together.<br><br>First, I'll identify the two numbers involved in the addition.<br><br>Then, I'll perform the addition operation to find the sum.<br><br>Finally, I'll provide the result of the addition.<br></strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -785,7 +787,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><br><br>Sure! Let's solve the addition step by step.<br><br>**Problem:**  <br>What is \(1 + 3\)?<br><br>**Solution:**  <br>1. Start with the number **1**.<br>2. Add the number **3** to it.<br>   <br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Answer:**  <br>\(\boxed{4}\)</strong></div>
+<strong style='color: #00008B;'><br><br>Sure! Let's solve the addition step by step.<br><br>**Problem:**<br>\[ 1 + 3 \]<br><br>**Solution:**<br><br>1. **Identify the numbers to add:**<br>   \[<br>   1 \quad \text{and} \quad 3<br>   \]<br><br>2. **Perform the addition:**<br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Answer:**<br>\[<br>\boxed{4}<br>\]</strong></div>
 </div>
 <p>Optionally, you can buffer the reasoning content to the last reasoning chunk (or the first chunk after the reasoning content).</p>
 <div class="nbinput docutils container">
@@ -827,7 +829,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of two numbers: 1 and 3.<br><br>Next, I add the two numbers together: 1 plus 3 equals 4.<br><br>Therefore, the final answer is 4.</strong></div>
+<strong style='color: #00008B;'>First, I identify the two numbers involved in the addition, which are 1 and 3.<br><br>Next, I add these two numbers together.<br><br>Finally, the sum of 1 and 3 is 4.</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -839,7 +841,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><br><br>**Solution:**<br><br>We are asked to find the sum of two numbers: 1 and 3.<br><br>\[<br>1 + 3 = 4<br>\]<br><br>Therefore, the final answer is \(\boxed{4}\).</strong></div>
+<strong style='color: #00008B;'><br><br>Sure! Let's solve the addition problem step by step.<br><br>**Question:** What is \(1 + 3\)?<br><br>**Solution:**<br><br>1. **Identify the numbers to add:**<br>   \[<br>   1 \quad \text{and} \quad 3<br>   \]<br><br>2. **Add the numbers together:**<br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Answer:**<br>\[<br>\boxed{4}<br>\]</strong></div>
 </div>
 <p>The reasoning separation is enable by default when specify . <strong>To disable it, set the ``separate_reasoning`` option to ``False`` in request.</strong></p>
 <div class="nbinput docutils container">
@@ -870,7 +872,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>First, I need to identify the two numbers in the addition problem, which are 1 and 3.<br><br>Next, I'll add these two numbers together.<br><br>Finally, the sum of 1 and 3 is 4.<br></think><br><br>**Solution:**<br><br>We are asked to find the sum of \(1\) and \(3\).<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \(\boxed{4}\)</strong></div>
+<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of 1 and 3.<br><br>Next, I add the two numbers together: 1 plus 3 equals 4.<br><br>Therefore, the final answer is 4.<br></think><br><br>**Solution:**<br><br>We are asked to find the sum of 1 and 3.<br><br>\[<br>1 + 3 = 4<br>\]<br><br>Therefore, the final answer is \(\boxed{4}\).</strong></div>
 </div>
 </section>
 </section>
@@ -927,7 +929,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of the numbers 1 and 3.<br><br>Next, I perform the addition by combining these two numbers together.<br><br>Finally, I calculate the result to find that 1 plus 3 equals 4.<br></think><br><br>**Solution:**<br><br>We are asked to find the sum of \(1\) and \(3\).<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \(\boxed{4}\)</strong></div>
+<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of the numbers 1 and 3.<br><br>Next, I add the two numbers together: 1 plus 3 equals 4.<br><br>Therefore, the final answer is 4.<br></think><br><br>**Solution:**<br><br>We are asked to find the sum of 1 and 3.<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \boxed{4}</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -948,7 +950,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of the numbers 1 and 3.<br><br>Next, I perform the addition by combining these two numbers together.<br><br>Finally, I calculate the result to find that 1 plus 3 equals 4.<br></strong></div>
+<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of the numbers 1 and 3.<br><br>Next, I add the two numbers together: 1 plus 3 equals 4.<br><br>Therefore, the final answer is 4.<br></strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -960,7 +962,7 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>**Solution:**<br><br>We are asked to find the sum of \(1\) and \(3\).<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \(\boxed{4}\)</strong></div>
+<strong style='color: #00008B;'>**Solution:**<br><br>We are asked to find the sum of 1 and 3.<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \boxed{4}</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
@@ -1023,19 +1025,19 @@ Capturing num tokens (num_tokens=4 avail_mem=122.11 GB): 100%|██████
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-03-30 17:19:33.424 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:19:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:19:33.424 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:19:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:19:33.424 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:19:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:19:33.424 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:19:33] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:19:33.424 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:19:33] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02&lt;00:00,  1.11s/it]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.81it/s]
-Capturing num tokens (num_tokens=4 avail_mem=106.35 GB): 100%|██████████| 58/58 [00:03&lt;00:00, 14.91it/s]
+2026-03-30 17:27:53.234 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:53] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:53.234 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:53] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:53.234 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:53] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:53.234 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:53] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:53.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:53] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02&lt;00:00,  1.08s/it]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00, 10.05it/s]
+Capturing num tokens (num_tokens=4 avail_mem=41.56 GB): 100%|██████████| 58/58 [00:08&lt;00:00,  6.45it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -1048,7 +1050,7 @@ Capturing num tokens (num_tokens=4 avail_mem=106.35 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>I start by identifying the two numbers in the problem: 1 and 3.<br><br>Next, I add these two numbers together to find the sum.<br><br>Finally, I conclude that the result of 1 plus 3 is 4.<br></think><br><br>Sure! Let's solve the problem step by step.<br><br>**Question:** What is \(1 + 3\)?<br><br>**Solution:**<br><br>1. **Identify the numbers to add:**<br>   \[<br>   1 \quad \text{and} \quad 3<br>   \]<br><br>2. **Add the numbers together:**<br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Answer:**<br>\[<br>\boxed{4}<br>\]</strong></div>
+<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of 1 and 3.<br><br>Next, I add the two numbers together.<br><br>Finally, I arrive at the conclusion that 1 plus 3 equals 4.<br></think><br><br>**Solution:**<br><br>We are asked to find the sum of 1 and 3.<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \boxed{4}</strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -1060,7 +1062,7 @@ Capturing num tokens (num_tokens=4 avail_mem=106.35 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>I start by identifying the two numbers in the problem: 1 and 3.<br><br>Next, I add these two numbers together to find the sum.<br><br>Finally, I conclude that the result of 1 plus 3 is 4.<br></strong></div>
+<strong style='color: #00008B;'>First, I recognize that the problem is asking for the sum of 1 and 3.<br><br>Next, I add the two numbers together.<br><br>Finally, I arrive at the conclusion that 1 plus 3 equals 4.<br></strong></div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
@@ -1072,7 +1074,7 @@ Capturing num tokens (num_tokens=4 avail_mem=106.35 GB): 100%|██████
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Let's solve the problem step by step.<br><br>**Question:** What is \(1 + 3\)?<br><br>**Solution:**<br><br>1. **Identify the numbers to add:**<br>   \[<br>   1 \quad \text{and} \quad 3<br>   \]<br><br>2. **Add the numbers together:**<br>   \[<br>   1 + 3 = 4<br>   \]<br><br>**Answer:**<br>\[<br>\boxed{4}<br>\]</strong></div>
+<strong style='color: #00008B;'>**Solution:**<br><br>We are asked to find the sum of 1 and 3.<br><br>\[<br>1 + 3 = 4<br>\]<br><br>**Answer:** \boxed{4}</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:

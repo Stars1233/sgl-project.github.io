@@ -89,7 +89,8 @@ supported\_models/specialized/index supported\_models/extending/index
 <div class="toctree" data-maxdepth="2" data-caption="SGLang Diffusion">
 
 diffusion/index diffusion/installation diffusion/compatibility\_matrix
-diffusion/api/cli diffusion/api/openai\_api
+diffusion/api/cli diffusion/api/openai\_api diffusion/performance/index
+diffusion/performance/ring\_sp\_performance
 diffusion/performance/attention\_backends
 diffusion/performance/cache/index diffusion/quantization
 diffusion/contributing

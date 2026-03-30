@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=b01aa6e6"></script>
+    <script src="../../_static/documentation_options.js?v=85b895d1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -223,6 +223,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/attention_backends.html">Attention Backends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diffusion/quantization.html">Quantization</a></li>
@@ -557,19 +559,19 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-30 17:13:05.759 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:05] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:05.759 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:05] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:05.759 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:05] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:05.759 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:05] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:05.759 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:05] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.67it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:07&lt;00:00,  8.27it/s]
-Capturing num tokens (num_tokens=4 avail_mem=119.60 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 12.74it/s]
+2026-03-30 17:33:37.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:33:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:33:37.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:33:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:33:37.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:33:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:33:37.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:33:37] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:33:37.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:33:37] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.54it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00, 10.13it/s]
+Capturing num tokens (num_tokens=4 avail_mem=59.51 GB): 100%|██████████| 58/58 [00:03&lt;00:00, 15.41it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -585,7 +587,7 @@ Capturing num tokens (num_tokens=4 avail_mem=119.60 GB): 100%|██████
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:30201
+Server started on http://localhost:30979
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -602,7 +604,7 @@ Server started on http://localhost:30201
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-30 17:13:29] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-30 17:33:59] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -634,7 +636,7 @@ Server started on http://localhost:30201
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure, here are three countries along with their capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Brazil - Brasília</strong></div>
+<strong style='color: #00008B;'>Sure! Here are three countries with their capitals:<br><br>1. United States - Washington, D.C.<br>2. France - Paris<br>3. Japan - Tokyo</strong></div>
 </div>
 </section>
 <section id="Multi-turn-Dialog">
@@ -664,13 +666,13 @@ Server started on http://localhost:30201
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here are three countries along with their respective capitals:<br><br>1. **France** - Paris<br>2. **Germany** - Berlin<br>3. **Spain** - Madrid</strong></div>
+<strong style='color: #00008B;'>Certainly! Here's a list of three countries along with their respective capitals:<br><br>1. **Germany** - Berlin<br>2. **France** - Paris<br>3. **Spain** - Madrid</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here's another list of three countries and their capitals:<br><br>1. **Italy** - Rome<br>2. **Japan** - Tokyo<br>3. **Canada** - Ottawa</strong></div>
+<strong style='color: #00008B;'>Of course! Here's another list of three countries and their capitals:<br><br>1. **Italy** - Rome<br>2. **Japan** - Tokyo<br>3. **Australia** - Canberra</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -712,7 +714,7 @@ Server started on http://localhost:30201
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2.<br><br>To calculate the result, you don't necessarily need a calculator since this is a basic multiplication. The answer is 4.<br><br>However, if you want to use a calculator, you can input "2 * 2" and it will confirm the result as 4.</strong></div>
+<strong style='color: #00008B;'>2 * 2. <br><br>You don't actually need a calculator to solve this, as it's a straightforward multiplication. The result is 4.<br><br>However, if you want me to use a calculator, here's how that would look:<br><br>1. You would enter `2 * 2` into a calculator.<br>2. Press the equals or enter key.<br>3. The calculator would display the result as `4`.<br><br>So, the answer to 2 * 2 is 4.</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -752,7 +754,7 @@ Server started on http://localhost:30201
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: <br>   - Includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats.<br>   - Ensures you get all necessary vitamins, minerals, and fiber.<br>   - Supports a strong immune system, healthy weight, and reduces the risk of chronic diseases.<br>   - Stays hydrated by drinking plenty of water.<br><br>2. **Regular Exercise**: <br>   - Involves aerobic exercises, strength training, and flexibility exercises.<br>   - Improves cardiovascular fitness, increases muscle and bone strength, and enhances flexibility.<br>   - Boosts mood and energy levels, and helps with weight management.<br>   - Reduces the risk of developing conditions like type 2 diabetes, certain types of cancer, and heart disease.<br>   - Aims for at least 150-300 minutes of moderate aerobic activity or 75-150 minutes of vigorous activity each week, along with muscle-strengthening exercises on two or more days.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet**: Eating a variety of nutrients from different food groups in the right proportions is essential. Include a good mix of carbohydrates, proteins, and fats, along with plenty of fruits and vegetables, whole grains, and lean proteins. Reduce intake of processed foods, sugar, and unhealthy fats. Regular meals and snacks can help stabilize blood sugar levels and maintain energy.<br>   <br>2. **Regular Exercise**: Engaging in regular physical activity is crucial for maintaining overall health. Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises at least two days a week. Regular exercise helps improve cardiovascular health, boosts mental well-being, and enhances overall fitness, reducing the risk of various diseases and improving mood and stress management.</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -825,7 +827,7 @@ Server started on http://localhost:30201
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Douglas Fir",<br>        "core": "Phoenix feather",<br>        "length": 11.5<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Dementor"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Cedar",<br>        "core": " phoenix feather",<br>        "length": 11.5<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Spiders"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -860,7 +862,7 @@ Server started on http://localhost:30201
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 25.49it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 35.71it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -984,30 +986,30 @@ The capital of France is Paris.&lt;|im_end|&gt;
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:176: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-2026-03-30 17:13:44.431 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:44.431 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:44.431 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:44.431 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:44.431 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:44] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:54.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:54] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:54.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:54] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:54.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:54] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:54.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:54] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:13:54.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:13:54] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:11.576 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:11] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:11.577 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:11] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:11.577 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:11] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:11.577 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:11] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:11.577 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:11] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:19.707 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:19] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:19.707 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:19] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:19.707 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:19] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:19.707 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:19] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:34:19.707 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:34:19] Persistent cache disabled, using in-memory JIT cache
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.72it/s]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.61it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1023,7 +1025,7 @@ Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:37224
+Server started on http://localhost:31504
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1039,7 +1041,7 @@ Server started on http://localhost:37224
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-30 17:14:09] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-30 17:34:33] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1073,7 +1075,7 @@ Server started on http://localhost:37224
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a person standing on the rear compartment of a yellow taxi in an urban setting, using an iron to press a shirt or jacket that is placed on an ironing board. The person appears to be balancing between the taxi's rear compartment and the roadway while performing this task, suggesting they might be participating in a performance art, environmental protest, or simply a creative act meant to catch attention. The setting, including the taxi and the surrounding city environment, indicates that this is likely taking place in a busy city intersection.</strong></div>
+<strong style='color: #00008B;'>The image shows a person ironing clothes while standing on the back of a parked yellow taxi. The setting appears to be an urban area, possibly a city street, with a mix of traffic and buildings in the background. The person is using a standard portable iron, and the scene humorously contrasts the typical urban environment with an everyday household chore being performed in an unexpected location.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:

@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=b01aa6e6"></script>
+    <script src="../_static/documentation_options.js?v=85b895d1"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -223,6 +223,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/attention_backends.html">Attention Backends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/quantization.html">Quantization</a></li>
@@ -572,19 +574,19 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-30 17:15:24.620 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:15:24] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:15:24.620 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:15:24] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:15:24.620 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:15:24] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:15:24.620 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:15:24] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:15:24.621 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:15:24] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.55it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09&lt;00:00,  6.24it/s]
-Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████████| 58/58 [00:05&lt;00:00, 10.35it/s]
+2026-03-30 17:27:55.359 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:55.360 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:55.360 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:55.360 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:55] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:27:55.360 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:27:55] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.32it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09&lt;00:00,  6.38it/s]
+Capturing num tokens (num_tokens=4 avail_mem=41.83 GB): 100%|██████████| 58/58 [00:05&lt;00:00, 10.92it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -879,7 +881,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources:<br>1. get_current_date function<br>2. get_current_weather function</strong></div>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function></strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
@@ -927,7 +929,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources:<br>- get_current_date function<br>- get_current_weather function</strong></div>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources: <br>- get_current_date function <br>- get_current_weather function</strong></div>
 </div>
 </section>
 </section>
@@ -990,7 +992,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'dea78c0594b64d75a73333e85ef952cb', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.17205644771456718, 'response_sent_to_client_ts': 1774890958.9758904}}</strong></div>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'b3c081da7bf34e26aed7fcb89897c69d', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12011676107067615, 'response_sent_to_client_ts': 1774891707.5202332}}</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
@@ -1035,7 +1037,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'c0a0fdb5fa02466a96630df7cf960ba5', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.1739363051019609, 'response_sent_to_client_ts': 1774890959.1625044}}</strong></div>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'd24544a290e34ce19f83cb57670c5153', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.11913138290401548, 'response_sent_to_client_ts': 1774891707.649336}}</strong></div>
 </div>
 </section>
 <section id="id2">
@@ -1082,7 +1084,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '9058c168b3484c41a7cb5e4f0e2ba2dc', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.09079455398023129, 'response_sent_to_client_ts': 1774890959.2888863}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '68d2ad8b3877481593b284c392a6cbc6', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.09072212688624859, 'response_sent_to_client_ts': 1774890959.2888973}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '999eb0d996694a8e9f2f0b3820161eee', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.09067236306145787, 'response_sent_to_client_ts': 1774890959.288902}}]</strong></div>
+<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': 'ab7a606a14a844f8be9821bcefb3e08e', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.07392314705066383, 'response_sent_to_client_ts': 1774891707.746313}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '8b26f8b2e0c249ea86220e78a1700a94', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.07370757299941033, 'response_sent_to_client_ts': 1774891707.7463198}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '2c7e78f1d74e45d8aa2bd1cab91d051d', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.07365689903963357, 'response_sent_to_client_ts': 1774891707.7463226}}]</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1119,7 +1121,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': '337a1730ac294d19acbe216f53e27cd7', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.03608199395239353, 'response_sent_to_client_ts': 1774890959.3330495}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': '5bd76edb2b4848bc9745bd0c80e0483f', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.025376404984854162, 'response_sent_to_client_ts': 1774891707.7783163}}</strong></div>
 </div>
 </section>
 <section id="id4">
@@ -1171,7 +1173,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': 'e872c816a9ed40138bbecda0b7b4635e', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.10426689498126507, 'response_sent_to_client_ts': 1774890961.038972}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'Paris is the capital of France.', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 13, 128009], 'meta_info': {'id': 'df62dc6d92d64507bee8cc638f8c7649', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 8, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.1280459420522675, 'response_sent_to_client_ts': 1774891709.182208}}</strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -1225,7 +1227,7 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': 'fcfd50fa922248fd9084c01beca0de9d', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.0498297531157732, 'response_sent_to_client_ts': 1774890961.1012392}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'Paris is the capital of France.', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 13, 128009], 'meta_info': {'id': '35a21ce78926416ebc50f13e66b1fdb8', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 8, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.07311428303364664, 'response_sent_to_client_ts': 1774891709.2643795}}</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -1266,19 +1268,19 @@ Capturing num tokens (num_tokens=4 avail_mem=99.86 GB): 100%|██████�
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-03-30 17:16:15.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:16:15] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:16:15.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:16:15] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:16:15.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:16:15] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:16:15.471 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:16:15] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:16:15.472 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:16:15] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.55it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:10&lt;00:00,  5.41it/s]
-Capturing num tokens (num_tokens=4 avail_mem=83.11 GB): 100%|██████████| 58/58 [00:08&lt;00:00,  6.58it/s]
+2026-03-30 17:28:41.645 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:28:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:28:41.645 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:28:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:28:41.645 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:28:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:28:41.645 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:28:41] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:28:41.645 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:28:41] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.60it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09&lt;00:00,  6.02it/s]
+Capturing num tokens (num_tokens=4 avail_mem=18.63 GB): 100%|██████████| 58/58 [00:07&lt;00:00,  7.37it/s]
 </pre></div></div>
 </div>
 <section id="id5">
@@ -1506,7 +1508,7 @@ Capturing num tokens (num_tokens=4 avail_mem=83.11 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: Rome is the capital of Italy</strong></div>
+<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: London is the capital of Italy</strong></div>
 </div>
 </section>
 <section id="id7">
@@ -1608,7 +1610,7 @@ Capturing num tokens (num_tokens=4 avail_mem=83.11 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Prompt: <|begin_of_text|><|start_header_id|>system<|end_header_id|><br><br>Cutting Knowledge Date: December 2023<br>Today Date: 26 Jul 2024<br><br><|eot_id|><|start_header_id|>user<|end_header_id|><br><br>Paris is the capital of<|eot_id|><|start_header_id|>assistant<|end_header_id|><br><br><br>Generated text: Paris is the capital of France.</strong></div>
+<strong style='color: #00008B;'>Prompt: <|begin_of_text|><|start_header_id|>system<|end_header_id|><br><br>Cutting Knowledge Date: December 2023<br>Today Date: 26 Jul 2024<br><br><|eot_id|><|start_header_id|>user<|end_header_id|><br><br>Paris is the capital of<|eot_id|><|start_header_id|>assistant<|end_header_id|><br><br><br>Generated text: France.</strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:

@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=b01aa6e6"></script>
+    <script src="../_static/documentation_options.js?v=85b895d1"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -228,6 +228,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/attention_backends.html">Attention Backends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../diffusion/quantization.html">Quantization</a></li>
@@ -577,19 +579,19 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-30 17:14:38.978 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:14:38] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:14:38.978 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:14:38] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:14:38.978 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:14:38] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:14:38.978 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:14:38] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 17:14:38.978 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 17:14:38] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  5.98it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 17.69it/s]
-Capturing num tokens (num_tokens=4 avail_mem=118.80 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 37.57it/s]
+2026-03-30 17:32:14.942 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:32:14] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:32:14.942 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:32:14] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:32:14.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:32:14] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:32:14.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:32:14] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 17:32:14.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 17:32:14] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00&lt;00:00,  5.65it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:03&lt;00:00, 19.19it/s]
+Capturing num tokens (num_tokens=4 avail_mem=74.00 GB): 100%|██████████| 58/58 [00:01&lt;00:00, 44.33it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -605,7 +607,7 @@ Capturing num tokens (num_tokens=4 avail_mem=118.80 GB): 100%|██████
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:33413
+Server started on http://localhost:35138
 </pre></div></div>
 </div>
 </section>
@@ -639,7 +641,7 @@ Server started on http://localhost:33413
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: ChatCompletion(id='95eea26ca66843e19cfe67888f61e998', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774890894, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: ChatCompletion(id='b14fcbfcab2740558b9631d90efbfccb', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='Sure, here are three countries and their respective capitals:\n\n1. **United States** - Washington, D.C.\n2. **Canada** - Ottawa\n3. **Australia** - Canberra', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, reasoning_content=None), matched_stop=151645)], created=1774891949, model='qwen/qwen2.5-0.5b-instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=39, prompt_tokens=37, total_tokens=76, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="Model-Thinking/Reasoning-Support">
@@ -904,7 +906,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The major achievements of ancient Rome include the construction of the Colosseum, the Pantheon, the Forum, and the Roman Forum. The Romans also invented the concept of the republic, which lasted for over 200 years. They developed a complex system of law, including the Twelve Tables, which were written to ensure fair and just laws for all citizens. Rome's military prowess was also notable, and they conquered much of the known world during their rule. Additionally, they developed a vast network of roads and public works that connected their cities and made travel easier.</strong></div>
+<strong style='color: #00008B;'>Ancient Rome was a major civilization that flourished from the 8th century BCE to the 4th century CE. It was known for its vast infrastructure, including the Colosseum, aqueducts, and extensive network of roads. The Roman Empire, which lasted for over 2000 years, was one of the most powerful and influential empires in history. Key achievements include:<br><br>1. **Infrastructure**: The construction of roads, aqueducts, and public buildings like the Colosseum showcased Rome's engineering prowess.<br><br>2. **Cultural Legacy**: Rome was a center of learning and culture, with</strong></div>
 </div>
 <p>Streaming mode is also supported.</p>
 <section id="id1">
@@ -930,7 +932,7 @@ Answer: The word &quot;strawberry&quot; contains **3** instances of the letter &
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Yes, I am Qwen, created by Alibaba Cloud. My responses are based on natural language processing, which allows me to understand and respond to text in various languages and contexts. My training data includes a wide range of topics and applications, and I&#39;m constantly learning and improving my ability to generate human-like responses.
+Yes, I am designed to assist with various tasks, including answering questions, providing information, and performing tasks related to language processing. I am not a test, but rather a tool created by Alibaba Cloud. If you have any specific questions or need assistance with a particular topic, feel free to ask, and I will do my best to provide you with the information or support you&#39;re looking for.
 </pre></div></div>
 </div>
 </section>
@@ -995,7 +997,7 @@ Yes, I am Qwen, created by Alibaba Cloud. My responses are based on natural lang
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='758ad83c0115465cb878b4e956c95292', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774890897, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='6dc3ada869f246198d734058ab90f799', choices=[CompletionChoice(finish_reason='length', index=0, logprobs=None, text=' 1. United States - Washington D.C.\n2. Canada - Ottawa\n3. France - Paris\n4. Germany - Berlin\n5. Japan - Tokyo\n6. Italy - Rome\n7. Spain - Madrid\n8. United Kingdom - London\n9. Australia - Canberra\n10. New Zealand', matched_stop=None)], created=1774891951, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=64, prompt_tokens=8, total_tokens=72, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1027,7 +1029,7 @@ Yes, I am Qwen, created by Alibaba Cloud. My responses are based on natural lang
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Response: Completion(id='065722d3fcde4268afea5d94b17d5f99', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' The story should be about a person who discovers a new planet and how they adapt to their new environment.', matched_stop='\n\n')], created=1774890897, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=21, prompt_tokens=9, total_tokens=30, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
+<strong style='color: #00008B;'>Response: Completion(id='6f11f2759f444247984043cee5adaac3', choices=[CompletionChoice(finish_reason='stop', index=0, logprobs=None, text=' Once upon a time, there was a space explorer named Jack who had always dreamed of exploring the stars. He had read countless books on space travel and had even taken many courses to learn everything he could about it. One day, Jack was offered a job as a space explorer by a company that was looking to send astronauts into outer space.', matched_stop='\n\n')], created=1774891952, model='qwen/qwen2.5-0.5b-instruct', object='text_completion', system_fingerprint=None, usage=CompletionUsage(completion_tokens=68, prompt_tokens=9, total_tokens=77, completion_tokens_details=None, prompt_tokens_details=None, reasoning_tokens=0), metadata={'weight_version': 'default'})</strong></div>
 </div>
 <section id="id4">
 <h4>Returning Routed Experts (MoE Models)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>

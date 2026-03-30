@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=b01aa6e6"></script>
+    <script src="../../_static/documentation_options.js?v=85b895d1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -51,6 +51,8 @@
     <link rel="icon" href="../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)" href="ring_sp_performance.html" />
+    <link rel="prev" title="TeaCache" href="cache/teacache.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Mar 30, 2026"/>
@@ -212,12 +214,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../supported_models/extending/index.html">Extending SGLang</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SGLang Diffusion</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">SGLang Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Install SGLang-Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../compatibility_matrix.html">Compatibility Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/cli.html">SGLang Diffusion CLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Performance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="attention_backends.html">Attention Backends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Profiling Multimodal Generation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attention_backends.html">Attention Backends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cache/index.html">Caching Acceleration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quantization.html">Quantization</a></li>
@@ -660,6 +669,24 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="cache/teacache.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">TeaCache</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ring_sp_performance.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
