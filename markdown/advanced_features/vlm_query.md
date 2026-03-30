@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-30 11:46:32.942 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:00.396 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 11:46:32.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:00.397 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 11:46:32.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:00.398 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 11:46:32.944 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:00.398 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 11:46:32.944 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:00.399 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 11:46:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 11:46:41.722 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 11:46:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:09.986 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:09.986 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:09.986 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:09.986 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 12:31:09.986 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 12:31:09] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.77it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.61it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.32it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.37it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a scene on a city street with two yellow taxis parked on the side. One of the taxi cabs is open, and an individual is hanging clothes to dry on it. The说人 isn't complete, but it could read something like "brown belongings."
+    The image shows a scene with two yellow taxicabs parked on a city street. A person in a yellow shirt is hanging up a blue and blueish grey striped towel on the back of one of the taxis. The background includes urban storefronts, pedestrians, and traffic lights. The person appears to be using the back of the taxi as a makeshift drying rack for drying their towel.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab parked along a street. The taxi has apermanent display of several flags hanging over it.
+    In the image, there are two yellow taxis. One is in the process of loading a red suitcase onto its back. This sequence of events implies that a person, dressed in a yellow shirt and tie, is either loading luggage onto the back seat of the taxi or perhaps preparing to prepare luggage.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,12 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street scene with a yellow cab. The taxi is parked on the street, and there is a clothesline with laundry hanging on it extending from the backseat of the cab. The clothesline appears to be makeshift, as it is extending out the side of the cab. The background includes buildings with awnings and storefronts, and the scene appears to be in an urban setting.
+    The image shows a street scene in a city with a number of distinctive elements:
+    
+    1. **Yellow Taxis**: There are two yellow taxis visible, one of which is moving and the other stationary. Taxis are a common sight in many cities as a convenient and familiar mode of transportation.
+    2. **Periodic Monetary Regime (PMR) Signs**: These are red and yellow signs, often used to indicate taxicab fare rates.
+    3. **Pamono Communications Setup**: There is a blue and white rigging set up with markings that seem to suggest educational or informational content, possibly related to the PMR.
+    4
 
 
 ## Querying Llama 4 Vision Model
