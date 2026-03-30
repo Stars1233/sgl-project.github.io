@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=9272b30e"></script>
+    <script src="../_static/documentation_options.js?v=b81c20b9"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -571,101 +571,22 @@ document.write(`
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:176: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 10, in map_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 28, in read
-    return self._sock.recv(max_bytes)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1288, in recv
-    return self.read(buflen)
-  File &#34;/usr/lib/python3.10/ssl.py&#34;, line 1161, in read
-    return self._sslobj.read(len)
-TimeoutError: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 60, in map_httpcore_exceptions
-    yield
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 218, in handle_request
-    resp = self._pool.handle_request(req)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 253, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection_pool.py&#34;, line 237, in handle_request
-    response = connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/connection.py&#34;, line 90, in handle_request
-    return self._connection.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 112, in handle_request
-    raise exc
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 91, in handle_request
-    ) = self._receive_response_headers(**kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 155, in _receive_response_headers
-    event = self._receive_event(timeout=timeout)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_sync/http11.py&#34;, line 191, in _receive_event
-    data = self._network_stream.read(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/backends/sync.py&#34;, line 26, in read
-    with map_exceptions(exc_map):
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpcore/_exceptions.py&#34;, line 14, in map_exceptions
-    raise to_exc(exc)
-httpcore.ReadTimeout: The read operation timed out
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/utils/common.py&#34;, line 2571, in retry
-    return fn()
-  File &#34;/actions-runner/_work/sglang/sglang/python/sglang/srt/configs/model_config.py&#34;, line 721, in &lt;lambda&gt;
-    lambda: hf_api.file_exists(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/hf_api.py&#34;, line 3436, in file_exists
-    get_hf_file_metadata(url, token=token)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py&#34;, line 89, in _inner_fn
-    return fn(*args, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py&#34;, line 1576, in get_hf_file_metadata
-    response = _httpx_follow_relative_redirects_with_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 685, in _httpx_follow_relative_redirects_with_backoff
-    response = http_backoff(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 559, in http_backoff
-    return next(
-  File &#34;/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_http.py&#34;, line 467, in _http_backoff_base
-    response = client.request(method=method, url=url, **kwargs)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 821, in request
-    return self.send(request, auth=auth, follow_redirects=follow_redirects)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 908, in send
-    response = self._send_handling_auth(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 936, in _send_handling_auth
-    response = self._send_handling_redirects(
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 973, in _send_handling_redirects
-    response = self._send_single_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_client.py&#34;, line 1009, in _send_single_request
-    response = transport.handle_request(request)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 217, in handle_request
-    with map_httpcore_exceptions():
-  File &#34;/usr/lib/python3.10/contextlib.py&#34;, line 153, in __exit__
-    self.gen.throw(typ, value, traceback)
-  File &#34;/usr/local/lib/python3.10/dist-packages/httpx/_transports/default.py&#34;, line 77, in map_httpcore_exceptions
-    raise mapped_exc(message) from exc
-httpx.ReadTimeout: The read operation timed out
-[2026-03-30 19:35:44] retry() failed once (0th try, maximum 2 retries). Will delay 0.96s and retry. Error: The read operation timed out
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-30 19:35:46.185 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:35:46] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:35:46.185 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:35:46] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:35:46.185 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:35:46] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:35:46.185 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:35:46] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:35:46.185 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:35:46] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.32it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:10&lt;00:00,  5.61it/s]
-Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████████| 58/58 [00:06&lt;00:00,  8.74it/s]
+2026-03-30 19:51:57.542 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:51:57] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:51:57.542 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:51:57] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:51:57.542 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:51:57] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:51:57.542 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:51:57] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:51:57.542 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:51:57] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.58it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:08&lt;00:00,  6.51it/s]
+Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████████| 58/58 [00:07&lt;00:00,  8.03it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -960,7 +881,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources: <br>- get_current_date function <br>- get_current_weather function</strong></div>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources:<br>- get_current_date function<br>- get_current_weather function</strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
@@ -1008,7 +929,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources:<br>- Current date and time: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones<br>- Current weather: https://www.weather.com/</strong></div>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function></strong></div>
 </div>
 </section>
 </section>
@@ -1071,7 +992,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': '572cfe7b5a42429e91a4d7d71e655930', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.24749154597520828, 'response_sent_to_client_ts': 1774899384.715746}}</strong></div>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': '028d7d30a9784d908b3eb2a9a9db2ff1', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.2515032780356705, 'response_sent_to_client_ts': 1774900352.7172525}}</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
@@ -1116,7 +1037,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'b9b688b7c9ae4f978608cfe0041335ff', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.26035929191857576, 'response_sent_to_client_ts': 1774899384.985537}}</strong></div>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': '4d9fc67720734444a82ad4bb190118c8', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.26046876807231456, 'response_sent_to_client_ts': 1774900352.9865944}}</strong></div>
 </div>
 </section>
 <section id="id2">
@@ -1163,7 +1084,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '8c7cb98a78da4281b0657f56007a420e', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12814870197325945, 'response_sent_to_client_ts': 1774899385.1622632}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': 'c4b0b83d8c07403684668d8b154d69ad', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12807801901362836, 'response_sent_to_client_ts': 1774899385.1622741}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '229b5a1855f0435d8e5351572346fe08', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.1280328610446304, 'response_sent_to_client_ts': 1774899385.1622782}}]</strong></div>
+<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '53ab948e81324413af8df834be5e4af4', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12812370201572776, 'response_sent_to_client_ts': 1774900353.1629884}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '1d02e5a885234af88e465dd3ca11c39d', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12804513692390174, 'response_sent_to_client_ts': 1774900353.162995}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '97514cd8b2e243829cc1afc2263cc529', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.12800399702973664, 'response_sent_to_client_ts': 1774900353.1629982}}]</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1200,7 +1121,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': 'd67170487b5b4ba785cc7b9588228fba', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.03370782104320824, 'response_sent_to_client_ts': 1774899385.2030141}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': '407b5ff4a3634434a6770fabfd467398', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.05747611203696579, 'response_sent_to_client_ts': 1774900353.2264974}}</strong></div>
 </div>
 </section>
 <section id="id4">
@@ -1252,7 +1173,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': '5eb81c63359149e3ba6142137327331c', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.09847690002061427, 'response_sent_to_client_ts': 1774899386.485125}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': 'e938e9a9eb04475ea45acdbc112b5668', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.08451112394686788, 'response_sent_to_client_ts': 1774900354.4867568}}</strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -1306,7 +1227,7 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': 'b9d143540ad5489d8c326004c45672d9', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.06979643809609115, 'response_sent_to_client_ts': 1774899386.565095}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': '7c7d200915a346f58fecf1651271411e', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': None, 'dp_rank': None, 'e2e_latency': 0.034002310945652425, 'response_sent_to_client_ts': 1774900354.5285282}}</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -1347,19 +1268,19 @@ Capturing num tokens (num_tokens=4 avail_mem=31.21 GB): 100%|██████�
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-03-30 19:36:39.388 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:36:39] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:36:39.388 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:36:39] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:36:39.388 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:36:39] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:36:39.388 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:36:39] Persistent cache disabled, using in-memory JIT cache
-2026-03-30 19:36:39.388 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-30 19:36:39] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.31it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:06&lt;00:00,  8.77it/s]
-Capturing num tokens (num_tokens=4 avail_mem=41.91 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 12.72it/s]
+2026-03-30 19:52:46.861 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:52:46] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:52:46.861 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:52:46] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:52:46.861 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:52:46] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:52:46.861 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:52:46] Persistent cache disabled, using in-memory JIT cache
+2026-03-30 19:52:46.862 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-30 19:52:46] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.58it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:08&lt;00:00,  6.72it/s]
+Capturing num tokens (num_tokens=4 avail_mem=20.33 GB): 100%|██████████| 58/58 [00:05&lt;00:00,  9.78it/s]
 </pre></div></div>
 </div>
 <section id="id5">
@@ -1587,7 +1508,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.91 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: Paris is the capital of France</strong></div>
+<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: Paris is the capital of Italy</strong></div>
 </div>
 </section>
 <section id="id7">
@@ -1632,7 +1553,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.91 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Prompt: Please provide information about Paris as a major global city:<br>Generated text: France</strong></div>
+<strong style='color: #00008B;'>Prompt: Please provide information about Paris as a major global city:<br>Generated text: England</strong></div>
 </div>
 </section>
 <section id="id8">
