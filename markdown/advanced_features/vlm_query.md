@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-30 21:38:46.630 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:48.886 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 21:38:46] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:48] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 21:38:46.631 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:48.887 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 21:38:46] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:48] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 21:38:46.631 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:48.888 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 21:38:46] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:48] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 21:38:46.632 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:48.888 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 21:38:46] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:48] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 21:38:46.632 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:48.889 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 21:38:46] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:48] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 21:38:56.426 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 21:38:56] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 21:38:56.427 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 21:38:56] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 21:38:56.427 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 21:38:56] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 21:38:56.427 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 21:38:56] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 21:38:56.427 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 21:38:56] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:58.847 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:58] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:58.847 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:58] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:58.847 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:58] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:58.847 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:58] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 23:36:58.847 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 23:36:58] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.09it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.08it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.53it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.45it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.51it/s]
 
 
 
@@ -158,7 +158,9 @@ print(out["text"])
 ```
 
     Model response:
-    The image depicts a taxi parked on the street with another taxi in the background. A person is using a makeshift rack with blue clothes draped over it, possibly preparing to take out or put away clothes for the day.
+    This image shows a person, who appears to be wearing a yellow shirt, interacting with a modified такси (taxi) cab. Specifically, the person seems to be adjusting or showing off a stand attached to the back of the taxi, which has what looks like laundry hanging on it. The clothing items include items of blue color, and they are facilitated by a drying rack.
+    
+    The context and purpose of such an activity might indicate a demonstration or charity effort, involving the recycling or reusing of clothing. Such initiatives are common in various communities to raise awareness about sustainability and waste reduction. The stand might be used to display these items in a
 
 
 ### Call with Processor Output
@@ -183,7 +185,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    This image shows a yellow taxi driving on a city street. On the back of the taxi, a man is demonstrating something, possibly related to safety, as he holds a white cloth and seems to be using a device attached to the back of the taxi. The scene appears to be taking place during the day, and it looks like it is an public event, possibly in the New York City area, given the style of the taxi and the organization of the city.
+    This image shows a scene in a city street with a person standing next to a yellow taxi. The taxi has its trunk open and a piece of cloth or clothing appears to be draped over the edge. It looks like the person is either preparing to put something in the trunk or is in the process of taking it out. The background includes various storefronts and buildings, indicating an urban environment. The setting and the presence of the yellow taxi suggest it might be in a large city, possibly near the Notre Dame Cathedral in Paris as the description implies.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +241,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    I'm not sure what you mean by "what's shown here." Could you please provide more context or clarify your question?
+    The image shows aBonjour sign that was recently taken out of use by官方 in Nanning, China. This sign is typically used to welcome visitors, and this one has now been moved outside, usually onto a piece of equipment that holds the sign in place. The sign, which represents heart, flower, stands for "Shuanghuangfeng" (a type of cloud Icicle from which Duoluo chuan exchanges with everyone who wades through storms and streams to dive down and bring sunshine and rain to duoluo chuan), was not used in Nanning anymore, so it was dragged out to be smashed,
 
 
 ## Querying Llama 4 Vision Model
