@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-30 08:22:53.263 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:09.986 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:22:53] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:22:53.264 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:09.987 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:22:53] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:22:53.264 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:09.987 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:22:53] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:22:53.265 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:09.988 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:22:53] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:22:53.265 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:09.988 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-30 08:22:53] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-30 08:23:02.149 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:23:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:23:02.149 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:23:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:23:02.149 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:23:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:23:02.149 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:23:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-30 08:23:02.150 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-30 08:23:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:18.057 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:18] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:18.057 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:18] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:18.057 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:18] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:18.057 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:18] Persistent cache disabled, using in-memory JIT cache
+    2026-03-30 08:40:18.057 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-30 08:40:18] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.52it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.71it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.03s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.02it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.01s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.05it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a very unusual and humorous scene of a person ironing clothes in the back seat of a yellow taxi cab. The unique setup is set up in front of what looks like a eBay or online auction store. The illusion is quite striking and makes for a comical sight.
+    The image shows a street scene with two yellow taxis parked on the side of a city street. A person is hanging laundry on clotheslines attached to the back of the taxis. The background includes buildings, some shops with store signs, and street lamps. This scene is unusual as people typically minimize the impact of their daily activities on public spaces, especially in an urban setting.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxis driving on a city street with some commercial buildings in the background. The image appears to be manipulated to create an unusual contrast between the vehicles and a regular scene where horse-drawn carriages are usually used.
+    The image shows a scene from what appears to be a stand-up comedy routine. A performer is dressed as a weatherman, standing next to a city street with yellow taxis. He is partially cutting a large American flag into small strips, which he then hangs over a railing. This action is part of a comedic sketch where he explains the weather forecast. The setting looks to be in a public area in an urban environment, possibly during a street performance or outdoor event.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    This image shows a humorous and unusual scene where a taxi cab is being used as a makeshift outdoor laundry line. The cab's rear door is hung up on a metal grate, functioning as a clothesline for hanging clothes. This setup is likely a creative and humorous attempt to do laundry when no other facilities are available. The cab itself is a典型 yellow NYC taxi from very recent years.
+    The image shows a yellow taxi parked on a city street. The taxi is equipped with a cloth or tarp stretched out, possibly indicating a rental or washing service. Behind the taxi, there is a building with several flags, including American flags. The scene appears to be in an urban area, likely in the United States, given the presence of the American flags.
 
 
 ## Querying Llama 4 Vision Model
