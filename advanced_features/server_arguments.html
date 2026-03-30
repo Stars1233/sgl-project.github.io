@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=0a60b56f"></script>
+    <script src="../_static/documentation_options.js?v=45bbbc86"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -1125,77 +1125,82 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag (set to enable)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-metrics-for-all-schedulers</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-mfu-metrics</span></code></p></td>
+<td><p>Enable estimated MFU-related prometheus metrics.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p>bool flag (set to enable)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-metrics-for-all-schedulers</span></code></p></td>
 <td><p>Enable –enable-metrics-for-all-schedulers when you want schedulers on all TP ranks (not just TP 0) to record request metrics separately. This is especially useful when dp_attention is enabled, as otherwise all metrics appear to come from TP 0.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag (set to enable)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--tokenizer-metrics-custom-labels-header</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tokenizer-metrics-custom-labels-header</span></code></p></td>
 <td><p>Specify the HTTP header for passing custom labels for tokenizer metrics.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">x-custom-labels</span></code></p></td>
 <td><p>Type: str</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tokenizer-metrics-allowed-custom-labels</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--tokenizer-metrics-allowed-custom-labels</span></code></p></td>
 <td><p>The custom labels allowed for tokenizer metrics. The labels are specified via a dict in ‘–tokenizer-metrics-custom-labels-header’ field in HTTP requests, e.g., {‘label1’: ‘value1’, ‘label2’: ‘value2’} is allowed if ‘–tokenizer-metrics-allowed-custom-labels label1 label2’ is set.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>List[str]</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--bucket-time-to-first-token</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--bucket-time-to-first-token</span></code></p></td>
 <td><p>The buckets of time to first token, specified as a list of floats.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>List[float]</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--bucket-inter-token-latency</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--bucket-inter-token-latency</span></code></p></td>
 <td><p>The buckets of inter-token latency, specified as a list of floats.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>List[float]</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--bucket-e2e-request-latency</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--bucket-e2e-request-latency</span></code></p></td>
 <td><p>The buckets of end-to-end request latency, specified as a list of floats.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>List[float]</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--collect-tokens-histogram</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--collect-tokens-histogram</span></code></p></td>
 <td><p>Collect prompt/generation tokens histogram.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag (set to enable)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--prompt-tokens-buckets</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--prompt-tokens-buckets</span></code></p></td>
 <td><p>The buckets rule of prompt tokens. Supports 3 rule types: ‘default’ uses predefined buckets; ‘tse <middle> <base> <count>’ generates two sides exponential distributed buckets (e.g., ‘tse 1000 2 8’ generates buckets [984.0, 992.0, 996.0, 998.0, 1000.0, 1002.0, 1004.0, 1008.0, 1016.0]).); ‘custom <value1> <value2> …’ uses custom bucket values (e.g., ‘custom 10 50 100 500’).</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>List[str]</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--generation-tokens-buckets</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--generation-tokens-buckets</span></code></p></td>
 <td><p>The buckets rule for generation tokens histogram. Supports 3 rule types: ‘default’ uses predefined buckets; ‘tse <middle> <base> <count>’ generates two sides exponential distributed buckets (e.g., ‘tse 1000 2 8’ generates buckets [984.0, 992.0, 996.0, 998.0, 1000.0, 1002.0, 1004.0, 1008.0, 1016.0]).); ‘custom <value1> <value2> …’ uses custom bucket values (e.g., ‘custom 10 50 100 500’).</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>List[str]</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--gc-warning-threshold-secs</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--gc-warning-threshold-secs</span></code></p></td>
 <td><p>The threshold for long GC warning. If a GC takes longer than this, a warning will be logged. Set to 0 to disable.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></td>
 <td><p>Type: float</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--decode-log-interval</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--decode-log-interval</span></code></p></td>
 <td><p>The log interval of decode batch.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">40</span></code></p></td>
 <td><p>Type: int</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-request-time-stats-logging</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-request-time-stats-logging</span></code></p></td>
 <td><p>Enable per request time stats logging</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag (set to enable)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--kv-events-config</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--kv-events-config</span></code></p></td>
 <td><p>Config in json format for NVIDIA dynamo KV event publishing. Publishing will be enabled if this flag is used.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>Type: str</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-trace</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--enable-trace</span></code></p></td>
 <td><p>Enable opentelemetry trace</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
 <td><p>bool flag (set to enable)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--otlp-traces-endpoint</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--otlp-traces-endpoint</span></code></p></td>
 <td><p>Config opentelemetry collector endpoint if –enable-trace is set. format: <ip>:<port></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">localhost:4317</span></code></p></td>
 <td><p>Type: str</p></td>
