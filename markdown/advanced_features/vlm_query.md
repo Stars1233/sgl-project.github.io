@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-31 02:26:30.115 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:23.667 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 02:26:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 02:26:30.116 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:23.668 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 02:26:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 02:26:30.116 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:23.668 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 02:26:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 02:26:30.116 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:23.669 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 02:26:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 02:26:30.117 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:23.670 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 02:26:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 02:26:39.133 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 02:26:39] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 02:26:39.133 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 02:26:39] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 02:26:39.133 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 02:26:39] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 02:26:39.133 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 02:26:39] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 02:26:39.134 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 02:26:39] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:33.066 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:33] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:33.066 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:33] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:33.066 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:33] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:33.067 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:33] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 03:25:33.067 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 03:25:33] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.36it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.39it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.14it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.17it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.43s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.33s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a scene of what appears to be a humorous or unexpected situation. There is a person dressed in a yellow shirt and black pants standing on the street, particularly on the back of a yellow recreational vehicle (RV). The person is holding a large red object and wearing a blue raincoat, which is tied up. The RV has additional plating and numerous American flags attached to it. The background includes urban elements with tall buildings and a yellow taxi cab. The scene suggests that the person might be participating in a protest or demonstration, but the exact reason is not clear.
+    The image shows a man touching his pant leg in his office on what appears to be a vibrant city street with tall buildings. This setup seems to suggest a humorous or absurd scenario where the man is being photographed in aacasoid manner, likely due to the mặcness of his behavior.
 
 
 ### Call with Processor Output
@@ -183,7 +183,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxis typically used for taxi service in urban areas, often in cities around the world, such as New York. These cabs are equipped with stickers, posters, banners, and design logos, indicating they might be part of a promotional campaign or provide custom branding for advertising purposes. The handlebars in front of the taxis are equipped with graffiti and small bulky manufacturas that are covered over and over, suggesting industrial or commercial activity related to law enforcement or public service activity.
+    The image shows a scene in a city street with two yellow taxis parked side by side. The scene appears to have been captured during a protest or public event. The yellow taxis are serving as makeshift desks or tables for protesters, as they have clothes and other items draped over a folded, makeshift desk that also functions as a table for transparency reasons. This gesture is a form of peaceful protest known as "opencart," where protesters use public spaces as desk-in-road setups, testing transparency and public records.
+    
+    The image shows one of the cities, a laundry service. With clothes and other items draped over folding desks that serves as a table for
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +241,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows two taxi cabs on a city street, likely in New York City, given the architecture and flags visible. The person manipulating the suitcase is using a telescope or similar device to get a closer look at something on the ground in front of the second taxi.
+    The image shows a man standing between two yellow taxi cabs parked on a city street. He is holding what appears to be an ironing board or some kind of stand and is apparently ironing clothes. The scene suggests some unusual or humorous activity, likely staged for a photograph or a creative project. The background includes buildings and street elements typical of an urban environment.
 
 
 ## Querying Llama 4 Vision Model
