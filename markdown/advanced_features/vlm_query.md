@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-31 19:55:32.567 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:00.756 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 19:55:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 19:55:32.567 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:00.758 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 19:55:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 19:55:32.568 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:00.758 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 19:55:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 19:55:32.569 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:00.759 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 19:55:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 19:55:32.569 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:00.759 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 19:55:32] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 19:55:41.348 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 19:55:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 19:55:41.348 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 19:55:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 19:55:41.348 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 19:55:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 19:55:41.348 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 19:55:41] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 19:55:41.348 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 19:55:41] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:09.736 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:09.737 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:09.737 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:09.737 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:09] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 21:11:09.737 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 21:11:09] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.68it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.60it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.30it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.29it/s]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image shows a street scene in New York City. There is a yellow taxi cab in the background, and in the foreground, a man is claimed to be ironing a blue shirt on a folding chair. The location appears to be a street near the iconic New York taxi numbered "521," known for its distinctive yellow-and-white color scheme, which is not present in the image. The street is lined with tall buildings and flagpoles, with flags and banners hanging, adding to the typical New York City atmosphere. The man may be performing a humorous or artistic act, as it is not common to iron clothes on the street
+    The image shows a yellow taxi car in the foreground, likely performing laundry. Looks like a man hanging up laundry outside the taxi.
 
 
 ### Call with Processor Output
@@ -183,7 +183,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi parked on a city street. The taxi is closed with the doors and windows intact. The driver's side door is slightly ajar, and the rear door is up. Affairs electric blue in the back seat of the taxi are clearly visible through the windows.
+    The image you've shared depicts a common scene in some service jobs, but it has become a meme that expresses frustration or a laundry list of concerns, though often clearly exaggerated or suggested. This kind of visual humor taps into the thought of many workers laboring under various circumstances to make a living.
+    
+    In this case, the scenario presented in the image certainly reflects the reality that some workers deal with numerous, seemingly insurmountable tasks combined in ever-escalating proportions. It primarily underscores the ongoing stress and responsibility that feel unmanageable, highlighting universal feelings of frustration and overwork in their professional lives.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +241,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi driving on a city street. A person in an orange shirt is holding a spread-meter over the taxi, likely for data collection purposes or traffic monitoring. The urban setting includes sleek buildings, street lights, and various signs.
+    The image shows two yellow taxis on a city street. One taxi, in the foreground, is adorned with a set of clothes that look like they are being hung out to dry on a clothesline attached to the vehicle. This displays a creative and unusual use of the taxi as a makeshift clothing display or a form of artDeployment. The second taxi is parked further back in the background.
 
 
 ## Querying Llama 4 Vision Model
