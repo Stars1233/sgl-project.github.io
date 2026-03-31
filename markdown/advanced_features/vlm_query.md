@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-31 07:29:17.549 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:15.486 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 07:29:17] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 07:29:17.553 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:15.487 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 07:29:17] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 07:29:17.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:15.487 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 07:29:17] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 07:29:17.554 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:15.488 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 07:29:17] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 07:29:17.556 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:15.488 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 07:29:17] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:15] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 07:29:27.294 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 07:29:27] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 07:29:27.294 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 07:29:27] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 07:29:27.294 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 07:29:27] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 07:29:27.294 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 07:29:27] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 07:29:27.294 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 07:29:27] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:24.505 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:24.505 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:24.505 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:24.505 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:24] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 07:42:24.506 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 07:42:24] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.96it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.38it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.31it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.38it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.54s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.41s/it]
 
 
 
@@ -158,7 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    It looks like the person dressed as a man from a news satire show, Waco. He's pretending to hang a towel or cloth on the back of a moving taxi as part of a humorous act, combining a gaggle of comical characters from various TV shows, including Survivor and The Dukes of Hazzard.
+    The image shows a person standing in an urban street, working with a fold-up drying rack to hang up a blue piece of clothes. Behind them are two yellow taxis. This scene appears to be taking place in a bustling city environment, possibly during a revitalization effort or performance by a street artist.
 
 
 ### Call with Processor Output
@@ -183,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a humorous scene on a city street where two yellow taxis are pulled by jacks, causing the front of one taxi to align with the rear of the other. A man in a yellow shirt is standing next to a jacked-up taxi, making a statement cardboard that reads, "LINDENX LINDENX LINDENX," which is a playful contradiction. This scene appears to be staged for humor, combining the real-life antics of taxi jacks with a humorous, altogather nonsense-aligned text.
+    It looks like a street scene with two taxis. One taxi on the left appears to be parked on the street, while the other taxi on the right is partially visible between two street signs.
 
 
 ### Call with Precomputed Embeddings
@@ -239,7 +239,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The picture shows a scene from the \"See Jane Work\" campaign. This campaign features a young woman named Jane depicted as a model advertising the representation of women in the business world. In this particular image, the woman, portrayed as Jane, appears to be unloading or tending to laundry from her job as a New York City taxi driver. The campaign aims to highlight women like Jane who are succeeding in traditionally male-dominated industries, showcasing their capabilities and career paths.
+    The image shows a rack of clothes hanging on a seated individual who appears to be riding in a yellow taxi. The person is using their right foot to adjust the clothes on the rack, possibly trying to organize or manage the load. The background includes a store with large windows and numerous clothing items displayed, suggesting a shopping area or market. The scene is set in an urban environment with multiple buildings and a clear sky. The clothes on the rack consist of a variety of garments, including clothing pieces hanging from hooks and items draped over the ropes of the rack.
 
 
 ## Querying Llama 4 Vision Model
