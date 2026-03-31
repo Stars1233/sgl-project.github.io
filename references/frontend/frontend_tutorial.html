@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=b8eb9f23"></script>
+    <script src="../../_static/documentation_options.js?v=e0d383bd"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -559,19 +559,19 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-03-31 10:09:27.137 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:09:27] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:09:27.137 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:09:27] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:09:27.137 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:09:27] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:09:27.137 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:09:27] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:09:27.137 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:09:27] Persistent cache disabled, using in-memory JIT cache
-Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.52it/s]
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00, 10.85it/s]
-Capturing num tokens (num_tokens=4 avail_mem=30.21 GB): 100%|██████████| 58/58 [00:03&lt;00:00, 15.49it/s]
+2026-03-31 12:09:13.972 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:13] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:13.973 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:13] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:13.973 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:13] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:13.973 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:13] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:13.973 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:13] Persistent cache disabled, using in-memory JIT cache
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.62it/s]
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:07&lt;00:00,  7.91it/s]
+Capturing num tokens (num_tokens=4 avail_mem=119.60 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 13.24it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -587,7 +587,7 @@ Capturing num tokens (num_tokens=4 avail_mem=30.21 GB): 100%|██████�
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:36207
+Server started on http://localhost:33114
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -604,7 +604,7 @@ Server started on http://localhost:36207
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-31 10:09:48] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-31 12:09:38] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -636,7 +636,7 @@ Server started on http://localhost:36207
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure, here are three countries and their capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Brazil - Brasília</strong></div>
+<strong style='color: #00008B;'>Sure, here are three countries along with their respective capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Canada - Ottawa</strong></div>
 </div>
 </section>
 <section id="Multi-turn-Dialog">
@@ -666,13 +666,13 @@ Server started on http://localhost:36207
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Certainly! Here are three countries along with their respective capitals:<br><br>1. **France** - Paris<br>2. **Australia** - Canberra<br>3. **Brazil** - Brasília</strong></div>
+<strong style='color: #00008B;'>Sure! Here is a list of three countries and their capitals:<br><br>1. **France** - Paris<br>2. **Japan** - Tokyo<br>3. **Canada** - Ottawa</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Of course! Here are three more countries along with their respective capitals:<br><br>1. **India** - New Delhi<br>2. **Germany** - Berlin<br>3. **Mexico** - Mexico City</strong></div>
+<strong style='color: #00008B;'>Certainly! Here is another list of three countries and their capitals:<br><br>1. **Mexico** - Mexico City<br>2. **Germany** - Berlin<br>3. **Spain** - Madrid</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -714,7 +714,7 @@ Server started on http://localhost:36207
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2.<br><br>This expression requires simple multiplication. When we multiply 2 by 2, the result is 4.<br><br>So, 2 * 2 = 4.<br><br>You didn't need a calculator for this one; it's a straightforward arithmetic operation. However, if you want to confirm this using a calculator, you can simply enter 2 * 2 and press equals.</strong></div>
+<strong style='color: #00008B;'>2 * 2.<br><br>Let's calculate:<br><br>\[ 2 \times 2 = 4 \]<br><br>So, 2 * 2 equals 4. <br><br>No calculator was needed for this simple multiplication!</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -754,7 +754,7 @@ Server started on http://localhost:36207
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: Eating a variety of nutritious foods including fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods, sugars, and saturated fats to maintain overall health and avoid diseases like obesity, heart disease, and diabetes. Stay hydrated by drinking plenty of water.<br><br>2. **Regular Exercise**: Engage in physical activity regularly to keep your heart strong, improve circulation, and manage weight. Exercise also helps in reducing the risk of various diseases such as diabetes and certain cancers, boosts mental health, and improves overall quality of life. Aim for a mix of aerobic, strength, and flexibility exercises, with at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet**: Consuming a variety of foods in the right proportions to ensure adequate intake of nutrients such as proteins, carbohydrates, fats, vitamins, and minerals. Include lean proteins, whole grains, fruits, and vegetables. Limit processed foods, sugars, and unhealthy fats.<br>2. **Regular Exercise**: Engaging in physical activities to improve heart health, lower blood pressure, and enhance overall well-being. Regular exercise also helps manage conditions like diabetes, obesity, and depression. Aim for consistency and consult with a healthcare provider if needed.<br><br>Would you like to add any more details or tips related to these points?</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -827,7 +827,7 @@ Server started on http://localhost:36207
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Holm oak",<br>        "core": "Phoenix feather",<br>        "length": 11.25<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Ministry ofMagic"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Holly",<br>        "core": "Phoenix feather",<br>        "length": 10.5<br>    },<br>    "alive": "Alive",<br>    "patronus": " stag",<br>    "bogart": "Lack of self"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -862,7 +862,7 @@ Server started on http://localhost:36207
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 36.76it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 27.25it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -986,30 +986,30 @@ The capital of France is Paris.&lt;|im_end|&gt;
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:176: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-2026-03-31 10:10:00.655 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:00] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:00.655 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:00] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:00.655 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:00] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:00.655 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:00] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:00.655 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:00] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:08.876 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:08] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:08.876 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:08] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:08.876 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:08] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:08.876 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:08] Persistent cache disabled, using in-memory JIT cache
-2026-03-31 10:10:08.876 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-03-31 10:10:08] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:52.544 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:52] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:52.545 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:52] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:52.545 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:52] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:52.545 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:52] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:09:52.545 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:09:52] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:10:02.075 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:10:02] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:10:02.075 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:10:02] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:10:02.075 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:10:02] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:10:02.075 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:10:02] Persistent cache disabled, using in-memory JIT cache
+2026-03-31 12:10:02.075 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-03-31 12:10:02] Persistent cache disabled, using in-memory JIT cache
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.62it/s]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:04&lt;00:00,  1.01it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -1025,7 +1025,7 @@ Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:39452
+Server started on http://localhost:39777
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1041,7 +1041,7 @@ Server started on http://localhost:39452
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-03-31 10:10:22] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-03-31 12:10:17] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1075,7 +1075,7 @@ Server started on http://localhost:39452
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a man standing in the back of a moving yellow taxi, attempting to iron clothing. The person is using an ironing board that is extended from the trunk of the taxi. The background includes a city street with other taxis and buildings, suggesting an urban setting, likely in a busy commercial area.</strong></div>
+<strong style='color: #00008B;'>The image shows a person standing near a rearview mirror attached to the back of a yellow taxi in an urban setting. The individual appears to be ironing clothes that are clamped to the mirror with a tool resembling a clothespin mounted on an extendable arm. The setting is a busy street with other vehicles, including what looks like another taxi, approaching or parked. The person is dressed in a yellow long-sleeve shirt and jeans. The scene seems to depict a humorous or peculiar activity, possibly as part of a performance or a creative challenge.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
