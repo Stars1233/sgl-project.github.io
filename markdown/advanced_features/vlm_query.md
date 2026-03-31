@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-03-31 17:59:51.660 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:47.553 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 17:59:51] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 17:59:51.660 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:47.554 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 17:59:51] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 17:59:51.661 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:47.557 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 17:59:51] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 17:59:51.661 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:47.558 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 17:59:51] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 17:59:51.662 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:47.559 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 17:59:51] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-03-31 18:00:02.706 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:00:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:00:02.707 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:00:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:00:02.707 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:00:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:00:02.707 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:00:02] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:00:02.707 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:00:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:57.826 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:57] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:57.826 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:57] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:57.826 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:57] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:57.826 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:57] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 18:44:57.826 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 18:44:57] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.11it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.32it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.52it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.58it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.09s/it]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.04s/it]
 
 
 
@@ -158,11 +158,7 @@ print(out["text"])
 ```
 
     Model response:
-    The image depicts a scene at what appears to be a New York City street, specifically in Times Square. The most notable feature is a yellow taxi, which is a iconic vehicle in New York, particularly in Times Square. Positioned between two taxi cabs is a person holding a piece of striped fabric, possibly a flag or a flag banner, attached to a makeshift stand.
-    
-    The street scene is busy and characterized by the typical New York City backdrop, including tall buildings with multiple floors and various storefronts. The buildings are adorned with multiple advertisements and signs, creating a vibrant and dynamic urban landscape.
-    
-    The unusual sight of someone holding a flag at a
+    The image shows a scene from what seems to be a rags-to-riches story or a real-world showcase of how someone has risen to success. A man is hanging laundry out to dry on a clothes line attached to the back end of a taxi cab. The taxi is in the foreground, with another taxi in the background. This setup is unusual and likely meant to beراماريد to evoke an environment of struggling but accomplished situations.
 
 
 ### Call with Processor Output
@@ -187,7 +183,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi with an unusual addition: a laundry rack or clothesline attached to its side. The clothesline holds several pieces of clothing, including what appears to be a dress or uniform. The taxi is parked on a city street, with a storefront and large banners visible in the background. The scene seems to be in an urban area, possibly during a parade or an event where such an addition has been installed for a symbolic or humorous purpose.
+    The image depicts a New York City taxi cab labeled as both "Men's Briefs" and "Women's Mini Skirt," due to袖dictions from the public的 attire during the COVID-19 pandemic. The caption humorously points out this strange blend of taxi drivtime advertisements and public restroom bliss, suggesting the cab is operating in a public restroom when typically, taxis are a common mode of public transport.
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +239,9 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    This image shows a yellow taxi cab with an added small blue balcony-style vanity added to the back of the vehicle, complete with clothes hanging out. An individual in a yellow shirt is standing next to the cab, seemingly using the space to hang clothes. The setting appears to be a city street, as there are buildings and other elements of an urban environment in the background.
+    The image shows a yellow Fairmont taxi cab parked on a street in a cityscape, likely New York City, given the style and placement of the city street signs. The taxi is marked with distinctive decals, including a New York state license plate. 
+    
+    The scene appears to be outdoors during the daytime, with a clear sky and urban surroundings visible in the background. There are no additional people or structures prominently featured in the image.
 
 
 ## Querying Llama 4 Vision Model
