@@ -77,30 +77,34 @@ wait_for_server(f"http://localhost:{port}", process=server_process)
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-    2026-03-31 18:45:54.803 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:45:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:45:54.803 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:45:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:45:54.803 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:45:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:45:54.803 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:45:54] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:45:54.803 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:45:54] Persistent cache disabled, using in-memory JIT cache
 
 
-    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  5.74it/s]
+    2026-03-31 19:55:48.245 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:55:48] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:55:48.246 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:55:48] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:55:48.246 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:55:48] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:55:48.246 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:55:48] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:55:48.246 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:55:48] Persistent cache disabled, using in-memory JIT cache
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:00<00:01,  1.84it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.37it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.27it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.43it/s]
+    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.49it/s]
+
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.34it/s]
+
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.88it/s]
+
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.68it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.64it/s]
 
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10046.24it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 12510.97it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 116.26it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10692.94it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 11444.21it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 145.10it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -173,35 +177,37 @@ wait_for_server(f"http://localhost:{port}", process=server_process)
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-    2026-03-31 18:46:29.705 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:46:29] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:46:29.705 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:46:29] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:46:29.705 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:46:29] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:46:29.705 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:46:29] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:46:29.705 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:46:29] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:21.808 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:21.809 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:21.809 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:21.809 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:21] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:21.809 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:21] Persistent cache disabled, using in-memory JIT cache
 
 
-    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  5.70it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:00<00:01,  1.86it/s]
+    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.41it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.36it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.28it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.25it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.41it/s]
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.78it/s]
 
-
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10538.45it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 17753.67it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 112.51it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.60it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.56it/s]
 
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9816.98it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 16660.59it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 243.68it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9631.01it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 70492.50it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 148.89it/s]
+
+
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 23301.69it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 91180.52it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 287.16it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -287,25 +293,27 @@ wait_for_server(url, process=server_process)
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-    2026-03-31 18:47:04.930 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:04.930 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:04.931 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:04.931 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:04] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:04.931 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:04] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:53.531 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:53] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:53.531 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:53] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:53.531 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:53] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:53.531 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:53] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:56:53.531 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:56:53] Persistent cache disabled, using in-memory JIT cache
 
 
-    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  6.74it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:00<00:00,  2.17it/s]
+    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.37it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.58it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.27it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.33it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.54it/s]
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.80it/s]
+
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.59it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.55it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -334,9 +342,9 @@ else:
     print("Failed to load LoRA adapter.", response.json())
 ```
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 14768.68it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 11044.91it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 218.34it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 51150.05it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 12018.06it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 234.63it/s]
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:328: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       return await dependant.call(**values)
     LoRA adapter loaded successfully. {'rid': None, 'http_worker_ipc': None, 'success': True, 'error_message': '', 'loaded_adapters': {'lora0': 'Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json'}}
@@ -360,11 +368,11 @@ else:
     print("Failed to load LoRA adapter.", response.json())
 ```
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10052.26it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9548.79it/s]
 
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 11313.02it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 118.02it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 78033.56it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 127.90it/s]
 
 
     LoRA adapter loaded successfully. {'rid': None, 'http_worker_ipc': None, 'success': True, 'error_message': '', 'loaded_adapters': {'lora0': 'Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json', 'lora1': 'algoprog/fact-generation-llama-3.1-8b-instruct-lora'}}
@@ -430,11 +438,11 @@ else:
     print("Failed to load LoRA adapter.", response.json())
 ```
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9049.20it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 7605.27it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 20815.40it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 22250.95it/s]
 
 
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 81.10it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 76.19it/s]
 
 
     LoRA adapter loaded successfully. {'rid': None, 'http_worker_ipc': None, 'success': True, 'error_message': '', 'loaded_adapters': {'lora1': 'algoprog/fact-generation-llama-3.1-8b-instruct-lora', 'lora0': 'philschmid/code-llama-3-1-8b-text-to-sql-lora'}}
@@ -525,40 +533,42 @@ wait_for_server(url, process=server_process)
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-    2026-03-31 18:47:42.226 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:42] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:42.226 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:42] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:42.226 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:42] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:42.226 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:42] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:47:42.226 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:47:42] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:57:28.401 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:57:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:57:28.401 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:57:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:57:28.401 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:57:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:57:28.401 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:57:28] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:57:28.401 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:57:28] Persistent cache disabled, using in-memory JIT cache
 
 
-    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  5.63it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:00<00:01,  1.81it/s]
+    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.47it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.34it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.33it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.25it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.40it/s]
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.89it/s]
 
-
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 2372.01it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 38043.57it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 137.88it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1410.09it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.69it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.64it/s]
 
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 67378.38it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 119.73it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 19949.13it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 93206.76it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 294.92it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 24070.61it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 17331.83it/s]
 
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1474.14it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4282.09it/s]
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 86.09it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 154.53it/s]
+
+
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 54827.50it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 85598.04it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 89.53it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -592,11 +602,9 @@ response = requests.post(
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:328: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       return await dependant.call(**values)
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 23899.17it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 65793.00it/s]
-
-
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 108.01it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 12642.97it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 17716.17it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 124.41it/s]
 
 
 Verify that the results are expected:
@@ -707,99 +715,104 @@ wait_for_server(url, process=server_process)
       from sglang.srt.utils.json_response import (
 
 
-    [2026-03-31 18:48:08] server_args=ServerArgs(model_path='meta-llama/Meta-Llama-3.1-8B-Instruct', tokenizer_path='meta-llama/Meta-Llama-3.1-8B-Instruct', tokenizer_mode='auto', tokenizer_worker_num=1, skip_tokenizer_init=False, load_format='auto', model_loader_extra_config='{}', trust_remote_code=False, context_length=None, is_embedding=False, enable_multimodal=None, revision=None, model_impl='auto', host='127.0.0.1', port=34600, fastapi_root_path='', grpc_mode=False, skip_server_warmup=False, warmups=None, nccl_port=None, checkpoint_engine_wait_weights_before_ready=False, ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_keyfile_password=None, enable_ssl_refresh=False, dtype='auto', quantization=None, quantization_param_path=None, kv_cache_dtype='auto', enable_fp32_lm_head=False, modelopt_quant=None, modelopt_checkpoint_restore_path=None, modelopt_checkpoint_save_path=None, modelopt_export_path=None, quantize_and_serve=False, rl_quant_profile=None, mem_fraction_static=0.91, max_running_requests=128, max_queued_requests=None, max_total_tokens=20480, chunked_prefill_size=8192, enable_dynamic_chunking=False, max_prefill_tokens=16384, prefill_max_requests=None, schedule_policy='fcfs', enable_priority_scheduling=False, disable_priority_preemption=False, default_priority_value=None, abort_on_priority_when_disabled=False, schedule_low_priority_values_first=False, priority_scheduling_preemption_threshold=10, schedule_conservativeness=1.0, page_size=1, swa_full_tokens_ratio=0.8, disable_hybrid_swa_memory=False, radix_eviction_policy='lru', enable_prefill_delayer=False, prefill_delayer_max_delay_passes=30, prefill_delayer_token_usage_low_watermark=None, prefill_delayer_forward_passes_buckets=None, prefill_delayer_wait_seconds_buckets=None, device='cuda', tp_size=1, pp_size=1, pp_max_micro_batch_size=None, pp_async_batch_depth=0, stream_interval=1, incremental_streaming_output=False, enable_streaming_session=False, random_seed=455330474, constrained_json_whitespace_pattern=None, constrained_json_disable_any_whitespace=False, watchdog_timeout=300, soft_watchdog_timeout=300, dist_timeout=None, download_dir=None, model_checksum=None, base_gpu_id=0, gpu_id_step=1, sleep_on_idle=False, use_ray=False, custom_sigquit_handler=None, log_level='info', log_level_http=None, log_requests=False, log_requests_level=2, log_requests_format='text', log_requests_target=None, uvicorn_access_log_exclude_prefixes=[], crash_dump_folder=None, show_time_cost=False, enable_metrics=False, enable_mfu_metrics=False, enable_metrics_for_all_schedulers=False, tokenizer_metrics_custom_labels_header='x-custom-labels', tokenizer_metrics_allowed_custom_labels=None, extra_metric_labels=None, bucket_time_to_first_token=None, bucket_inter_token_latency=None, bucket_e2e_request_latency=None, collect_tokens_histogram=False, prompt_tokens_buckets=None, generation_tokens_buckets=None, gc_warning_threshold_secs=0.0, decode_log_interval=40, enable_request_time_stats_logging=False, kv_events_config=None, enable_trace=False, otlp_traces_endpoint='localhost:4317', export_metrics_to_file=False, export_metrics_to_file_dir=None, api_key=None, admin_api_key=None, served_model_name='meta-llama/Meta-Llama-3.1-8B-Instruct', weight_version='default', chat_template=None, hf_chat_template_name=None, completion_template=None, file_storage_path='sglang_storage', enable_cache_report=False, reasoning_parser=None, tool_call_parser=None, tool_server=None, sampling_defaults='model', dp_size=1, load_balance_method='round_robin', attn_cp_size=1, moe_dp_size=1, dist_init_addr=None, nnodes=1, node_rank=0, json_model_override_args='{}', preferred_sampling_params=None, enable_lora=True, enable_lora_overlap_loading=True, max_lora_rank=256, lora_target_modules=None, lora_paths=[LoRARef(lora_id='a46a0564e5024e90b5e6b770c2866121', lora_name='lora0', lora_path='Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json', pinned=False), LoRARef(lora_id='f047bdec77f04d84b22514a7e270b597', lora_name='lora1', lora_path='algoprog/fact-generation-llama-3.1-8b-instruct-lora', pinned=False), LoRARef(lora_id='f86c8b0d53924ce28d36c11a739345e6', lora_name='lora2', lora_path='philschmid/code-llama-3-1-8b-text-to-sql-lora', pinned=False)], max_loaded_loras=4, max_loras_per_batch=2, lora_eviction_policy='lru', lora_backend='csgmv', max_lora_chunk_size=16, attention_backend='fa3', decode_attention_backend=None, prefill_attention_backend=None, sampling_backend='flashinfer', grammar_backend='xgrammar', mm_attention_backend=None, fp8_gemm_runner_backend='auto', fp4_gemm_runner_backend='auto', nsa_prefill_backend=None, nsa_decode_backend=None, disable_flashinfer_autotune=False, mamba_backend='triton', speculative_algorithm=None, speculative_draft_model_path=None, speculative_draft_model_revision=None, speculative_draft_load_format=None, speculative_num_steps=None, speculative_eagle_topk=None, speculative_num_draft_tokens=None, speculative_accept_threshold_single=1.0, speculative_accept_threshold_acc=1.0, speculative_token_map=None, speculative_attention_mode='prefill', speculative_draft_attention_backend=None, speculative_moe_runner_backend='auto', speculative_moe_a2a_backend=None, speculative_draft_model_quantization=None, speculative_ngram_min_match_window_size=1, speculative_ngram_max_match_window_size=12, speculative_ngram_min_bfs_breadth=1, speculative_ngram_max_bfs_breadth=10, speculative_ngram_match_type='BFS', speculative_ngram_max_trie_depth=18, speculative_ngram_capacity=10000000, enable_multi_layer_eagle=False, ep_size=1, moe_a2a_backend='none', moe_runner_backend='auto', flashinfer_mxfp4_moe_precision='default', enable_flashinfer_allreduce_fusion=False, enforce_disable_flashinfer_allreduce_fusion=False, enable_aiter_allreduce_fusion=False, deepep_mode='auto', ep_num_redundant_experts=0, ep_dispatch_algorithm=None, init_expert_location='trivial', enable_eplb=False, eplb_algorithm='auto', eplb_rebalance_num_iterations=1000, eplb_rebalance_layers_per_chunk=None, eplb_min_rebalancing_utilization_threshold=1.0, expert_distribution_recorder_mode=None, expert_distribution_recorder_buffer_size=1000, enable_expert_distribution_metrics=False, deepep_config=None, moe_dense_tp_size=None, elastic_ep_backend=None, enable_elastic_expert_backup=False, mooncake_ib_device=None, max_mamba_cache_size=None, mamba_ssm_dtype=None, mamba_full_memory_ratio=0.9, mamba_scheduler_strategy='no_buffer', mamba_track_interval=256, linear_attn_backend='triton', linear_attn_decode_backend=None, linear_attn_prefill_backend=None, enable_hierarchical_cache=False, hicache_ratio=2.0, hicache_size=0, hicache_write_policy='write_through', hicache_io_backend='kernel', hicache_mem_layout='layer_first', hicache_storage_backend=None, hicache_storage_prefetch_policy='best_effort', hicache_storage_backend_extra_config=None, enable_hisparse=False, hisparse_config=None, enable_lmcache=False, kt_weight_path=None, kt_method='AMXINT4', kt_cpuinfer=None, kt_threadpool_count=2, kt_num_gpu_experts=None, kt_max_deferred_experts_per_token=None, dllm_algorithm=None, dllm_algorithm_config=None, enable_double_sparsity=False, ds_channel_config_path=None, ds_heavy_channel_num=32, ds_heavy_token_num=256, ds_heavy_channel_type='qk', ds_sparse_decode_threshold=4096, cpu_offload_gb=0, offload_group_size=-1, offload_num_in_group=1, offload_prefetch_step=1, offload_mode='cpu', multi_item_scoring_delimiter=None, disable_radix_cache=False, cuda_graph_max_bs=4, cuda_graph_bs=[1, 2, 4], disable_cuda_graph=True, disable_cuda_graph_padding=False, enable_profile_cuda_graph=False, enable_cudagraph_gc=False, enable_layerwise_nvtx_marker=False, enable_nccl_nvls=False, enable_symm_mem=False, disable_flashinfer_cutlass_moe_fp4_allgather=False, enable_tokenizer_batch_encode=False, disable_tokenizer_batch_decode=False, disable_outlines_disk_cache=False, disable_custom_all_reduce=False, enable_mscclpp=False, enable_torch_symm_mem=False, pre_warm_nccl=False, disable_overlap_schedule=False, enable_mixed_chunk=False, enable_dp_attention=False, enable_dp_lm_head=False, enable_two_batch_overlap=False, enable_single_batch_overlap=False, tbo_token_distribution_threshold=0.48, enable_torch_compile=False, disable_piecewise_cuda_graph=True, enforce_piecewise_cuda_graph=False, enable_torch_compile_debug_mode=False, torch_compile_max_bs=32, piecewise_cuda_graph_max_tokens=8192, piecewise_cuda_graph_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096, 4608, 5120, 5632, 6144, 6656, 7168, 7680, 8192], piecewise_cuda_graph_compiler='eager', torchao_config='', enable_nan_detection=False, enable_p2p_check=False, triton_attention_reduce_in_fp32=False, triton_attention_num_kv_splits=8, triton_attention_split_tile_size=None, num_continuous_decode_steps=1, delete_ckpt_after_loading=False, enable_memory_saver=False, enable_weights_cpu_backup=False, enable_draft_weights_cpu_backup=False, allow_auto_truncate=False, enable_custom_logit_processor=False, flashinfer_mla_disable_ragged=False, disable_shared_experts_fusion=False, disable_chunked_prefix_cache=False, disable_fast_image_processor=False, keep_mm_feature_on_device=False, enable_return_hidden_states=False, enable_return_routed_experts=False, scheduler_recv_interval=1, numa_node=None, enable_deterministic_inference=False, rl_on_policy_target=None, enable_attn_tp_input_scattered=False, gc_threshold=None, enable_nsa_prefill_context_parallel=False, nsa_prefill_cp_mode='round-robin-split', enable_fused_qk_norm_rope=False, enable_precise_embedding_interpolation=False, enable_fused_moe_sum_all_reduce=False, enable_prefill_context_parallel=False, prefill_cp_mode='in-seq-split', enable_dynamic_batch_tokenizer=False, dynamic_batch_tokenizer_batch_size=32, dynamic_batch_tokenizer_batch_timeout=0.002, debug_tensor_dump_output_folder=None, debug_tensor_dump_layers=None, debug_tensor_dump_input_file=None, debug_tensor_dump_inject=False, disaggregation_mode='null', disaggregation_transfer_backend='mooncake', disaggregation_bootstrap_port=8998, disaggregation_ib_device=None, disaggregation_decode_enable_offload_kvcache=False, num_reserved_decode_tokens=512, disaggregation_decode_polling_interval=1, encoder_only=False, language_only=False, encoder_transfer_backend='zmq_to_scheduler', encoder_urls=[], enable_adaptive_dispatch_to_encoder=False, custom_weight_loader=[], weight_loader_disable_mmap=False, remote_instance_weight_loader_seed_instance_ip=None, remote_instance_weight_loader_seed_instance_service_port=None, remote_instance_weight_loader_send_weights_group_ports=None, remote_instance_weight_loader_backend='nccl', remote_instance_weight_loader_start_seed_via_transfer_engine=False, engine_info_bootstrap_port=6789, modelexpress_config=None, enable_pdmux=False, pdmux_config_path=None, sm_group_num=8, mm_max_concurrent_calls=32, mm_per_request_timeout=10.0, enable_broadcast_mm_inputs_process=False, enable_prefix_mm_cache=False, mm_enable_dp_encoder=False, mm_process_config={}, limit_mm_data_per_request=None, enable_mm_global_cache=False, decrypted_config_file=None, decrypted_draft_config_file=None, forward_hooks=None)
+    [2026-03-31 19:57:52] server_args=ServerArgs(model_path='meta-llama/Meta-Llama-3.1-8B-Instruct', tokenizer_path='meta-llama/Meta-Llama-3.1-8B-Instruct', tokenizer_mode='auto', tokenizer_worker_num=1, skip_tokenizer_init=False, load_format='auto', model_loader_extra_config='{}', trust_remote_code=False, context_length=None, is_embedding=False, enable_multimodal=None, revision=None, model_impl='auto', host='127.0.0.1', port=30854, fastapi_root_path='', grpc_mode=False, skip_server_warmup=False, warmups=None, nccl_port=None, checkpoint_engine_wait_weights_before_ready=False, ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_keyfile_password=None, enable_ssl_refresh=False, dtype='auto', quantization=None, quantization_param_path=None, kv_cache_dtype='auto', enable_fp32_lm_head=False, modelopt_quant=None, modelopt_checkpoint_restore_path=None, modelopt_checkpoint_save_path=None, modelopt_export_path=None, quantize_and_serve=False, rl_quant_profile=None, mem_fraction_static=0.841, max_running_requests=128, max_queued_requests=None, max_total_tokens=20480, chunked_prefill_size=8192, enable_dynamic_chunking=False, max_prefill_tokens=16384, prefill_max_requests=None, schedule_policy='fcfs', enable_priority_scheduling=False, disable_priority_preemption=False, default_priority_value=None, abort_on_priority_when_disabled=False, schedule_low_priority_values_first=False, priority_scheduling_preemption_threshold=10, schedule_conservativeness=1.0, page_size=1, swa_full_tokens_ratio=0.8, disable_hybrid_swa_memory=False, radix_eviction_policy='lru', enable_prefill_delayer=False, prefill_delayer_max_delay_passes=30, prefill_delayer_token_usage_low_watermark=None, prefill_delayer_forward_passes_buckets=None, prefill_delayer_wait_seconds_buckets=None, device='cuda', tp_size=1, pp_size=1, pp_max_micro_batch_size=None, pp_async_batch_depth=0, stream_interval=1, incremental_streaming_output=False, enable_streaming_session=False, random_seed=324215869, constrained_json_whitespace_pattern=None, constrained_json_disable_any_whitespace=False, watchdog_timeout=300, soft_watchdog_timeout=300, dist_timeout=None, download_dir=None, model_checksum=None, base_gpu_id=0, gpu_id_step=1, sleep_on_idle=False, use_ray=False, custom_sigquit_handler=None, log_level='info', log_level_http=None, log_requests=False, log_requests_level=2, log_requests_format='text', log_requests_target=None, uvicorn_access_log_exclude_prefixes=[], crash_dump_folder=None, show_time_cost=False, enable_metrics=False, enable_mfu_metrics=False, enable_metrics_for_all_schedulers=False, tokenizer_metrics_custom_labels_header='x-custom-labels', tokenizer_metrics_allowed_custom_labels=None, extra_metric_labels=None, bucket_time_to_first_token=None, bucket_inter_token_latency=None, bucket_e2e_request_latency=None, collect_tokens_histogram=False, prompt_tokens_buckets=None, generation_tokens_buckets=None, gc_warning_threshold_secs=0.0, decode_log_interval=40, enable_request_time_stats_logging=False, kv_events_config=None, enable_trace=False, otlp_traces_endpoint='localhost:4317', export_metrics_to_file=False, export_metrics_to_file_dir=None, api_key=None, admin_api_key=None, served_model_name='meta-llama/Meta-Llama-3.1-8B-Instruct', weight_version='default', chat_template=None, hf_chat_template_name=None, completion_template=None, file_storage_path='sglang_storage', enable_cache_report=False, reasoning_parser=None, tool_call_parser=None, tool_server=None, sampling_defaults='model', dp_size=1, load_balance_method='round_robin', attn_cp_size=1, moe_dp_size=1, dist_init_addr=None, nnodes=1, node_rank=0, json_model_override_args='{}', preferred_sampling_params=None, enable_lora=True, enable_lora_overlap_loading=True, max_lora_rank=256, lora_target_modules=None, lora_paths=[LoRARef(lora_id='b667fad42343405f96f664140ea062db', lora_name='lora0', lora_path='Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json', pinned=False), LoRARef(lora_id='38d0877d3b8b4d25a783d5536590f877', lora_name='lora1', lora_path='algoprog/fact-generation-llama-3.1-8b-instruct-lora', pinned=False), LoRARef(lora_id='8c8737f114dc4f6e9c170dc396cc91c2', lora_name='lora2', lora_path='philschmid/code-llama-3-1-8b-text-to-sql-lora', pinned=False)], max_loaded_loras=4, max_loras_per_batch=2, lora_eviction_policy='lru', lora_backend='csgmv', max_lora_chunk_size=16, attention_backend='fa3', decode_attention_backend=None, prefill_attention_backend=None, sampling_backend='flashinfer', grammar_backend='xgrammar', mm_attention_backend=None, fp8_gemm_runner_backend='auto', fp4_gemm_runner_backend='auto', nsa_prefill_backend=None, nsa_decode_backend=None, disable_flashinfer_autotune=False, mamba_backend='triton', speculative_algorithm=None, speculative_draft_model_path=None, speculative_draft_model_revision=None, speculative_draft_load_format=None, speculative_num_steps=None, speculative_eagle_topk=None, speculative_num_draft_tokens=None, speculative_accept_threshold_single=1.0, speculative_accept_threshold_acc=1.0, speculative_token_map=None, speculative_attention_mode='prefill', speculative_draft_attention_backend=None, speculative_moe_runner_backend='auto', speculative_moe_a2a_backend=None, speculative_draft_model_quantization=None, speculative_ngram_min_match_window_size=1, speculative_ngram_max_match_window_size=12, speculative_ngram_min_bfs_breadth=1, speculative_ngram_max_bfs_breadth=10, speculative_ngram_match_type='BFS', speculative_ngram_max_trie_depth=18, speculative_ngram_capacity=10000000, enable_multi_layer_eagle=False, ep_size=1, moe_a2a_backend='none', moe_runner_backend='auto', flashinfer_mxfp4_moe_precision='default', enable_flashinfer_allreduce_fusion=False, enforce_disable_flashinfer_allreduce_fusion=False, enable_aiter_allreduce_fusion=False, deepep_mode='auto', ep_num_redundant_experts=0, ep_dispatch_algorithm=None, init_expert_location='trivial', enable_eplb=False, eplb_algorithm='auto', eplb_rebalance_num_iterations=1000, eplb_rebalance_layers_per_chunk=None, eplb_min_rebalancing_utilization_threshold=1.0, expert_distribution_recorder_mode=None, expert_distribution_recorder_buffer_size=1000, enable_expert_distribution_metrics=False, deepep_config=None, moe_dense_tp_size=None, elastic_ep_backend=None, enable_elastic_expert_backup=False, mooncake_ib_device=None, max_mamba_cache_size=None, mamba_ssm_dtype=None, mamba_full_memory_ratio=0.9, mamba_scheduler_strategy='no_buffer', mamba_track_interval=256, linear_attn_backend='triton', linear_attn_decode_backend=None, linear_attn_prefill_backend=None, enable_hierarchical_cache=False, hicache_ratio=2.0, hicache_size=0, hicache_write_policy='write_through', hicache_io_backend='kernel', hicache_mem_layout='layer_first', hicache_storage_backend=None, hicache_storage_prefetch_policy='best_effort', hicache_storage_backend_extra_config=None, enable_hisparse=False, hisparse_config=None, enable_lmcache=False, kt_weight_path=None, kt_method='AMXINT4', kt_cpuinfer=None, kt_threadpool_count=2, kt_num_gpu_experts=None, kt_max_deferred_experts_per_token=None, dllm_algorithm=None, dllm_algorithm_config=None, enable_double_sparsity=False, ds_channel_config_path=None, ds_heavy_channel_num=32, ds_heavy_token_num=256, ds_heavy_channel_type='qk', ds_sparse_decode_threshold=4096, cpu_offload_gb=0, offload_group_size=-1, offload_num_in_group=1, offload_prefetch_step=1, offload_mode='cpu', multi_item_scoring_delimiter=None, disable_radix_cache=False, cuda_graph_max_bs=4, cuda_graph_bs=[1, 2, 4], disable_cuda_graph=True, disable_cuda_graph_padding=False, enable_profile_cuda_graph=False, enable_cudagraph_gc=False, enable_layerwise_nvtx_marker=False, enable_nccl_nvls=False, enable_symm_mem=False, disable_flashinfer_cutlass_moe_fp4_allgather=False, enable_tokenizer_batch_encode=False, disable_tokenizer_batch_decode=False, disable_outlines_disk_cache=False, disable_custom_all_reduce=False, enable_mscclpp=False, enable_torch_symm_mem=False, pre_warm_nccl=False, disable_overlap_schedule=False, enable_mixed_chunk=False, enable_dp_attention=False, enable_dp_lm_head=False, enable_two_batch_overlap=False, enable_single_batch_overlap=False, tbo_token_distribution_threshold=0.48, enable_torch_compile=False, disable_piecewise_cuda_graph=True, enforce_piecewise_cuda_graph=False, enable_torch_compile_debug_mode=False, torch_compile_max_bs=32, piecewise_cuda_graph_max_tokens=8192, piecewise_cuda_graph_tokens=[4, 8, 12, 16, 20, 24, 28, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 352, 384, 416, 448, 480, 512, 576, 640, 704, 768, 832, 896, 960, 1024, 1280, 1536, 1792, 2048, 2304, 2560, 2816, 3072, 3328, 3584, 3840, 4096, 4608, 5120, 5632, 6144, 6656, 7168, 7680, 8192], piecewise_cuda_graph_compiler='eager', torchao_config='', enable_nan_detection=False, enable_p2p_check=False, triton_attention_reduce_in_fp32=False, triton_attention_num_kv_splits=8, triton_attention_split_tile_size=None, num_continuous_decode_steps=1, delete_ckpt_after_loading=False, enable_memory_saver=False, enable_weights_cpu_backup=False, enable_draft_weights_cpu_backup=False, allow_auto_truncate=False, enable_custom_logit_processor=False, flashinfer_mla_disable_ragged=False, disable_shared_experts_fusion=False, disable_chunked_prefix_cache=False, disable_fast_image_processor=False, keep_mm_feature_on_device=False, enable_return_hidden_states=False, enable_return_routed_experts=False, scheduler_recv_interval=1, numa_node=None, enable_deterministic_inference=False, rl_on_policy_target=None, enable_attn_tp_input_scattered=False, gc_threshold=None, enable_nsa_prefill_context_parallel=False, nsa_prefill_cp_mode='round-robin-split', enable_fused_qk_norm_rope=False, enable_precise_embedding_interpolation=False, enable_fused_moe_sum_all_reduce=False, enable_prefill_context_parallel=False, prefill_cp_mode='in-seq-split', enable_dynamic_batch_tokenizer=False, dynamic_batch_tokenizer_batch_size=32, dynamic_batch_tokenizer_batch_timeout=0.002, debug_tensor_dump_output_folder=None, debug_tensor_dump_layers=None, debug_tensor_dump_input_file=None, debug_tensor_dump_inject=False, disaggregation_mode='null', disaggregation_transfer_backend='mooncake', disaggregation_bootstrap_port=8998, disaggregation_ib_device=None, disaggregation_decode_enable_offload_kvcache=False, num_reserved_decode_tokens=512, disaggregation_decode_polling_interval=1, encoder_only=False, language_only=False, encoder_transfer_backend='zmq_to_scheduler', encoder_urls=[], enable_adaptive_dispatch_to_encoder=False, custom_weight_loader=[], weight_loader_disable_mmap=False, remote_instance_weight_loader_seed_instance_ip=None, remote_instance_weight_loader_seed_instance_service_port=None, remote_instance_weight_loader_send_weights_group_ports=None, remote_instance_weight_loader_backend='nccl', remote_instance_weight_loader_start_seed_via_transfer_engine=False, engine_info_bootstrap_port=6789, modelexpress_config=None, enable_pdmux=False, pdmux_config_path=None, sm_group_num=8, mm_max_concurrent_calls=32, mm_per_request_timeout=10.0, enable_broadcast_mm_inputs_process=False, enable_prefix_mm_cache=False, mm_enable_dp_encoder=False, mm_process_config={}, limit_mm_data_per_request=None, enable_mm_global_cache=False, decrypted_config_file=None, decrypted_draft_config_file=None, forward_hooks=None)
+    [2026-03-31 19:57:52] CI: patched _patch_mistral_regex to skip HF API calls
 
 
-    [2026-03-31 18:48:11] Watchdog TokenizerManager initialized.
-    [2026-03-31 18:48:11] Using default HuggingFace chat template with detected content format: string
+    [2026-03-31 19:57:55] Watchdog TokenizerManager initialized.
+    [2026-03-31 19:57:55] Using default HuggingFace chat template with detected content format: string
 
 
-    [2026-03-31 18:48:18] Watchdog DetokenizerManager initialized.
+    [2026-03-31 19:57:59] CI: patched _patch_mistral_regex to skip HF API calls
+    [2026-03-31 19:57:59] CI: patched _patch_mistral_regex to skip HF API calls
 
 
-    [2026-03-31 18:48:18] Init torch distributed begin.
+    [2026-03-31 19:58:01] Watchdog DetokenizerManager initialized.
+    [2026-03-31 19:58:01] Init torch distributed begin.
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-    [2026-03-31 18:48:19] Init torch distributed ends. elapsed=0.24 s, mem usage=0.09 GB
-    2026-03-31 18:48:19.146 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:48:19] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:48:19.146 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:48:19] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:48:19.146 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:48:19] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:48:19.146 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:48:19] Persistent cache disabled, using in-memory JIT cache
-    2026-03-31 18:48:19.146 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-03-31 18:48:19] Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:58:02] Init torch distributed ends. elapsed=0.25 s, mem usage=0.12 GB
+    2026-03-31 19:58:02.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:58:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:58:02.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:58:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:58:02.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:58:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:58:02.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:58:02] Persistent cache disabled, using in-memory JIT cache
+    2026-03-31 19:58:02.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-03-31 19:58:02] Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-03-31 18:48:21] Load weight begin. avail mem=139.13 GB
-    [2026-03-31 18:48:21] Found local HF snapshot for meta-llama/Meta-Llama-3.1-8B-Instruct at /root/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659; skipping download.
+    [2026-03-31 19:58:04] Load weight begin. avail mem=73.94 GB
+    [2026-03-31 19:58:04] Found local HF snapshot for meta-llama/Meta-Llama-3.1-8B-Instruct at /root/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659; skipping download.
 
 
-    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  5.65it/s]
+    Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:00<00:01,  1.85it/s]
+    Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.45it/s]
 
-    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.37it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.34it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.27it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.43it/s]
+    Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:01<00:00,  1.89it/s]
 
-
-    [2026-03-31 18:48:24] Load weight end. elapsed=3.40 s, type=LlamaForCausalLM, avail mem=124.11 GB, mem usage=15.02 GB.
-    [2026-03-31 18:48:24] Using csgmv as backend of LoRA kernels.
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10028.22it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 81442.80it/s]
-    [2026-03-31 18:48:24] Found local HF snapshot for Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json at /root/.cache/huggingface/hub/models--Nutanix--Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json/snapshots/2c398740f3eba8dc63ee78999316b833a2833b6c; skipping download.
-    [2026-03-31 18:48:24] No model.safetensors.index.json found in remote.
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
-
-    Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 210.86it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 10180.35it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 9939.11it/s]
-    [2026-03-31 18:48:24] Found local HF snapshot for algoprog/fact-generation-llama-3.1-8b-instruct-lora at /root/.cache/huggingface/hub/models--algoprog--fact-generation-llama-3.1-8b-instruct-lora/snapshots/dc8cdfb21993a6cb46199d6b1d79f68a42b06439; skipping download.
-    [2026-03-31 18:48:24] No model.safetensors.index.json found in remote.
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 122.53it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.69it/s]Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:02<00:00,  1.64it/s]
 
 
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 11052.18it/s]
-    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 17172.18it/s]
-    [2026-03-31 18:48:25] Found local HF snapshot for philschmid/code-llama-3-1-8b-text-to-sql-lora at /root/.cache/huggingface/hub/models--philschmid--code-llama-3-1-8b-text-to-sql-lora/snapshots/141fc3a09386a8baf0d7495c247ae2d1a565f69f; skipping download.
-    [2026-03-31 18:48:25] No model.safetensors.index.json found in remote.
-    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 85.94it/s]
+    [2026-03-31 19:58:07] Load weight end. elapsed=2.90 s, type=LlamaForCausalLM, avail mem=58.90 GB, mem usage=15.04 GB.
+    [2026-03-31 19:58:07] Using csgmv as backend of LoRA kernels.
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 20360.70it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 89717.73it/s]
+    [2026-03-31 19:58:07] Found local HF snapshot for Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json at /root/.cache/huggingface/hub/models--Nutanix--Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_humaneval_raw_json/snapshots/2c398740f3eba8dc63ee78999316b833a2833b6c; skipping download.
+    [2026-03-31 19:58:07] No model.safetensors.index.json found in remote.
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 303.58it/s]
 
 
-    [2026-03-31 18:48:28] Using KV cache dtype: torch.bfloat16
-    [2026-03-31 18:48:28] KV Cache is allocated. #tokens: 20480, K size: 1.25 GB, V size: 1.25 GB
-    [2026-03-31 18:48:28] Memory pool end. avail mem=118.87 GB
-    [2026-03-31 18:48:28] Disable piecewise CUDA graph because --disable-piecewise-cuda-graph is set
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 12576.62it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 13573.80it/s]
+    [2026-03-31 19:58:07] Found local HF snapshot for algoprog/fact-generation-llama-3.1-8b-instruct-lora at /root/.cache/huggingface/hub/models--algoprog--fact-generation-llama-3.1-8b-instruct-lora/snapshots/dc8cdfb21993a6cb46199d6b1d79f68a42b06439; skipping download.
+    [2026-03-31 19:58:07] No model.safetensors.index.json found in remote.
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 156.50it/s]
 
 
-    [2026-03-31 18:48:31] max_total_num_tokens=20480, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=128, context_len=131072, available_gpu_mem=118.78 GB
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 21675.99it/s]
+    Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 11397.57it/s]
+    [2026-03-31 19:58:08] Found local HF snapshot for philschmid/code-llama-3-1-8b-text-to-sql-lora at /root/.cache/huggingface/hub/models--philschmid--code-llama-3-1-8b-text-to-sql-lora/snapshots/141fc3a09386a8baf0d7495c247ae2d1a565f69f; skipping download.
+    [2026-03-31 19:58:08] No model.safetensors.index.json found in remote.
+    Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00, 105.79it/s]
 
 
-    [2026-03-31 18:48:31] SubprocessWatchdog started, monitoring 2 process(es)
-    [2026-03-31 18:48:31] INFO:     Started server process [749585]
-    [2026-03-31 18:48:31] INFO:     Waiting for application startup.
-    [2026-03-31 18:48:31] Using default chat sampling params from model generation config: {'temperature': 0.6, 'top_p': 0.9}
-    [2026-03-31 18:48:32] INFO:     Application startup complete.
-    [2026-03-31 18:48:32] INFO:     Uvicorn running on http://127.0.0.1:34600 (Press CTRL+C to quit)
+    [2026-03-31 19:58:10] Using KV cache dtype: torch.bfloat16
+    [2026-03-31 19:58:10] KV Cache is allocated. #tokens: 20480, K size: 1.25 GB, V size: 1.25 GB
+    [2026-03-31 19:58:10] Memory pool end. avail mem=58.26 GB
+    [2026-03-31 19:58:10] Disable piecewise CUDA graph because --disable-piecewise-cuda-graph is set
+
+
+    [2026-03-31 19:58:13] max_total_num_tokens=20480, chunked_prefill_size=8192, max_prefill_tokens=16384, max_running_requests=128, context_len=131072, available_gpu_mem=58.16 GB
+
+
+    [2026-03-31 19:58:13] SubprocessWatchdog started, monitoring 2 process(es)
+    [2026-03-31 19:58:13] INFO:     Started server process [3454493]
+    [2026-03-31 19:58:13] INFO:     Waiting for application startup.
+    [2026-03-31 19:58:13] Using default chat sampling params from model generation config: {'temperature': 0.6, 'top_p': 0.9}
+    [2026-03-31 19:58:13] INFO:     Application startup complete.
+    [2026-03-31 19:58:13] INFO:     Uvicorn running on http://127.0.0.1:30854 (Press CTRL+C to quit)
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       response = await f(request)
-    [2026-03-31 18:48:32] INFO:     127.0.0.1:59922 - "GET /v1/models HTTP/1.1" 200 OK
+    [2026-03-31 19:58:13] INFO:     127.0.0.1:51814 - "GET /v1/models HTTP/1.1" 200 OK
 
 
-    [2026-03-31 18:48:33] INFO:     127.0.0.1:59926 - "GET /model_info HTTP/1.1" 200 OK
+    [2026-03-31 19:58:14] INFO:     127.0.0.1:34818 - "GET /model_info HTTP/1.1" 200 OK
 
 
-    [2026-03-31 18:48:33] Prefill batch, #new-seq: 1, #new-token: 7, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, cuda graph: False, input throughput (token/s): 0.00
-    [2026-03-31 18:48:33] INFO:     127.0.0.1:59938 - "POST /generate HTTP/1.1" 200 OK
-    [2026-03-31 18:48:33] The server is fired up and ready to roll!
+    [2026-03-31 19:58:15] Prefill batch, #new-seq: 1, #new-token: 7, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 0, cuda graph: False, input throughput (token/s): 0.00
+    [2026-03-31 19:58:15] INFO:     127.0.0.1:34824 - "POST /generate HTTP/1.1" 200 OK
+    [2026-03-31 19:58:15] The server is fired up and ready to roll!
 
 
 
@@ -834,87 +847,87 @@ for i in range(3):
     print(f"Output from lora{i}: \n{response.json()[i]['text']}\n")
 ```
 
-    [2026-03-31 18:48:37] Prefill batch, #new-seq: 1, #new-token: 9, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 1, cuda graph: False, input throughput (token/s): 1.86
-    [2026-03-31 18:48:37] Prefill batch, #new-seq: 1, #new-token: 9, #cached-token: 0, token usage: 0.00, #running-req: 1, #queue-req: 1, cuda graph: False, input throughput (token/s): 419.41
+    [2026-03-31 19:58:18] Prefill batch, #new-seq: 1, #new-token: 9, #cached-token: 0, token usage: 0.00, #running-req: 0, #queue-req: 1, cuda graph: False, input throughput (token/s): 1.84
+    [2026-03-31 19:58:18] Prefill batch, #new-seq: 1, #new-token: 9, #cached-token: 0, token usage: 0.00, #running-req: 1, #queue-req: 1, cuda graph: False, input throughput (token/s): 500.35
 
 
-    [2026-03-31 18:48:38] Decode batch, #running-req: 2, #token: 84, token usage: 0.00, cuda graph: False, gen throughput (token/s): 3.23, #queue-req: 1
+    [2026-03-31 19:58:19] Decode batch, #running-req: 2, #token: 84, token usage: 0.00, cuda graph: False, gen throughput (token/s): 3.56, #queue-req: 1
 
 
-    [2026-03-31 18:48:38] Prefill batch, #new-seq: 1, #new-token: 9, #cached-token: 0, token usage: 0.00, #running-req: 1, #queue-req: 0, cuda graph: False, input throughput (token/s): 6.70
-    [2026-03-31 18:48:38] Decode batch, #running-req: 2, #token: 96, token usage: 0.00, cuda graph: False, gen throughput (token/s): 94.78, #queue-req: 0
+    [2026-03-31 19:58:20] Prefill batch, #new-seq: 1, #new-token: 9, #cached-token: 0, token usage: 0.00, #running-req: 1, #queue-req: 0, cuda graph: False, input throughput (token/s): 8.14
+    [2026-03-31 19:58:20] Decode batch, #running-req: 2, #token: 95, token usage: 0.00, cuda graph: False, gen throughput (token/s): 115.63, #queue-req: 0
 
 
-    [2026-03-31 18:48:39] Decode batch, #running-req: 2, #token: 176, token usage: 0.01, cuda graph: False, gen throughput (token/s): 103.53, #queue-req: 0
+    [2026-03-31 19:58:20] Decode batch, #running-req: 2, #token: 175, token usage: 0.01, cuda graph: False, gen throughput (token/s): 134.31, #queue-req: 0
 
 
-    [2026-03-31 18:48:40] Decode batch, #running-req: 1, #token: 162, token usage: 0.01, cuda graph: False, gen throughput (token/s): 79.43, #queue-req: 0
+    [2026-03-31 19:58:21] Decode batch, #running-req: 1, #token: 162, token usage: 0.01, cuda graph: False, gen throughput (token/s): 103.56, #queue-req: 0
 
 
-    [2026-03-31 18:48:41] Decode batch, #running-req: 1, #token: 202, token usage: 0.01, cuda graph: False, gen throughput (token/s): 53.95, #queue-req: 0
+    [2026-03-31 19:58:22] Decode batch, #running-req: 1, #token: 202, token usage: 0.01, cuda graph: False, gen throughput (token/s): 50.62, #queue-req: 0
 
 
-    [2026-03-31 18:48:41] Decode batch, #running-req: 1, #token: 242, token usage: 0.01, cuda graph: False, gen throughput (token/s): 53.75, #queue-req: 0
+    [2026-03-31 19:58:22] Decode batch, #running-req: 1, #token: 242, token usage: 0.01, cuda graph: False, gen throughput (token/s): 47.43, #queue-req: 0
 
 
-    [2026-03-31 18:48:42] Decode batch, #running-req: 1, #token: 282, token usage: 0.01, cuda graph: False, gen throughput (token/s): 53.80, #queue-req: 0
+    [2026-03-31 19:58:23] Decode batch, #running-req: 1, #token: 282, token usage: 0.01, cuda graph: False, gen throughput (token/s): 46.97, #queue-req: 0
 
 
-    [2026-03-31 18:48:43] Decode batch, #running-req: 1, #token: 322, token usage: 0.02, cuda graph: False, gen throughput (token/s): 53.95, #queue-req: 0
+    [2026-03-31 19:58:24] Decode batch, #running-req: 1, #token: 322, token usage: 0.02, cuda graph: False, gen throughput (token/s): 48.36, #queue-req: 0
 
 
-    [2026-03-31 18:48:44] Decode batch, #running-req: 1, #token: 362, token usage: 0.02, cuda graph: False, gen throughput (token/s): 53.90, #queue-req: 0
+    [2026-03-31 19:58:25] Decode batch, #running-req: 1, #token: 362, token usage: 0.02, cuda graph: False, gen throughput (token/s): 48.27, #queue-req: 0
 
 
-    [2026-03-31 18:48:44] Decode batch, #running-req: 1, #token: 402, token usage: 0.02, cuda graph: False, gen throughput (token/s): 54.09, #queue-req: 0
+    [2026-03-31 19:58:26] Decode batch, #running-req: 1, #token: 402, token usage: 0.02, cuda graph: False, gen throughput (token/s): 51.27, #queue-req: 0
 
 
-    [2026-03-31 18:48:45] Decode batch, #running-req: 1, #token: 442, token usage: 0.02, cuda graph: False, gen throughput (token/s): 54.01, #queue-req: 0
+    [2026-03-31 19:58:26] Decode batch, #running-req: 1, #token: 442, token usage: 0.02, cuda graph: False, gen throughput (token/s): 60.48, #queue-req: 0
 
 
-    [2026-03-31 18:48:46] Decode batch, #running-req: 1, #token: 482, token usage: 0.02, cuda graph: False, gen throughput (token/s): 53.99, #queue-req: 0
+    [2026-03-31 19:58:27] Decode batch, #running-req: 1, #token: 482, token usage: 0.02, cuda graph: False, gen throughput (token/s): 69.09, #queue-req: 0
 
 
-    [2026-03-31 18:48:47] Decode batch, #running-req: 1, #token: 522, token usage: 0.03, cuda graph: False, gen throughput (token/s): 53.46, #queue-req: 0
+    [2026-03-31 19:58:28] Decode batch, #running-req: 1, #token: 522, token usage: 0.03, cuda graph: False, gen throughput (token/s): 63.02, #queue-req: 0
 
 
-    [2026-03-31 18:48:47] Decode batch, #running-req: 1, #token: 562, token usage: 0.03, cuda graph: False, gen throughput (token/s): 53.29, #queue-req: 0
+    [2026-03-31 19:58:28] Decode batch, #running-req: 1, #token: 562, token usage: 0.03, cuda graph: False, gen throughput (token/s): 53.17, #queue-req: 0
 
 
-    [2026-03-31 18:48:48] Decode batch, #running-req: 1, #token: 602, token usage: 0.03, cuda graph: False, gen throughput (token/s): 53.09, #queue-req: 0
+    [2026-03-31 19:58:29] Decode batch, #running-req: 1, #token: 602, token usage: 0.03, cuda graph: False, gen throughput (token/s): 47.65, #queue-req: 0
 
 
-    [2026-03-31 18:48:49] Decode batch, #running-req: 1, #token: 642, token usage: 0.03, cuda graph: False, gen throughput (token/s): 53.48, #queue-req: 0
+    [2026-03-31 19:58:30] Decode batch, #running-req: 1, #token: 642, token usage: 0.03, cuda graph: False, gen throughput (token/s): 48.22, #queue-req: 0
 
 
-    [2026-03-31 18:48:50] Decode batch, #running-req: 1, #token: 682, token usage: 0.03, cuda graph: False, gen throughput (token/s): 53.14, #queue-req: 0
+    [2026-03-31 19:58:31] Decode batch, #running-req: 1, #token: 682, token usage: 0.03, cuda graph: False, gen throughput (token/s): 51.24, #queue-req: 0
 
 
-    [2026-03-31 18:48:50] Decode batch, #running-req: 1, #token: 722, token usage: 0.04, cuda graph: False, gen throughput (token/s): 53.24, #queue-req: 0
+    [2026-03-31 19:58:32] Decode batch, #running-req: 1, #token: 722, token usage: 0.04, cuda graph: False, gen throughput (token/s): 52.14, #queue-req: 0
 
 
-    [2026-03-31 18:48:51] Decode batch, #running-req: 1, #token: 762, token usage: 0.04, cuda graph: False, gen throughput (token/s): 53.12, #queue-req: 0
+    [2026-03-31 19:58:32] Decode batch, #running-req: 1, #token: 762, token usage: 0.04, cuda graph: False, gen throughput (token/s): 55.37, #queue-req: 0
 
 
-    [2026-03-31 18:48:52] Decode batch, #running-req: 1, #token: 802, token usage: 0.04, cuda graph: False, gen throughput (token/s): 53.38, #queue-req: 0
+    [2026-03-31 19:58:33] Decode batch, #running-req: 1, #token: 802, token usage: 0.04, cuda graph: False, gen throughput (token/s): 58.97, #queue-req: 0
 
 
-    [2026-03-31 18:48:53] Decode batch, #running-req: 1, #token: 842, token usage: 0.04, cuda graph: False, gen throughput (token/s): 53.28, #queue-req: 0
+    [2026-03-31 19:58:34] Decode batch, #running-req: 1, #token: 842, token usage: 0.04, cuda graph: False, gen throughput (token/s): 60.45, #queue-req: 0
 
 
-    [2026-03-31 18:48:53] Decode batch, #running-req: 1, #token: 882, token usage: 0.04, cuda graph: False, gen throughput (token/s): 53.54, #queue-req: 0
+    [2026-03-31 19:58:34] Decode batch, #running-req: 1, #token: 882, token usage: 0.04, cuda graph: False, gen throughput (token/s): 63.05, #queue-req: 0
 
 
-    [2026-03-31 18:48:54] Decode batch, #running-req: 1, #token: 922, token usage: 0.05, cuda graph: False, gen throughput (token/s): 53.41, #queue-req: 0
+    [2026-03-31 19:58:35] Decode batch, #running-req: 1, #token: 922, token usage: 0.05, cuda graph: False, gen throughput (token/s): 67.32, #queue-req: 0
 
 
-    [2026-03-31 18:48:55] Decode batch, #running-req: 1, #token: 962, token usage: 0.05, cuda graph: False, gen throughput (token/s): 53.47, #queue-req: 0
+    [2026-03-31 19:58:35] Decode batch, #running-req: 1, #token: 962, token usage: 0.05, cuda graph: False, gen throughput (token/s): 69.02, #queue-req: 0
 
 
-    [2026-03-31 18:48:56] Decode batch, #running-req: 1, #token: 1002, token usage: 0.05, cuda graph: False, gen throughput (token/s): 53.37, #queue-req: 0
+    [2026-03-31 19:58:36] Decode batch, #running-req: 1, #token: 1002, token usage: 0.05, cuda graph: False, gen throughput (token/s): 69.18, #queue-req: 0
 
 
-    [2026-03-31 18:48:56] INFO:     127.0.0.1:59946 - "POST /generate HTTP/1.1" 200 OK
+    [2026-03-31 19:58:36] INFO:     127.0.0.1:34834 - "POST /generate HTTP/1.1" 200 OK
     Output from lora0: 
      I mean, really long. Like, 10,000 words long. I'm talking epic fantasy, with magic, adventure, and romance. I'll give you a prompt, and you'll write the story. Here's your prompt:
     
@@ -922,29 +935,35 @@ for i in range(3):
     
     The secret was a magical spring, hidden deep within the forest, a spring that granted wishes to those who drank from it. The spring was said to have been created by the ancient magic of the land, a magic that had been passed down through generations of Eridorians. The villagers had always known of the spring's existence, but they had never dared to approach it, for they had heard tales of its dark and mysterious power.
     
-    One day, a young woman named Aria arrived in Brindlemark. She was a traveler, a wanderer, with a heart full of wonder and a spirit that was both fierce and gentle. Aria had heard the tales of the magical spring, and she was determined to find it, to drink from its waters, and to make a wish that would change her life forever.
+    One day, a young woman named Aria arrived in Brindlemark. She was a traveler, a wanderer, with a heart full of wonder and a spirit that yearned for adventure. Aria had heard the tales of the magical spring, and she was determined to find it. She had a wish to make, a wish that would change her life forever.
     
-    As Aria settled into the village, she began to notice strange occurrences. Tools would go missing, and strange noises could be heard in the dead of night. The villagers seemed to be acting strangely, as if they were hiding something from her. Aria's curiosity was piqued, and she began to investigate the strange happenings.
+    As Aria settled into the village, she began to hear whispers of the spring's existence. The villagers would speak of it in hushed tones, their eyes darting nervously around the village square. Aria knew that she had to find the spring, and she set out on a journey to discover its secrets.
     
-    As she delved deeper into the mystery, Aria discovered that the villagers were indeed hiding something. They were afraid of the magical spring, afraid of its power, and afraid of what might happen if it fell into the wrong hands. But Aria was not afraid. She was drawn to the spring, and she was determined to find it, no matter the cost.
+    She packed a small bag, said goodbye to the villagers, and set off into the forest. The trees towered above her, their branches creaking in the gentle breeze. Aria walked for hours, the sun beating down on her back, until she came to a clearing. In the center of the clearing stood an ancient tree, its trunk twisted and gnarled with age. Aria approached the tree, feeling a strange energy emanating from it.
     
-    And so, Aria set out on a journey, a journey that would take her through treacherous forests, over treacherous mountains, and into the heart of darkness. She was not alone, for she had a companion, a young man named Eryndor, who was a skilled warrior, and a member of the village's guard. Eryndor was sworn to protect the village, and he was determined to keep Aria from finding the spring.
+    As she reached out to touch the tree, a figure emerged from the shadows. It was an old woman, her face lined with age and wisdom. The old woman introduced herself as Elara, a guardian of the forest and a keeper of its secrets.
     
-    But Aria was not one to be deterred. She was a force to be reckoned with, and she would stop at nothing to achieve her goal. As she journeyed deeper into the forest, she encountered strange creatures, creatures that were both magical and terrifying. She encountered faeries, who danced in the moonlight, and wolves, who howled at the moon. She encountered ancient trees, who whispered secrets to the wind, and rivers, who flowed with a power that was both fierce and gentle.
+    "Welcome, Aria," Elara said, her voice low and soothing. "I have been waiting for you. You have come to find the magical spring, have you not?"
     
-    And then, one day, Aria and Eryndor stumbled upon the magical spring. It was a beautiful sight, a sight that took Aria's breath away. The spring was surrounded by a ring of mushrooms, each one glowing with a soft, ethereal light. The water was crystal clear, and it seemed to shimmer and shine like a thousand diamonds. Aria felt a sense of wonder, a sense of awe, as she approached the spring.
+    Aria nodded, her heart racing with excitement. Elara smiled, her eyes twinkling with knowledge.
     
-    But as she reached out to drink from its waters, Eryndor grabbed her arm, and held her back. "Do not drink from the spring," he said, his voice low and urgent. "It is not safe. The spring's power is not to be trifled with. It is a power that can destroy, as well as create."
+    "The spring is not an easy thing to find," she said. "It is hidden deep within the forest, guarded by ancient magic and treacherous paths. But I will give you a map, a map that will lead you to the spring. Are you prepared to face what lies ahead?"
     
-    Aria looked at Eryndor, and she saw the fear in his eyes. She saw the doubt, the uncertainty, and she knew that he was not telling her the whole truth. "What do you know about the spring?" she asked, her voice firm and commanding.
+    Aria nodded, her determination burning brighter than ever. Elara handed her a small, intricately drawn map, and Aria set off once more into the forest.
     
-    Eryndor hesitated, and then he spoke. "I know that the spring is guarded by a powerful entity, a being of great magic and great power. It is a being that will not give up its power easily, and it will stop at nothing to keep the spring's secrets safe."
+    As she walked, the trees grew taller and the path grew narrower. Aria felt a sense of unease creeping over her, as if she was being watched by unseen eyes. She quickened her pace, her heart pounding in her chest.
     
-    Aria's eyes narrowed, and she looked at Eryndor with a sense of suspicion. "What entity?" she asked, her voice low and menacing.
+    Suddenly, the trees parted, and Aria found herself standing at the edge of a vast, crystal-clear lake. The water was so still that it seemed to be a mirror, reflecting the sky above. Aria approached the lake's edge, feeling a sense of wonder and awe.
     
-    Eryndor hesitated, and then he spoke. "The entity is a dragon, a dragon of great power and great wisdom. It is a dragon that has been guarding the spring for centuries, and it will not give up its power easily."
+    As she gazed out across the lake, Aria saw a figure standing on the far shore. It was a man, tall and strong, with piercing blue eyes and jet-black hair. He was dressed in a flowing white robe, and he seemed to be waiting for her.
     
-    Aria
+    Aria felt a jolt of surprise, and then a sense of curiosity. Who was this man, and what was he doing here? She took a deep breath, and then she began to walk across the lake, the water parting beneath her feet like a curtain of silk.
+    
+    As she reached the far shore, the man turned to her, a smile spreading across his face. "Welcome, Aria," he said, his voice low and husky. "I have been waiting for you. My name is Lyrien, and I am the guardian of the spring."
+    
+    Aria's heart skipped a beat as she gazed into Lyrien's eyes. She felt a sense of connection, a sense of belonging. Who was this man, and why did she feel such a strong connection to him?
+    
+    Lyrien took her hand, and Aria felt a surge of energy run through her body. "Come," he said, his voice low and
     
     Output from lora1: 
      Each country and capital should be on a new line. 
