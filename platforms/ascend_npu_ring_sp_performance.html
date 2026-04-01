@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>OpenAI-Compatible APIs &#8212; SGLang</title>
+    <title>Ascend NPU Ring-SP Performance (Wan2.1-T2V-1.3B) &#8212; SGLang</title>
   
   
   
@@ -47,14 +47,10 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'basic_usage/openai_api';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'platforms/ascend_npu_ring_sp_performance';</script>
     <link rel="icon" href="../_static/logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="OpenAI APIs - Completions" href="openai_api_completions.html" />
-    <link rel="prev" title="Sending Requests" href="send_request.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Apr 01, 2026"/>
@@ -118,6 +114,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -170,19 +168,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../get_started/install.html">Install SGLang</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic Usage</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="send_request.html">Sending Requests</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">OpenAI-Compatible APIs</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="openai_api_completions.html">OpenAI APIs - Completions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="openai_api_vision.html">OpenAI APIs - Vision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="openai_api_embeddings.html">OpenAI APIs - Embedding</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="ollama_api.html">Ollama-Compatible API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="offline_engine_api.html">Offline Engine API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="native_api.html">SGLang Native APIs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sampling_params.html">Sampling Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="popular_model_usage.html">Popular Model Usage (DeepSeek, GPT-OSS, GLM, Llama, MiniMax, Qwen, and more)</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/send_request.html">Sending Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/openai_api.html">OpenAI-Compatible APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/ollama_api.html">Ollama-Compatible API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/offline_engine_api.html">Offline Engine API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/native_api.html">SGLang Native APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/sampling_params.html">Sampling Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage/popular_model_usage.html">Popular Model Usage (DeepSeek, GPT-OSS, GLM, Llama, MiniMax, Qwen, and more)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
 <ul class="nav bd-sidenav">
@@ -236,12 +229,12 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../platforms/amd_gpu.html">AMD GPUs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../platforms/cpu_server.html">CPU Servers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../platforms/tpu.html">TPU</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../platforms/nvidia_jetson.html">NVIDIA Jetson Orin</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../platforms/ascend/ascend_npu_support.html">Ascend NPUs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../platforms/xpu.html">XPU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="amd_gpu.html">AMD GPUs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cpu_server.html">CPU Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tpu.html">TPU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nvidia_jetson.html">NVIDIA Jetson Orin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ascend/ascend_npu_support.html">Ascend NPUs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xpu.html">XPU</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Developer Guide</span></p>
 <ul class="nav bd-sidenav">
@@ -335,7 +328,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/blob/main/basic_usage/openai_api.rst?plain=1" target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/blob/main/platforms/ascend_npu_ring_sp_performance.md?plain=1" target="_blank"
    class="btn btn-sm btn-source-file-button dropdown-item"
    title="Show source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,7 +345,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/edit/main/basic_usage/openai_api.rst" target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/edit/main/platforms/ascend_npu_ring_sp_performance.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -369,7 +362,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/issues/new?title=Issue%20on%20page%20%2Fbasic_usage/openai_api.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/issues/new?title=Issue%20on%20page%20%2Fplatforms/ascend_npu_ring_sp_performance.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -399,7 +392,7 @@
       
       
       
-      <li><a href="../_sources/basic_usage/openai_api.rst" target="_blank"
+      <li><a href="../_sources/platforms/ascend_npu_ring_sp_performance.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -409,7 +402,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.rst</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -470,7 +463,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -481,11 +476,29 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>OpenAI-Compatible APIs</h1>
+    <h1>Ascend NPU Ring-SP Performance (Wan2.1-T2V-1.3B)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmark-setup">Benchmark Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-commands">Generate Commands</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#baseline-u1r1">Baseline (<code class="docutils literal notranslate"><span class="pre">u1r1</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ring-sp-u1r2">Ring-SP (<code class="docutils literal notranslate"><span class="pre">u1r2</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmarks">Benchmarks</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stage-time-breakdown">Stage Time Breakdown</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -495,15 +508,104 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="openai-compatible-apis">
-<h1>OpenAI-Compatible APIs<a class="headerlink" href="#openai-compatible-apis" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="openai_api_completions.html">OpenAI APIs - Completions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="openai_api_vision.html">OpenAI APIs - Vision</a></li>
-<li class="toctree-l1"><a class="reference internal" href="openai_api_embeddings.html">OpenAI APIs - Embedding</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="ascend-npu-ring-sp-performance-wan2-1-t2v-1-3b">
+<h1>Ascend NPU Ring-SP Performance (Wan2.1-T2V-1.3B)<a class="headerlink" href="#ascend-npu-ring-sp-performance-wan2-1-t2v-1-3b" title="Link to this heading">#</a></h1>
+<p>This page reports Ring-SP performance on Ascend NPU with <code class="docutils literal notranslate"><span class="pre">torch_npu==2.10.0</span></code>.</p>
+<ul class="simple">
+<li><p>Baseline config: <code class="docutils literal notranslate"><span class="pre">ulysses=1,</span> <span class="pre">ring=1</span></code> (short: <code class="docutils literal notranslate"><span class="pre">u1r1</span></code>)</p></li>
+<li><p>Ring-SP config: <code class="docutils literal notranslate"><span class="pre">ulysses=1,</span> <span class="pre">ring=2</span></code> (short: <code class="docutils literal notranslate"><span class="pre">u1r2</span></code>)</p></li>
 </ul>
+<section id="benchmark-setup">
+<h2>Benchmark Setup<a class="headerlink" href="#benchmark-setup" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Model: <code class="docutils literal notranslate"><span class="pre">Wan2.1-T2V-1.3B-Diffusers</span></code></p></li>
+<li><p>Prompt: <code class="docutils literal notranslate"><span class="pre">&quot;a</span> <span class="pre">cat</span> <span class="pre">is</span> <span class="pre">playing</span> <span class="pre">piano&quot;</span></code></p></li>
+<li><p>Framework command: <code class="docutils literal notranslate"><span class="pre">sglang</span> <span class="pre">generate</span></code></p></li>
+<li><p>Runtime: <code class="docutils literal notranslate"><span class="pre">torch_npu==2.10.0</span></code></p></li>
+</ul>
+</section>
+<section id="generate-commands">
+<h2>Generate Commands<a class="headerlink" href="#generate-commands" title="Link to this heading">#</a></h2>
+<section id="baseline-u1r1">
+<h3>Baseline (<code class="docutils literal notranslate"><span class="pre">u1r1</span></code>)<a class="headerlink" href="#baseline-u1r1" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span class="w"> </span>/nas/disk1/Wan2.1-T2V-1.3B-Diffusers<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--prompt<span class="w"> </span><span class="s2">&quot;a cat is playing piano&quot;</span><span class="w"> </span>--num-gpus<span class="w"> </span><span class="m">1</span><span class="w"> </span>--ring-degree<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--save-output
+</pre></div>
 </div>
+</section>
+<section id="ring-sp-u1r2">
+<h3>Ring-SP (<code class="docutils literal notranslate"><span class="pre">u1r2</span></code>)<a class="headerlink" href="#ring-sp-u1r2" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sglang<span class="w"> </span>generate<span class="w"> </span>--model-path<span class="w"> </span>/nas/disk1/Wan2.1-T2V-1.3B-Diffusers<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--prompt<span class="w"> </span><span class="s2">&quot;a cat is playing piano&quot;</span><span class="w"> </span>--num-gpus<span class="w"> </span><span class="m">2</span><span class="w"> </span>--ring-degree<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--save-output
+</pre></div>
+</div>
+</section>
+</section>
+<section id="benchmarks">
+<h2>Benchmarks<a class="headerlink" href="#benchmarks" title="Link to this heading">#</a></h2>
+<p>Benchmark Disclaimer</p>
+<p>These numbers are from one fixed setup and one prompt case. Actual performance may vary by model settings, environment, and workload.</p>
+<section id="stage-time-breakdown">
+<h3>Stage Time Breakdown<a class="headerlink" href="#stage-time-breakdown" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stage / Metric</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">u1r2</span></code> (s)</p></th>
+<th class="head text-right"><p><code class="docutils literal notranslate"><span class="pre">u1r1</span></code> baseline (s)</p></th>
+<th class="head text-right"><p>Speedup</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>InputValidation</p></td>
+<td class="text-right"><p>0.0003</p></td>
+<td class="text-right"><p>0.0002</p></td>
+<td class="text-right"><p>0.67x</p></td>
+</tr>
+<tr class="row-odd"><td><p>TextEncoding</p></td>
+<td class="text-right"><p>3.5936</p></td>
+<td class="text-right"><p>3.5820</p></td>
+<td class="text-right"><p>1.00x</p></td>
+</tr>
+<tr class="row-even"><td><p>LatentPreparation</p></td>
+<td class="text-right"><p>0.0007</p></td>
+<td class="text-right"><p>0.0055</p></td>
+<td class="text-right"><p>7.86x</p></td>
+</tr>
+<tr class="row-odd"><td><p>TimestepPreparation</p></td>
+<td class="text-right"><p>0.0008</p></td>
+<td class="text-right"><p>0.0007</p></td>
+<td class="text-right"><p>0.88x</p></td>
+</tr>
+<tr class="row-even"><td><p>Denoising</p></td>
+<td class="text-right"><p>121.2788</p></td>
+<td class="text-right"><p>239.2580</p></td>
+<td class="text-right"><p>1.97x</p></td>
+</tr>
+<tr class="row-odd"><td><p>Decoding</p></td>
+<td class="text-right"><p>13.8685</p></td>
+<td class="text-right"><p>16.4969</p></td>
+<td class="text-right"><p>1.19x</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Total (Pixel data generated)</strong></p></td>
+<td class="text-right"><p><strong>141.86</strong></p></td>
+<td class="text-right"><p><strong>266.50</strong></p></td>
+<td class="text-right"><p><strong>1.88x</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>With <code class="docutils literal notranslate"><span class="pre">torch_npu==2.10.0</span></code>, Ring-SP (<code class="docutils literal notranslate"><span class="pre">u1r2</span></code>) runs successfully on NPU for this case.</p></li>
+<li><p>End-to-end generation time improves from <code class="docutils literal notranslate"><span class="pre">266.50s</span></code> to <code class="docutils literal notranslate"><span class="pre">141.86s</span></code> (<code class="docutils literal notranslate"><span class="pre">1.88x</span></code>).</p></li>
+<li><p>The main gain comes from <code class="docutils literal notranslate"><span class="pre">DenoisingStage</span></code> (<code class="docutils literal notranslate"><span class="pre">1.97x</span></code>), while decoding also improves (<code class="docutils literal notranslate"><span class="pre">1.19x</span></code>).</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -517,30 +619,37 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="send_request.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Sending Requests</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="openai_api_completions.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OpenAI APIs - Completions</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmark-setup">Benchmark Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-commands">Generate Commands</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#baseline-u1r1">Baseline (<code class="docutils literal notranslate"><span class="pre">u1r1</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ring-sp-u1r2">Ring-SP (<code class="docutils literal notranslate"><span class="pre">u1r2</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benchmarks">Benchmarks</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stage-time-breakdown">Stage Time Breakdown</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
