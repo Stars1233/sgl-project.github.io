@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-01 21:00:49.681 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:27:54.722 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 21:00:49] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:27:54] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 21:00:49.682 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:27:54.723 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 21:00:49] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:27:54] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 21:00:49.682 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:27:54.723 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 21:00:49] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:27:54] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 21:00:49.683 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:27:54.724 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 21:00:49] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:27:54] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 21:00:49.684 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:27:54.724 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 21:00:49] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:27:54] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 21:00:59.523 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 21:00:59] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 21:00:59.523 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 21:00:59] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 21:00:59.523 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 21:00:59] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 21:00:59.523 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 21:00:59] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 21:00:59.523 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 21:00:59] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:28:03.564 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:28:03] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:28:03.565 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:28:03] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:28:03.565 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:28:03] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:28:03.565 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:28:03] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 21:28:03.565 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 21:28:03] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.32it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.43it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.11it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.13it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.08it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.12it/s]
 
 
 
@@ -157,12 +157,13 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-01 21:01:07,730 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-01 21:01:07] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-01 21:28:13,339 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-01 21:28:13] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows two yellow taxis in the background. One taxi is closer to the foreground and is parked, while the other is moved slightly to the right. The difference in the position and orientation of the two taxis makes it appear as though there are three taxis.
+    The image shows a scene with two taxis parked in a city street, one yellow and one red. A person appears to be deforesting the taxi behind them by using a pair of shoes attached to a/**
+    be placed stand and the rearview mirror.
 
 
 ### Call with Processor Output
@@ -187,7 +188,11 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a street scene with a yellow taxi parked in the foreground. There is a person wearing a yellow shirt leaning over the taxi's rear luggage compartment skyway. The skyway is filled with drying clothes, suggesting someone is ironing clothes before hanging them to dry. The background includes a building with some signage and flags hanging from it.
+    The image shows two yellow taxis parked side by side on a city street. One taxi is right in front of the other, and both are capable of operating as personal vehicles. Here’s a breakdown of the key elements present in the image:
+    
+    1. **Two Yellow Taxis**: Both taxis are identical in color, emphasizing that they are from the same service provider and likely in New York City, given the carriagetype design and the location.
+    
+    2. **Accessories**: Each taxi has extended plate holders (or platoons, as known in the United States) located near the front, suggesting that they might be used for short-term on
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +248,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a segment of a city street with a yellow taxi cab parked on the side of the road. The taxi has a clothes dryer attached to the back, which appears to be in the process of drying clothes. There are several pink flags in the background hanging from banner stands. The setting seems to be a busy urban environment with some nearby buildings and businesses.
+    The image shows a street scene with a yellow taxi cab in the foreground. The taxi has a laundry cart attached to its rear. On the cart, there are several clothes, suggesting someone is washing clothes and presumably/day dressing them for later use. The background features a building with multiple signs and flags, indicating an urban environment, possibly in a busy city area.
 
 
 ## Querying Llama 4 Vision Model
