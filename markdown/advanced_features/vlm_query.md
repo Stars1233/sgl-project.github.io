@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-01 17:57:02.272 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:49.438 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 17:57:02] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 17:57:02.274 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:49.439 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 17:57:02] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 17:57:02.274 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:49.440 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 17:57:02] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 17:57:02.275 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:49.441 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 17:57:02] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 17:57:02.275 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:49.442 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 17:57:02] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 17:57:12.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 17:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 17:57:12.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 17:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 17:57:12.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 17:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 17:57:12.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 17:57:12] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 17:57:12.209 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 17:57:12] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:59.394 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:59] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:59.394 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:59] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:59.394 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:59] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:59.394 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:59] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 19:59:59.394 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 19:59:59] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  2.06it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.66it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.44it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.51it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.32it/s]
 
 
 
@@ -157,14 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-01 17:57:20,881 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-01 17:57:20] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-01 20:00:07,115 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-01 20:00:07] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a scene of a bright yellow taxi cab (Urquhart Taxi) with a person setting up an ice cream stand or similar tent duties near the vehicle. The taxi is typically used for public transportation in New York City, though the car in the image is modified to function as a "court tender," which offers soft serve ice cream. 
-    
-    In this scene, the taxi driver is standing next to the vehicle, handling the tent equipment or possibly arranging the ice cream cart for operation. This is likely part of a promotional event or local civil service auction (citi cycle), where vehicles are swapped or bid on, particularly common in
+    The image shows a scene of two yellow taxis parked in an urban environment, likely in a major city like New York. The driver of one taxi has used toothpaste and other cleaning substances to create a sidewalk barricade. This is a lighthearted action, often seen in such locations but not a standardized practice on the road. The nebula-like shape made with toothpaste resembles a nebula in space, which gives the image a whimsical and playful twist.
 
 
 ### Call with Processor Output
@@ -189,7 +187,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi parked on a city street with its rear lifted, revealing a space underneath. The taxi is positioned adjacent to a clothing rack suspended between electric poles. The clothing rack is strung with laundry, including a blue shirt and white socks. The background includes tall buildings, large glass windows, and a partially visible storefront. The scene appears to depict a form of public laundry service, where people can hang their clothes to dry on the roof of a taxi.
+    The image shows a scene from what appears to be a successful.item to jokingly take credit for the hack. This is only a speculation, so I cannot provide such details.
 
 
 ### Call with Precomputed Embeddings
@@ -245,7 +243,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street scene with a yellow taxi parked in an intersection. The taxi is facing right, and there are people visible on the sidewalk nearby. The vehicle has luggage attached to its back, suggesting the possibility of a consignment flight. The background includes tall buildings with storefronts and some pedestrians visible. The taxi is a popular mode of transportation in many urban areas.
+    The image shows two yellow taxis driving on a city street. The taxi in the foreground is partially pulling out of a parking space, while the other taxi is parked next to a storefront. The street appears to be in an urban area, and there are tall buildings in the background. The taxis have visible Trim-a-doodle crutches attached to the back of them, which are used to.Display or hang flags.
 
 
 ## Querying Llama 4 Vision Model
