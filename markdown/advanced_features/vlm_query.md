@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-01 06:17:15.058 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:42:59.090 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 06:17:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:42:59] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 06:17:15.058 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:42:59.091 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 06:17:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:42:59] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 06:17:15.059 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:42:59.092 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 06:17:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:42:59] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 06:17:15.060 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:42:59.092 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 06:17:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:42:59] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 06:17:15.060 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:42:59.092 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-01 06:17:15] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:42:59] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 06:17:25.183 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 06:17:25] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 06:17:25.183 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 06:17:25] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 06:17:25.183 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 06:17:25] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 06:17:25.183 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 06:17:25] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 06:17:25.183 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 06:17:25] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:43:08.409 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:43:08] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:43:08.409 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:43:08] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:43:08.409 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:43:08] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:43:08.409 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:43:08] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 06:43:08.409 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 06:43:08] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.72it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.31it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.20it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.26it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.08it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.11it/s]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-01 06:17:33,960 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-01 06:17:33] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-01 06:43:16,426 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-01 06:43:16] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    It appears that this is a humorous scene where a person is seen trying to fold or organize clothes while standing next to his or her taxi cab. The situation seems to be unexpected and ridiculous, possibly indicating that the individual is running late or trying to do multiple things at once. The bright yellow taxis and urban setting add to the comedic element of the image.
+    This image shows a commercial mop and bucket drying rack or similar self-service laundry machine setup. It appears to be used for drying clothes in a public place, likely urban due to the presence of city taxis. The photo is taken in New York City, as indicated by the advertisements in the background. It demonstrates public access to outdoor laundry facilities.
 
 
 ### Call with Processor Output
@@ -187,7 +187,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab parked on a city street. The taxi cab has its front wheels on the right side of the image (considering it's on the viewer's right) and its rear wheels on the left side. In front of the taxi cab, there is a chair, and a person wearing a yellow shirt appears to be using the chair for transportation. This is unusual because chairs are not meant for transportation, but people often use oversized or makeshift chairs for activities like riding or resting, as shown in the image. The background features tall buildings, indicating an urban setting in a city environment, likely New York, as suggested
+    The image shows a scene of a yellow taxi driving past a store. A man stands out in the foreground standing behind a metal structure. He wears yellow attire and is flanked by two striped purple and light blue clothes hanging on a line.
+    
+    There are a few signal lights visible against a grey sky, indicating an urban environment with possible indications of traffic or street signals. The man appears to be participating in an art or social experiment where the clothes are hanging out to dry behind him.
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +245,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene in an urban environment with two taxis. One taxi is driving away on the right side, and the other is stationary on the left. Both taxis are yellow with a traditional design. There is a shirt hung on a metallic rack and held up by strings attached to the metal, being displayed as if it is being sold. The background includes a tall building with large windows, and there are also other vehicles, such as buses, visible in the distance. The setting suggests that this is a busy city street, possibly during a sale or a promotional event, where clothing items are being displayed in the public view for potential buyers
+    The image shows two taxi cabs, one in the foreground and one behind it, on what appears to be a city street. The taxi in the foreground is yellow and is pulling a tool wagon attached to it. On the tool wagon, there are various pieces of equipment, likely for cleaning or maintaining the cabs. The background shows buildings with decorative banners and American flags hanging from them. The scene is typical of a street in a city, possibly New York, given the style of the taxi and the atmosphere.
 
 
 ## Querying Llama 4 Vision Model
