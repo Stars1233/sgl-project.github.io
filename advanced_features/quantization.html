@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=d26be426"></script>
+    <script src="../_static/documentation_options.js?v=f61e8534"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -752,22 +752,26 @@ to guard against abnormal quantization loss regressions.</p>
 <td><p>SM100/120</p></td>
 <td><p>Auto-selects: <code class="docutils literal notranslate"><span class="pre">flashinfer_cudnn</span></code> on SM120; <code class="docutils literal notranslate"><span class="pre">flashinfer_cutlass</span></code> on SM100</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">flashinfer_cutlass</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cutlass</span></code></p></td>
+<td><p>SM100/120</p></td>
+<td><p>SGLang CUTLASS kernel</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">flashinfer_cutlass</span></code></p></td>
 <td><p>SM100/120</p></td>
 <td><p>FlashInfer CUTLASS backend</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">flashinfer_cudnn</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">flashinfer_cudnn</span></code></p></td>
 <td><p>SM100/120 (CUDA 13+, cuDNN 9.15+)</p></td>
 <td><p>FlashInfer cuDNN backend; used on SM120 for performance</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">flashinfer_trtllm</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">flashinfer_trtllm</span></code></p></td>
 <td><p>SM100</p></td>
 <td><p>FlashInfer TensorRT-LLM backend</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>When FlashInfer is unavailable for NVFP4, sgl-kernel CUTLASS is used as an automatic fallback.</p>
+<p>When FlashInfer is unavailable for NVFP4, the SGLang CUTLASS kernel is used as an automatic fallback.</p>
 </section>
 </section>
 <section id="offline-quantization">
