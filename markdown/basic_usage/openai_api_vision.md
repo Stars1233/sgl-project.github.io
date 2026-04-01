@@ -38,28 +38,28 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
       from sglang.srt.utils.json_response import (
 
 
-    2026-04-01 02:45:15.961 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:15] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:15.961 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:15] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:15.961 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:15] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:15.961 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:15] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:15.961 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:15] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:23.215 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:23] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:23.215 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:23] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:23.216 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:23] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:23.216 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:23] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:23.216 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:23] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-01 02:45:26.036 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:26] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:26.036 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:26] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:26.036 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:26] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:26.036 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:26] Persistent cache disabled, using in-memory JIT cache
-    2026-04-01 02:45:26.036 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-01 02:45:26] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:32.770 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:32] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:32.770 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:32] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:32.770 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:32] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:32.770 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:32] Persistent cache disabled, using in-memory JIT cache
+    2026-04-01 03:39:32.770 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-01 03:39:32] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -69,15 +69,15 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
 
     Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.97it/s]
+    Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:00<00:02,  1.70it/s]
 
-    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:01,  1.68it/s]
+    Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:01<00:02,  1.38it/s]
 
-    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:01<00:01,  1.63it/s]
+    Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:02<00:01,  1.29it/s]
 
-    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:02<00:00,  1.51it/s]
+    Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:03<00:00,  1.22it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.89it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:02<00:00,  1.77it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03<00:00,  1.51it/s]Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:03<00:00,  1.42it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
@@ -135,11 +135,11 @@ print_highlight(response)
 
 
 
-<strong style='color: #00008B;'>{"id":"2f0a69be8d5e47b0a83277f413ef1c13","object":"chat.completion","created":1775011542,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":373,"completion_tokens":66,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"8fe42f5ca62147a5b263aec22188f6b7","object":"chat.completion","created":1775014789,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and humorous scene.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":373,"completion_tokens":66,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 
-<strong style='color: #00008B;'>{"id":"a3fdecb79e5a47d0b3831086a659bc8a","object":"chat.completion","created":1775011543,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man is wearing a yellow shirt and appears to be balancing on the taxi's rear bumper while ironing. The scene suggests a humorous or unusual situation, possibly for a promotional or artistic purpose.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":388,"completion_tokens":81,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"558edf97687b49038bfb375c67f9dcc0","object":"chat.completion","created":1775014790,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and humorous scene. The setting suggests an urban environment, likely in a busy city.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":386,"completion_tokens":79,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using Python Requests
@@ -172,7 +172,7 @@ print_highlight(response.text)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"d07dc96268ea4c19bf33bc5c2f782554","object":"chat.completion","created":1775011544,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man is wearing a yellow shirt and appears to be balancing on the taxi's rear bumper while ironing. The scene suggests a humorous or unusual situation, possibly for a promotional or artistic purpose.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":388,"completion_tokens":81,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"619e39b081144ee5aa05e9a124c84885","object":"chat.completion","created":1775014791,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis and buildings in the background. The man appears to be balancing on the taxi's rear bumper while ironing, which is an unusual and humorous scene. The setting suggests an urban environment, likely in a busy city.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":386,"completion_tokens":79,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using OpenAI Python Client
