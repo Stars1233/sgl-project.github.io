@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-02 09:00:04.612 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:09.323 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 09:00:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 09:00:04.614 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:09.324 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 09:00:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 09:00:04.614 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:09.324 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 09:00:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 09:00:04.615 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:09.325 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 09:00:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 09:00:04.615 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:09.325 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 09:00:04] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:09] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 09:00:14.207 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 09:00:14] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 09:00:14.207 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 09:00:14] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 09:00:14.207 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 09:00:14] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 09:00:14.207 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 09:00:14] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 09:00:14.207 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 09:00:14] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:19.727 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:19] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:19.727 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:19] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:19.727 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:19] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:19.727 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:19] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 09:20:19.727 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 09:20:19] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.05it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.14it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.56s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.47s/it]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.58it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.65it/s]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-02 09:00:27,241 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-02 09:00:27] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-02 09:20:29,884 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-02 09:20:29] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a city street with two yellow taxis. One taxi is stopped at a red light, and a person has hung a garment on the back of the stopped taxi. The person appears to be drying clothes on a metal stand attached to the back of the car's rear windshield. The taxis are clearly identifiable by their distinctive yellow color and the shape of their top windshield. The urban setting includes brick buildings, street signs, and trees.
+    The image shows a street scene with two yellow taxis parked on the side of the road. One of the taxis has a laundry drying rack extended from its rear window, with several pieces of clothing hanging on it, including a blue cloth. The person wearing a yellow shirt is standing next to the rack, seemingly engaged in the laundry-drying process. The background includes some buildings, street signs, and a few trees.
 
 
 ### Call with Processor Output
@@ -187,13 +187,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    This image shows a street scene with a few notable elements:
+    The image you've shared shows a scene from the TV show "The Big Bang Theory." In the photo, the popular character Penny is seen doing laundry in the back of a yellow taxi, which is a staple of her often over-the-top personality and comedic situations. The setting is likely within the bustling cities of the United States, as indicated by the bright, clear background and the style of the vehicles.
     
-    1. **Two Yellow Cabs**: There are two yellow taxis in the foreground. These are commonly used for ride-hailing services in urban areas.
-    2. **Person on Mostement Cot**: A person is balancing on three bars on a yellow metal frame commonly known as a "mostement cot." This is likely a humorous or inductionist trick, putting the person on the bars to prove their balance and strength.
-    3. **Traffic and Cityscape**: The scene appears to be in a bustling city environment, as indicated by the buildings and urban elements in the background.
-    
-    This image
+    The character's attire, a colorful striped shirt, further emphasizes her distinctive fashion sense and her ability to add a lot of humor and weirdness to the show. Overall, the image captures a humorous moment from the show, reflecting Penny's
 
 
 ### Call with Precomputed Embeddings
@@ -249,9 +245,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a white taxi cab parked on a city street. Inside the cab, someone's legs and feet are visible through the open door. The person appears to be using a appendage, possibly a boot or shoe, as a makeshift stand to keep an item or some luggage elevated. 
-    
-    Attached to this apparatus is a piece of clothing, specifically blue jeans. The jeans are folded and draped over the stand. This setup contrasts with the typical image one might expect of a taxi cab etiquette, which typically involves folded jackets and not man-made props.
+    The image shows a bizarre and unusual sight on a city street. A person is balancing or standing on a branch at the top of a stopped yellow vehicle, which appears to be a taxi. The branch is elevated 있도록, possibly from a tree branch or a pole. The scene is quite comical and unusual, as it resembles something more akin to a magic realism or a pranking瞬间 than a real-world scenario.
 
 
 ## Querying Llama 4 Vision Model
