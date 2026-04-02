@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=419c7815"></script>
+    <script src="../_static/documentation_options.js?v=3dd4d7e7"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -575,21 +575,21 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-04-02 16:08:07.421 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:08:07] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:08:07.421 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:08:07] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:08:07.421 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:08:07] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:08:07.421 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:08:07] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:08:07.421 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:08:07] Persistent cache disabled, using in-memory JIT cache
-Multi-thread loading shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.48it/s]
-2026-04-02 16:08:16,813 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-[2026-04-02 16:08:16] Unexpected error during package walk: cutlass.cute.experimental
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09&lt;00:00,  6.15it/s]
-Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████████| 58/58 [00:06&lt;00:00,  9.09it/s]
+2026-04-02 16:52:42.997 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:52:42] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:52:42.997 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:52:42] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:52:42.997 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:52:42] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:52:42.997 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:52:42] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:52:42.997 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:52:42] Persistent cache disabled, using in-memory JIT cache
+Multi-thread loading shards: 100% Completed | 4/4 [00:04&lt;00:00,  1.07s/it]
+2026-04-02 16:52:52,155 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-02 16:52:52] Unexpected error during package walk: cutlass.cute.experimental
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:09&lt;00:00,  6.41it/s]
+Capturing num tokens (num_tokens=4 avail_mem=102.47 GB): 100%|██████████| 58/58 [00:05&lt;00:00, 10.26it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -884,7 +884,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources: <br>- get_current_date function <br>- get_current_weather function</strong></div>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources:<br>1. get_current_date function<br>2. get_current_weather function</strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
@@ -932,7 +932,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Note: I used the function calls as per the specified format. The timezone for New York is 'America/New_York'. The weather function was called with the city as 'New York' and state as 'NY' and unit as 'fahrenheit'.</strong></div>
+<strong style='color: #00008B;'><function=get_current_date>{"timezone": "America/New_York"}</function><br><function=get_current_weather>{"city": "New York", "state": "NY", "unit": "fahrenheit"}</function><br><br>Sources: <br>- Current date and time function: Python built-in datetime module<br>- Current weather function: OpenWeatherMap API</strong></div>
 </div>
 </section>
 </section>
@@ -995,7 +995,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'da8391606fd942e5bf7a42b644764994', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': {'device': 1, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.21112106391228735, 'response_sent_to_client_ts': 1775146127.3457174}}</strong></div>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': '427d6434fa724dda9542e0166c1469ed', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 1, 'cached_tokens_details': {'device': 1, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.17493045702576637, 'response_sent_to_client_ts': 1775148801.1069114}}</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
@@ -1040,7 +1040,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'ff2b3d0ab8f14aeb9d158b865f64de0c', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': {'device': 49, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.11721999407745898, 'response_sent_to_client_ts': 1775146127.4721565}}</strong></div>
+<strong style='color: #00008B;'>{'text': '{"name": "Paris", "population": 2147000}', 'output_ids': [5018, 609, 794, 330, 60704, 498, 330, 45541, 794, 220, 11584, 7007, 15, 92, 128009], 'meta_info': {'id': 'ed87fd436c4643a18c5759cca27cd7c2', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 50, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 15, 'cached_tokens': 49, 'cached_tokens_details': {'device': 49, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.18058928987011313, 'response_sent_to_client_ts': 1775148801.3019896}}</strong></div>
 </div>
 </section>
 <section id="id2">
@@ -1087,7 +1087,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '624c08c0bbbf47c092504e3bb9fe7412', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': {'device': 45, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.0645348149118945, 'response_sent_to_client_ts': 1775146127.5598462}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '6557772da1584a08b5bffd7c30514a8a', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': {'device': 45, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.06448574108071625, 'response_sent_to_client_ts': 1775146127.5598576}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '497f5e7aed734c5c99491ae33e171d92', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': {'device': 45, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.06444608198944479, 'response_sent_to_client_ts': 1775146127.5598614}}]</strong></div>
+<strong style='color: #00008B;'>[{'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '7339636df8a94354a9d15706b08243cc', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': {'device': 45, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.09635899076238275, 'response_sent_to_client_ts': 1775148801.4333835}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': 'cd857c14a782470fa468c369e79b337e', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': {'device': 45, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.09629445476457477, 'response_sent_to_client_ts': 1775148801.4333959}}, {'text': 'Paris is the capital of France', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 128009], 'meta_info': {'id': '8e2791310aa1455db72aa2aff613aa48', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 46, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 7, 'cached_tokens': 45, 'cached_tokens_details': {'device': 45, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.09624882694333792, 'response_sent_to_client_ts': 1775148801.4334006}}]</strong></div>
 </div>
 </section>
 <section id="id3">
@@ -1124,7 +1124,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': 'e48ab8e8b9424170a62dad02f57acd39', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': {'device': 31, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.02637455496005714, 'response_sent_to_client_ts': 1775146127.5934622}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'France', 'output_ids': [50100, 128009], 'meta_info': {'id': 'dfd09f7c2d324a8d9ba0795471b64c24', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 2, 'cached_tokens': 31, 'cached_tokens_details': {'device': 31, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.05006174137815833, 'response_sent_to_client_ts': 1775148801.4917176}}</strong></div>
 </div>
 </section>
 <section id="id4">
@@ -1176,7 +1176,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': '30f4a3610d3c43d895f37573df9a3f9d', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': {'device': 40, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.10639072896447033, 'response_sent_to_client_ts': 1775146129.1244187}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'Paris is the capital of France.', 'output_ids': [60704, 374, 279, 6864, 315, 9822, 13, 128009], 'meta_info': {'id': '82101cb1a1604f15b8202dd3852b2fc3', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 8, 'cached_tokens': 40, 'cached_tokens_details': {'device': 40, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.18360002106055617, 'response_sent_to_client_ts': 1775148803.0076375}}</strong></div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
@@ -1230,7 +1230,7 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': '2bfb1684e01f4191a6dfa1874bc3c868', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': {'device': 40, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.052408425020985305, 'response_sent_to_client_ts': 1775146129.1904895}}</strong></div>
+<strong style='color: #00008B;'>{'text': 'France.', 'output_ids': [50100, 13, 128009], 'meta_info': {'id': 'eaec459e17a646f39e4b9ef28a2e327d', 'finish_reason': {'type': 'stop', 'matched': 128009}, 'prompt_tokens': 41, 'weight_version': 'default', 'total_retractions': 0, 'completion_tokens': 3, 'cached_tokens': 40, 'cached_tokens_details': {'device': 40, 'host': 0}, 'dp_rank': None, 'e2e_latency': 0.05663652392104268, 'response_sent_to_client_ts': 1775148803.0786674}}</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -1271,21 +1271,21 @@ Capturing num tokens (num_tokens=4 avail_mem=41.85 GB): 100%|██████�
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-2026-04-02 16:09:01.852 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:09:01] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:09:01.853 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:09:01] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:09:01.853 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:09:01] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:09:01.853 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:09:01] Persistent cache disabled, using in-memory JIT cache
-2026-04-02 16:09:01.853 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-02 16:09:01] Persistent cache disabled, using in-memory JIT cache
-Multi-thread loading shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.57it/s]
-2026-04-02 16:09:09,055 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-[2026-04-02 16:09:09] Unexpected error during package walk: cutlass.cute.experimental
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:08&lt;00:00,  6.48it/s]
-Capturing num tokens (num_tokens=4 avail_mem=20.07 GB): 100%|██████████| 58/58 [00:08&lt;00:00,  7.13it/s]
+2026-04-02 16:53:37.099 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:53:37] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:53:37.099 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:53:37] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:53:37.099 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:53:37] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:53:37.099 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:53:37] Persistent cache disabled, using in-memory JIT cache
+2026-04-02 16:53:37.099 DEBUG Persistent cache disabled, using in-memory JIT cache
+[2026-04-02 16:53:37] Persistent cache disabled, using in-memory JIT cache
+Multi-thread loading shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.36it/s]
+2026-04-02 16:53:46,815 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-02 16:53:46] Unexpected error during package walk: cutlass.cute.experimental
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:11&lt;00:00,  5.19it/s]
+Capturing num tokens (num_tokens=4 avail_mem=83.11 GB): 100%|██████████| 58/58 [00:09&lt;00:00,  6.41it/s]
 </pre></div></div>
 </div>
 <section id="id5">
@@ -1513,7 +1513,7 @@ Capturing num tokens (num_tokens=4 avail_mem=20.07 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: Paris is the capital of France</strong></div>
+<strong style='color: #00008B;'>Prompt: Give me the information of the capital of Italy.<br>Generated text: Paris is the capital of Italy</strong></div>
 </div>
 </section>
 <section id="id7">
@@ -1558,7 +1558,7 @@ Capturing num tokens (num_tokens=4 avail_mem=20.07 GB): 100%|██████�
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Prompt: Please provide information about Paris as a major global city:<br>Generated text: France</strong></div>
+<strong style='color: #00008B;'>Prompt: Please provide information about Paris as a major global city:<br>Generated text: England</strong></div>
 </div>
 </section>
 <section id="id8">
