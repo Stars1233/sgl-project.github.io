@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=6e7770e6"></script>
+    <script src="../_static/documentation_options.js?v=022ef5f7"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -1254,7 +1254,7 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 <td><p>Type: str</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--admin-api-key</span></code></p></td>
-<td><p>Set <strong>admin API key</strong> for administrative/control endpoints (e.g., weights update, cache flush, <code class="docutils literal notranslate"><span class="pre">/get_server_info</span></code>). Endpoints marked as admin-only require <code class="docutils literal notranslate"><span class="pre">Authorization:</span> <span class="pre">Bearer</span> <span class="pre">&lt;admin_api_key&gt;</span></code> when this is set.</p></td>
+<td><p>Set <strong>admin API key</strong> for administrative/control endpoints (e.g., weights update, cache flush, <code class="docutils literal notranslate"><span class="pre">/server_info</span></code>). Endpoints marked as admin-only require <code class="docutils literal notranslate"><span class="pre">Authorization:</span> <span class="pre">Bearer</span> <span class="pre">&lt;admin_api_key&gt;</span></code> when this is set.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>Type: str</p></td>
 </tr>
@@ -1633,16 +1633,6 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-min-match-window-size</span></code></p></td>
-<td><p>The minimum window size for pattern matching in ngram speculative decoding.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
-<td><p>Type: int</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-match-window-size</span></code></p></td>
-<td><p>The maximum window size for pattern matching in ngram speculative decoding.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">12</span></code></p></td>
-<td><p>Type: int</p></td>
-</tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-min-bfs-breadth</span></code></p></td>
 <td><p>The minimum breadth for BFS (Breadth-First Search) in ngram speculative decoding.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
@@ -1659,7 +1649,7 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 <td><p><code class="docutils literal notranslate"><span class="pre">BFS</span></code>, <code class="docutils literal notranslate"><span class="pre">PROB</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-trie-depth</span></code></p></td>
-<td><p>The max trie depth for ngram speculative decoding.</p></td>
+<td><p>Maximum suffix length stored and matched by the ngram trie.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">18</span></code></p></td>
 <td><p>Type: int</p></td>
 </tr>

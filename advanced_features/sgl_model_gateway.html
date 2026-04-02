@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=6e7770e6"></script>
+    <script src="../_static/documentation_options.js?v=022ef5f7"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -778,7 +778,7 @@ document.write(`
 <section id="control-plane">
 <h3>Control Plane<a class="headerlink" href="#control-plane" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>Worker Manager</strong> discovers capabilities (<code class="docutils literal notranslate"><span class="pre">/get_server_info</span></code>, <code class="docutils literal notranslate"><span class="pre">/get_model_info</span></code>), tracks load, and registers/removes workers in the shared registry.</p></li>
+<li><p><strong>Worker Manager</strong> discovers capabilities (<code class="docutils literal notranslate"><span class="pre">/server_info</span></code>, <code class="docutils literal notranslate"><span class="pre">/get_model_info</span></code>), tracks load, and registers/removes workers in the shared registry.</p></li>
 <li><p><strong>Job Queue</strong> serializes add/remove requests and exposes status (<code class="docutils literal notranslate"><span class="pre">/workers/{worker_id}</span></code>) so clients can track onboarding progress.</p></li>
 <li><p><strong>Load Monitor</strong> feeds cache-aware and power-of-two policies with live worker load statistics.</p></li>
 <li><p><strong>Health Checker</strong> continuously probes workers and updates readiness, circuit breaker state, and router metrics.</p></li>
@@ -1432,7 +1432,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 <td><p>Get model information</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">GET</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">/get_server_info</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/server_info</span></code></p></td>
 <td><p>Get server information</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POST</span></code></p></td>

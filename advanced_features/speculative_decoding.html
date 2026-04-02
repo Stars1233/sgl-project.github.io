@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=6e7770e6"></script>
+    <script src="../_static/documentation_options.js?v=022ef5f7"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -1034,15 +1034,7 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-num-draft-tokens</span></code></p></td>
-<td><p>Number of draft tokens verified per step. If omitted, defaults to <code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-match-window-size</span></code>.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">12</span></code> (with default ngram settings)</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-min-match-window-size</span></code></p></td>
-<td><p>Minimum matching window size.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-match-window-size</span></code></p></td>
-<td><p>Maximum matching window size.</p></td>
+<td><p>Number of draft tokens verified per step.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">12</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-min-bfs-breadth</span></code></p></td>
@@ -1058,7 +1050,7 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;BFS&quot;</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-trie-depth</span></code></p></td>
-<td><p>The max trie depth for ngram speculative decoding.</p></td>
+<td><p>Maximum suffix length stored and matched by the ngram trie.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">18</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-capacity</span></code></p></td>
@@ -1080,7 +1072,6 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 <span class="w">    </span>--model<span class="w"> </span>Qwen/Qwen2.5-7B-Instruct<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--speculative-algorithm<span class="w"> </span>NGRAM<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--speculative-num-draft-tokens<span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--speculative-ngram-max-match-window-size<span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--speculative-ngram-max-bfs-breadth<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--mem-fraction-static<span class="w"> </span><span class="m">0</span>.7<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--cuda-graph-max-bs<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="se">\</span>
@@ -1211,16 +1202,6 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-min-match-window-size</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
-<td><p>Minimum ngram matching window</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-match-window-size</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">12</span></code></p></td>
-<td><p>Maximum ngram matching window</p></td>
-</tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-min-bfs-breadth</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
@@ -1239,7 +1220,7 @@ For <code class="docutils literal notranslate"><span class="pre">--speculative-n
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-max-trie-depth</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">18</span></code></p></td>
-<td><p>Max trie depth for ngram speculative decoding</p></td>
+<td><p>Maximum suffix length stored and matched by the ngram trie</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--speculative-ngram-capacity</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
