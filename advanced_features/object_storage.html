@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>CI Performance &#8212; SGLang</title>
+    <title>Loading Models from Object Storage &#8212; SGLang</title>
   
   
   
@@ -47,12 +47,12 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'diffusion/ci_perf';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'advanced_features/object_storage';</script>
     <link rel="icon" href="../_static/logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="AMD GPUs" href="../platforms/amd_gpu.html" />
-    <link rel="prev" title="How to Support New Diffusion Models" href="support_new_models.html" />
+    <link rel="next" title="Hyperparameter Tuning" href="hyperparameter_tuning.html" />
+    <link rel="prev" title="Server Arguments" href="server_arguments.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Apr 02, 2026"/>
@@ -178,34 +178,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../basic_usage/popular_model_usage.html">Popular Model Usage (DeepSeek, GPT-OSS, GLM, Llama, MiniMax, Qwen, and more)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/server_arguments.html">Server Arguments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/object_storage.html">Loading Models from Object Storage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/hyperparameter_tuning.html">Hyperparameter Tuning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/attention_backend.html">Attention Backend</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/speculative_decoding.html">Speculative Decoding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/structured_outputs.html">Structured Outputs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/structured_outputs_for_reasoning_models.html">Structured Outputs For Reasoning Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/tool_parser.html">Tool Parser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/separate_reasoning.html">Reasoning Parser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/quantization.html">Quantization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/quantized_kv_cache.html">Quantized KV Cache</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/expert_parallelism.html">Expert Parallelism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/dp_dpa_smg_guide.html">DP, DPA and SGLang DP Router</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/lora.html">LoRA Serving</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/pd_disaggregation.html">PD Disaggregation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/epd_disaggregation.html">EPD Disaggregation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/pipeline_parallelism.html">Pipeline Parallelism for Long Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/hicache.html">Hierarchical KV Caching (HiCache)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/vlm_query.html">Query VLM with Offline Engine</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/dp_for_multi_modal_encoder.html">DP for Multi-Modal Encoder in SGLang</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/cuda_graph_for_multi_modal_encoder.html">Cuda Graph for Multi-Modal Encoder in SGLang</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/piecewise_cuda_graph.html">Piecewise CUDA Graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/sgl_model_gateway.html">SGLang Model Gateway</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/deterministic_inference.html">Deterministic Inference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/observability.html">Observability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/checkpoint_engine.html">Checkpoint Engine Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced_features/sglang_for_rl.html">SGLang for RL Systems</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="server_arguments.html">Server Arguments</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Loading Models from Object Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hyperparameter_tuning.html">Hyperparameter Tuning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attention_backend.html">Attention Backend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="speculative_decoding.html">Speculative Decoding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structured_outputs.html">Structured Outputs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structured_outputs_for_reasoning_models.html">Structured Outputs For Reasoning Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tool_parser.html">Tool Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="separate_reasoning.html">Reasoning Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantized_kv_cache.html">Quantized KV Cache</a></li>
+<li class="toctree-l1"><a class="reference internal" href="expert_parallelism.html">Expert Parallelism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dp_dpa_smg_guide.html">DP, DPA and SGLang DP Router</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lora.html">LoRA Serving</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pd_disaggregation.html">PD Disaggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="epd_disaggregation.html">EPD Disaggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline_parallelism.html">Pipeline Parallelism for Long Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hicache.html">Hierarchical KV Caching (HiCache)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vlm_query.html">Query VLM with Offline Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dp_for_multi_modal_encoder.html">DP for Multi-Modal Encoder in SGLang</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuda_graph_for_multi_modal_encoder.html">Cuda Graph for Multi-Modal Encoder in SGLang</a></li>
+<li class="toctree-l1"><a class="reference internal" href="piecewise_cuda_graph.html">Piecewise CUDA Graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sgl_model_gateway.html">SGLang Model Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deterministic_inference.html">Deterministic Inference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observability.html">Observability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="checkpoint_engine.html">Checkpoint Engine Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sglang_for_rl.html">SGLang for RL Systems</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Supported Models</span></p>
 <ul class="nav bd-sidenav">
@@ -215,22 +215,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../supported_models/extending/index.html">Extending SGLang</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SGLang Diffusion</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="index.html">SGLang Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Install SGLang-Diffusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="compatibility_matrix.html">Compatibility Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/cli.html">SGLang Diffusion CLI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/index.html">Performance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/attention_backends.html">Attention Backends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance/cache/index.html">Caching Acceleration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quantization.html">Quantization</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="contributing.html">Contributing to SGLang Diffusion</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="support_new_models.html">How to Support New Diffusion Models</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">CI Performance</a></li>
-</ul>
-</details></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/index.html">SGLang Diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/installation.html">Install SGLang-Diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/compatibility_matrix.html">Compatibility Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/api/cli.html">SGLang Diffusion CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/api/openai_api.html">SGLang Diffusion OpenAI API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/index.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/ring_sp_performance.html">Ring SP Benchmark: Wan2.2-TI2V-5B (u1r2 vs Baseline)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/attention_backends.html">Attention Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/performance/cache/index.html">Caching Acceleration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/quantization.html">Quantization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion/contributing.html">Contributing to SGLang Diffusion</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Hardware Platforms</span></p>
 <ul class="nav bd-sidenav">
@@ -333,7 +329,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/blob/main/diffusion/ci_perf.md?plain=1" target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/blob/main/advanced_features/object_storage.md?plain=1" target="_blank"
    class="btn btn-sm btn-source-file-button dropdown-item"
    title="Show source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -350,7 +346,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/edit/main/diffusion/ci_perf.md" target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/edit/main/advanced_features/object_storage.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +363,7 @@
       
       
       
-      <li><a href="https://github.com/sgl-project/sgl-project.github.io/issues/new?title=Issue%20on%20page%20%2Fdiffusion/ci_perf.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/sgl-project/sgl-project.github.io/issues/new?title=Issue%20on%20page%20%2Fadvanced_features/object_storage.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -397,7 +393,7 @@
       
       
       
-      <li><a href="../_sources/diffusion/ci_perf.md" target="_blank"
+      <li><a href="../_sources/advanced_features/object_storage.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -481,7 +477,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CI Performance</h1>
+    <h1>Loading Models from Object Storage</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -491,10 +487,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perf-baseline-generation-script">Perf Baseline Generation Script</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-storage-backends">Supported Storage Backends</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-usage">Basic Usage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#with-tensor-parallelism">With Tensor Parallelism</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-format">Load Format</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-configuration-parameters">Extended Configuration Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#available-parameters">Available Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-considerations">Performance Considerations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-streaming">Distributed Streaming</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#see-also">See Also</a></li>
 </ul>
             </nav>
         </div>
@@ -506,30 +519,138 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ci-performance">
-<h1>CI Performance<a class="headerlink" href="#ci-performance" title="Link to this heading">#</a></h1>
-<section id="perf-baseline-generation-script">
-<h2>Perf Baseline Generation Script<a class="headerlink" href="#perf-baseline-generation-script" title="Link to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">python/sglang/multimodal_gen/test/scripts/gen_perf_baselines.py</span></code> starts a local diffusion server, issues requests for selected test cases, aggregates stage/denoise-step/E2E timings from the perf log, and writes the results back to the <code class="docutils literal notranslate"><span class="pre">scenarios</span></code> section of <code class="docutils literal notranslate"><span class="pre">perf_baselines.json</span></code>.</p>
-<section id="usage">
-<h3>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h3>
-<p>Update a single case:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>python/sglang/multimodal_gen/test/scripts/gen_perf_baselines.py<span class="w"> </span>--case<span class="w"> </span>qwen_image_t2i
+  <section class="tex2jax_ignore mathjax_ignore" id="loading-models-from-object-storage">
+<h1>Loading Models from Object Storage<a class="headerlink" href="#loading-models-from-object-storage" title="Link to this heading">#</a></h1>
+<p>SGLang supports direct loading of models from object storage (S3 and Google Cloud Storage) without requiring a full local download. This feature uses the <code class="docutils literal notranslate"><span class="pre">runai_streamer</span></code> load format to stream model weights directly from cloud storage, significantly reducing startup time and local storage requirements.</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>When loading models from object storage, SGLang uses a two-phase approach:</p>
+<ol class="arabic simple">
+<li><p><strong>Metadata Download</strong> (once, before process launch): Configuration files and tokenizer files are downloaded to a local cache</p></li>
+<li><p><strong>Weight Streaming</strong> (lazy, during model loading): Model weights are streamed directly from object storage as needed</p></li>
+</ol>
+</section>
+<section id="supported-storage-backends">
+<h2>Supported Storage Backends<a class="headerlink" href="#supported-storage-backends" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Amazon S3</strong>: <code class="docutils literal notranslate"><span class="pre">s3://bucket-name/path/to/model/</span></code></p></li>
+<li><p><strong>Google Cloud Storage</strong>: <code class="docutils literal notranslate"><span class="pre">gs://bucket-name/path/to/model/</span></code></p></li>
+<li><p><strong>Azure Blob</strong>: <code class="docutils literal notranslate"><span class="pre">az://some-azure-container/path/</span></code></p></li>
+<li><p><strong>S3 compatible</strong>: <code class="docutils literal notranslate"><span class="pre">s3://bucket-name/path/to/model/</span></code></p></li>
+</ol>
+</section>
+<section id="quick-start">
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Link to this heading">#</a></h2>
+<section id="basic-usage">
+<h3>Basic Usage<a class="headerlink" href="#basic-usage" title="Link to this heading">#</a></h3>
+<p>Simply provide an object storage URI as the model path:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># S3</span>
+python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>s3://my-bucket/models/llama-3-8b/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--load-format<span class="w"> </span>runai_streamer
+
+<span class="c1"># Google Cloud Storage</span>
+python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>gs://my-bucket/models/llama-3-8b/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--load-format<span class="w"> </span>runai_streamer
 </pre></div>
 </div>
-<p>Select by regex:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>python/sglang/multimodal_gen/test/scripts/gen_perf_baselines.py<span class="w"> </span>--match<span class="w"> </span><span class="s1">&#39;qwen_image_.*&#39;</span>
-</pre></div>
-</div>
-<p>Run all keys from the baseline file <code class="docutils literal notranslate"><span class="pre">scenarios</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>python/sglang/multimodal_gen/test/scripts/gen_perf_baselines.py<span class="w"> </span>--all-from-baseline
-</pre></div>
-</div>
-<p>Specify input/output paths and timeout:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>python/sglang/multimodal_gen/test/scripts/gen_perf_baselines.py<span class="w"> </span>--baseline<span class="w"> </span>python/sglang/multimodal_gen/test/server/perf_baselines.json<span class="w"> </span>--out<span class="w"> </span>/tmp/perf_baselines.json<span class="w"> </span>--timeout<span class="w"> </span><span class="m">600</span>
+<p><strong>Note</strong>: The <code class="docutils literal notranslate"><span class="pre">--load-format</span> <span class="pre">runai_streamer</span></code> is automatically detected when using object storage URIs, so you can omit it:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>s3://my-bucket/models/llama-3-8b/
 </pre></div>
 </div>
 </section>
+<section id="with-tensor-parallelism">
+<h3>With Tensor Parallelism<a class="headerlink" href="#with-tensor-parallelism" title="Link to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>gs://my-bucket/models/llama-70b/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tp<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-loader-extra-config<span class="w"> </span><span class="s1">&#39;{&quot;distributed&quot;: true}&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h2>
+<section id="load-format">
+<h3>Load Format<a class="headerlink" href="#load-format" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">runai_streamer</span></code> load format is specifically designed for object storage, ssd and shared file systems</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>s3://bucket/model/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--load-format<span class="w"> </span>runai_streamer
+</pre></div>
+</div>
+</section>
+<section id="extended-configuration-parameters">
+<h3>Extended Configuration Parameters<a class="headerlink" href="#extended-configuration-parameters" title="Link to this heading">#</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">--model-loader-extra-config</span></code> to pass additional configuration as a JSON string:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>s3://bucket/model/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-loader-extra-config<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1">    &quot;distributed&quot;: true,</span>
+<span class="s1">    &quot;concurrency&quot;: 8,</span>
+<span class="s1">    &quot;memory_limit&quot;: 2147483648</span>
+<span class="s1">  }&#39;</span>
+</pre></div>
+</div>
+<section id="available-parameters">
+<h4>Available Parameters<a class="headerlink" href="#available-parameters" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">distributed</span></code></p></td>
+<td><p>bool</p></td>
+<td><p>Enable distributed streaming for multi-GPU setups. Automatically set to <code class="docutils literal notranslate"><span class="pre">true</span></code> for object storage paths and cuda alike devices.</p></td>
+<td><p>Auto-detected</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">concurrency</span></code></p></td>
+<td><p>int</p></td>
+<td><p>Number of concurrent download streams. Higher values can improve throughput for large models.</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">memory_limit</span></code></p></td>
+<td><p>int</p></td>
+<td><p>Memory limit (in bytes) for the streaming buffer.</p></td>
+<td><p>System-dependent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="performance-considerations">
+<h2>Performance Considerations<a class="headerlink" href="#performance-considerations" title="Link to this heading">#</a></h2>
+<section id="distributed-streaming">
+<h3>Distributed Streaming<a class="headerlink" href="#distributed-streaming" title="Link to this heading">#</a></h3>
+<p>For multi-GPU setups, enable distributed streaming to parallelize weight loading between the processes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-path<span class="w"> </span>s3://bucket/model/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tp<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model-loader-extra-config<span class="w"> </span><span class="s1">&#39;{&quot;distributed&quot;: true}&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Supported Formats</strong>: Currently only supports <code class="docutils literal notranslate"><span class="pre">.safetensors</span></code> weight format (recommended format)</p></li>
+<li><p><strong>Supported Device</strong>: Distributed streaming is supported on cuda alike devices. Otherwise fallback to non distributed streaming</p></li>
+</ul>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/run-ai/runai-model-streamer">Runai model streamer documentation</a></p></li>
+</ul>
 </section>
 </section>
 
@@ -545,20 +666,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="support_new_models.html"
+       href="server_arguments.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">How to Support New Diffusion Models</p>
+        <p class="prev-next-title">Server Arguments</p>
       </div>
     </a>
     <a class="right-next"
-       href="../platforms/amd_gpu.html"
+       href="hyperparameter_tuning.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">AMD GPUs</p>
+        <p class="prev-next-title">Hyperparameter Tuning</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -578,10 +699,27 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perf-baseline-generation-script">Perf Baseline Generation Script</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-storage-backends">Supported Storage Backends</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-start">Quick Start</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-usage">Basic Usage</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#with-tensor-parallelism">With Tensor Parallelism</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-format">Load Format</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extended-configuration-parameters">Extended Configuration Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#available-parameters">Available Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-considerations">Performance Considerations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-streaming">Distributed Streaming</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#see-also">See Also</a></li>
 </ul>
   </nav></div>
 

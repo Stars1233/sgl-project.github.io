@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=fa969bd3"></script>
+    <script src="../_static/documentation_options.js?v=2021a124"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -51,7 +51,7 @@
     <link rel="icon" href="../_static/logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hyperparameter Tuning" href="hyperparameter_tuning.html" />
+    <link rel="next" title="Loading Models from Object Storage" href="object_storage.html" />
     <link rel="prev" title="Llama4 Usage" href="../basic_usage/llama4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -180,6 +180,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Features</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Server Arguments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="object_storage.html">Loading Models from Object Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hyperparameter_tuning.html">Hyperparameter Tuning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attention_backend.html">Attention Backend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="speculative_decoding.html">Speculative Decoding</a></li>
@@ -648,9 +649,9 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 <td><p>bool flag (set to enable)</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--load-format</span></code></p></td>
-<td><p>The format of the model weights to load. “auto” will try to load the weights in the safetensors format and fall back to the pytorch bin format if safetensors format is not available. “pt” will load the weights in the pytorch bin format. “safetensors” will load the weights in the safetensors format. “npcache” will load the weights in pytorch format and store a numpy cache to speed up the loading. “dummy” will initialize the weights with random values, which is mainly for profiling.”gguf” will load the weights in the gguf format. “bitsandbytes” will load the weights using bitsandbytes quantization.”layered” loads weights layer by layer so that one can quantize a layer before loading another to make the peak memory envelope smaller. “flash_rl” will load the weights in flash_rl format. “fastsafetensors” and “private” are also supported.</p></td>
+<td><p>The format of the model weights to load. “auto” will try to load the weights in the safetensors format and fall back to the pytorch bin format if safetensors format is not available. “pt” will load the weights in the pytorch bin format. “safetensors” will load the weights in the safetensors format. “npcache” will load the weights in pytorch format and store a numpy cache to speed up the loading. “dummy” will initialize the weights with random values, which is mainly for profiling.”gguf” will load the weights in the gguf format. “bitsandbytes” will load the weights using bitsandbytes quantization.”layered” loads weights layer by layer so that one can quantize a layer before loading another to make the peak memory envelope smaller. “flash_rl” will load the weights in flash_rl format. “fastsafetensors” and “private” are also supported. “runai_streamer” enables direct model loading from object storage and shared file systems.</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>, <code class="docutils literal notranslate"><span class="pre">pt</span></code>, <code class="docutils literal notranslate"><span class="pre">safetensors</span></code>, <code class="docutils literal notranslate"><span class="pre">npcache</span></code>, <code class="docutils literal notranslate"><span class="pre">dummy</span></code>, <code class="docutils literal notranslate"><span class="pre">sharded_state</span></code>, <code class="docutils literal notranslate"><span class="pre">gguf</span></code>, <code class="docutils literal notranslate"><span class="pre">bitsandbytes</span></code>, <code class="docutils literal notranslate"><span class="pre">layered</span></code>, <code class="docutils literal notranslate"><span class="pre">flash_rl</span></code>, <code class="docutils literal notranslate"><span class="pre">remote</span></code>, <code class="docutils literal notranslate"><span class="pre">remote_instance</span></code>, <code class="docutils literal notranslate"><span class="pre">fastsafetensors</span></code>, <code class="docutils literal notranslate"><span class="pre">private</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>, <code class="docutils literal notranslate"><span class="pre">pt</span></code>, <code class="docutils literal notranslate"><span class="pre">safetensors</span></code>, <code class="docutils literal notranslate"><span class="pre">npcache</span></code>, <code class="docutils literal notranslate"><span class="pre">dummy</span></code>, <code class="docutils literal notranslate"><span class="pre">sharded_state</span></code>, <code class="docutils literal notranslate"><span class="pre">gguf</span></code>, <code class="docutils literal notranslate"><span class="pre">bitsandbytes</span></code>, <code class="docutils literal notranslate"><span class="pre">layered</span></code>, <code class="docutils literal notranslate"><span class="pre">flash_rl</span></code>, <code class="docutils literal notranslate"><span class="pre">remote</span></code>, <code class="docutils literal notranslate"><span class="pre">remote_instance</span></code>, <code class="docutils literal notranslate"><span class="pre">fastsafetensors</span></code>, <code class="docutils literal notranslate"><span class="pre">private</span></code>, <code class="docutils literal notranslate"><span class="pre">runai_streamer</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--model-loader-extra-config</span></code></p></td>
 <td><p>Extra config for model loader. This will be passed to the model loader corresponding to the chosen load_format.</p></td>
@@ -2909,11 +2910,11 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
       </div>
     </a>
     <a class="right-next"
-       href="hyperparameter_tuning.html"
+       href="object_storage.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hyperparameter Tuning</p>
+        <p class="prev-next-title">Loading Models from Object Storage</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

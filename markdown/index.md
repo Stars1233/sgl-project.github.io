@@ -51,6 +51,7 @@ basic\_usage/popular\_model\_usage.rst
 <div class="toctree" data-maxdepth="1" data-caption="Advanced Features">
 
 advanced\_features/server\_arguments.md
+advanced\_features/object\_storage.md
 advanced\_features/hyperparameter\_tuning.md
 advanced\_features/attention\_backend.md
 advanced\_features/speculative\_decoding.ipynb
