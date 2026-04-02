@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-02 20:02:34.018 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:28.285 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 20:02:34] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:28] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 20:02:34.019 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:28.287 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 20:02:34] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:28] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 20:02:34.020 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:28.287 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 20:02:34] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:28] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 20:02:34.020 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:28.288 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 20:02:34] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:28] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 20:02:34.020 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:28.288 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 20:02:34] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:28] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 20:02:43.258 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 20:02:43] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 20:02:43.258 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 20:02:43] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 20:02:43.258 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 20:02:43] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 20:02:43.258 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 20:02:43] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 20:02:43.258 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 20:02:43] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:38.646 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:38] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:38.647 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:38] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:38.647 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:38] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:38.647 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:38] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 22:06:38.647 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 22:06:38] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.76it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.85it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.32it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.37it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.35it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.41it/s]
 
 
 
@@ -157,17 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-02 20:02:53,383 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-02 20:02:53] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-02 22:06:48,467 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-02 22:06:48] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a scene where a person is using the back of a yellow SUV, likely a taxi, as a makeshift washing line. It appears that they are hanging clothing, possibly to dry, on an improvised metal stand that the person has set up behind the vehicle. This seems to be an unconventional way to dry clothes, possibly due to an emergency situation, such as outdoor work or a location without access to a specific utility.
-    
-    There are several things to note in the background:
-    1. Tall buildings, possibly indicating an urban area.
-    2. Some red and blue banners or flags hanging from the buildings.
-    3. A yellow taxi in the
+    The image depicts a scene on a city street where a person is folding clothes and ironing them outside in the parking lot of a building. There is a yellow taxi cab in the foreground, and another yellow car is visible in the background. The person is sitting on a metal folding chair and appears to be focusing on folding clothes. The image capturing this odd incident is shown.
 
 
 ### Call with Processor Output
@@ -192,7 +187,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    It looks like there is a scarf or fabric draped over an object that is not clearly identifiable in the image provided. It's difficult to ascertain the exact item, but it appears to be some kind of cloth or accessory given its placement.
+    The image shows a scene involving a person placing a folded garment, possibly a garment bag or an accessory, onto a back seat of a yellow taxi. The taxi is parked on a street with a cityscape background, which includes buildings and some trees. The person is wearing a yellow shirt and orange protective glasses, and they have a yellow flag on their side, possibly an umbrella or bag. The street has a yellow curb and there are other elements like a streetlight and some advertisements or posters visible.
 
 
 ### Call with Precomputed Embeddings
@@ -248,7 +243,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellowطار顶 patrols a road in the city
+    The image shows two yellow taxis parked on a street. The taxis are equipped with additional racks and poles on top, which are likely used for transporting quotes or signs for delivery services. This setup is common in cities where taxis might be used for whimsical or inappropriate advertising or delivery purposes.
 
 
 ## Querying Llama 4 Vision Model
