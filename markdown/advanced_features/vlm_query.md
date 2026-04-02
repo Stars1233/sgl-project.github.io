@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-02 17:52:52.343 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:49.385 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 17:52:52] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 17:52:52.344 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:49.386 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 17:52:52] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 17:52:52.344 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:49.386 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 17:52:52] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 17:52:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:49.387 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 17:52:52] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 17:52:52.345 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:49.388 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 17:52:52] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:49] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 17:53:02.751 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 17:53:02] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 17:53:02.751 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 17:53:02] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 17:53:02.751 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 17:53:02] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 17:53:02.751 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 17:53:02] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 17:53:02.752 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 17:53:02] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:58.886 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:58] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:58.886 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:58] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:58.886 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:58] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:58.886 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:58] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 18:35:58.887 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 18:35:58] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.79it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.50it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.34it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.19s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.11s/it]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-02 17:53:13,226 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-02 17:53:13] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-02 18:36:11,126 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-02 18:36:11] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a man ironing clothes outdoors in the street. The scene appears to be set in a busy urban area, with taxis and other vehicles visible. The clothes ironer is placed on top of a small folding table, and the man is wearing casual clothing while ironing what looks like shirts. The background includes multiple colorful flags and storefronts, indicating a lively, possibly commercial street.
+    The image shows two yellow taxi cabs on a city street. One taxi cab is parked facing the sidewalk, while the other taxi cab is in the process of being loaded or unloaded. The driver appears to be engaged in some form of tailgating or perhaps a public performance involving laundry items like shirts or towels. The scene is bustling with activity typical of a busy urban environment.
 
 
 ### Call with Processor Output
@@ -187,7 +187,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxis on a city street. A person wearing a yellow shirt is standing next to one of the taxis. The person appears to be performing some kind of demonstration or trick with laundry, as there is laundry items hanging on a stick near the car. The scene likely depicts a public service announcement or a performative act related to cleanliness or laundry care.
+    The image shows a scene on a city street with a yellow taxi in the foreground. The taxi's trunk is open, and there are several pairs of trousers draped over a pole or stand. The setting appears to be in a busy urban area, likely in a major city with tall buildings in the background. There are also some flag-like banners visible in the background.
 
 
 ### Call with Precomputed Embeddings
@@ -243,15 +243,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    Here's the explanation:
-    
-    1. **Hanging Pegs**: Two black metal hanging pegs are depicted. These are typically used for hanging clothes on a clothesline.
-    
-    2. **Clothes**: The pegs are stretched with clothes. This shows that the renters are drying their clothes using this method.
-    
-    3. **Cinema Cameras**: There are three camera-like devices set up in the scene. These could be used to monitor the drying process or for security purposes.
-    
-    4. **Clothesline**: The clothes are hanging on a clothesline extending from the back of the car. This is a common outdoor drying method using available space and
+    The image shows a street scene in what appears to be a busy urban area. There are two yellow taxis on the street, one in the foreground and one further down the road. The foreground taxi is displaying an air freshener on its rear window, tied to a long stick. The truck on which the air freshener is mounted is extended horizontally, and the extremely long stick is bent in such a way that it's hard to believe it's real. Another variable image is also present in the scene, added digitally to the background. The truck issuing from the false image is red, yellow, and white, with its back four wheels and
 
 
 ## Querying Llama 4 Vision Model
