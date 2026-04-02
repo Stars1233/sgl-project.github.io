@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-02 16:55:44.876 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:34.716 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 16:55:44] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:34] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 16:55:44.877 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:34.717 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 16:55:44] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:34] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 16:55:44.878 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:34.718 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 16:55:44] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:34] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 16:55:44.878 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:34.719 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 16:55:44] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:34] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 16:55:44.879 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:34.719 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 16:55:44] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:34] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 16:55:54.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 16:55:54] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 16:55:54.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 16:55:54] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 16:55:54.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 16:55:54] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 16:55:54.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 16:55:54] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 16:55:54.571 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 16:55:54] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:44.473 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:44] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:44.474 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:44] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:44.474 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:44] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:44.474 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:44] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 17:24:44.474 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 17:24:44] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.01it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.86it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.36it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.43it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.32it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.38it/s]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-02 16:56:05,441 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-02 16:56:05] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-02 17:24:55,868 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-02 17:24:55] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    It appears that there is an anomaly in the image, as clothes drying on the tailgate of a vehicle is not a typical sight. This unusual laundry setup with clothes draped over a tornado pattern signboard could either be an artistic installation, a joke, or part of an experiential marketing or advertising campaign. It doesn't align with the usual expectations of what vehicles should be used for these purposes.
+    The image shows a scene with several yellow taxis in a city street. A person standing between the taxis has their laundry hanging on a makeshift clothesline. The person is holding an iron and appears to be ironing or drying their clothes. The background includes some commercial storefronts with wagons and umbrellas. The setting suggests that the person is in a busy area, possibly in New York City given the reference to a Shahっちゃan recital at the Hindu Temple located on 129th Street, which is well-known there.
 
 
 ### Call with Processor Output
@@ -187,7 +187,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a taxi with clothes hanging outside upon its rear hatch, possibly indicating a clothing sale or giveaway event. The taxi is yellow, which is a common color for taxis in New York City. The background includes other cars and urban infrastructure.
+    The image shows a man trying to remove a suitcase from the trunk of a yellow taxi in a street. The suitcase was removed onto a wooden stick propped up next to the taxi. There are also cars passing by in the background, as well as some buildings, shops, trees, and street signs.
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +243,11 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    This image depicts an unusual scene where a man in a yellow shirt is working on a piece of laundry, holding a white iron over a blue item of clothing on a xe.Record. The irony of the situation—the iron and the clothes being on the back of a yellow taxi—suggests a humorous or artistic piece, possibly for a protest or for a performance art event. The urban environment, with taxis and city buildings, adds to the setting.
+    The image shows a yellow New York City taxi cab parked on a city street. There is a person in a yellow shirt standing next to the taxi with their back to the camera, seemingly on some kind of equipment or apparatus, which appears to involve some kind of stretching or aligning device. The person seems to be performing an exercise or demonstration, possibly for a camera or as part of a performance. 
+    
+    The background includes urban elements such as buildings with multiple signs and several red and blue banners hanging from a pole on the left. There are also other cars visible on the street.
+    
+    Overall, the scene is vibrant, with the yellow cab turning
 
 
 ## Querying Llama 4 Vision Model
