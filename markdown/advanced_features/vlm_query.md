@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-02 00:14:30.650 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:00.285 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 00:14:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 00:14:30.651 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:00.286 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 00:14:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 00:14:30.652 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:00.287 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 00:14:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 00:14:30.653 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:00.287 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 00:14:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 00:14:30.653 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:00.288 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-02 00:14:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:00] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-02 00:14:40.524 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 00:14:40] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 00:14:40.524 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 00:14:40] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 00:14:40.524 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 00:14:40] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 00:14:40.524 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 00:14:40] Persistent cache disabled, using in-memory JIT cache
-    2026-04-02 00:14:40.524 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-02 00:14:40] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:09.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:09] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:09.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:09] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:09.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:09] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:09.365 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:09] Persistent cache disabled, using in-memory JIT cache
+    2026-04-02 00:57:09.366 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-02 00:57:09] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.67it/s]
+    Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.61it/s]
 
-    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.17it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]
+    Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.20it/s]Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-02 00:14:49,336 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-02 00:14:49] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-02 00:57:17,418 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-02 00:57:17] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    This image shows a car with a dry-cleaning installation on its side. The car appears to be a yellow taxi from New York, as indicated by its distinctive design. The car is equipped with a rack under the trunk or rear door and has laundry items, such as blue jeans and a red shirt, hanging over the rack. The individual hanging the items is wearing a yellow shirt. The setting seems to be in a busy street in an urban area, likely New York City, given the presence of a doeskin street lamp and the style of advertisements in the background. The car also has advertisements for Apple Products maintaining their Hindi branding.
+    The image shows a street scene with a yellow car, which appears to be a taxi, stopped with its rear door open. Inside the car, there is a man wearing a yellow shirt who is covering himself with a towel, possibly to protect himself from the elements or to prevent oil stains. The man is also holding a small red flag or object in his hand. The setting appears to be an urban area with buildings and possibly some pedestrian activity in the background.
 
 
 ### Call with Processor Output
@@ -187,7 +187,9 @@ print(out["text"])
 ```
 
     Response using processor output:
-    It looks like the image shows a yellow taxi cab, which is a common vehicle used for transporting people in cities like New York City. The taxi is parked on a street, and there are some McDonald's restaurants visible in the background, indicating an urban setting.
+    This image shows a humorous scene on a city street involving a taxi and a bicycle. The motorcycle rider appears to be siphoning an engine oil from one of the car's oil guns, placed upside down on the back seat. This is not a common or legal activity, and the setup creates an absurd and inappropriate situation.
+    
+    Additional context indicates that there is a clothing rack or some kind of backup attached to the car, and the makeshift workaround for the oil syringe.
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +245,9 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street scene with a taxi parked on the side of the road. A person is standing in front of the taxi with a makeshift laundry line. The line is stretching across the street and appears to be filled with clothes. There are also some hanging clothes visible over a fence or temporary structure. The background includes a brick building and other urban elements like street signs and traffic. The overall impression is of street art or a public installation related to laundry or clothing.
+    The image shows a street scene featuring three yellow taxis driving in a single lane. The taxis are typical of those in New York City, distinguishable by their distinctive color and body shape. Each taxi has luggage and colors on its roof, consistent with New York taxi practices. The setting is urban, with buildings, flagpoles, and traffic barriers visible in the background. The traffic is confined on the left and right, with the taxis moving toward the near end of the scene. The weather appears to be clear, as the cars reflect sunlight and the surrounding buildings are well-lit.
+    
+    This is a visual representation of city streets and taxi traffic
 
 
 ## Querying Llama 4 Vision Model
