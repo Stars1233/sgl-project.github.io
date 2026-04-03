@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-03 15:37:01.235 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:47.172 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 15:37:01] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 15:37:01.236 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:47.173 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 15:37:01] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 15:37:01.237 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:47.173 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 15:37:01] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 15:37:01.237 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:47.174 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 15:37:01] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 15:37:01.238 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:47.175 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 15:37:01] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:47] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 15:37:11.193 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 15:37:11] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 15:37:11.193 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 15:37:11] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 15:37:11.193 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 15:37:11] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 15:37:11.193 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 15:37:11] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 15:37:11.193 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 15:37:11] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:57.679 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:57] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:57.679 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:57] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:57.679 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:57] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:57.679 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:57] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 16:50:57.679 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 16:50:57] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.78it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.82it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.35it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.40it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.41it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.46it/s]
 
 
 
@@ -157,14 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 15:37:19,062 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 15:37:19] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 16:51:05,730 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 16:51:05] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows two yellow taxi cabs in a city street, with the cabs placed side by side. One taxi is closer to the foreground, while the other is further back. Additionally, a person wearing a yellow shirt and blue shorts is pushing a laundry cart towards the taxi. The person appears to be engaged in loading or unloading laundry from the cart. The background includes various storefronts and street signs, indicating an urban environment. 
-    
-    Your description is quite detailed and captures the scene very well. It's clear that the context is an urban setting with vehicles and people, and the unusual situation of a person loading laundry into a taxi
+    The image shows a scene where a yellow taxi has its backseat seats removed, exposing the empty seats. It appears to be arranged to be displayed or presented to the public. The taxi is on a city street, with another taxi visible in the background. The action of removing the backseat might be part of a promotional event, a display for a local business, or a stunt for entertainment.
 
 
 ### Call with Processor Output
@@ -189,7 +187,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab on a city street. The taxi appears to be parked on the side of the road, and a person is standing behind it, wearing a yellow shirt. In front of the person is a turquoise towel or cloth draped over something, possibly a part of the taxi. There are tall buildings and street signs in the background.
+    The image shows two yellow taxis on the street. One taxi appears to be pulling out a banner from its front. The scene looks like it could be part of a parade or a special event.
 
 
 ### Call with Precomputed Embeddings
@@ -245,7 +243,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene from a theme park, most likely Iron Man Universe, which is part of Marvel's Avengers Campus. The setup includes a car with a DIY reinforceable Pop-Up House acrylic structure attached to the trunk, making it resemble a PJ습니까's home from the Iron Man universe. The car resemblance is to emphasize the theme.
+    The image shows a yellow taxi cab parked on a city street. The taxi has clothes hanging from a bar attached to its roof. The street is lined with other vehicles and buildings, including a prominent store with large windows. The scene appears to be set in a busy urban area.
 
 
 ## Querying Llama 4 Vision Model
