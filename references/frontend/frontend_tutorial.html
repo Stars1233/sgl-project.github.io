@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=dfd2c996"></script>
+    <script src="../../_static/documentation_options.js?v=8120b6ab"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -560,21 +560,11 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-2026-04-03 20:20:14.967 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:14] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:14.967 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:14] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:14.967 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:14] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:14.967 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:14] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:14.967 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:14] Persistent cache disabled, using in-memory JIT cache
-Multi-thread loading shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.52it/s]
-2026-04-03 20:20:19,791 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-[2026-04-03 20:20:19] Unexpected error during package walk: cutlass.cute.experimental
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00, 10.05it/s]
-Capturing num tokens (num_tokens=4 avail_mem=44.09 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 14.47it/s]
+Multi-thread loading shards: 100% Completed | 4/4 [00:03&lt;00:00,  1.33it/s]
+2026-04-03 21:07:22,139 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-03 21:07:22] Unexpected error during package walk: cutlass.cute.experimental
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00, 10.35it/s]
+Capturing num tokens (num_tokens=4 avail_mem=61.59 GB): 100%|██████████| 58/58 [00:03&lt;00:00, 14.91it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -590,7 +580,7 @@ Capturing num tokens (num_tokens=4 avail_mem=44.09 GB): 100%|██████�
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:34112
+Server started on http://localhost:37532
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -607,7 +597,7 @@ Server started on http://localhost:34112
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-04-03 20:20:37] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-04-03 21:07:39] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -639,7 +629,7 @@ Server started on http://localhost:34112
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure, here are three countries along with their capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Mexico - Mexico City</strong></div>
+<strong style='color: #00008B;'>Sure, here are three countries along with their capitals:<br><br>1. France - Paris<br>2. Japan - Tokyo<br>3. Brazil - Brasília</strong></div>
 </div>
 </section>
 <section id="Multi-turn-Dialog">
@@ -669,13 +659,13 @@ Server started on http://localhost:34112
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here is a list of three countries along with their capitals:<br><br>1. **France** - Paris<br>2. **Germany** - Berlin<br>3. **Japan** - Tokyo</strong></div>
+<strong style='color: #00008B;'>Certainly! Here is a list of three countries along with their capitals:<br><br>1. **France** - Paris<br>2. **Germany** - Berlin<br>3. **India** - New Delhi</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Of course! Here is another list of three countries and their capitals:<br><br>1. **Italy** - Rome<br>2. **Spain** - Madrid<br>3. **Canada** - Ottawa</strong></div>
+<strong style='color: #00008B;'>Of course! Here is another list of three countries along with their capitals:<br><br>1. **Italy** - Rome<br>2. **Japan** - Tokyo<br>3. **Canada** - Ottawa</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -717,7 +707,7 @@ Server started on http://localhost:34112
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2. <br><br>We can solve this without a calculator by simply performing the multiplication:<br><br>2 * 2 = 4<br><br>So, the answer is 4.</strong></div>
+<strong style='color: #00008B;'>2 * 2. <br><br>Let me compute it for you.<br><br>2 * 2 = 4<br><br>So, 2 multiplied by 2 equals 4.</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -757,7 +747,7 @@ Server started on http://localhost:34112
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: Eating a well-balanced diet is crucial for maintaining good health. Focus on fruits, vegetables, whole grains, lean proteins, and healthy fats. Limit processed foods and sugars. This helps improve your energy levels, immune system, and overall well-being.<br>2. **Regular Exercise**: Engage in regular physical activity to strengthen your cardiovascular system, enhance muscle and bone strength, and improve your mental health. Aim for at least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity aerobic activity each week, along with muscle-strengthening exercises on two or more days a week. Consistency is key for optimal health benefits.<br><br>By combining these tips, you can significantly enhance your health and quality of life.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet**: A key to overall health, it involves eating a variety of nutrient-rich foods, including plenty of fruits and vegetables, lean proteins, whole grains, and healthy fats. Avoiding excessive intake of sugars and refined carbohydrates is also important. Staying hydrated and ensuring a balanced intake of vitamins and minerals is crucial.<br>2. **Regular Exercise**: Essential for maintaining physical fitness, it helps manage weight, strengthens the heart and muscles, enhances immune function, and improves mental health. Engage in activities you enjoy, such as walking, cycling, swimming, or team sports, and aim for consistency in your routine to achieve the best benefits.<br><br>Both practices are closely intertwined and complement each other in promoting a healthy lifestyle.</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -830,7 +820,7 @@ Server started on http://localhost:34112
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Muggle-born",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Vine",<br>        "core": "Phoenix feather",<br>        "length": 10.4<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Dementor"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "holly",<br>        "core": "phoenix feather",<br>        "length": 11.0<br>    },<br>    "alive": "Alive",<br>    "patronus": "stag",<br>    "bogart": "Dementors"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -865,7 +855,7 @@ Server started on http://localhost:34112
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 33.91it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 36.93it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -989,34 +979,14 @@ The capital of France is Paris.&lt;|im_end|&gt;
   warnings.warn(
 /actions-runner/_work/sglang/sglang/python/sglang/srt/entrypoints/http_server.py:172: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   from sglang.srt.utils.json_response import (
-2026-04-03 20:20:50.957 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:50] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:50.957 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:50] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:50.958 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:50] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:50.958 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:50] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:50.958 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:50] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:59.659 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:59] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:59.659 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:59] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:59.659 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:59] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:59.659 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:59] Persistent cache disabled, using in-memory JIT cache
-2026-04-03 20:20:59.659 DEBUG Persistent cache disabled, using in-memory JIT cache
-[2026-04-03 20:20:59] Persistent cache disabled, using in-memory JIT cache
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Multi-thread loading shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.47it/s]
+Multi-thread loading shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.52it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
-2026-04-03 20:21:09,938 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-[2026-04-03 20:21:09] Unexpected error during package walk: cutlass.cute.experimental
+2026-04-03 21:08:09,702 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-03 21:08:09] Unexpected error during package walk: cutlass.cute.experimental
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -1030,7 +1000,7 @@ Multi-thread loading shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.47it/s]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:31952
+Server started on http://localhost:39772
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1046,7 +1016,7 @@ Server started on http://localhost:31952
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-04-03 20:21:13] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-04-03 21:08:13] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1080,7 +1050,7 @@ Server started on http://localhost:31952
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a man standing in the middle of a busy street. He is ironing clothes while leaning on the tailgate of a moving car, which appears to be a taxi. The man is wearing a yellow shirt, and the taxi has "Metro Cab" written on it. The street is lined with tall buildings, and there are other cars, including another taxi, visible in the background. The image seems humorous due to the unusual and impractical way the man is doing his ironing.</strong></div>
+<strong style='color: #00008B;'>The image shows a man performing an unusual task in the middle of a busy city street. He is standing on the trunk of a taxi, stepping into it with one leg, while also standing on an ironing board positioned on the top of the trunk. He appears to be ironing clothes, which are hanging over the edge of the ironing board. The setting is an urban environment, with other yellow taxis visible, a building with large windows, and some traffic in the background. This situation is highly impractical and unusual for real-world daily activity.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:

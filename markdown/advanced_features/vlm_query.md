@@ -96,48 +96,6 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-03 20:13:48.061 DEBUG Persistent cache disabled, using in-memory JIT cache
-
-
-    [2026-04-03 20:13:48] Persistent cache disabled, using in-memory JIT cache
-
-
-    2026-04-03 20:13:48.063 DEBUG Persistent cache disabled, using in-memory JIT cache
-
-
-    [2026-04-03 20:13:48] Persistent cache disabled, using in-memory JIT cache
-
-
-    2026-04-03 20:13:48.063 DEBUG Persistent cache disabled, using in-memory JIT cache
-
-
-    [2026-04-03 20:13:48] Persistent cache disabled, using in-memory JIT cache
-
-
-    2026-04-03 20:13:48.064 DEBUG Persistent cache disabled, using in-memory JIT cache
-
-
-    [2026-04-03 20:13:48] Persistent cache disabled, using in-memory JIT cache
-
-
-    2026-04-03 20:13:48.064 DEBUG Persistent cache disabled, using in-memory JIT cache
-
-
-    [2026-04-03 20:13:48] Persistent cache disabled, using in-memory JIT cache
-
-
-    2026-04-03 20:13:57.048 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 20:13:57] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 20:13:57.048 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 20:13:57] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 20:13:57.048 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 20:13:57] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 20:13:57.048 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 20:13:57] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 20:13:57.049 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 20:13:57] Persistent cache disabled, using in-memory JIT cache
-
-
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.50it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.58it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.16it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.20it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.24it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
 
 
 
@@ -157,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 20:14:04,946 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 20:14:04] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 21:02:08,652 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 21:02:08] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows two taxi cabs on a city street. The taxi on the left is partially pulled over onto the curb, while the one on the right appears to be in motion or parked. Both cabs are yellow and have text on their sides, which is typical for New York City taxi taxis to identify drivers and routes. The background includes tall buildings, billboards, and streetlights, indicating an urban environment. The scene is bustling and suggests a busy city day.
+    The image shows two large yellow taxis driving down a street. The taxi in the foreground has aIni cloth stretched across its rear window, likely as a prank or form of guerrilla marketing. There is also a makeshift sign or board attached to the taxi's rear that appears to have been tailored for advertisement or public service. The scene is in an urban area, possibly in New York City, given the architectural style of the buildings in the background and the presence of flags that resemble the New York City flag.
 
 
 ### Call with Processor Output
@@ -187,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    It appears to be a still from a movie showing a man and a yellow taxi cab. The context is typically from the movie "Shutter Island," where aевarke man is run over and runs near the taxi.
+    The image shows a yellow taxi cab driving down a city street. It appears that the taxi has a colorful propeller or another vehicle attached to its back. The overall scene suggests a quirky or eventful situation, possibly related to a parade, festival, or special occasion.
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a side view of a yellow vehicle, which appears to be a new York City taxi. It is marked with designated taxi emblems, which are displayed prominently on the vehicle. The taxi has its back doors open, and on the back seat, there are two pieces of clothing: a t-shirt and a black item that resembles a t-strap or a second shirt. The scene includes several New York City characteristics, such as the trees, street signs, and visible buildings in the background. The colorful emblems on the taxi, along with the distinctive design of the vehicle, are key identifying features of New York City taxis.
+    The image shows a yellow taxi with a striped garment attached to its back. The garment is allegedly rain pants, but it appears to be folded and leaning against the back of the taxi, which is not a typical way to handle such items. Typically, people would not attach clothing to the back of a taxi, as it can distract drivers and potentially interfere with the vehicle's operation. The scene likely suggests a humorous or practical joke, suggesting that the person may be labeling the clothes for odd deliveries or returns.
 
 
 ## Querying Llama 4 Vision Model
