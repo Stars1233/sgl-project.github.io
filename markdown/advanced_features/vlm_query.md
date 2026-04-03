@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-03 03:23:36.666 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:05.040 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 03:23:36.667 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:05.041 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 03:23:36.667 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:05.041 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 03:23:36.668 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:05.042 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 03:23:36.668 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:05.042 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:05] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:15.465 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:15] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:15.465 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:15] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:15.465 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:15] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:15.465 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:15] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:56:15.466 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:56:15] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.19it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.15it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.06s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.03s/it]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.66it/s]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 03:24:01,063 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 03:24:01] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 03:56:25,726 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 03:56:25] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a street scene in Nantucket, Massachusetts, a town on长岛.
+    The image depicts two yellow taxis parked on a city street, likely in New York City given the recognizable taxi design. One of the taxis has a clothesline with laundry hanging on it, suggesting that someone is drying clothes in the street. This is an unusual sight, as most people usually dry their clothes at home or use public laundry facilities. Additional details include urban architecture and street signs, indicating a busy, well-developed area in a major city.
 
 
 ### Call with Processor Output
@@ -187,7 +187,13 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The photo shows a man in yellow sunglasses and a yellow sweatshirt riding aUNicycle, which is a bicycle without pedals, on the back of a yellow taxi cab. The man appears to be using the UNicycle to balance his weight while riding the taxi. The background features tall buildings, including a store with a large window display, and a street lined with other buildings and parked cars. The street is wet, suggesting it has recently rained.
+    The image shows a yellow taxi cab with a laundry rack on the back, with clothes hanging on it. This unusual sight could be due to a number of reasons:
+    
+    1. **Hiring a Laundry Service**: Some taxi services offer a unique customer service where they let their customers carry their laundry in the back of the taxi to their destination and then take it back to them.
+    
+    2. **Agritourism Project**: The rack might be part of a special program where passengers can pick up clothes after their ride, encouraging them to experience rural life from the comfort of urban living.
+    
+    3. **Activism**: It could also be used
 
 
 ### Call with Precomputed Embeddings
@@ -243,7 +249,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene inside the Metropolitan Museum of Art (MoMA) during an event called "Living in the Present" by artist Tomás Saraceno. The display features inflatable clouds floating near glass doors, with chairs suspended beneath them. These clouds appear to be part of a sculpture or installation that is meant to capture and hold artificial edible clouds. The chairs are designed to provide a comfortable posture while seated, possibly to mimic being inside the clouds. This installation illustrates themes of relaxation, moments of plenty, and the connection between art and nature.
+    The image depicts a scene with a yellow cab (taxi) driving down a street. On the back of the taxi, a doll appears to be staked out on a stand. The doll is dressed in what looks like attire from a bar or night club, suggesting the scene might be related to nightlife or the entertainment industry.
 
 
 ## Querying Llama 4 Vision Model
