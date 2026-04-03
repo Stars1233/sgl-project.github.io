@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-03 05:12:24.131 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:30.969 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:30] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 05:12:24.132 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:30.970 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:30] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 05:12:24.132 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:30.971 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:30] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 05:12:24.132 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:30.971 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:30] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 05:12:24.133 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:30.972 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:30] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:41.115 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:41] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:41.115 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:41] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:41.115 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:41] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:41.115 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:41] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 06:08:41.115 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 06:08:41] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.10it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.16it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.57it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.63it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.66it/s]
 
 
 
@@ -157,17 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 05:12:43,533 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 05:12:43] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 06:08:50,479 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 06:08:50] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a man washing clothes outdoors using the moving traffic in New York City to move his laundry up and down with the passing cabs. The man is balancing his load on an overhanging clothes rack while two yellow taxis pass by. It's a humorous and clever way to make use of the traffic to keep his clothing hosed down and clean.
-    
-    - **Setting**: Outdoor, city street, with a perspective capturing both the man and two taxis passing by
-    - **Man's attire**: Yellow shirt
-    - **Clothes**: Variously colored clothes hanging on a clothes rack
-    - **Traffic**: Two yellow taxis passing by,
+    It appears that the image shows an outdoor scene in New York City with two yellow taxi cabs parked on the street. The shirts are likely makeshift windsocks installed by the man, explaining why one of the shirts is blowing \( toward his face \). The small modules at the ends of the shirts are designed to move in the wind, creating a windsock effect.
 
 
 ### Call with Processor Output
@@ -192,7 +187,11 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi with a blue hula hoop on the roof, which is being used as makeshift steps by the driver. This is often referred to as the "cat languages how to ride a cab" phenomenon. The hula hoop is typically used in this manner to provide additional height for taller individuals who need to enter or exit the cab easily.
+    The image depicts a street scene with a yellow taxi cab driving on a city street. The taxis in the image are not 21-inch or 30-inch vehicles, but rather standard yellow taxis found in cities with an extensive taxi service. Despite this, they are not the specific model type mentioned in the prompt.
+    
+    The taxi in the foreground is equipped with various utility items attached to its back, including a folding pickup bed and a vacuum cleaner. This setup is likely used by a pedestrian or a flowershop, indicating a practice where taxis are sometimes used as temporary storage or delivery vehicles.
+    
+    Another yellow cab is visible in the background, further
 
 
 ### Call with Precomputed Embeddings
@@ -248,9 +247,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a person wearing a yellow shirt, standing on a makeshift stand that is propped up by a metal frame. The person appears to be hanging a piece of fabric or clothing that is draped over the top of the stand. This setup is often seen outside stores or עלías to display merchandise or clothes for sale. The stand seems to be operating outdoors, as evidenced by the street scene and the presence of a yellow taxi and a building with a facade similar to standard urban architecture. 
-    
-    To proceed with this use of mathematics, we could consider calculating the height of the person or the length of the cloth, for example, if required
+    The image shows a scene with a man in a yellow hoodie standing next to a makeshift crutch. The man appears to be applying something on the crutch, possibly to fix or clean it. The background features a yellow taxi cab and a store with colorful banners or flags hanging from the entrance. The setting seems to be an urban area, likely in a city with multiple stores and commercial activity. The man's actions suggest he might be helping himself or someone else with the crutch before using it.
 
 
 ## Querying Llama 4 Vision Model
