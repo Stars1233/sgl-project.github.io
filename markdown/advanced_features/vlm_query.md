@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-03 04:41:30.941 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:24.131 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 04:41:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 04:41:30.942 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:24.132 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 04:41:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 04:41:30.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:24.132 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 04:41:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 04:41:30.943 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:24.132 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 04:41:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 04:41:30.944 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:24.133 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 04:41:30] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:24] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 04:41:41.428 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 04:41:41] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 04:41:41.428 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 04:41:41] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 04:41:41.428 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 04:41:41] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 04:41:41.428 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 04:41:41] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 04:41:41.428 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 04:41:41] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 05:12:33.892 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 05:12:33] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.78it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.10it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.31it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.36it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.57it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.63it/s]
 
 
 
@@ -157,21 +157,17 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 04:41:51,311 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 04:41:51] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 05:12:43,533 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 05:12:43] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    Here's what's shown in the image:
+    The image shows a man washing clothes outdoors using the moving traffic in New York City to move his laundry up and down with the passing cabs. The man is balancing his load on an overhanging clothes rack while two yellow taxis pass by. It's a humorous and clever way to make use of the traffic to keep his clothing hosed down and clean.
     
-    1. Two yellow taxis are parked parallel to each other on a city street.
-    2. A man is stripping a cover or luggage off the back of a grayardy cart.
-    3. The man is wearing a yellow shirt.
-    4. There are storefronts in the background, with signs and flags hanging outside.
-    5. The scene appears to be in a busy urban area with tall buildings and a few trees.
-    6. Streetlights and other city elements are visible.
-    
-    The image depicts an urban scene where a man is loading or unloading luggage from a cart, likely in a taxi.
+    - **Setting**: Outdoor, city street, with a perspective capturing both the man and two taxis passing by
+    - **Man's attire**: Yellow shirt
+    - **Clothes**: Variously colored clothes hanging on a clothes rack
+    - **Traffic**: Two yellow taxis passing by,
 
 
 ### Call with Processor Output
@@ -196,7 +192,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    This image shows a scene with several taxis and a参勤sns.
+    The image shows a yellow taxi with a blue hula hoop on the roof, which is being used as makeshift steps by the driver. This is often referred to as the "cat languages how to ride a cab" phenomenon. The hula hoop is typically used in this manner to provide additional height for taller individuals who need to enter or exit the cab easily.
 
 
 ### Call with Precomputed Embeddings
@@ -252,7 +248,9 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street scene featuring a yellow taxi in New York City. The taxi has been adorned with colorful fabric, creating a makeshift banner-like display. This is likely part of a celebratory event or artistic performance, as the taxi was not originally designed to be decorated. The scene is lively and festive, with other elements like buildings, flags, and street signs visible in the background.
+    The image shows a person wearing a yellow shirt, standing on a makeshift stand that is propped up by a metal frame. The person appears to be hanging a piece of fabric or clothing that is draped over the top of the stand. This setup is often seen outside stores or עלías to display merchandise or clothes for sale. The stand seems to be operating outdoors, as evidenced by the street scene and the presence of a yellow taxi and a building with a facade similar to standard urban architecture. 
+    
+    To proceed with this use of mathematics, we could consider calculating the height of the person or the length of the cloth, for example, if required
 
 
 ## Querying Llama 4 Vision Model
