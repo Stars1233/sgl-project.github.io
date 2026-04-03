@@ -96,46 +96,46 @@ from sglang import Engine
 llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warning")
 ```
 
-    2026-04-03 01:06:24.828 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:36.666 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 01:06:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 01:06:24.830 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:36.667 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 01:06:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 01:06:24.830 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:36.667 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 01:06:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 01:06:24.831 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:36.668 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 01:06:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 01:06:24.831 DEBUG Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:36.668 DEBUG Persistent cache disabled, using in-memory JIT cache
 
 
-    [2026-04-03 01:06:24] Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:36] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 01:06:35.194 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 01:06:35] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 01:06:35.194 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 01:06:35] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 01:06:35.194 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 01:06:35] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 01:06:35.194 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 01:06:35] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 01:06:35.194 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 01:06:35] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 03:23:47.658 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 03:23:47] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -145,9 +145,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.25it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.19it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.63it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.70it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.06s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.03s/it]
 
 
 
@@ -157,12 +157,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 01:06:44,969 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 01:06:44] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 03:24:01,063 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 03:24:01] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a notable street scene in San Francisco, California. What is being shown here is the reflection of two largeathers on the rear window of a yellow taxi cab through the loading dock glass door of the S.F. Giants' dugout.
+    The image shows a street scene in Nantucket, Massachusetts, a town on长岛.
 
 
 ### Call with Processor Output
@@ -187,7 +187,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    It looks like a yellow taxi cab with a man standing beside it, hanging clothes on a small clothes rack. The background appears to be a city street with urban buildings, and there are some flags visible in the scene. The man seems to be wearing a yellow shirt, and the taxi has the typical design and color for New York City taxis.
+    The photo shows a man in yellow sunglasses and a yellow sweatshirt riding aUNicycle, which is a bicycle without pedals, on the back of a yellow taxi cab. The man appears to be using the UNicycle to balance his weight while riding the taxi. The background features tall buildings, including a store with a large window display, and a street lined with other buildings and parked cars. The street is wet, suggesting it has recently rained.
 
 
 ### Call with Precomputed Embeddings
@@ -243,9 +243,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a New York City taxi adorned with a banner. This is a playful visual twist where the taxi is covered with fabric that appears to be engulfing the vehicle, creating the illusion that the taxi is not a usual yellow taxi cab but rather a piece of fabric art.
-    
-    This kind of art is known as "parade taxi" or "Draped Cab." Artists often use this method to draw attention to their work and to make their message more visible, especially when they are attending art fairs, festivals, or other public events. The purpose behind this is to transform the traditional visual identity of a taxi into an unconventional and
+    The image shows a scene inside the Metropolitan Museum of Art (MoMA) during an event called "Living in the Present" by artist Tomás Saraceno. The display features inflatable clouds floating near glass doors, with chairs suspended beneath them. These clouds appear to be part of a sculpture or installation that is meant to capture and hold artificial edible clouds. The chairs are designed to provide a comfortable posture while seated, possibly to mimic being inside the clouds. This installation illustrates themes of relaxation, moments of plenty, and the connection between art and nature.
 
 
 ## Querying Llama 4 Vision Model

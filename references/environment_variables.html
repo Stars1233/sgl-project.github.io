@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=273dd347"></script>
+    <script src="../_static/documentation_options.js?v=d4312cd7"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -914,6 +914,14 @@ document.write(`
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_FORCE_FP8_MARLIN</span></code></p></td>
 <td><p>Force using FP8 MARLIN kernels even if other FP8 kernels are available</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_FORCE_NVFP4_MARLIN</span></code></p></td>
+<td><p>Force using NVFP4 Marlin fallback kernels even on Blackwell GPUs with native FP4 support</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">false</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_FLASHINFER_FP4_GEMM_BACKEND</span></code> (deprecated)</p></td>
+<td><p>Select backend for <code class="docutils literal notranslate"><span class="pre">mm_fp4</span></code> on Blackwell GPUs. <strong>DEPRECATED</strong>: Please use <code class="docutils literal notranslate"><span class="pre">--fp4-gemm-backend</span></code> instead.</p></td>
+<td><p>``</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SGLANG_NVFP4_CKPT_FP8_GEMM_IN_ATTN</span></code></p></td>
 <td><p>Quantize q_b_proj from BF16 to FP8 when launching DeepSeek NVFP4 checkpoint</p></td>
