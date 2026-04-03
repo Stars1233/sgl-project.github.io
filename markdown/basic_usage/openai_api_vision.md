@@ -38,28 +38,28 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
       from sglang.srt.utils.json_response import (
 
 
-    2026-04-03 16:46:55.520 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:46:55] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:46:55.521 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:46:55] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:46:55.521 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:46:55] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:46:55.521 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:46:55] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:46:55.521 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:46:55] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:06.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:06] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:06.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:06] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:06.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:06] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:06.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:06] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:06.819 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:06] Persistent cache disabled, using in-memory JIT cache
 
 
-    2026-04-03 16:47:05.526 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:47:05] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:47:05.527 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:47:05] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:47:05.527 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:47:05] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:47:05.527 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:47:05] Persistent cache disabled, using in-memory JIT cache
-    2026-04-03 16:47:05.527 DEBUG Persistent cache disabled, using in-memory JIT cache
-    [2026-04-03 16:47:05] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:16.649 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:16] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:16.649 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:16] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:16.650 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:16] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:16.650 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:16] Persistent cache disabled, using in-memory JIT cache
+    2026-04-03 18:30:16.650 DEBUG Persistent cache disabled, using in-memory JIT cache
+    [2026-04-03 18:30:16] Persistent cache disabled, using in-memory JIT cache
 
 
     [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
@@ -73,19 +73,19 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
 
     Multi-thread loading shards:  40% Completed | 2/5 [00:01<00:01,  1.84it/s]
 
-    Multi-thread loading shards:  60% Completed | 3/5 [00:01<00:01,  1.75it/s]
+    Multi-thread loading shards:  60% Completed | 3/5 [00:01<00:01,  1.76it/s]
 
-    Multi-thread loading shards:  80% Completed | 4/5 [00:02<00:00,  1.62it/s]
+    Multi-thread loading shards:  80% Completed | 4/5 [00:02<00:00,  1.65it/s]
 
-    Multi-thread loading shards: 100% Completed | 5/5 [00:02<00:00,  1.99it/s]Multi-thread loading shards: 100% Completed | 5/5 [00:02<00:00,  1.89it/s]
+    Multi-thread loading shards: 100% Completed | 5/5 [00:02<00:00,  2.04it/s]Multi-thread loading shards: 100% Completed | 5/5 [00:02<00:00,  1.92it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       response = await f(request)
 
 
-    2026-04-03 16:47:15,475 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 16:47:15] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 18:30:28,045 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 18:30:28] Unexpected error during package walk: cutlass.cute.experimental
 
 
 
@@ -139,11 +139,11 @@ print_highlight(response)
 
 
 
-<strong style='color: #00008B;'>{"id":"6b31a7f8bf5d4aa28371d72397239afb","object":"chat.completion","created":1775234842,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing clothes. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while using an iron to press a shirt. The scene takes place in an urban environment with buildings, trees, and traffic lights in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":384,"completion_tokens":77,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"6eaecead7b3c4beea4ec0b9a10163a53","object":"chat.completion","created":1775241033,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing clothes. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while using an iron to press a piece of clothing. The setting suggests an urban environment with buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":380,"completion_tokens":73,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 
-<strong style='color: #00008B;'>{"id":"8ff4b2b2200a42e88a9e6956caf7b776","object":"chat.completion","created":1775234843,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing clothes. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while using an iron to press a shirt. The setting suggests an urban environment with buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":378,"completion_tokens":71,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"10c2e21c144249d69ac4c60c4c3444c4","object":"chat.completion","created":1775241034,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing clothes. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while using an iron to press a shirt. The setting suggests an urban environment with buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":378,"completion_tokens":71,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using Python Requests
@@ -176,7 +176,7 @@ print_highlight(response.text)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"ca39fc3cfdff429d89e1c5ff758ee0da","object":"chat.completion","created":1775234844,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing clothes. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be using an ironing board set up on the back of the taxi for this task. The scene takes place in what looks like a busy urban area with buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":387,"completion_tokens":80,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"50768f46831b4aacb0c9844275155fdd","object":"chat.completion","created":1775241035,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing clothes. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be using an ironing board set up on the back of the taxi for this task. The scene takes place in what looks like a busy urban area with buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":387,"completion_tokens":80,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using OpenAI Python Client
