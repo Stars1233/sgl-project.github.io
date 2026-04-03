@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.58it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.57it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.24it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.03it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.09it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 21:02:08,652 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 21:02:08] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 21:27:07,922 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 21:27:07] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows two large yellow taxis driving down a street. The taxi in the foreground has aIni cloth stretched across its rear window, likely as a prank or form of guerrilla marketing. There is also a makeshift sign or board attached to the taxi's rear that appears to have been tailored for advertisement or public service. The scene is in an urban area, possibly in New York City, given the architectural style of the buildings in the background and the presence of flags that resemble the New York City flag.
+    The image shows a man dressed in casual clothes, standing in the back of a yellow taxi taxi, holding a spray bottle and what appears to be an ironing board. There is a substance on his clothes that looks like a substance used for moisture testing or inspection. This scene appears to depict a humorous or unconventional way to show Automotive testing data or load, possibly illustrating the fast-tracking of new cars with assistance providing pass status.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab driving down a city street. It appears that the taxi has a colorful propeller or another vehicle attached to its back. The overall scene suggests a quirky or eventful situation, possibly related to a parade, festival, or special occasion.
+    In the image, you can see a yellow taxi driving on the street. The taxi has a water pitcher pole attached to the front, and a shirt draped over the pole. The shirt is located over the taxi's front windshield.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi with a striped garment attached to its back. The garment is allegedly rain pants, but it appears to be folded and leaning against the back of the taxi, which is not a typical way to handle such items. Typically, people would not attach clothing to the back of a taxi, as it can distract drivers and potentially interfere with the vehicle's operation. The scene likely suggests a humorous or practical joke, suggesting that the person may be labeling the clothes for odd deliveries or returns.
+    In the image, there is a yellow taxi cab in the background. On the back of the taxi, there is a person hanging clothes on a rack. The person is standing on the edge of the taxi, holding the clothes on a hanger. The background shows a busy city street with buildings and a clear sky on a sunny day.
 
 
 ## Querying Llama 4 Vision Model
