@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.02it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.87it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.45it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.51it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.29it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.35it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 22:20:18,193 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 22:20:18] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-03 23:27:31,440 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-03 23:27:31] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a scene in New York City with a yellow taxicab. A person is hanging laundry out of the back window of one of the taxis, which is an unusual and rare phenomenon that has attracted media attention and sparked debate among New Yorkers and taxicab drivers.
+    The image shows two New York City taxis driving by a clothesline where a person is hanging clothes to dry in the street. This scenario is unusual because clothes drying in the city street is not a common practice. The person is hanging a shirt on the clothesline, which is a variation of drying clothes in an unconventional place.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxicabs driving on a city street. One taxi is pulling an empty clothes rack behind it, which seems to be an unusual scene. There are also banners and flags visible in the background, indicating a festive or themed event. The setting appears to be an urban area with buildings and trees lining the street.
+    The image shows a man engaging in an unusual activity. He is standing next to a van with clothes draped over a towel or cloth on his shoulder. The van is parked on a street with other vehicles nearby, including a notable yellow taxi. This scene appears to be part of a street performance or a publicity stunt designed to catch the attention of passersby. The combination of a man dressed in a bright yellow shirt with plain pants and a vehicle carrying clothing suggests a playful or artistic act, possibly involving humor or humor in advertising.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a New York City scene with two yellow taxis parked on the street. One taxi is hitched to a rig on its back, serving as a makeshift parking meter bar for vehicles to pay for parking. This bar uses a red flag to signal that it is paid up, similar to the small American flags attached to the taxis in the background. The flag at the truck is red and white striped. Other details include trees, buildings, and street signs, giving it a typical urban New York City atmosphere.
+    The image shows a scene of a taxi cab equipped with a bicycle rack on the back, presumably to carry bicycles. The taxi appears to be in an urban setting, possibly in a city known for its active cycling culture. There are also other cars and buildings visible in the background, suggesting a busy street. The photo was taken in July 2009.
 
 
 ## Querying Llama 4 Vision Model
