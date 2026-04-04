@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.58it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.07it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.27it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.31it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.54it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 05:01:07,639 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 05:01:07] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 05:27:37,211 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 05:27:37] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a scene from what appears to be a public event or protest in New York City, where public transportation taxis have been seized and their license plates removed. The glass windows of the taxis, specifically the ones in the foreground, are shattered, and clothes are hanging from broken and removed lockers or covers. This scene likely depicts a vehicle seizure, an action by law enforcement or activists to draw attention to transportation-related issues, such as tolls, fare evasion, or city parking.
+    The image shows a humorous scene in New York City. In the photo, a person is gesturing with various clothing items draped over a chair, riding on the back of a yellow taxi cab. This seems to be a humorous take on the idea of people traveling on taxis in New York City. The cab driver is in the process of picking up the person from a sidewalk and transporting them to their destination, possibly correcting a missed boarding opportunity or engaging in a playful scenario. The surrounding environment includes city buildings, street vendors and other activities typical of a bustling urban area.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    I'm sorry, but I'm not sure what you mean by "I'm not sure what you mean by '__'". It seems like a question is being formed. Can you please rephrase your question or provide more context so I can better understand what you are asking or trying to express?
+    The image depicts two yellow taxis parked on a city street. The taxis are large, four-door vehicles with traditional yellow coloring used for yellow taxis in many United States cities. They are equipped with roof racks, likely to transport送给 pickups to dining venues or other services that specifically require them. The sidewalks in the background have various banners and signs indicating advertising or local business promotions commonly found in busy urban areas.隐约可以辨认。
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,13 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street corner with a yellow taxi cab, which is an iconic symbol of New York City. The taxi is parked on the side of the street, and there are clothes on a rack in front of it, possibly belonging to the cab driver. The background includes a multi-story building with some shops and street signs.
+    The image depicts a street scene in an urban area with several notable elements:
+    
+    1. **Taxi**: In the foreground, there is a yellow taxi with a metal rack attached to the back, holding several flags and banners. The taxi is usually associated with New York City, as yellow taxis are known in that city.
+    
+    2. **Street View**: The background shows a city street with buildings, pavement, and sidewalks. There are trees lining the street, and the overall setting suggests a busy urban environment.
+    
+    3. **Flags and Banners**: The metal rack on the taxi is holding a variety of flags and banners. These could be in
 
 
 ## Querying Llama 4 Vision Model
