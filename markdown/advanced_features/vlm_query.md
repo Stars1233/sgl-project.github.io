@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.56it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.76it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.26it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.29it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.35it/s]
 
 
 
@@ -115,12 +115,14 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 06:06:08,658 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 06:06:08] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 07:14:07,994 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 07:14:07] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a person hanging clothes on the back of a parked yellow taxi. The cab is on a city street, and there are people and buildings in the background. The person appears to be using the cab as a makeshift clothesline.
+    Here is a cleaned-up and detailed description of the image:
+    
+    The image shows a practice in which an individual is ironing clothes outside on a yellow cab. The setting appears to be in a city, as indicated by the urban environment with buildings and street elements like traffic lights and street lamps. The person is using an ironing board attached to the back of the taxi cab, methodically ironing what looks like a blue garment. The scene is humorous, as it humorously combines the everyday activity of ironing with the familiar urban background of a taxi cab.
 
 
 ### Call with Processor Output
@@ -145,7 +147,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    This image shows a street scene with a yellow taxi cab and a man standing next to it. The man appears to be folding his plaid shirt on a bench or table attached to the back of the taxi. There are also other vehicles and pedestrians in the background, along with some street signs and lights. The setting looks like an urban area, possibly during daytime.
+    The image shows a scene with two yellow taxis parked on a city street. The taxi on the left has a red taillight indicator lit up. There is a person in a yellow shirt with a yellow strap hanging from their shoulder and a draped blue cloth or towel across their body, who is leaning over a folded chair or stand. This is likely a street performer or street vendor. In the background, there is a building with several flags hanging from its second and third floors, and streetlights are visible further down the street.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +203,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    This image appears to be a humorous or satirical scene. A person is standing with a crate full of laundry outside of a yellow taxi cab. The person is wearing a yellow shirt and appears to be sorting or organizing the clothes. The scene is likely meant to be a playful or comedic image, possibly staged for a humorous photograph. The setting seems to be an urban environment with buildings and other vehicles in the background.
+    The image shows a yellow taxi cab on a city street. The taxi is positioned next to two clothing racks with items hung on them, implying that the person might be drying clothes or transporting laundry. The setting looks urban, with tall buildings and flags visible in the background, suggesting that this could be a busy city area, possibly in the United States given the pricing of vehicles and the style of traffic lights.
 
 
 ## Querying Llama 4 Vision Model
