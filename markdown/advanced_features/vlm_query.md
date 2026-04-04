@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.84it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.51it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.25s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.14s/it]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.18it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-03 23:44:59,365 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-03 23:44:59] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 01:42:30,223 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 01:42:30] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a New York City taxi cab with a person standing at the rear of the vehicle, likely performing some sort of street performance or art installation called "Freewashing." In this performance, a woman named Daisy Cooper draws designs on the rear windshield of the taxi using sponge soaps as ink. This is part of a global conceptual art and lifestyle campaign that began in New York City in 2008 and has expanded to more than 100 cities around the world.
+    The image shows a city street with two yellow taxi cabs. A person, wearing a yellow shirt and a red hat, is using a pair of pants as a makeshift clothesline or drying rack, hanging two pieces of clothing. In the background, there are buildings with various storefronts and some banners. The setting appears to be an urban area, possibly in a busy downtown district.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The picture you're referring to shows a " Tow Tow Tow Tow Driver " performance happening on a street in New York City, typical for a争取vertising activity. The参贩 driver is using a tire and a small sign to stand out and attract attention as people drive.
+    The image shows a yellow taxi cab parked on a street in an urban area. The taxi cab is parked next to a newsstand or magazine kiosk. There are clothes draped over a makeshift rack behind the taxi cab, possibly indicating a humorous or quirky situation. The background features other elements typical of an city street, including buildings with large glass windows and some greenery.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows two yellow taxis. One taxi has the top up, and the俗称 handle mechanism is visible. The thigh crutches on the back are green, and the wheels are black.
+    The image shows two yellow taxis driving on a city street, likely in New York City given the brand name N.Y.C. visible on the back of one of the taxis. There are also clothespins on bicycles near the taxis, which seem out of place for this urban setting. The clothespins are attached to a horizontal bar, and it appears they are part of some public art or installation. The background includes buildings with storefronts and a mix of traffic infrastructure.
 
 
 ## Querying Llama 4 Vision Model

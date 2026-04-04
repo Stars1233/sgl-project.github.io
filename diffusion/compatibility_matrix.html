@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=eb7e36b2"></script>
+    <script src="../_static/documentation_options.js?v=f8b02ea3"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -55,7 +55,7 @@
     <link rel="prev" title="Install SGLang-Diffusion" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Apr 03, 2026"/>
+    <meta name="docbuild:last-update" content="Apr 04, 2026"/>
   </head>
   
   
@@ -707,12 +707,26 @@ default parameters when initializing and generating videos.</p>
 <td class="text-center"><p>✅</p></td>
 <td class="text-center"><p>⭕</p></td>
 </tr>
+<tr class="row-odd"><td class="text-left"><p>LTX-2</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Lightricks/LTX-2</span></code></p></td>
+<td class="text-left"><p>1536×1024</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+<td class="text-center"><p>❌</p></td>
+</tr>
 </tbody>
 </table>
 </div>
-<p><strong>Note</strong>:
-1.Wan2.2 TI2V 5B has some quality issues when performing I2V generation. We are working on fixing this issue.
-2.SageSLA Based on SpargeAttn. Install it first with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/thu-ml/SpargeAttn.git</span> <span class="pre">--no-build-isolation</span></code></p>
+<p><strong>Note</strong>:</p>
+<ol class="arabic simple">
+<li><p>Wan2.2 TI2V 5B has some quality issues when performing I2V generation. We are working on fixing this issue.</p></li>
+<li><p>SageSLA is based on SpargeAttn. Install it first with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/thu-ml/SpargeAttn.git</span> <span class="pre">--no-build-isolation</span></code></p></li>
+<li><p>LTX-2 two-stage generation uses <code class="docutils literal notranslate"><span class="pre">--pipeline-class-name</span> <span class="pre">LTX2TwoStagePipeline</span></code>. The spatial upsampler and distilled LoRA are auto-resolved from the model snapshot by default, and can still be overridden with <code class="docutils literal notranslate"><span class="pre">--spatial-upsampler-path</span></code> and <code class="docutils literal notranslate"><span class="pre">--distilled-lora-path</span></code>.</p></li>
+</ol>
 </section>
 <section id="image-generation-models">
 <h3>Image Generation Models<a class="headerlink" href="#image-generation-models" title="Link to this heading">#</a></h3>
@@ -720,41 +734,35 @@ default parameters when initializing and generating videos.</p>
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Model Name</p></th>
 <th class="head text-left"><p>HuggingFace Model ID</p></th>
-<th class="head text-left"><p>Resolutions</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p>FLUX.1-dev</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">black-forest-labs/FLUX.1-dev</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>FLUX.2-dev</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">black-forest-labs/FLUX.2-dev</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>FLUX.2-Klein</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">black-forest-labs/FLUX.2-klein-4B</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Z-Image-Turbo</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Tongyi-MAI/Z-Image-Turbo</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>GLM-Image</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">zai-org/GLM-Image</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Qwen Image</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Qwen/Qwen-Image</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Qwen Image 2512</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Qwen/Qwen-Image-2512</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Qwen Image Edit</p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Qwen/Qwen-Image-Edit</span></code></p></td>
-<td class="text-left"><p>Any resolution</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Qwen Image Edit 2511</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Qwen/Qwen-Image-Edit-2511</span></code></p></td>
 </tr>
 </tbody>
 </table>
@@ -904,7 +912,7 @@ By SGLang Team
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Apr 03, 2026.
+  Last updated on Apr 04, 2026.
   <br/>
 </p>
   </div>
