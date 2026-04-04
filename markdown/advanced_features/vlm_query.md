@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.91it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.26it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.39it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.44it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.68it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.75it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 08:57:30,221 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 08:57:30] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 09:20:41,292 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 09:20:41] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image you provided shows a scenario where a person, who appears to be a laundromat worker or aตาม 다짐者 (literally "laundryあれ"), is demonstrating laundry hanging in front of a yellowade.Com. (likely referring to a yellow Snapple drawer or cup dispenser). The person is stationing a chair or stand with clothes hanging from it, perhaps to show how to organize laundry. This is often done as part of a street performance or to draw interest. Note that this scene is not from all areas of Snapple.
+    The image shows a unique scene where a man is ironing a shirt using the rear view mirrors of a yellow police car. This is likely intended to humorously illustrate the long duration of the ironing process in Patriots Day, a popular comedy movie about the Boston Marathon bombing. The setting appears to be in the back of a yellow taxi, possibly in New York City, given the urban backdrop.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a day in the life of a tightrope walker. A man is performing on a tightrope balanced between two yellow taxis on a New York street. This street performer uses hanging sheets or flags as his balance points, adding an element of risk and artistry to a potentially dangerous act. The yellow taxis themselves are standard for New York City taxis.
+    The image shows a yellow taxi cab on a city street. There is a person wearing a yellow shirt and blue jeans standing in front of the car, positioned on aALTER. The person appears to be balancing on this apparatus for comedic or entertainment purposes. The background includes a building with storefronts and a street lined with trees. The setting suggests it might be a demonstration or a parlay designed for fun.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi cab on a street in a city. There is a flag displayed on the back of the taxi. The scene appears to be in New York City, as the taxi is a typical New York City taxi. The flag being displayed is likely representing a specific organization or group, possibly related to the taxi company or a local cause.
+    The image shows a street scene in a city. There is a yellow taxi parked on the side of the road. A person wearing a yellow shirt and blue jeans is standing next to the taxi, engaged in some activity. They appear to be folding or organizing clothes on a stool that is positioned next to the taxi. The background includes buildings with signs and a partially visible elevated train track on the right side.
 
 
 ## Querying Llama 4 Vision Model
