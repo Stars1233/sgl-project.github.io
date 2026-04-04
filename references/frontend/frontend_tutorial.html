@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=d5246c92"></script>
+    <script src="../../_static/documentation_options.js?v=ea2f7477"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -560,11 +560,11 @@ document.write(`
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Multi-thread loading shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.69it/s]
-2026-04-04 07:18:30,110 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-[2026-04-04 07:18:30] Unexpected error during package walk: cutlass.cute.experimental
-Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:06&lt;00:00,  9.47it/s]
-Capturing num tokens (num_tokens=4 avail_mem=101.19 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 13.42it/s]
+Multi-thread loading shards: 100% Completed | 4/4 [00:02&lt;00:00,  1.63it/s]
+2026-04-04 07:40:17,512 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-04 07:40:17] Unexpected error during package walk: cutlass.cute.experimental
+Compiling num tokens (num_tokens=4): 100%|██████████| 58/58 [00:05&lt;00:00,  9.89it/s]
+Capturing num tokens (num_tokens=4 avail_mem=30.16 GB): 100%|██████████| 58/58 [00:04&lt;00:00, 12.82it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
 </pre></div></div>
@@ -580,7 +580,7 @@ Capturing num tokens (num_tokens=4 avail_mem=101.19 GB): 100%|██████
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:30202
+Server started on http://localhost:34088
 </pre></div></div>
 </div>
 <p>Set the default backend. Note: Besides the local server, you may use also <code class="docutils literal notranslate"><span class="pre">OpenAI</span></code> or other API endpoints.</p>
@@ -597,7 +597,7 @@ Server started on http://localhost:30202
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-04-04 07:18:48] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-04-04 07:40:35] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 </section>
@@ -629,7 +629,7 @@ Server started on http://localhost:30202
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure, here are three countries and their capitals:<br><br>1. Japan - Tokyo<br>2. Brazil - Brasília<br>3. Spain - Madrid</strong></div>
+<strong style='color: #00008B;'>Sure! Here are three countries with their capitals:<br><br>1. **India** - New Delhi<br>2. **France** - Paris<br>3. **Japan** - Tokyo</strong></div>
 </div>
 </section>
 <section id="Multi-turn-Dialog">
@@ -659,13 +659,13 @@ Server started on http://localhost:30202
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Sure! Here's a list of three countries along with their capitals:<br><br>1. **Germany** - Berlin<br>2. **France** - Paris<br>3. **Japan** - Tokyo</strong></div>
+<strong style='color: #00008B;'>Sure! Here's a list of three countries and their respective capitals:<br><br>1. **France** - Paris<br>2. **Japan** - Tokyo<br>3. **Mexico** - Mexico City</strong></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>Of course! Here's another list of three countries along with their capitals:<br><br>1. **Italy** - Rome<br>2. **Spain** - Madrid<br>3. **Canada** - Ottawa</strong></div>
+<strong style='color: #00008B;'>Of course! Here's another list of three countries and their capitals:<br><br>1. **Italy** - Rome<br>2. **India** - New Delhi<br>3. **Brazil** - Brasília</strong></div>
 </div>
 </section>
 <section id="Control-flow">
@@ -707,7 +707,7 @@ Server started on http://localhost:30202
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>2 * 2.<br><br>Let's solve it directly without needing a calculator.<br><br>2 * 2 = 4<br><br>Therefore, the answer is 4.</strong></div>
+<strong style='color: #00008B;'>2 * 2. <br><br>You don't actually need a calculator to perform this multiplication, but I can show you:<br><br>2 * 2 = 4<br><br>So the answer to 2 * 2 is 4.</strong></div>
 </div>
 </section>
 <section id="Parallelism">
@@ -747,7 +747,7 @@ Server started on http://localhost:30202
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>1. **Balanced Diet**: A balanced diet is essential for maintaining overall health. It includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Proper hydration is also crucial. This diet helps support your body's functions, boosts energy levels, and reduces the risk of various health issues such as heart disease, diabetes, and obesity.<br>2. **Regular Exercise**: Regular physical activity is vital for health. It helps reduce the risk of diseases, aids in weight management, and improves mood and sleep quality. Exercise releases endorphins, which can boost your energy levels and enhance your overall quality of life. Incorporating simple activities like walking or cycling can be a great starting point.<br><br>Together, these practices can significantly contribute to your overall health and well-being.</strong></div>
+<strong style='color: #00008B;'>1. **Balanced Diet**: <br>   - **Key Components**: Focus on whole grains, lean proteins, healthy fats, and a wide range of fruits and vegetables.<br>   - **Nutrients**: Ensure you get essential vitamins, minerals, and fiber.<br>   - **Limitations**: Reduce intake of sugary and processed foods, and avoid excessive saturated and trans fats.<br>   - **Benefits**: Improved physical health, enhanced energy levels, better mental clarity, and improved mood.<br><br>2. **Regular Exercise**:<br>   - **Frequency**: Aim for at least 150 to 300 minutes of moderate aerobic activity or 75 to 150 minutes of vigorous aerobic activity each week.<br>   - **Supplement**: Include muscle-strengthening exercises on two or more days a week.<br>   - **Examples**: Brisk walking, running, cycling, swimming, or strength training.<br>   - **Start Gradually**: Begin slowly and gradually increase intensity and duration to avoid injury.<br>   - **Benefits**: Strengthen heart, lungs, and muscles, improve immune function, enhance mood, and boost cognitive function.<br><br>By combining these two strategies, you can significantly enhance your overall health and quality of life.</strong></div>
 </div>
 </section>
 <section id="Constrained-Decoding">
@@ -820,7 +820,7 @@ Server started on http://localhost:30202
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Willow",<br>        "core": "Thestral hair",<br>        "length": 11.0<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "Barnard the barn"<br>}</strong></div>
+<strong style='color: #00008B;'>{<br>    "name": "Harry Potter",<br>    "house": "Gryffindor",<br>    "blood status": "Half-blood",<br>    "occupation": "student",<br>    "wand": {<br>        "wood": "Oak",<br>        "core": "Phoenix feather",<br>        "length": 11.0<br>    },<br>    "alive": "Alive",<br>    "patronus": "Stag",<br>    "bogart": "gray"<br>}</strong></div>
 </div>
 </section>
 <section id="Batching">
@@ -855,7 +855,7 @@ Server started on http://localhost:30202
 </div>
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
-100%|██████████| 3/3 [00:00&lt;00:00, 22.70it/s]
+100%|██████████| 3/3 [00:00&lt;00:00, 35.75it/s]
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -982,11 +982,11 @@ The capital of France is Paris.&lt;|im_end|&gt;
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
 [Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
-Multi-thread loading shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.70it/s]
+Multi-thread loading shards: 100% Completed | 5/5 [00:03&lt;00:00,  1.44it/s]
 /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn&#39;t need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
   response = await f(request)
-2026-04-04 07:19:27,346 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-[2026-04-04 07:19:27] Unexpected error during package walk: cutlass.cute.experimental
+2026-04-04 07:41:08,578 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+[2026-04-04 07:41:08] Unexpected error during package walk: cutlass.cute.experimental
 </pre></div></div>
 </div>
 <div class="nboutput docutils container">
@@ -1000,7 +1000,7 @@ Multi-thread loading shards: 100% Completed | 5/5 [00:02&lt;00:00,  1.70it/s]
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Server started on http://localhost:35186
+Server started on http://localhost:34304
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -1016,7 +1016,7 @@ Server started on http://localhost:35186
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2026-04-04 07:19:30] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
+[2026-04-04 07:41:11] Endpoint &#39;/get_model_info&#39; is deprecated and will be removed in a future version. Please use &#39;/model_info&#39; instead.
 </pre></div></div>
 </div>
 <p>Ask a question about an image.</p>
@@ -1050,7 +1050,7 @@ Server started on http://localhost:35186
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area rendered_html docutils container">
-<strong style='color: #00008B;'>The image shows a street scene where a man is ironing clothes using an ironing board that is placed between the trunk of a yellow taxi and a sidewalk. The man is wearing a yellow shirt and black pants. The background includes a yellow taxi, a building with a couple of flags, and a city street. The scene captures an interesting and unusual moment of unusal use of a taxi's trunk space.</strong></div>
+<strong style='color: #00008B;'>The image shows a person attempting to iron a shirt on a surface attached to the rear of a taxi, using an ironing board set on a tool bar. The person appears to be struggling slightly with the placement as the taxi moves on a city street. The scene takes place on a sunny day, and there are other taxis and a yellow taxi visible in the background, indicating an urban setting. The person is wearing a yellow shirt and is lifting the shirt onto the ironing board.</strong></div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:

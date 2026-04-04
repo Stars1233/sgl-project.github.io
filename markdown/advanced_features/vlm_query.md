@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.76it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.52it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.29it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.35it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.19it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]
 
 
 
@@ -115,14 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 07:14:07,994 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 07:14:07] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 07:36:39,837 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 07:36:39] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    Here is a cleaned-up and detailed description of the image:
-    
-    The image shows a practice in which an individual is ironing clothes outside on a yellow cab. The setting appears to be in a city, as indicated by the urban environment with buildings and street elements like traffic lights and street lamps. The person is using an ironing board attached to the back of the taxi cab, methodically ironing what looks like a blue garment. The scene is humorous, as it humorously combines the everyday activity of ironing with the familiar urban background of a taxi cab.
+    The image shows a yellow taxi, likely a taxi service in New York City, parked on a city street with its rear scene visible. A person is cleaning or preparing the taxi's rear window. The taxi has stickers on its back door reading "TAXI" and several U.S. flags are visible in the background. There are also signs with the alphabet, likely indicating the price of cab rides. There are two men standing next to the taxi, possibly the taxi driver and a customer. The scene reflects a typical urban transportation setting with a focus on the taxi's rear end.
 
 
 ### Call with Processor Output
@@ -147,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a scene with two yellow taxis parked on a city street. The taxi on the left has a red taillight indicator lit up. There is a person in a yellow shirt with a yellow strap hanging from their shoulder and a draped blue cloth or towel across their body, who is leaning over a folded chair or stand. This is likely a street performer or street vendor. In the background, there is a building with several flags hanging from its second and third floors, and streetlights are visible further down the street.
+    It looks like you're describing people walking in what appears to be Hong Kong. You can see two people walking.
 
 
 ### Call with Precomputed Embeddings
@@ -203,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi cab on a city street. The taxi is positioned next to two clothing racks with items hung on them, implying that the person might be drying clothes or transporting laundry. The setting looks urban, with tall buildings and flags visible in the background, suggesting that this could be a busy city area, possibly in the United States given the pricing of vehicles and the style of traffic lights.
+    In the image, there are two bright yellow taxis on a city street. One taxi is driving away from the camera, while the other appears to be at a complete stop in the foreground. In the foreground, someone is holding a rainbow, draped over a plastic folding chair. The street is lined with buildings, and there are flags hanging from some of the windows. The scene suggests that this may be part of an event or celebration in a city.
 
 
 ## Querying Llama 4 Vision Model
