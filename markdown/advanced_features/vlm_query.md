@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.94it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.58it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.42it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.48it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.27it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.31it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 04:38:13,095 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 04:38:13] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 05:01:07,639 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 05:01:07] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The picture you provided depicts a protest by a shirtless man in the center who is using squeegee blades strapped to a希望通过架 of a motorcycle to create a barrier in the lane of 8th Avenue at 21st Street in New York City, the United States.
+    The image shows a scene from what appears to be a public event or protest in New York City, where public transportation taxis have been seized and their license plates removed. The glass windows of the taxis, specifically the ones in the foreground, are shattered, and clothes are hanging from broken and removed lockers or covers. This scene likely depicts a vehicle seizure, an action by law enforcement or activists to draw attention to transportation-related issues, such as tolls, fare evasion, or city parking.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxis driving down a city street. One taxi is farther in the background, partially obscured, while the other is closer to the foreground. The taxis appear to be in motion, as their taillights are visible and PARC signs are floating in mid-air, suggesting this might be a whimsical or trendy location or simply a playful arrangement. The setting seems to be urban, with buildings and a busy street in the background.
+    I'm sorry, but I'm not sure what you mean by "I'm not sure what you mean by '__'". It seems like a question is being formed. Can you please rephrase your question or provide more context so I can better understand what you are asking or trying to express?
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    It looks like the image is showing a scene of a taxi and a person standing next to it, but the person does not seem to be in a typical taxi setting. It looks like there might be an unusual or humorous element to the scene, such as the person being dressed in a yellow shirt and sweatpants, which is refreshingly casual. The yellow color is mysterious and suggests an in-sync appreciation with the taxi another portion of the photo.
+    The image shows a street corner with a yellow taxi cab, which is an iconic symbol of New York City. The taxi is parked on the side of the street, and there are clothes on a rack in front of it, possibly belonging to the cab driver. The background includes a multi-story building with some shops and street signs.
 
 
 ## Querying Llama 4 Vision Model
