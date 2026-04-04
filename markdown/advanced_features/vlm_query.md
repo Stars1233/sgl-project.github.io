@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.26it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.62it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.68it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.75it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.29it/s]
 
 
 
@@ -115,12 +115,14 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 09:20:41,292 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 09:20:41] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 10:44:42,176 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 10:44:42] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a unique scene where a man is ironing a shirt using the rear view mirrors of a yellow police car. This is likely intended to humorously illustrate the long duration of the ironing process in Patriots Day, a popular comedy movie about the Boston Marathon bombing. The setting appears to be in the back of a yellow taxi, possibly in New York City, given the urban backdrop.
+    The image shows a person dressed as an Outline of the World (OW) character outside of a bus stop in a city environment. This character is donning a yellow long-sleeve shirt similar to the iconic New York City taxi uniform. The person is also wearing a headpiece that resembles the Outline of the World, which is a fictional character from popular culture.
+    
+    The background shows a typical urban street with buildings, horizontal colorful banners, and other city features.
 
 
 ### Call with Processor Output
@@ -145,7 +147,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab on a city street. There is a person wearing a yellow shirt and blue jeans standing in front of the car, positioned on aALTER. The person appears to be balancing on this apparatus for comedic or entertainment purposes. The background includes a building with storefronts and a street lined with trees. The setting suggests it might be a demonstration or a parlay designed for fun.
+    The image shows two taxis parked on a city street. One of the taxis, which is yellow in color, appears to have a makeshift signal hanging from it. The signal consists of a pair of skis stuck through رقم using an enable-naclip thisve, with some fabric attached to them to represent a cable. This unusual setup is not typically seen on real taxi signals.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +203,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street scene in a city. There is a yellow taxi parked on the side of the road. A person wearing a yellow shirt and blue jeans is standing next to the taxi, engaged in some activity. They appear to be folding or organizing clothes on a stool that is positioned next to the taxi. The background includes buildings with signs and a partially visible elevated train track on the right side.
+    The image shows a yellow taxi cab parked on a street in an urban area. The taxi cab has some laundry draped over its rear end, and there are two people involved. One of the individuals is handling the laundry. The street is lined with buildings, and it appears to be a sunny day. The scene suggests that someone is hanging clothes out to dry while waiting for the taxi cab to move.
 
 
 ## Querying Llama 4 Vision Model
