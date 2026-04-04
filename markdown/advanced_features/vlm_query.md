@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.62it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.27it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.29it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.13it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.15it/s]
 
 
 
@@ -115,14 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 10:44:42,176 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 10:44:42] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 13:54:54,391 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 13:54:54] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a person dressed as an Outline of the World (OW) character outside of a bus stop in a city environment. This character is donning a yellow long-sleeve shirt similar to the iconic New York City taxi uniform. The person is also wearing a headpiece that resembles the Outline of the World, which is a fictional character from popular culture.
-    
-    The background shows a typical urban street with buildings, horizontal colorful banners, and other city features.
+    This image shows a scene on a city street where a person is reportedly using a taxi's exhaust pipe to iron clothes. It is likely a novelty or humorous interaction, created by an individual who don't want to take the hassle of using a machine to iron their clothes. The scene reaches the attention of onlookers, resulting in the appearance of bystanders who are photoshopped into the scene as a form of meme.
 
 
 ### Call with Processor Output
@@ -147,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two taxis parked on a city street. One of the taxis, which is yellow in color, appears to have a makeshift signal hanging from it. The signal consists of a pair of skis stuck through رقم using an enable-naclip thisve, with some fabric attached to them to represent a cable. This unusual setup is not typically seen on real taxi signals.
+    The image depicts a playful scene where a person is blocking a car with a folded umbrella. The car appears to be a taxi, as indicated by its distinctive yellow color and design. The umbrella being held open by the person in front of the car creates a humorous and unlikely situation. This type of setup often occurs as a quirky, humorous photograph or art piece, created by someone taking advantage of the driver accidentally backing into or obstructing the car with their path to or from work. There are other cars nearby, and a storefront is visible in the background.
 
 
 ### Call with Precomputed Embeddings
@@ -203,7 +201,9 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi cab parked on a street in an urban area. The taxi cab has some laundry draped over its rear end, and there are two people involved. One of the individuals is handling the laundry. The street is lined with buildings, and it appears to be a sunny day. The scene suggests that someone is hanging clothes out to dry while waiting for the taxi cab to move.
+    The image shows a bright yellow passenger taxi parked on the street. The taxicab has a cloth draped over a piece of equipment attached to its rear. This scene appears to be from a outdoor event or parade, possibly the Macy's Thanksgiving Day Parade, given the presence of the digital ticker tape banners in the background.
+    
+    From context to date, 2014 was the year when the traditional Macy's parade made way for a "Macy's Thanksgiving Day Pixel Parade," due to existing details about a drone incident interfering with the parade. However, if Địa Csw exaggerated background details from more traditional plagiarism, then the specific and very
 
 
 ## Querying Llama 4 Vision Model
