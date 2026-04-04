@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.54it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.91it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.18it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.39it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.44it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 08:38:57,292 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 08:38:57] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 08:57:30,221 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 08:57:30] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    There is a yellow taxi in the background on the road, and in the foreground, a shirt is hanging out of the back of the taxi, likely being used as a makeshift drying rack or dry cleaner's overhead rack. The setting appears to be urban, with buildings and flags visible in the background.
+    The image you provided shows a scenario where a person, who appears to be a laundromat worker or aตาม 다짐者 (literally "laundryあれ"), is demonstrating laundry hanging in front of a yellowade.Com. (likely referring to a yellow Snapple drawer or cup dispenser). The person is stationing a chair or stand with clothes hanging from it, perhaps to show how to organize laundry. This is often done as part of a street performance or to draw interest. Note that this scene is not from all areas of Snapple.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a person pushing a cart on the side of a street. The cart is filled with various items, including clothes and what appears to be a television set. The person pushing the cart is wearing a yellow shirt and is in front of a yellow taxi. The background includes a busy street scene with buildings, flags, and traffic. The context seems to be some form of a street market or a clothing sale.
+    The image shows a day in the life of a tightrope walker. A man is performing on a tightrope balanced between two yellow taxis on a New York street. This street performer uses hanging sheets or flags as his balance points, adding an element of risk and artistry to a potentially dangerous act. The yellow taxis themselves are standard for New York City taxis.
 
 
 ### Call with Precomputed Embeddings
@@ -201,16 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a street scene with several objects and activities happening. Here is a detailed description:
-    
-    1. **Foreground**:
-       - There is a yellow taxi cab on the street, parked near the sidewalk.
-       - On the back of the taxi, there is a makeshift laundry cart set up by hand and rope.
-       - The cart is holding clothes or laundry, suggesting someone might be washing or drying clothes on the street.
-    
-    2. **Background**:
-       - A tall building with a few floor-to-ceiling windows is visible.
-       - Several American flags are being flown on flag poles outside the building, adding a patriotic touch to
+    The image shows a yellow taxi cab on a street in a city. There is a flag displayed on the back of the taxi. The scene appears to be in New York City, as the taxi is a typical New York City taxi. The flag being displayed is likely representing a specific organization or group, possibly related to the taxi company or a local cause.
 
 
 ## Querying Llama 4 Vision Model
