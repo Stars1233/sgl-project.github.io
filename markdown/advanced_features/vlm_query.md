@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.52it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.55it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.19it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.27it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 07:36:39,837 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 07:36:39] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 08:29:07,976 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 08:29:07] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a yellow taxi, likely a taxi service in New York City, parked on a city street with its rear scene visible. A person is cleaning or preparing the taxi's rear window. The taxi has stickers on its back door reading "TAXI" and several U.S. flags are visible in the background. There are also signs with the alphabet, likely indicating the price of cab rides. There are two men standing next to the taxi, possibly the taxi driver and a customer. The scene reflects a typical urban transportation setting with a focus on the taxi's rear end.
+    The image shows a street scene with two yellow taxi cabs. The main focus is a shirt hanging on a nearby pole in the road. The tarp in the photo is insignificantly small compared to the total real-world size of the tarp. The visible part of the tarp is labeled with the term "300."
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    It looks like you're describing people walking in what appears to be Hong Kong. You can see two people walking.
+    The image shows a yellow taxi cab in a city street. The taxi is equipped with a rack on top, which holds additional items, possibly a clothing rack. This setup suggests it might be used for transporting clothes or other items. The background includes buildings and other urban elements.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    In the image, there are two bright yellow taxis on a city street. One taxi is driving away from the camera, while the other appears to be at a complete stop in the foreground. In the foreground, someone is holding a rainbow, draped over a plastic folding chair. The street is lined with buildings, and there are flags hanging from some of the windows. The scene suggests that this may be part of an event or celebration in a city.
+    It appears that the image shows a man with a dolly standing behind a taxi in an urban setting. The dolly likely supports some tools or equipment.
 
 
 ## Querying Llama 4 Vision Model
