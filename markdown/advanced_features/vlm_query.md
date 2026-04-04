@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.55it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.54it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.27it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.18it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 08:29:07,976 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 08:29:07] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 08:38:57,292 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 08:38:57] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a street scene with two yellow taxi cabs. The main focus is a shirt hanging on a nearby pole in the road. The tarp in the photo is insignificantly small compared to the total real-world size of the tarp. The visible part of the tarp is labeled with the term "300."
+    There is a yellow taxi in the background on the road, and in the foreground, a shirt is hanging out of the back of the taxi, likely being used as a makeshift drying rack or dry cleaner's overhead rack. The setting appears to be urban, with buildings and flags visible in the background.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab in a city street. The taxi is equipped with a rack on top, which holds additional items, possibly a clothing rack. This setup suggests it might be used for transporting clothes or other items. The background includes buildings and other urban elements.
+    The image shows a person pushing a cart on the side of a street. The cart is filled with various items, including clothes and what appears to be a television set. The person pushing the cart is wearing a yellow shirt and is in front of a yellow taxi. The background includes a busy street scene with buildings, flags, and traffic. The context seems to be some form of a street market or a clothing sale.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,16 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    It appears that the image shows a man with a dolly standing behind a taxi in an urban setting. The dolly likely supports some tools or equipment.
+    The image shows a street scene with several objects and activities happening. Here is a detailed description:
+    
+    1. **Foreground**:
+       - There is a yellow taxi cab on the street, parked near the sidewalk.
+       - On the back of the taxi, there is a makeshift laundry cart set up by hand and rope.
+       - The cart is holding clothes or laundry, suggesting someone might be washing or drying clothes on the street.
+    
+    2. **Background**:
+       - A tall building with a few floor-to-ceiling windows is visible.
+       - Several American flags are being flown on flag poles outside the building, adding a patriotic touch to
 
 
 ## Querying Llama 4 Vision Model
