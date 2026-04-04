@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.91it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.94it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.39it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.45it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.42it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.48it/s]
 
 
 
@@ -115,14 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 03:53:43,382 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 03:53:43] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 04:38:13,095 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 04:38:13] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    What is being shown here appears to be a man cleaning clothes in a somewhat unusual setting. The man is placing various items of clothing on a stand next to a yellow taxi. This scenario might be considered unusual because typically people dry their clothes at home, not in the middle of the street.
-    
-    The bright yellow color of the taxi and the man's casual attire add to the oddness of the image. There doesn't seem to be any other people in sight, making this scene even more odd.
+    The picture you provided depicts a protest by a shirtless man in the center who is using squeegee blades strapped to a希望通过架 of a motorcycle to create a barrier in the lane of 8th Avenue at 21st Street in New York City, the United States.
 
 
 ### Call with Processor Output
@@ -147,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi parked on a city street. The taxi has a luggage rack strapped to the top of the vehicle, with several items of clothing hanging from it. The clothing items include shirts and jeans, which appear to be disheveled. The scene looks like it is part of a college student prank prom dress-up challenge that is very unusual, placing a touch of humor in an otherwise mundane urban setting.
+    The image shows two yellow taxis driving down a city street. One taxi is farther in the background, partially obscured, while the other is closer to the foreground. The taxis appear to be in motion, as their taillights are visible and PARC signs are floating in mid-air, suggesting this might be a whimsical or trendy location or simply a playful arrangement. The setting seems to be urban, with buildings and a busy street in the background.
 
 
 ### Call with Precomputed Embeddings
@@ -203,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi parked along a city street. The taxi has a small suitcase or piece of luggage resting on the side of it. There is also an individual standing next to the taxi, holding a suitcase. The person seems to be preparing to load or unload luggage from the vehicle. The scene appears to be in a busy urban area, with other vehicles and pedestrians visible in the background.
+    It looks like the image is showing a scene of a taxi and a person standing next to it, but the person does not seem to be in a typical taxi setting. It looks like there might be an unusual or humorous element to the scene, such as the person being dressed in a yellow shirt and sweatpants, which is refreshingly casual. The yellow color is mysterious and suggests an in-sync appreciation with the taxi another portion of the photo.
 
 
 ## Querying Llama 4 Vision Model
