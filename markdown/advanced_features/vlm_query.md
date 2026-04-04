@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  2.07it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.56it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.54it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.60it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.22it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.26it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 05:27:37,211 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 05:27:37] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 06:06:08,658 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 06:06:08] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a humorous scene in New York City. In the photo, a person is gesturing with various clothing items draped over a chair, riding on the back of a yellow taxi cab. This seems to be a humorous take on the idea of people traveling on taxis in New York City. The cab driver is in the process of picking up the person from a sidewalk and transporting them to their destination, possibly correcting a missed boarding opportunity or engaging in a playful scenario. The surrounding environment includes city buildings, street vendors and other activities typical of a bustling urban area.
+    The image shows a person hanging clothes on the back of a parked yellow taxi. The cab is on a city street, and there are people and buildings in the background. The person appears to be using the cab as a makeshift clothesline.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image depicts two yellow taxis parked on a city street. The taxis are large, four-door vehicles with traditional yellow coloring used for yellow taxis in many United States cities. They are equipped with roof racks, likely to transport送给 pickups to dining venues or other services that specifically require them. The sidewalks in the background have various banners and signs indicating advertising or local business promotions commonly found in busy urban areas.隐约可以辨认。
+    This image shows a street scene with a yellow taxi cab and a man standing next to it. The man appears to be folding his plaid shirt on a bench or table attached to the back of the taxi. There are also other vehicles and pedestrians in the background, along with some street signs and lights. The setting looks like an urban area, possibly during daytime.
 
 
 ### Call with Precomputed Embeddings
@@ -201,13 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image depicts a street scene in an urban area with several notable elements:
-    
-    1. **Taxi**: In the foreground, there is a yellow taxi with a metal rack attached to the back, holding several flags and banners. The taxi is usually associated with New York City, as yellow taxis are known in that city.
-    
-    2. **Street View**: The background shows a city street with buildings, pavement, and sidewalks. There are trees lining the street, and the overall setting suggests a busy urban environment.
-    
-    3. **Flags and Banners**: The metal rack on the taxi is holding a variety of flags and banners. These could be in
+    This image appears to be a humorous or satirical scene. A person is standing with a crate full of laundry outside of a yellow taxi cab. The person is wearing a yellow shirt and appears to be sorting or organizing the clothes. The scene is likely meant to be a playful or comedic image, possibly staged for a humorous photograph. The setting seems to be an urban environment with buildings and other vehicles in the background.
 
 
 ## Querying Llama 4 Vision Model
