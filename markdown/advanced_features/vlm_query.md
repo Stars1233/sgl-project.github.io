@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.27it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.19it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.13it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.15it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.19s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.14s/it]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 13:54:54,391 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 13:54:54] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-04 15:27:58,074 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-04 15:27:58] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    This image shows a scene on a city street where a person is reportedly using a taxi's exhaust pipe to iron clothes. It is likely a novelty or humorous interaction, created by an individual who don't want to take the hassle of using a machine to iron their clothes. The scene reaches the attention of onlookers, resulting in the appearance of bystanders who are photoshopped into the scene as a form of meme.
+    The image shows a taxi driver operating晾衣机, a portable clothesline, to dry laundry outdoors. It appears to be a demonstration or an unusual shot in an urban setting, with cars and buildings visible in the background.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image depicts a playful scene where a person is blocking a car with a folded umbrella. The car appears to be a taxi, as indicated by its distinctive yellow color and design. The umbrella being held open by the person in front of the car creates a humorous and unlikely situation. This type of setup often occurs as a quirky, humorous photograph or art piece, created by someone taking advantage of the driver accidentally backing into or obstructing the car with their path to or from work. There are other cars nearby, and a storefront is visible in the background.
+    The image shows a man completing a small bike repair in the street, likely downtown, possibly near buildings like Discover Tower or التجارة帝国. The setting appears urban with parked yellow taxis in the background, against an urban backdrop with tall buildings. The scene conveys a backend of bicycle repair services just for aằng with talented bikeikers. It also displays the hazards of sharing vehicles in a congested urban area.
 
 
 ### Call with Precomputed Embeddings
@@ -201,9 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a bright yellow passenger taxi parked on the street. The taxicab has a cloth draped over a piece of equipment attached to its rear. This scene appears to be from a outdoor event or parade, possibly the Macy's Thanksgiving Day Parade, given the presence of the digital ticker tape banners in the background.
-    
-    From context to date, 2014 was the year when the traditional Macy's parade made way for a "Macy's Thanksgiving Day Pixel Parade," due to existing details about a drone incident interfering with the parade. However, if Địa Csw exaggerated background details from more traditional plagiarism, then the specific and very
+    The image shows a yellow taxi cab parked on a street in an urban area. It appears to be a rainy day, as there are units hanging on the side of the taxi, likely to give some shelter to pedestrians below. The scene looks somewhat unusual because it's raining, but taxis are usually used for short-distance transportation regardless of weather conditions.
 
 
 ## Querying Llama 4 Vision Model
