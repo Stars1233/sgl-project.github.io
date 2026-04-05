@@ -45,23 +45,23 @@ wait_for_server(f"http://localhost:{port}", process=vision_process)
 
     Multi-thread loading shards:   0% Completed | 0/5 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  20% Completed | 1/5 [00:00<00:02,  1.57it/s]
+    Multi-thread loading shards:  20% Completed | 1/5 [00:00<00:03,  1.33it/s]
 
-    Multi-thread loading shards:  40% Completed | 2/5 [00:01<00:01,  2.07it/s]
+    Multi-thread loading shards:  40% Completed | 2/5 [00:01<00:02,  1.15it/s]
 
-    Multi-thread loading shards:  60% Completed | 3/5 [00:01<00:01,  1.80it/s]
+    Multi-thread loading shards:  60% Completed | 3/5 [00:02<00:01,  1.60it/s]
 
-    Multi-thread loading shards:  80% Completed | 4/5 [00:02<00:00,  1.50it/s]
+    Multi-thread loading shards:  80% Completed | 4/5 [00:02<00:00,  1.42it/s]
 
-    Multi-thread loading shards: 100% Completed | 5/5 [00:03<00:00,  1.33it/s]Multi-thread loading shards: 100% Completed | 5/5 [00:03<00:00,  1.48it/s]
+    Multi-thread loading shards: 100% Completed | 5/5 [00:04<00:00,  1.05it/s]Multi-thread loading shards: 100% Completed | 5/5 [00:04<00:00,  1.18it/s]
 
 
     /usr/local/lib/python3.10/dist-packages/fastapi/routing.py:120: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
       response = await f(request)
 
 
-    2026-04-05 07:40:32,198 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 07:40:32] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 07:54:11,464 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 07:54:11] Unexpected error during package walk: cutlass.cute.experimental
 
 
 
@@ -115,11 +115,11 @@ print_highlight(response)
 
 
 
-<strong style='color: #00008B;'>{"id":"3c06754bc568477780df0ce6098f633f","object":"chat.completion","created":1775374838,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a blue shirt. The taxi is parked on a city street with other vehicles and buildings in the background. The man appears to be balancing on the tailgate while performing this task. The scene seems to be set in an urban environment, possibly in New York City, given the style of the taxi and the architecture visible in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":391,"completion_tokens":84,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"e6410e76ecd44f7f8f8fd14925e11beb","object":"chat.completion","created":1775375657,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a blue shirt. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while ironing, which is an unusual and humorous scene. The setting suggests it might be in a busy urban area with tall buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":389,"completion_tokens":82,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 
-<strong style='color: #00008B;'>{"id":"e9f2979c50e94372923bf7eda4ec4283","object":"chat.completion","created":1775374839,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a blue shirt. The taxi is parked on a city street with other vehicles and buildings in the background. The man appears to be balancing on the tailgate while performing the task. The scene suggests an unusual or humorous situation, as it is not typical for someone to iron clothes from the back of a moving vehicle.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":387,"completion_tokens":80,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"22be9478f08e485eb60da30c4f7076e0","object":"chat.completion","created":1775375658,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a blue shirt. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while ironing, which is an unusual and humorous scene. The setting suggests it might be in a busy urban area with tall buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":389,"completion_tokens":82,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using Python Requests
@@ -152,7 +152,7 @@ print_highlight(response.text)
 ```
 
 
-<strong style='color: #00008B;'>{"id":"f68eb68e9e8d468f81553a77d945d49a","object":"chat.completion","created":1775374840,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a blue shirt. The taxi is parked on a city street with other vehicles and buildings in the background. The man appears to be balancing on the tailgate while performing the task. The scene suggests an unusual or humorous situation, as it is not typical for someone to iron clothes from the back of a moving vehicle.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":387,"completion_tokens":80,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
+<strong style='color: #00008B;'>{"id":"83f44e0ce5594a07a3832c513382a097","object":"chat.completion","created":1775375659,"model":"Qwen/Qwen2.5-VL-7B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"The image shows a man standing on the back of a yellow taxi, ironing a blue shirt. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while ironing, which is an unusual and humorous scene. The setting suggests it might be in a busy urban area with tall buildings and flags in the background.","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_tokens":307,"total_tokens":389,"completion_tokens":82,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default"}}</strong>
 
 
 ## Using OpenAI Python Client
@@ -187,7 +187,7 @@ print_highlight(response.choices[0].message.content)
 ```
 
 
-<strong style='color: #00008B;'>The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while ironing, which is an unusual and humorous scene. The setting suggests it might be in a busy urban area with tall buildings and flags in the background.</strong>
+<strong style='color: #00008B;'>The image shows a man standing on the back of a yellow taxi, ironing a piece of clothing. The taxi is parked on a city street, and there are other taxis visible in the background. The man appears to be balancing on the tailgate while ironing, which is an unusual and humorous scene. The setting suggests an urban environment with buildings and flags in the background.</strong>
 
 
 ## Multiple-Image Inputs

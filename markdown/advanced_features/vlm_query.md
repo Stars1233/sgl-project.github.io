@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.88it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.55it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 07:34:29,321 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 07:34:29] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 07:49:59,205 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 07:49:59] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    This image shows a scene with two yellow taxis on a street, with a person hanging clothes on a的心理架 between them. The person is wearing a yellow shirt and appears to be ironing clothes. The setting seems to be in an urban area, possibly a city with tall buildings and streetlights.
+    The image shows a man lying on the back of a yellow taxi cab, appearing to be passed out or asleep. The taxi is parked in an urban environment, likely in New York City, as indicated by the factors such as the yellow taxi cabs and the scene. The man is wearing a yellow shirt and seems to be staying warm by covering himself with a blue blanket, which may also be part of his makeshift shelter as he lays on-top of the yellow cab.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a streetscape with two yellow taxis. One taxi is parked on the street, and the other taxi is parked next to a building. There are various advertisements and banners visible along the sidewalk in front of the building. The scene appears to be in an urban area, possibly a commercial district. The image also includes streetlamps and other urban fixtures.
+    The image shows a street scene with two yellow taxicabs parked on the side of a road. Between these two taxis, there is a clothes drying rack with dry laundry draped over it, suggesting that someone is simply airing out their clothing in the street. The background includes a building, some flags hanging from pole near the building, and a few other details like windows and storefront elements. The clothing items on the drying rack include various types of garments, but the exact types are not entirely clear from the image.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene from New York City with a vintage yellow cab. The car appears to be older, potentially representing a model from the 1970s or 1980s. The vehicle is adorned with American flags and other banners, giving it a patriotic appearance. This cab is typical of the era it represents and is used for tourism, as it has been restored to its original yellow color and model.
+    It looks like someone has set up a laundry rack on the back of a yellow taxi cab. The clothes are draped over the rack, suggesting they are being hung out to dry. This is unusual and typically related to street art or social commentary, possibly indicating concerns about cleanliness or the urban environment in New York City.
 
 
 ## Querying Llama 4 Vision Model
