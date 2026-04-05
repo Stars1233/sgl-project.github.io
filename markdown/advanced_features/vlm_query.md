@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.19it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.66it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.19s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.14s/it]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-04 15:27:58,074 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-04 15:27:58] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 00:27:55,169 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 00:27:55] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a taxi driver operating晾衣机, a portable clothesline, to dry laundry outdoors. It appears to be a demonstration or an unusual shot in an urban setting, with cars and buildings visible in the background.
+    This image shows two yellow taxis on a city street. One taxi has its back end open, and a person wearing a yellow shirt is seemingly working with cleaning supplies or equipment from inside the taxi. The other taxi is moving, and there are various transportation elements like a flag and traffic lights visible in the background.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a man completing a small bike repair in the street, likely downtown, possibly near buildings like Discover Tower or التجارة帝国. The setting appears urban with parked yellow taxis in the background, against an urban backdrop with tall buildings. The scene conveys a backend of bicycle repair services just for aằng with talented bikeikers. It also displays the hazards of sharing vehicles in a congested urban area.
+    The image shows a yellow taxi cab parked on a city street. The taxi has its rear doors opened, and there is a cloth or blanket draped over the back of the cab. This setup is commonly used to cover the rear windows or back seat when parking in an area with many people or vehicles. The taxi is likely parked in a busy area to ensure its drivers and passengers are out of direct sunlight when they get in or out.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow taxi cab parked on a street in an urban area. It appears to be a rainy day, as there are units hanging on the side of the taxi, likely to give some shelter to pedestrians below. The scene looks somewhat unusual because it's raining, but taxis are usually used for short-distance transportation regardless of weather conditions.
+    The image depicts two yellow taxis parked side by side on a city street. The taxi on the left is moving, while the one on the right is stationary. Both taxis have惟行的广告遮阳罩 and are carrying luggage racks on the back. There are orange flags on the back of the stationary taxi, and a person in a yellow shirt is visible standing near the taxi's entrance. The background shows a building with several signs and a storefront.
 
 
 ## Querying Llama 4 Vision Model
