@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>DeepSeek V3.2 Usage &#8212; SGLang</title>
+    <title>DeepSeek V3.2/GLM-5 Usage &#8212; SGLang</title>
   
   
   
@@ -39,7 +39,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=0e967ed7"></script>
+    <script src="../_static/documentation_options.js?v=93ca9115"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -177,7 +177,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sampling_params.html">Sampling Parameters</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="popular_model_usage.html">Popular Model Usage (DeepSeek, GPT-OSS, GLM, Llama, MiniMax, Qwen, and more)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="deepseek_v3.html">DeepSeek V3/V3.1/R1 Usage</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">DeepSeek V3.2 Usage</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">DeepSeek V3.2/GLM-5 Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glm45.html">Launch GLM-4.5 / GLM-4.6 / GLM-4.7 with SGLang</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glmv.html">GLM-4.6V / GLM-4.5V Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpt_oss.html">GPT OSS Usage</a></li>
@@ -490,7 +490,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>DeepSeek V3.2 Usage</h1>
+    <h1>DeepSeek V3.2/GLM-5 Usage</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -505,7 +505,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-source">Build From Source</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-deepseek-v3-2-with-sglang">Launch DeepSeek V3.2 with SGLang</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-deepseek-v3-2-glm-5-with-sglang">Launch DeepSeek V3.2/GLM-5 with SGLang</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-tips">Configuration Tips</a></li>
 </ul>
 </li>
@@ -540,11 +540,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="deepseek-v3-2-usage">
-<h1>DeepSeek V3.2 Usage<a class="headerlink" href="#deepseek-v3-2-usage" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="deepseek-v3-2-glm-5-usage">
+<h1>DeepSeek V3.2/GLM-5 Usage<a class="headerlink" href="#deepseek-v3-2-glm-5-usage" title="Link to this heading">#</a></h1>
 <p>DeepSeek-V3.2 model family equips DeepSeek-V3.1-Terminus with DeepSeek Sparse Attention (DSA) through continued training. With DSA, a fine-grained sparse attention mechanism powered by a lightning indexer, DeepSeek-V3.2 achieves efficiency improvements in long-context scenarios.</p>
-<p>For reporting issues or tracking upcoming features, please refer to this <a class="reference external" href="https://github.com/sgl-project/sglang/issues/11060">Roadmap</a>.</p>
-<p>Note: This document is originally written for the usage of <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp">DeepSeek-V3.2-Exp</a> model. The usage of <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2">DeepSeek-V3.2</a> or <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale">DeepSeek-V3.2-Speciale</a> is the same as DeepSeek-V3.2-Exp except for the tool call parser.</p>
+<p>Note: This document is originally written for the usage of <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp">DeepSeek-V3.2-Exp</a> model. The usage of <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2">DeepSeek-V3.2</a> or <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale">DeepSeek-V3.2-Speciale</a> is the same as DeepSeek-V3.2-Exp except for the tool call parser. <a class="reference external" href="https://huggingface.co/zai-org/GLM-5">GLM-5</a> model also applies DSA(Deepseek sparse attention) structure, so can share most of the usage here, except for reasoning parser and tool call parser.</p>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h2>
 <section id="docker">
@@ -578,8 +577,8 @@ pip3<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </
 </div>
 </section>
 </section>
-<section id="launch-deepseek-v3-2-with-sglang">
-<h2>Launch DeepSeek V3.2 with SGLang<a class="headerlink" href="#launch-deepseek-v3-2-with-sglang" title="Link to this heading">#</a></h2>
+<section id="launch-deepseek-v3-2-glm-5-with-sglang">
+<h2>Launch DeepSeek V3.2/GLM-5 with SGLang<a class="headerlink" href="#launch-deepseek-v3-2-glm-5-with-sglang" title="Link to this heading">#</a></h2>
 <p>To serve <a class="reference external" href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp">DeepSeek-V3.2-Exp</a> on 8xH200/B200 GPUs:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Launch with TP + DP (Recommended)</span>
 python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model<span class="w"> </span>deepseek-ai/DeepSeek-V3.2-Exp<span class="w"> </span>--tp<span class="w"> </span><span class="m">8</span><span class="w"> </span>--dp<span class="w"> </span><span class="m">8</span><span class="w"> </span>--enable-dp-attention
@@ -594,33 +593,33 @@ python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<spa
 python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span>--model<span class="w"> </span>deepseek-ai/DeepSeek-V3.2-Exp<span class="w"> </span>--tp<span class="w"> </span><span class="m">8</span><span class="w"> </span>--nsa-prefill-backend<span class="w"> </span>tilelang<span class="w"> </span>--nsa-decode-backend<span class="w"> </span>tilelang
 </pre></div>
 </div>
+<p>To server GLM-5, just replace the <code class="docutils literal notranslate"><span class="pre">--model</span></code> argument with <code class="docutils literal notranslate"><span class="pre">zai-org/GLM-5-FP8</span></code>.</p>
 <section id="configuration-tips">
 <h3>Configuration Tips<a class="headerlink" href="#configuration-tips" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>DP Attention (Recommended)</strong>: For DeepSeek V3.2 model, the kernels are customized for the use case of <code class="docutils literal notranslate"><span class="pre">dp_size=8</span></code>, so DP attention (<code class="docutils literal notranslate"><span class="pre">--dp</span> <span class="pre">8</span> <span class="pre">--enable-dp-attention</span></code>) is the recommended configuration for better stability and performance. All test cases use this configuration by default.</p></li>
-<li><p><strong>Pure TP Mode</strong>: Launching with pure TP (without <code class="docutils literal notranslate"><span class="pre">--dp</span></code> and <code class="docutils literal notranslate"><span class="pre">--enable-dp-attention</span></code>) is also supported. Note that this mode has not been fully validated in PD disaggregation scenarios.</p></li>
-<li><p><strong>Short-sequence MHA prefill (adaptive)</strong>: For short prefill sequences (default threshold: <strong>2048 tokens</strong>), the NSA backend uses standard MHA automatically (no extra flags). On H200 (SM90) this path uses the FlashAttention variable-length kernel; on B200 (SM100) it uses TRT-LLM ragged MHA. MHA uses <code class="docutils literal notranslate"><span class="pre">MHA_ONE_SHOT</span></code> for best performance. <code class="docutils literal notranslate"><span class="pre">MHA_ONE_SHOT</span></code> computes multi-head attention over all tokens (both cached prefix and newly extended tokens) in a single kernel invocation, avoiding the overhead of chunked KV cache processing. This achieves optimal throughput for short sequences where total sequence length fits within the chunk capacity limit.</p></li>
+<li><p><strong>DP Attention</strong>: To enable <a class="reference internal" href="../advanced_features/dp_dpa_smg_guide.html"><span class="std std-doc">DP Attention</span></a>, please include <code class="docutils literal notranslate"><span class="pre">--enable-dp-attention</span> <span class="pre">--dp</span> <span class="pre">&lt;dp-size&gt;</span></code> in command. DP Attention is better for large concurrency scenarios.</p></li>
+<li><p><strong>TP Attention</strong>: Launching with TP attention is also supported. TP attention is better for low latency scenarios.</p></li>
+<li><p><strong>Short-sequence MHA prefill (adaptive)</strong>: For short prefill sequences (default threshold: <strong>2048 tokens</strong>), the NSA backend uses standard MHA automatically (no extra flags). On H200 (SM90) this path uses the FlashAttention variable-length kernel; on B200 (SM100) it uses TRT-LLM ragged MHA. MHA uses <code class="docutils literal notranslate"><span class="pre">MHA_ONE_SHOT</span></code> for best performance, which computes multi-head attention over all tokens (both cached prefix and newly extended tokens) in a single kernel invocation, avoiding the overhead of chunked KV cache processing. This achieves optimal throughput for short sequences where total sequence length fits within the chunk capacity limit.</p></li>
+<li><p><strong>MHA prefill threshold relax</strong> To apply MHA attention to requests longer than 2048 tokens, please set flag <code class="docutils literal notranslate"><span class="pre">SGLANG_NSA_PREFILL_DENSE_ATTN_KV_LEN_THRESHOLD</span></code> to a value larger than 2048. As threshold grows larger, the prefill performance can be improved, but at the cost of potential accuracy drop.</p></li>
 <li><p><strong>Choices of Attention Kernels</strong>: The attention backend is automatically set to <code class="docutils literal notranslate"><span class="pre">nsa</span></code> attention backend for DeepSeek V3.2 model. In this backend, different kernels for sparse prefilling/decoding are implemented, which can be specified by <code class="docutils literal notranslate"><span class="pre">--nsa-prefill-backend</span></code> and <code class="docutils literal notranslate"><span class="pre">--nsa-decode-backend</span></code> server arguments. The choices of nsa prefill/decode attention kernels include:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code>: <code class="docutils literal notranslate"><span class="pre">flash_mla_sparse_fwd</span></code> kernel from <code class="docutils literal notranslate"><span class="pre">flash_mla</span></code> library. Can run on both Hopper and Blackwell GPUs. It requires bf16 q, kv inputs.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code>: <code class="docutils literal notranslate"><span class="pre">flash_mla_with_kvcache</span></code> kernel from <code class="docutils literal notranslate"><span class="pre">flash_mla</span></code> library. Can run on both Hopper and Blackwell GPUs. It requires bf16 q, fp8 k_cache inputs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flashmla_auto</span></code>: enables automatic selection of either <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> or <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> kernel for prefill based on KV cache dtype, hardware, and heuristics. When FP8 KV cache is enabled and <code class="docutils literal notranslate"><span class="pre">total_kv_tokens</span> <span class="pre">&lt;</span> <span class="pre">total_q_tokens</span> <span class="pre">*</span> <span class="pre">512</span></code>, it uses the <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> kernel; otherwise, it falls back to the <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> kernel. The heuristics may need to be tuned if the performance of either the <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> or <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> kernel changes significantly.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">fa3</span></code>: <code class="docutils literal notranslate"><span class="pre">flash_attn_with_kvcache</span></code> kernel from <code class="docutils literal notranslate"><span class="pre">flash_attn</span></code> library. Can only run on Hopper GPUs. It requires bf16 q, kv inputs.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tilelang</span></code>: <code class="docutils literal notranslate"><span class="pre">tilelang</span></code> implementation that can run on GPU, HPU and NPU.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">aiter</span></code>: Aiter kernel on AMD HPUs. Can only be used as decode kernel.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">trtllm</span></code>: <code class="docutils literal notranslate"><span class="pre">trtllm-mla</span></code> sparse kernel from flashinfer library. Only run on blackwell GPUs. It requires QKV bf16 or QKV fp8.</p></li>
-</ul>
-</li>
-<li><p>On the basis of performance benchmarks, the default configuration on H200 and B200 are set as follows :</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">trtllm</span></code>: <code class="docutils literal notranslate"><span class="pre">trtllm-mla</span></code> sparse kernel from flashinfer library. Only run on blackwell GPUs. It requires q,k,v to be uniformly bf16 or fp8_e4m3 format.</p></li>
+<li><p>On the basis of performance benchmarks, the default configuration of DSA kernels on Hopper and Blackwell are set as follows :</p>
 <ul>
-<li><p>H200: <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> prefill attention (short-seq prefill uses MHA via FlashAttention varlen), <code class="docutils literal notranslate"><span class="pre">fa3</span></code> decode attention, <code class="docutils literal notranslate"><span class="pre">bf16</span></code> kv cache dtype.</p></li>
-<li><p>B200: <code class="docutils literal notranslate"><span class="pre">flashmla_auto</span></code> prefill attention (short-seq prefill uses MHA via TRT-LLM ragged), <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> decode attention, <code class="docutils literal notranslate"><span class="pre">fp8_e4m3</span></code> kv cache dtype. <code class="docutils literal notranslate"><span class="pre">flashmla_auto</span></code> enables automatic selection of either <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> or <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> kernel for prefill based on KV cache dtype, hardware, and heuristics. When FP8 KV cache is enabled and <code class="docutils literal notranslate"><span class="pre">total_kv_tokens</span> <span class="pre">&lt;</span> <span class="pre">total_q_tokens</span> <span class="pre">*</span> <span class="pre">512</span></code>, it uses the <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> kernel; otherwise, it falls back to the <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> kernel. The heuristics may need to be tuned if the performance of either the <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> or <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> kernel changes significantly.</p></li>
+<li><p>Bfloat 16 kv cache: On Hopper, <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> prefill attention, <code class="docutils literal notranslate"><span class="pre">fa3</span></code> decode attention; On Blackwell, <code class="docutils literal notranslate"><span class="pre">flashmla_sparse</span></code> prefill attention, <code class="docutils literal notranslate"><span class="pre">trtllm</span></code> decode attention</p></li>
+<li><p>Float8_e3m4 kv cachew: On Hopper, <code class="docutils literal notranslate"><span class="pre">flashmla_auto</span></code> prefill attention, <code class="docutils literal notranslate"><span class="pre">flashmla_kv</span></code> decode attention; On Blackwell, <code class="docutils literal notranslate"><span class="pre">trtllm</span></code> prefill attention and <code class="docutils literal notranslate"><span class="pre">trtllm</span></code> decode attention.</p></li>
 </ul>
 </li>
-<li><p>On Blackwell platform, with slightly accuracy drop, the performance can boost up to 3x-5x</p>
-<ul>
-<li><p>B200: by choosing <code class="docutils literal notranslate"><span class="pre">trtllm</span></code> for both <code class="docutils literal notranslate"><span class="pre">--nsa-prefill-backend</span></code> and <code class="docutils literal notranslate"><span class="pre">--nsa-decode-backend</span></code>, the prefill attention use MHA via TRT-LLM ragged for both short and long sequence (<strong>accuracy impact</strong>). Combine the <code class="docutils literal notranslate"><span class="pre">trtllm</span></code> with <code class="docutils literal notranslate"><span class="pre">fp8_e4m3</span></code> kv cache, the kv cache dim is <code class="docutils literal notranslate"><span class="pre">576</span></code> (kv_lora_rank + qk_rope_head_dim) (<strong>accuracy impact</strong>), compare to the combination of <code class="docutils literal notranslate"><span class="pre">flashmla_auto</span></code> and <code class="docutils literal notranslate"><span class="pre">fp8_e4m</span></code> kv cache dim is <code class="docutils literal notranslate"><span class="pre">656</span></code> (kv_lora_rank + scale storage (kv_lora_rank // quant_block_size * 4 bytes) + rope dimension storage).</p></li>
 </ul>
 </li>
+<li><p><strong>Skip Softmax Attention</strong>: Introduced in <a class="reference external" href="https://arxiv.org/abs/2512.12087">BLAAST</a>, skip-softmax attention can improve speed by dynamically pruning attention matrices. Use <code class="docutils literal notranslate"><span class="pre">SGLANG_SKIP_SOFTMAX_PREFILL_THRESHOLD_SCALE_FACTOR</span></code> for controlling prefill kernel sparsity, and use <code class="docutils literal notranslate"><span class="pre">SGLANG_SKIP_SOFTMAX_DECODE_THRESHOLD_SCALE_FACTOR</span></code> for controlling decode kernel sparsity. Setting a higher sparsity can gain more speedup, but at the risk of lower accuracy. Skip-softmax attention can only be applied to trtllm-gem kernels on Blackwell.</p></li>
+<li><p><strong>Index Cache</strong>: Introduce in <a class="reference external" href="https://arxiv.org/abs/2603.12201">this paper</a>, IndexCache improves speed by reusing the result of indexer across different layers, only at cost of negligible accuracy loss.  We recommend appending <code class="docutils literal notranslate"><span class="pre">--json-model-override-args</span> <span class="pre">'{&quot;index_topk_pattern&quot;:</span> <span class="pre">&quot;FFSFSSSFSSFFFSSSFFFSFSSSSSSFFSFFSFFSSFFFFFFSFFFFFSFFSSSSSSFSFFFSFSSSFSFFSFFSSS&quot;}'</span></code> to command for better tradeoff between speedup and performance.</p></li>
 </ul>
 </section>
 </section>
@@ -641,7 +640,7 @@ python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<sp
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>To enable the experimental overlap scheduler for EAGLE speculative decoding, set the environment variable <code class="docutils literal notranslate"><span class="pre">SGLANG_ENABLE_SPEC_V2=1</span></code>. This can improve performance by enabling overlap scheduling between draft and verification stages.</p>
+<p>To enable overlap scheduler for EAGLE speculative decoding, we recommend setting the environment variable <code class="docutils literal notranslate"><span class="pre">SGLANG_ENABLE_SPEC_V2=1</span></code>. This can improve performance by enabling overlap scheduling between draft and verification stages.</p>
 </div>
 </section>
 <section id="function-calling-and-reasoning-parser">
@@ -675,6 +674,14 @@ python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<sp
 <span class="w">  </span>--trust-remote-code<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--tp-size<span class="w"> </span><span class="m">8</span><span class="w"> </span>--dp-size<span class="w"> </span><span class="m">8</span><span class="w"> </span>--enable-dp-attention<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--reasoning-parser<span class="w"> </span>deepseek-v3
+</pre></div>
+</div>
+<p>To launch <code class="docutils literal notranslate"><span class="pre">GLM-5</span></code> with function calling and reasoning parser:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--model<span class="w"> </span>zai-org/GLM-5-FP8<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tp-size<span class="w"> </span><span class="m">8</span><span class="w"> </span>--dp-size<span class="w"> </span><span class="m">8</span><span class="w"> </span>--enable-dp-attention<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--tool-call-parser<span class="w"> </span>glm47<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--reasoning-parser<span class="w"> </span>glm45<span class="w"> </span><span class="se">\</span>
 </pre></div>
 </div>
 </section>
@@ -1118,7 +1125,7 @@ python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<sp
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-from-source">Build From Source</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-deepseek-v3-2-with-sglang">Launch DeepSeek V3.2 with SGLang</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-deepseek-v3-2-glm-5-with-sglang">Launch DeepSeek V3.2/GLM-5 with SGLang</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-tips">Configuration Tips</a></li>
 </ul>
 </li>
