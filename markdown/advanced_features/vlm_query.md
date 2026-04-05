@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.56it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.88it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.20it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
 
 
 
@@ -115,14 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 05:15:00,366 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 05:15:00] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 07:34:29,321 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 07:34:29] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a Seeing Eye Dog demonstration, where a person is drying and ironing a Seeing Eye Dog clothing on a temporary clothesline attached to the back window of a yellow taxi in a city street. Seeing Eye Dogs are trained to perform a wide range of tasks in support of visually impaired individuals and have been used for decades.
-    
-    The demonstration is likely intended to show that Seeing Eye Dogs can train to perform tasks necessary for daily living, even when they are inside buildings or transportation vehicles. This highlights the flexibility and adaptability of the Seeing Eye Dog service.
+    This image shows a scene with two yellow taxis on a street, with a person hanging clothes on a的心理架 between them. The person is wearing a yellow shirt and appears to be ironing clothes. The setting seems to be in an urban area, possibly a city with tall buildings and streetlights.
 
 
 ### Call with Processor Output
@@ -147,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows two yellow taxis driving down a street.
+    The image shows a streetscape with two yellow taxis. One taxi is parked on the street, and the other taxi is parked next to a building. There are various advertisements and banners visible along the sidewalk in front of the building. The scene appears to be in an urban area, possibly a commercial district. The image also includes streetlamps and other urban fixtures.
 
 
 ### Call with Precomputed Embeddings
@@ -203,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a yellow New York City taxi driving down a street. A person is standing in front of the taxi, holding an ironing board with clothes draped over it. The scene appears to be humorous, combining elements of a mundane activity (ironing outdoors on a street) with the bustling environment of a busy city street with cars and shops in the background.
+    The image shows a scene from New York City with a vintage yellow cab. The car appears to be older, potentially representing a model from the 1970s or 1980s. The vehicle is adorned with American flags and other banners, giving it a patriotic appearance. This cab is typical of the era it represents and is used for tourism, as it has been restored to its original yellow color and model.
 
 
 ## Querying Llama 4 Vision Model
