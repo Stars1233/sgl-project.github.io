@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.55it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.20it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.10s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.06s/it]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 07:49:59,205 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 07:49:59] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 08:17:18,683 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 08:17:18] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a man lying on the back of a yellow taxi cab, appearing to be passed out or asleep. The taxi is parked in an urban environment, likely in New York City, as indicated by the factors such as the yellow taxi cabs and the scene. The man is wearing a yellow shirt and seems to be staying warm by covering himself with a blue blanket, which may also be part of his makeshift shelter as he lays on-top of the yellow cab.
+    The image shows a yellow taxi in New York City with an individual dressed in yellow hanging clothing on the back of the taxi. This humorous scenario is often seen in New York City, where people often hang clothes on the taxis as a form of street art or to signal their delivery vehicles. The sign with the range reducer can also be seen in various locations in the city.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a street scene with two yellow taxicabs parked on the side of a road. Between these two taxis, there is a clothes drying rack with dry laundry draped over it, suggesting that someone is simply airing out their clothing in the street. The background includes a building, some flags hanging from pole near the building, and a few other details like windows and storefront elements. The clothing items on the drying rack include various types of garments, but the exact types are not entirely clear from the image.
+    Based on the image, it appears there are clothes being folded and lowered onto a curb or ledge next to a yellow taxi cab. This could indicate someone is doing laundry in a public area, such as a rooftop or street-level area with available space for hanging clothes to dry. The presence of a yellow taxi cab in the background suggests this scene is taking place in a city, likely in an urban setting.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    It looks like someone has set up a laundry rack on the back of a yellow taxi cab. The clothes are draped over the rack, suggesting they are being hung out to dry. This is unusual and typically related to street art or social commentary, possibly indicating concerns about cleanliness or the urban environment in New York City.
+    The image shows a scene from a New York City parade. A person is carrying a large, colorful balloon in the shape of a clown's head, with multiple flags attached to it. The individual appears to be walking along a street, presumably one of the golden island streets, which are in the foreground. The background features typical New York City elements such as buildings with a brick facade and storefronts displaying various items. There are also streetscenes and cabdrivers involved in the parade.
 
 
 ## Querying Llama 4 Vision Model
