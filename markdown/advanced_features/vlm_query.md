@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.74it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.49it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.26it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.31it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.48s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.36s/it]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 15:21:37,554 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 15:21:37] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 16:48:57,612 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 16:48:57] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image depicts a scene with two New York City taxis—a yellow cab and a silver vehicle—parked side by side on what appears to be a street. The yellow cab has a man standing on the back of it with a sign and some articles of clothing on a metal easel. The man seems to be demonstrating or performing some kind of street game or stunt with the clothes. The silver vehicle is nearby, and there are various people in the surroundings, including a man wearing a backpack and standing at the back of the silver vehicle. The background shows buildings and晴天的 placards.
+    It looks like the image shows two yellow taxis, one appearing to be a cleaner cab or a van, both taking up a significant portion of the street. There is also a person, clad in a yellow shirt, who appears to be hanging laundry on a clothesline, which is also on the road. The scene seems somewhat unusual and unusual for a typical street environment.
 
 
 ### Call with Processor Output
@@ -145,11 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    What you're seeing is an unusual and unexpected scenario that's playing on your expectation of city life. It's not a real photograph.
-    
-    The image shows a taxi cab, which is typically red, not yellow. A street scene with a woman drying laundry outdoors on hangers attached to a table outside a storefront.
-    
-    So, this much, looks real. The scenario itself is not, it's a humorous concept of urban myth where实际出租汽车应该是灰色但实际上都被涂成黄色。
+    The image shows a scene on a city street with two yellow taxicabs parked along the curb. One of the taxis has a clothes rack attached to its rear rack, holding a bunch of folded blue clothes. The person in the yellow shirt seems to be hanging up the clothes to dry in the wind. The background includes trees, street signs, and a sidewalk, indicating an urban environment. The activity of drying clothes outside in urban settings is not common, as it typically occurs in more rural areas or by the water.
 
 
 ### Call with Precomputed Embeddings
@@ -205,7 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    This image shows a scene on a city street. In the foreground, there is a individual hanging their clothes on a metal drying rack attached to the back of a yellow cab. The taxi is driving on the road, and there are business storefronts visible in the background. There are also other cars in the area, including a yellow taxi in the background on the same street.
+    The image shows a yellow taxi cab parked on a city street. It is an older model of a taxis cab, often referred to as旧时代出租车 (xìndáizhòu taksiquán in Chinese).
 
 
 ## Querying Llama 4 Vision Model
