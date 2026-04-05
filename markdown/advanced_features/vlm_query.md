@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.20it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.52it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.10s/it]Multi-thread loading shards: 100% Completed | 2/2 [00:02<00:00,  1.06s/it]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.17it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 08:17:18,683 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 08:17:18] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 09:28:18,169 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 09:28:18] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a yellow taxi in New York City with an individual dressed in yellow hanging clothing on the back of the taxi. This humorous scenario is often seen in New York City, where people often hang clothes on the taxis as a form of street art or to signal their delivery vehicles. The sign with the range reducer can also be seen in various locations in the city.
+    I'm not sure I understand what you're describing. Can you please provide more context or clarify your question?
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    Based on the image, it appears there are clothes being folded and lowered onto a curb or ledge next to a yellow taxi cab. This could indicate someone is doing laundry in a public area, such as a rooftop or street-level area with available space for hanging clothes to dry. The presence of a yellow taxi cab in the background suggests this scene is taking place in a city, likely in an urban setting.
+    The image shows a scene from the movie "Taxi Driver." A man, played by Robert De Niro, gets out of a yellow taxi. He is dressed in a blue denim apron with white stripes and sunglasses, looking confused or disoriented. This iconic scene is a significant part of the movie's plot, where the main character, Travis Bickle, is in distress and is about to drive off, affecting his relationship with his passengers.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +201,9 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image shows a scene from a New York City parade. A person is carrying a large, colorful balloon in the shape of a clown's head, with multiple flags attached to it. The individual appears to be walking along a street, presumably one of the golden island streets, which are in the foreground. The background features typical New York City elements such as buildings with a brick facade and storefronts displaying various items. There are also streetscenes and cabdrivers involved in the parade.
+    Here's what's being shown in this image:
+    
+    A yellow taxi cab is depicted either for sale or at an inspection. It appears to be on a city street with buildings and flags in the background suggesting it might be in New York City or a similar urban area. The taxi is positioned in such a way that the back windows, rearview mirrors, and orange lane dividers are clearly visible. It seems to have various items attached to the back, including clothes, suggesting it might be being sold or the driver might be using it to tow a small item.
 
 
 ## Querying Llama 4 Vision Model
