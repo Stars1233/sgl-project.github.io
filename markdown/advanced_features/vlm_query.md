@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.52it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.94it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.17it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.21it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.41it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.47it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 09:28:18,169 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 09:28:18] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 09:54:22,701 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 09:54:22] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    I'm not sure I understand what you're describing. Can you please provide more context or clarify your question?
+    The image shows two yellow taxis parked on a city street. In the middle of the street, there is a makeshift laundry line with some clothes draped over it. A person is working with the clothes, using what appears to be a machine or device, possibly for washing or drying clothes. The scene combines elements of humor and urban life, suggesting a unique or quirky parking arrangement for bicycle parking.
 
 
 ### Call with Processor Output
@@ -145,7 +145,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a scene from the movie "Taxi Driver." A man, played by Robert De Niro, gets out of a yellow taxi. He is dressed in a blue denim apron with white stripes and sunglasses, looking confused or disoriented. This iconic scene is a significant part of the movie's plot, where the main character, Travis Bickle, is in distress and is about to drive off, affecting his relationship with his passengers.
+    The image shows a yellow and white taxi parked on the side of a city street. The taxi has a ladder attached to the back with several articles of clothing hanging from it. There are also several flags on the back of the taxi. The backdrop features a building with large windows and some greenery, including trees and streetlights. The scene appears to be in an urban area, likely a busy city space.
 
 
 ### Call with Precomputed Embeddings
@@ -201,9 +201,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    Here's what's being shown in this image:
-    
-    A yellow taxi cab is depicted either for sale or at an inspection. It appears to be on a city street with buildings and flags in the background suggesting it might be in New York City or a similar urban area. The taxi is positioned in such a way that the back windows, rearview mirrors, and orange lane dividers are clearly visible. It seems to have various items attached to the back, including clothes, suggesting it might be being sold or the driver might be using it to tow a small item.
+    The image shows a street scene with a Yellow cab, which is a distinctive taxi car used in New York City. The cab has an object attached to the roof that appears to be a prominent pink flag. The street is lined with buildings, and there are several patriotic roses in the street. The scene captures a moment of public creativity on a city street, as the cab performs a stunt by using its roof flagpole as a makeshift flag stand for the flag. This moment adds a playful and humorous element to the urban setting.
 
 
 ## Querying Llama 4 Vision Model
