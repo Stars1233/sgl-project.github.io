@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.66it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.56it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.23it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.28it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.20it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.25it/s]
 
 
 
@@ -115,12 +115,14 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 00:27:55,169 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 00:27:55] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 05:15:00,366 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 05:15:00] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    This image shows two yellow taxis on a city street. One taxi has its back end open, and a person wearing a yellow shirt is seemingly working with cleaning supplies or equipment from inside the taxi. The other taxi is moving, and there are various transportation elements like a flag and traffic lights visible in the background.
+    The image shows a Seeing Eye Dog demonstration, where a person is drying and ironing a Seeing Eye Dog clothing on a temporary clothesline attached to the back window of a yellow taxi in a city street. Seeing Eye Dogs are trained to perform a wide range of tasks in support of visually impaired individuals and have been used for decades.
+    
+    The demonstration is likely intended to show that Seeing Eye Dogs can train to perform tasks necessary for daily living, even when they are inside buildings or transportation vehicles. This highlights the flexibility and adaptability of the Seeing Eye Dog service.
 
 
 ### Call with Processor Output
@@ -145,7 +147,7 @@ print(out["text"])
 ```
 
     Response using processor output:
-    The image shows a yellow taxi cab parked on a city street. The taxi has its rear doors opened, and there is a cloth or blanket draped over the back of the cab. This setup is commonly used to cover the rear windows or back seat when parking in an area with many people or vehicles. The taxi is likely parked in a busy area to ensure its drivers and passengers are out of direct sunlight when they get in or out.
+    The image shows two yellow taxis driving down a street.
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +203,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image depicts two yellow taxis parked side by side on a city street. The taxi on the left is moving, while the one on the right is stationary. Both taxis have惟行的广告遮阳罩 and are carrying luggage racks on the back. There are orange flags on the back of the stationary taxi, and a person in a yellow shirt is visible standing near the taxi's entrance. The background shows a building with several signs and a storefront.
+    The image shows a yellow New York City taxi driving down a street. A person is standing in front of the taxi, holding an ironing board with clothes draped over it. The scene appears to be humorous, combining elements of a mundane activity (ironing outdoors on a street) with the bustling environment of a busy city street with cars and shops in the background.
 
 
 ## Querying Llama 4 Vision Model
