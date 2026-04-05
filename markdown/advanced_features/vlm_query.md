@@ -103,9 +103,9 @@ llm = Engine(model_path=model_path, chat_template=chat_template, log_level="warn
 
     Multi-thread loading shards:   0% Completed | 0/2 [00:00<?, ?it/s]
 
-    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.94it/s]
+    Multi-thread loading shards:  50% Completed | 1/2 [00:00<00:00,  1.74it/s]
 
-    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.46it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.52it/s]
+    Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.26it/s]Multi-thread loading shards: 100% Completed | 2/2 [00:01<00:00,  1.31it/s]
 
 
 
@@ -115,12 +115,12 @@ print("Model response:")
 print(out["text"])
 ```
 
-    2026-04-05 10:38:15,022 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
-    [2026-04-05 10:38:15] Unexpected error during package walk: cutlass.cute.experimental
+    2026-04-05 15:21:37,554 - CUTE_DSL - WARNING - [handle_import_error] - Unexpected error during package walk: cutlass.cute.experimental
+    [2026-04-05 15:21:37] Unexpected error during package walk: cutlass.cute.experimental
 
 
     Model response:
-    The image shows a scene in a city street. A person is hanging clothes on a line temporarily attached to the back of a taxi, likely as a temporary fix or makeshift drying method. The people in the Taxi appear to be jokingly doing laundry while the vehicle is parked on the street.
+    The image depicts a scene with two New York City taxis—a yellow cab and a silver vehicle—parked side by side on what appears to be a street. The yellow cab has a man standing on the back of it with a sign and some articles of clothing on a metal easel. The man seems to be demonstrating or performing some kind of street game or stunt with the clothes. The silver vehicle is nearby, and there are various people in the surroundings, including a man wearing a backpack and standing at the back of the silver vehicle. The background shows buildings and晴天的 placards.
 
 
 ### Call with Processor Output
@@ -145,7 +145,11 @@ print(out["text"])
 ```
 
     Response using processor output:
-    I'm not sure what I'm supposed to do.
+    What you're seeing is an unusual and unexpected scenario that's playing on your expectation of city life. It's not a real photograph.
+    
+    The image shows a taxi cab, which is typically red, not yellow. A street scene with a woman drying laundry outdoors on hangers attached to a table outside a storefront.
+    
+    So, this much, looks real. The scenario itself is not, it's a humorous concept of urban myth where实际出租汽车应该是灰色但实际上都被涂成黄色。
 
 
 ### Call with Precomputed Embeddings
@@ -201,7 +205,7 @@ llm.shutdown()
 ```
 
     Response using precomputed embeddings:
-    The image appears to show a person in a yellow shirt standing next to a weathered, cracked vehicle that looks like a city taxi. There is a fabric, similar to a coat or jacket, hanging from a stand attached to the taxi. This scene is set in an urban environment with a building in the background and several other vehicles on the street, including another taxi. The setting suggests a cityscape, possibly during an outdoor event or a demonstration. The flag visible in the background has a vertical blue stripe with a yellow field, but the details of the flag, including the country it represents, are not clear.
+    This image shows a scene on a city street. In the foreground, there is a individual hanging their clothes on a metal drying rack attached to the back of a yellow cab. The taxi is driving on the road, and there are business storefronts visible in the background. There are also other cars in the area, including a yellow taxi in the background on the same street.
 
 
 ## Querying Llama 4 Vision Model
